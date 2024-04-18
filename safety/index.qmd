@@ -1,0 +1,6 @@
+---
+title: "Basic Safety Information"
+author: "DOFPro group"
+---
+
+This page will eventually introduce the basics of safe guilding and flying of high power rockets.
