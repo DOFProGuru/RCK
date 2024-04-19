@@ -1,52 +1,10 @@
 [
   {
-    "objectID": "instr/baroalt.html",
-    "href": "instr/baroalt.html",
-    "title": "Barometric Altitude",
+    "objectID": "const/index.html",
+    "href": "const/index.html",
+    "title": "Construction Information",
     "section": "",
-    "text": "Barometric Altitude"
-  },
-  {
-    "objectID": "instr/baroalt.html#the-antoine-equation-for-water",
-    "href": "instr/baroalt.html#the-antoine-equation-for-water",
-    "title": "Barometric Altitude",
-    "section": "The Antoine Equation for Water",
-    "text": "The Antoine Equation for Water\nTo calculate the absolute humidity from the relative humidity, one needs the vapor pressure of water at the system temperature. Rather than use the steam tables, one can use the Antoine equation. A form of the equation suitable for atmospheric corrections is\n\\[\nP = \\exp\\left[16.3872 -\\frac{3885.70}{T-42.98}\\right]\n\\]\nwhere \\(P\\) is in kPa, and \\(T\\) is in kelvin."
-  },
-  {
-    "objectID": "model/index.html",
-    "href": "model/index.html",
-    "title": "Modeling",
-    "section": "",
-    "text": "Page development in process. It is still pretty rough. This page will eventually contain information on modeling of flight dynamics, modal vibrations, and other aspects of rocketry."
-  },
-  {
-    "objectID": "model/index.html#analytical-with-constant-thrust-and-constant-drag-coefficient",
-    "href": "model/index.html#analytical-with-constant-thrust-and-constant-drag-coefficient",
-    "title": "Modeling",
-    "section": "Analytical with Constant Thrust and Constant Drag Coefficient",
-    "text": "Analytical with Constant Thrust and Constant Drag Coefficient\nThis is the simplest model that does a good job of describing a rocket flight up to ejection and is useful for processing data to determine total impulse, total burn time, and an average C~D. This model assumes that the motor thrust is constant at the average level for the motor burn time. For example looking up the Estes C6 motor on ThrustCurve.org shows a total impulse of 8.8 Ns and a total burn time of 1.9 s. The motor would be modeled as generating a constant thrust of 8.8 Ns/1.9 s = 4.63 N for 1.9 s. Notice the listed average thrust is 4.7 N, which is close to the value we would specify, but not exactly the same. Which is correct? That would depend on what you think is correct.\n3 3-D models"
-  },
-  {
-    "objectID": "safety/index.html",
-    "href": "safety/index.html",
-    "title": "Basic Safety Information",
-    "section": "",
-    "text": "This page will eventually introduce the basics of safe guilding and flying of high power rockets."
-  },
-  {
-    "objectID": "fltdata/index.html",
-    "href": "fltdata/index.html",
-    "title": "Flight Data Archive",
-    "section": "",
-    "text": "This page will eventually contain an archive of actual flight data with instructions on how to read and process them."
-  },
-  {
-    "objectID": "intro/index.html",
-    "href": "intro/index.html",
-    "title": "Introduction the High Power Rocketry",
-    "section": "",
-    "text": "Introduction\nEventually, this page will provie more background on high power rocketry.\nThese pages outline the basics of High Power Rocketry as defined in NFPA 1127 and by [TRA](https://www.tripoli.org/) and [NAR](https://www.nar.org/).\nThe Certification process is explainied on the linked page."
+    "text": "This page will eventually contain information on construction techniques as well as information on how to construct a rocket suitable for a Level 1 flight, a Level 2 flight, and some other rockets."
   },
   {
     "objectID": "intro/cert.html",
@@ -91,11 +49,60 @@
     "text": "LOC Precision Vulcanite\nThe build instructions for Labs 4 and 5 already incorporate most of the hints below. 1. Be sure to roughen all surfaces to be epoxied, with 60, 80, or 100 grit sandpaper before you glue so that the epoxy adheres better. 2. Get an Aero Pack RA 38mm L motor retainer. 3. Sand the bottom 3/8” of the motor mount tube until the motor retainer slides on easily. 4. Replace the elastic shock cord in the kit with 12 ft to 15 ft of either tubular/strap nylon or tubular/strap Kevlar, such as PML STRP-0.375, eRockets ER9044, Wildman KEVLAR1/4”, or Madcow SC_FLT_38_RED. 5. Use either the PML mounting style or the Modified PML mounting style for the shock cord. For the PML style, follow steps 1 & 2 in the Phobos Instructions. You’ll have to machine or file a notch in one of the centering rings to accomodate the shock cord. The centering ring on the other end (held in place with tape), must be at least 3/8” from the end of the motor mount tube and preferably 1/2” to accomodate the motor retainer. When assembled, the motor mount will protrude from the end of the rocket a bit. The modified PML style is similar, but instead of epoxying the shock cord axially to the motor mount, it is tied radially around the motor mount tube and included in the epoxy fillet between the motor mount tube and the centering ring. Step 2 of the Madcow Batray instructions show the tying technique, but has the notch on the outside of the centering ring instead of on the inside where it belongs. 6. If you want streamlined fins, round the leading edge, and taper the trailing edge. Leave the inside and outside edges square. 7. Consider laser-cutting a pair of fin guides to ensure the fins are perpendicular to the body tube. 8. Use the PML technique to attach the fins as shown in Step 4 of the Phobos Instructions. When you finally epoxy in the bottom centering ring, push it flush up against the fins. 9. When prepping the Payload Bay, consider finding a screw eye that attaches with a nut and washer rather than just a wood-screw end. 10. When you epoxy in the coupler tube bulkhead, recess it at least 1/8” so that you can put a decent fillet between the bulkhead and the coupler tube on the outside. DO NOT make the bulkhead flush with the end of the coupler tube. The LOC instructions say to, but they are seriously wrong and you may lose your payload section when the recovery charge goes off. 11. Secure the nose cone to the payload section with three countersunk #4 flat head screws. You can use the pan head screws but they don’t sit as flush. 12. If you are planning on Level 2 (J) flights, either replace or supplement the launch lugs with rail guides, either PML LRL-10-2 or Acme 54mm. 13. Secure the motor retainer with JB Weld."
   },
   {
+    "objectID": "model/index.html",
+    "href": "model/index.html",
+    "title": "Modeling",
+    "section": "",
+    "text": "Page development in process. It is still pretty rough. This page will eventually contain information on modeling of flight dynamics, modal vibrations, and other aspects of rocketry."
+  },
+  {
+    "objectID": "model/index.html#analytical-with-constant-thrust-and-constant-drag-coefficient",
+    "href": "model/index.html#analytical-with-constant-thrust-and-constant-drag-coefficient",
+    "title": "Modeling",
+    "section": "Analytical with Constant Thrust and Constant Drag Coefficient",
+    "text": "Analytical with Constant Thrust and Constant Drag Coefficient\nThis is the simplest model that does a good job of describing a rocket flight up to ejection and is useful for processing data to determine total impulse, total burn time, and an average C~D. This model assumes that the motor thrust is constant at the average level for the motor burn time. For example looking up the Estes C6 motor on ThrustCurve.org shows a total impulse of 8.8 Ns and a total burn time of 1.9 s. The motor would be modeled as generating a constant thrust of 8.8 Ns/1.9 s = 4.63 N for 1.9 s. Notice the listed average thrust is 4.7 N, which is close to the value we would specify, but not exactly the same. Which is correct? That would depend on what you think is correct.\n3 3-D models"
+  },
+  {
+    "objectID": "instr/index.html",
+    "href": "instr/index.html",
+    "title": "Instrumentation and Data Analysis",
+    "section": "",
+    "text": "This page will eventually contain information about avionics and other instruments for collecting data aboard your rockets during flight, along with information on how to analyze the data and compare it with your flight models.\nAs a sample, here is a link to information about barometric altimeters."
+  },
+  {
     "objectID": "archive/index.html",
     "href": "archive/index.html",
     "title": "Data Archive",
     "section": "",
     "text": "A great number of models, tutorials, and experimental data sets have been gathered in E80, The Rocket Version, and in E178. Much of that information will be reproduced here."
+  },
+  {
+    "objectID": "fltdata/index.html",
+    "href": "fltdata/index.html",
+    "title": "Flight Data Archive",
+    "section": "",
+    "text": "This page will eventually contain an archive of actual flight data with instructions on how to read and process them."
+  },
+  {
+    "objectID": "instr/baroalt.html",
+    "href": "instr/baroalt.html",
+    "title": "Barometric Altitude",
+    "section": "",
+    "text": "Barometric Altitude"
+  },
+  {
+    "objectID": "instr/baroalt.html#the-antoine-equation-for-water",
+    "href": "instr/baroalt.html#the-antoine-equation-for-water",
+    "title": "Barometric Altitude",
+    "section": "The Antoine Equation for Water",
+    "text": "The Antoine Equation for Water\nTo calculate the absolute humidity from the relative humidity, one needs the vapor pressure of water at the system temperature. Rather than use the steam tables, one can use the Antoine equation. A form of the equation suitable for atmospheric corrections is\n\\[\nP = \\exp\\left[16.3872 -\\frac{3885.70}{T-42.98}\\right]\n\\]\nwhere \\(P\\) is in kPa, and \\(T\\) is in kelvin."
+  },
+  {
+    "objectID": "safety/index.html",
+    "href": "safety/index.html",
+    "title": "Basic Safety Information",
+    "section": "",
+    "text": "This page will eventually introduce the basics of safe guilding and flying of high power rockets."
   },
   {
     "objectID": "index.html",
@@ -105,17 +112,10 @@
     "text": "Introduction\nHigh Power Rocketry concerns rockets with a mass of greater than 1500 grams and/or a single motors with more than 160 Ns of impulse or a cluster of motors with more than 320 Ns of impulse. High Power Rocketry is more thoroughly defined in NFPA 1127 and by TRA and NAR. This website contains information on the safety regulations, construction guidelines and hints, modeling of rocket flight, instrumentation, avionics, and analysis of flight data. In addition, there is an archive of flight data, and archives of information from previous rocket courses.\nChecking out Quarto Publish."
   },
   {
-    "objectID": "const/index.html",
-    "href": "const/index.html",
-    "title": "Construction Information",
+    "objectID": "intro/index.html",
+    "href": "intro/index.html",
+    "title": "Introduction the High Power Rocketry",
     "section": "",
-    "text": "This page will eventually contain information on construction techniques as well as information on how to construct a rocket suitable for a Level 1 flight, a Level 2 flight, and some other rockets."
-  },
-  {
-    "objectID": "instr/index.html",
-    "href": "instr/index.html",
-    "title": "Instrumentation and Data Analysis",
-    "section": "",
-    "text": "This page will eventually contain information about avionics and other instruments for collecting data aboard your rockets during flight, along with information on how to analyze the data and compare it with your flight models.\nAs a sample, here is a link to information about barometric altimeters."
+    "text": "Introduction\nEventually, this page will provie more background on high power rocketry.\nThese pages outline the basics of High Power Rocketry as defined in NFPA 1127 and by [TRA](https://www.tripoli.org/) and [NAR](https://www.nar.org/).\nThe Certification process is explainied on the linked page."
   }
 ]
