@@ -5,8 +5,6 @@ website:
   title: "High Power Rocketry"
   navbar:
     left:
-      - href: index.qmd
-        text: Home
       - href: intro/
         text: Intro  
       - href: safety/
@@ -21,10 +19,12 @@ website:
         text: "Flight Data"
       - href: archive/
         text: Archive
+      - href: https://dofpro.org
+        text: DOFPro
 
 format:
   html:
-    theme: spacelab
+    theme: cerulean
     css: styles.css
     toc: true
 
