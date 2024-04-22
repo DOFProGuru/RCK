@@ -5,10 +5,12 @@ website:
   title: "High Power Rocketry"
   navbar:
     left:
-      - href: index.qmd
-        text: Home
-      - href: intro/
-        text: Intro  
+      - text: Intro
+        menu:
+        - href: intro/index.qmd
+          text: Intro
+        - href: intro/cert.qmd
+          text: Certification
       - href: safety/
         text: Safety
       - href: const/
@@ -16,15 +18,22 @@ website:
       - href: model/
         text: Modeling
       - href: instr/
-        text: "Data Analysis"
+      - text: "Data Analysis"
+        menu:
+        - href: instr/index.qmd
+          text: "Data Analysis"
+        - href: instr/baroalt.qmd
+          text: Altimeters
       - href: fltdata/
         text: "Flight Data"
       - href: archive/
         text: Archive
+      - href: https://dofpro.org
+        text: DOFPro
 
 format:
   html:
-    theme: spacelab
+    theme: cerulean
     css: styles.css
     toc: true
 
