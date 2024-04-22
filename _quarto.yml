@@ -5,8 +5,12 @@ website:
   title: "High Power Rocketry"
   navbar:
     left:
-      - href: intro/
-        text: Intro  
+      - text: Intro
+        menu:
+        - href: intro/index.qmd
+          text: Intro
+        - href: intro/cert.qmd
+          text: Certification
       - href: safety/
         text: Safety
       - href: const/
@@ -14,7 +18,12 @@ website:
       - href: model/
         text: Modeling
       - href: instr/
-        text: "Data Analysis"
+      - text: "Data Analysis"
+        menu:
+        - href: instr/index.qmd
+          text: "Data Analysis"
+        - href: instr/baroalt.qmd
+          text: Altimeters
       - href: fltdata/
         text: "Flight Data"
       - href: archive/
