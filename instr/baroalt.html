@@ -118,14 +118,21 @@ window.Quarto = {
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
-  <li class="nav-item">
-    <a class="nav-link" href="../index.html"> 
-<span class="menu-text">Home</span></a>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-intro" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Intro</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-intro">    
+        <li>
+    <a class="dropdown-item" href="../intro/index.html">
+ <span class="dropdown-text">Intro</span></a>
   </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="../intro/"> 
-<span class="menu-text">Intro</span></a>
+        <li>
+    <a class="dropdown-item" href="../intro/cert.html">
+ <span class="dropdown-text">Certification</span></a>
   </li>  
+    </ul>
+  </li>
   <li class="nav-item">
     <a class="nav-link" href="../safety/"> 
 <span class="menu-text">Safety</span></a>
@@ -138,10 +145,25 @@ window.Quarto = {
     <a class="nav-link" href="../model/"> 
 <span class="menu-text">Modeling</span></a>
   </li>  
-  <li class="nav-item">
+  <li class="nav-item compact">
     <a class="nav-link" href="../instr/"> 
-<span class="menu-text">Data Analysis</span></a>
+<span class="menu-text"></span></a>
   </li>  
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-data-analysis" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Data Analysis</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-data-analysis">    
+        <li>
+    <a class="dropdown-item" href="../instr/index.html">
+ <span class="dropdown-text">Data Analysis</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../instr/baroalt.html">
+ <span class="dropdown-text">Altimeters</span></a>
+  </li>  
+    </ul>
+  </li>
   <li class="nav-item">
     <a class="nav-link" href="../fltdata/"> 
 <span class="menu-text">Flight Data</span></a>
@@ -149,6 +171,10 @@ window.Quarto = {
   <li class="nav-item">
     <a class="nav-link" href="../archive/"> 
 <span class="menu-text">Archive</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="https://dofpro.org"> 
+<span class="menu-text">DOFPro</span></a>
   </li>  
 </ul>
           </div> <!-- /navcollapse -->
