@@ -1,5 +1,5 @@
 ---
-title: "Introduction the High Power Rocketry"
+title: "Introduction to High Power Rocketry"
 author: "DOFPro group"
 ---
 

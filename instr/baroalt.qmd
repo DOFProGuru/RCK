@@ -6,6 +6,18 @@ format: html
 
 **Barometric Altitude**
 
+# Barometric Altimeters
+
+A [*barometric altimeter*](https://en.wikipedia.org/wiki/Pressure_altimeter) uses the variation of atmospheric (or barometric) pressure with altitude to calculate and display the altitude from the measured local atmospheric pressure. The altimeter requires a model for how the pressure varies with altitude. Both the ISO and the US government have specified standard models for how pressure varies with altitude. These models assume that the atmospheric conditions are constant. Anyone who has watched or looked up a weather forecast realizes that the local temperature and pressure vary throughout the day. This page examines how the variations affect the accuracy of the altitude calculated by a barometric altimeter. The barometric altimeter has been used since the early days of aviation, and still finds a place on modern aircraft and hobbyist rocketry.
+
+There are three additional common ways to calculate the altitude of a rocket, and they each have their own set of associated errors. They are:
+
+- [Triangulation](https://www.apogeerockets.com/downloads/PDFs/triangulation_system.pdf)
+- GPS
+- Integration of velocity or double integration of acceleration
+
+These three will not be discussed further here.
+
 # Standard Atmospheric Model
 
 The standard atmospheric model below 11,000 m is almost the same for both the ISO Standard Atmosphere and the US Standard Atmosphere. The following is based on the US Standard Atmosphere. The atmosphere is modeled assuming a base temperature, $T_0$, at mean sea level (MSL) ($h_0 = 0$) of 288.15 K (15.0°C) and a base pressure, $P_0$, of 101,325 Pa. The temperature is assumed to vary linearly with altitude at a rate of –6.5°C per 1000 m (the *lapse rate*, $L$). The pressure versus altitude is calculated from the simultaneous solution of

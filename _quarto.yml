@@ -28,8 +28,13 @@ website:
         text: "Flight Data"
       - href: archive/
         text: Archive
-      - href: https://dofpro.org
-        text: DOFPro
+      
+      - text: DOFPro
+        menu:
+        - href: https://dofpro.org
+          text: "DOFPro Home"
+        - href: https://dofpro.org/CTP/
+          text: "Chem. Therm. Proc."
 
 format:
   html:
