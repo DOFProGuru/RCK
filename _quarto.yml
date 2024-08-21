@@ -4,6 +4,8 @@ project:
 website:
   title: "High Power Rocketry"
   navbar:
+    logo: DOFPro_D7_Red_Flame_No_Background_cropped.png
+    logo-alt: "DOFPro Logo"
     left:
       - text: Intro
         menu:
