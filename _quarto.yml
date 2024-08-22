@@ -41,7 +41,7 @@ website:
 
 format:
   html:
-    theme: cerulean
+    theme: materia
     css: styles.css
     toc: true
 
