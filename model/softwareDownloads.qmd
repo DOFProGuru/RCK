@@ -1,0 +1,154 @@
+---
+title: "Software Downloads"
+author: "DOFPro group"
+---
+
+ # OpenRocket Files
+
+* [First Flight LOC Weasel](https://pages.hmc.edu/spjut/AdvRoc/SimModels/LOC-Weasel-E178.ork)
+* [LOC Dual Deploy Vulcanite](https://pages.hmc.edu/spjut/AdvRoc/SimModels/DDVulcanite.ork)
+* [Class Madcow Adventurer](https://pages.hmc.edu/spjut/AdvRoc/SimModels/ClassAdventurer.ork)
+* [Old First Flight MiniDX3](https://pages.hmc.edu/spjut/AdvRoc/SimModels/StandardMiniDX3WAvionics.ork)
+* [LOC Standard Vulcanite](https://pages.hmc.edu/spjut/AdvRoc/SimModels/StandardVulcaniteWAvionics.ork)
+* [Class Modified GoDevil](https://pages.hmc.edu/spjut/AdvRoc/SimModels/ClassGoDevil38WAvionics.ork)
+* [Estes TopShot](https://pages.hmc.edu/spjut/AdvRoc/SimModels/Estes_Top_Shot_Avionics.ork)
+* [MiniDX3 for E69N Motors](https://pages.hmc.edu/spjut/AdvRoc/SimModels/MiniDX3MinDiamWAvionics.ork)
+* [Estes Emerald Streak](https://pages.hmc.edu/spjut/AdvRoc/SimModels/Estes_Emerald_Streak.ork)
+
+# Excel Files
+
+* [20210317_CompositeData](https://pages.hmc.edu/spjut/AdvRoc/ExcelModels/20210317_CompositeData.xlsx)
+* [20230220_FinTestData](https://pages.hmc.edu/spjut/AdvRoc/ExcelModels/20230220_FinTestData.xlsx)
+* [AerotechMotors](https://pages.hmc.edu/spjut/AdvRoc/ExcelModels/AerotechMotors.xlsx)
+* [Assignment1ResultsTable](https://pages.hmc.edu/spjut/AdvRoc/ExcelModels/Assignment1ResultsTable.xlsx)
+* [CesaroniMotors](https://pages.hmc.edu/spjut/AdvRoc/ExcelModels/CesaroniMotors.xlsx)
+* [E190PrototypeSimResults](https://pages.hmc.edu/spjut/AdvRoc/ExcelModels/E190PrototypeSimResults.xlsx)
+* [FinData](https://pages.hmc.edu/spjut/AdvRoc/ExcelModels/FinData.xlsx)
+* [FinTestData_18_FEB_2020](https://pages.hmc.edu/spjut/AdvRoc/ExcelModels/FinTestData_18_FEB_2020.xlsx)
+* [OneDConst2LThrustCDNoData](https://pages.hmc.edu/spjut/AdvRoc/ExcelModels/OneDConst2LThrustCDNoData.xlsx)
+* [OneDConst2LThrustCDwithData](https://pages.hmc.edu/spjut/AdvRoc/ExcelModels/OneDConst2LThrustCDwithData.xlsx)
+* [TransonicIIApr2016ThreeModelsJ449](https://pages.hmc.edu/spjut/AdvRoc/ExcelModels/TransonicIIApr2016ThreeModelsJ449.xlsx)
+
+# Mathematica Files
+
+* [ImportFIPaCSV](https://pages.hmc.edu/spjut/AdvRoc/MathematicaModels/ImportFIPaCSV.nb)
+* [ImportPF2File](https://pages.hmc.edu/spjut/AdvRoc/MathematicaModels/ImportPF2File.nb)
+* [QuatRotVecAndBack](https://pages.hmc.edu/spjut/AdvRoc/MathematicaModels/QuatRotVecAndBack.nb)
+* [TwoStepModel](https://pages.hmc.edu/spjut/AdvRoc/MathematicaModels/TwoStepModel.nb)
+
+# LabVIEW Files
+
+* [AIMCSVCDThrustCalcs](https://pages.hmc.edu/spjut/AdvRoc/LabVIEWModels/AIMCSVCDThrustCalcs.vi)
+* [AnalyticalConstThrustConstCD](https://pages.hmc.edu/spjut/AdvRoc/LabVIEWModels/AnalyticalConstThrustConstCD.vi)
+* [bILAToByte](https://pages.hmc.edu/spjut/AdvRoc/LabVIEWModels/bILAToByte.vi)
+* [FixRavenCSV](https://pages.hmc.edu/spjut/AdvRoc/LabVIEWModels/FixRavenCSV.vi)
+* [LowPowerThrustCurves.csv](https://pages.hmc.edu/spjut/AdvRoc/LabVIEWModels/LowPowerThrustCurves.csv)
+* [LowPowerThrustCurves.xlsx](https://pages.hmc.edu/spjut/AdvRoc/LabVIEWModels/LowPowerThrustCurves.xlsx)
+* [MolMassCalcForAir](https://pages.hmc.edu/spjut/AdvRoc/LabVIEWModels/MolMassCalcForAir.vi)
+* [MultiStepThrustModel](https://pages.hmc.edu/spjut/AdvRoc/LabVIEWModels/MultiStepThrustModel.vi)
+* [OneLevelLMFunction](https://pages.hmc.edu/spjut/AdvRoc/LabVIEWModels/OneLevelLMFunction.vi)
+* [OneLevelLMFunctVel](https://pages.hmc.edu/spjut/AdvRoc/LabVIEWModels/OneLevelLMFunctVel.vi)
+* [P-to-h](https://pages.hmc.edu/spjut/AdvRoc/LabVIEWModels/P-to-h.vi)
+* [ParseTeensy](https://pages.hmc.edu/spjut/AdvRoc/LabVIEWModels/ParseTeensy.vi)
+* [PnutCSVAltVelCalcs](https://pages.hmc.edu/spjut/AdvRoc/LabVIEWModels/PnutCSVAltVelCalcs.vi)
+* [QuatLibForRockets](https://pages.hmc.edu/spjut/AdvRoc/LabVIEWModels/QuatLibForRockets.llb)
+* [RavenCSVAccelCalcs](https://pages.hmc.edu/spjut/AdvRoc/LabVIEWModels/RavenCSVAccelCalcs.vi)
+* [RavenCSVAltVelCalcs](https://pages.hmc.edu/spjut/AdvRoc/LabVIEWModels/RavenCSVAltVelCalcs.vi)
+* [RavenCSVCDThrustCalcs](https://pages.hmc.edu/spjut/AdvRoc/LabVIEWModels/RavenCSVCDThrustCalcs.vi)
+* [ReadAIM](https://pages.hmc.edu/spjut/AdvRoc/LabVIEWModels/ReadAIM.vi)
+* [ReadDisplayAIM](https://pages.hmc.edu/spjut/AdvRoc/LabVIEWModels/ReadDisplayAIM.vi)
+* [ReadDisplayPF2](https://pages.hmc.edu/spjut/AdvRoc/LabVIEWModels/ReadDisplayPF2.vi)
+* [ReadDisplayRavenCSV](https://pages.hmc.edu/spjut/AdvRoc/LabVIEWModels/ReadDisplayRavenCSV.vi)
+* [ReadPF2File](https://pages.hmc.edu/spjut/AdvRoc/LabVIEWModels/ReadPF2File.vi)
+* [ReadRavenCSV](https://pages.hmc.edu/spjut/AdvRoc/LabVIEWModels/ReadRavenCSV.vi)
+* [ReadThrustCurveCSV](https://pages.hmc.edu/spjut/AdvRoc/LabVIEWModels/ReadThrustCurveCSV.vi)
+* [RungeKuttaLMFunction](https://pages.hmc.edu/spjut/AdvRoc/LabVIEWModels/RungeKuttaLMFunction.vi)
+* [RungeKuttaModel](https://pages.hmc.edu/spjut/AdvRoc/LabVIEWModels/RungeKuttaModel.vi)
+* [ThrustFromThrustCurve](https://pages.hmc.edu/spjut/AdvRoc/LabVIEWModels/ThrustFromThrustCurve.vi)
+* [ThrustToMass](https://pages.hmc.edu/spjut/AdvRoc/LabVIEWModels/ThrustToMass.vi)
+* [TwoLevelLMFunction](https://pages.hmc.edu/spjut/AdvRoc/LabVIEWModels/TwoLevelLMFunction.vi)
+
+# MATLAB Files
+
+* [Assignment1MATLABModel](https://pages.hmc.edu/spjut/AdvRoc/MATLABModels/Assignment1MATLABModel.zip)
+* [E190_9SEP2017_J825R_1_BASE](https://pages.hmc.edu/spjut/AdvRoc/MATLABModels/E190_9SEP2017_J825R_1_BASE.csv)
+* [E190_9SEP2017_J825R_1_XTRA](https://pages.hmc.edu/spjut/AdvRoc/MATLABModels/E190_9SEP2017_J825R_1_XTRA.csv)
+* [G69_30JUN2017_G69-P_3_FIP](https://pages.hmc.edu/spjut/AdvRoc/MATLABModels/G69_30JUN2017_G69-P_3_FIP.csv)
+* [G69_30JUN2017_G69-P_3](https://pages.hmc.edu/spjut/AdvRoc/MATLABModels/G69_30JUN2017_G69-P_3.pf2)
+* [makelists](https://pages.hmc.edu/spjut/AdvRoc/MATLABModels/G69_30JUN2017_G69-P_3.pf2)
+* [myDateNum](https://pages.hmc.edu/spjut/AdvRoc/MATLABModels/myDateNum.m)
+* [myStrLat](https://pages.hmc.edu/spjut/AdvRoc/MATLABModels/myStrLat.m)
+* [myStrLon](https://pages.hmc.edu/spjut/AdvRoc/MATLABModels/myStrLon.m)
+* [ParseTeensyLogger](https://pages.hmc.edu/spjut/AdvRoc/MATLABModels/ParseTeensyLogger.m)
+* [ParseTeensyLoggerEggfinder](https://pages.hmc.edu/spjut/AdvRoc/MATLABModels/ParseTeensyLoggerEggfinder.m)
+* [ParseTeensyLoggerNoGPS](https://pages.hmc.edu/spjut/AdvRoc/MATLABModels/ParseTeensyLoggerNoGPS.m)
+* [poscoast](https://pages.hmc.edu/spjut/AdvRoc/MATLABModels/poscoast.m)
+* [posff](https://pages.hmc.edu/spjut/AdvRoc/MATLABModels/posff.m)
+* [position](https://pages.hmc.edu/spjut/AdvRoc/MATLABModels/position.m)
+* [posvel](https://pages.hmc.edu/spjut/AdvRoc/MATLABModels/posvel.m)
+* [posvelacc](https://pages.hmc.edu/spjut/AdvRoc/MATLABModels/posvelacc.m)
+* [ProcessAIMDataForCDThrustSpinJ825R](https://pages.hmc.edu/spjut/AdvRoc/MATLABModels/ProcessAIMDataForCDThrustSpinJ825R.m)
+* [ProcessAltitudeDataJ825R](https://pages.hmc.edu/spjut/AdvRoc/MATLABModels/ProcessAltitudeDataJ825R.m)
+* [ProcessGPGGA](https://pages.hmc.edu/spjut/AdvRoc/MATLABModels/ProcessGPGGA.m)
+* [ProcessIMUData](https://pages.hmc.edu/spjut/AdvRoc/MATLABModels/ProcessIMUData.m)
+* [ProcessIMUDataJ825R](https://pages.hmc.edu/spjut/AdvRoc/MATLABModels/ProcessIMUDataJ825R.m)
+* [ProcessNMEAData](https://pages.hmc.edu/spjut/AdvRoc/MATLABModels/ProcessNMEAData.m)
+* [qdotCalc](https://pages.hmc.edu/spjut/AdvRoc/MATLABModels/qdotCalc.m)
+* [ReadFIPcsv](https://pages.hmc.edu/spjut/AdvRoc/MATLABModels/ReadFIPcsv.m)
+* [ReadPlotAIMData](https://pages.hmc.edu/spjut/AdvRoc/MATLABModels/ReadPlotAIMData.m)
+* [ReadPlotFIPcsv](https://pages.hmc.edu/spjut/AdvRoc/MATLABModels/ReadPlotFIPcsv.m)
+* [RocketEquationPackage](https://pages.hmc.edu/spjut/AdvRoc/MATLABModels/RocketEquationPackage.zip)
+* [RotKalmanJ825R](https://pages.hmc.edu/spjut/AdvRoc/MATLABModels/RotKalmanJ825R.m)
+* [rotToQuat](https://pages.hmc.edu/spjut/AdvRoc/MATLABModels/rotToQuat.m)
+* [rotVecToGlob](https://pages.hmc.edu/spjut/AdvRoc/MATLABModels/rotVecToGlob.m)
+* [rotVecToLoc](https://pages.hmc.edu/spjut/AdvRoc/MATLABModels/rotVecToLoc.m)
+* [ScanFaultyTeensyDataLogger](https://pages.hmc.edu/spjut/AdvRoc/MATLABModels/ScanFaultyTeensyDataLogger.m)
+* [ScanTeensyDataLogger](https://pages.hmc.edu/spjut/AdvRoc/MATLABModels/ScanTeensyDataLogger.m)
+* [ScanTeensyDataLoggerGPSRotTempAdventurer](https://pages.hmc.edu/spjut/AdvRoc/MATLABModels/ScanTeensyDataLoggerGPSRotTempAdventurer.m)
+* [smooth](https://pages.hmc.edu/spjut/AdvRoc/MATLABModels/smooth.m)
+* [TfromV](https://pages.hmc.edu/spjut/AdvRoc/MATLABModels/TfromV.m)
+* [TopShot_14DEC2017_E12-6_1](https://pages.hmc.edu/spjut/AdvRoc/MATLABModels/TopShot_14DEC2017_E12-6_1.pf2)
+* [TRIAD](https://pages.hmc.edu/spjut/AdvRoc/MATLABModels/TRIAD.m)
+* [TwoStepThrustAnalytical](https://pages.hmc.edu/spjut/AdvRoc/MATLABModels/TwoStepThrustAnalytical.m)
+* [velcoast](https://pages.hmc.edu/spjut/AdvRoc/MATLABModels/velcoast.m)
+* [velff](https://pages.hmc.edu/spjut/AdvRoc/MATLABModels/velff.m)
+* [velocity](https://pages.hmc.edu/spjut/AdvRoc/MATLABModels/velocity.m)
+* [VmaxApogee](https://pages.hmc.edu/spjut/AdvRoc/MATLABModels/VmaxApogee.m)
+
+# PDF Files
+
+* [AircraftQuaternions](https://pages.hmc.edu/spjut/AdvRoc/PDF/AircraftQuaternions.pdf)
+* [Assignment1Solution](https://pages.hmc.edu/spjut/AdvRoc/PDF/Assignment1Solution.pdf)
+* [BlackHawk38_Ins](https://pages.hmc.edu/spjut/AdvRoc/PDF/BlackHawk38_Ins.pdf)
+* [CambridgeRocketSimPaper](https://pages.hmc.edu/spjut/AdvRoc/PDF/CambridgeRocketSimPaper.pdf)
+* [CDfromPostBoost](https://pages.hmc.edu/spjut/AdvRoc/PDF/CDfromPostBoost.pdf)
+* [ConstThrustTwoStepModel](https://pages.hmc.edu/spjut/AdvRoc/PDF/ConstThrustTwoStepModel.pdf)
+* [dx316](https://pages.hmc.edu/spjut/AdvRoc/PDF/dx316.pdf)
+* [E190AJRocketSchematic](https://pages.hmc.edu/spjut/AdvRoc/PDF/E190AJRocketSchematic.pdf)
+* [FinalReportRubric2024](https://pages.hmc.edu/spjut/AdvRoc/PDF/FinalReportRubric2024.pdf)
+* [IntroToInertialNavigation](https://pages.hmc.edu/spjut/AdvRoc/PDF/IntroToInertialNavigation.pdf)
+* [KalmanFilterExample](https://pages.hmc.edu/spjut/AdvRoc/PDF/IntroToInertialNavigation.pdf)
+* [LSM330DLCDataSheet](https://pages.hmc.edu/spjut/AdvRoc/PDF/LSM330DLCDataSheet.pdf)
+* [MAG3110DataSheet](https://pages.hmc.edu/spjut/AdvRoc/PDF/MAG3110DataSheet.pdf)
+* [MMA65XXDataSheet](https://pages.hmc.edu/spjut/AdvRoc/PDF/MMA65XXDataSheet.pdf)
+* [ModelingControlFlightDynamics](https://pages.hmc.edu/spjut/AdvRoc/PDF/ModelingControlFlightDynamics.pdf)
+* [MS5607-02BA03DataSheet](https://pages.hmc.edu/spjut/AdvRoc/PDF/MS5607-02BA03DataSheet.pdf)
+* [OpenRocketHints](https://pages.hmc.edu/spjut/AdvRoc/PDF/OpenRocketHints.pdf)
+* [Raven_quick_start](https://pages.hmc.edu/spjut/AdvRoc/PDF/Raven_quick_start.pdf)
+* [raven_users_manual_2014may20](https://pages.hmc.edu/spjut/AdvRoc/PDF/raven_users_manual_2014may20.pdf)
+* [RocketEquationDerivation](https://pages.hmc.edu/spjut/AdvRoc/PDF/RocketEquationDerivation.pdf)
+* [StandardAtmosphere](https://pages.hmc.edu/spjut/AdvRoc/PDF/StandardAtmosphere.pdf)
+* [StudentDX3Measurements](https://pages.hmc.edu/spjut/AdvRoc/PDF/StudentDX3Measurements.pdf)
+* [ThermistorBoardLayout](https://pages.hmc.edu/spjut/AdvRoc/PDF/ThermistorBoardLayout.pdf)
+* [ThermistorConditionerSchematic](https://pages.hmc.edu/spjut/AdvRoc/PDF/ThermistorConditionerSchematic.pdf)
+* [ThrustCurveFromFlightData](https://pages.hmc.edu/spjut/AdvRoc/PDF/ThrustCurveFromFlightData.pdf)
+* [ToChargeLiPoBatteries](https://pages.hmc.edu/spjut/AdvRoc/PDF/ToChargeLiPoBatteries.pdf)
+* [UsingInertialSensorsPositionOrientationEstimation](https://pages.hmc.edu/spjut/AdvRoc/PDF/UsingInertialSensorsPositionOrientationEstimation.pdf)
+
+
+
+
+
+
+
+

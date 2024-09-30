@@ -3,7 +3,12 @@ title: "Modeling"
 author: "DOFPro group"
 ---
 
-Page development in process. It is still pretty rough. This page will eventually contain information on modeling of flight dynamics, modal vibrations, and other aspects of rocketry.
+A model is a set of equations or computer code that describes the flight of the rocket. The forces and torques in a rocket model come from gravity, thrust, lift, and drag. Models are classified as 1-D, 2-D, or 3-D models. A 1-D model assumes that the rocket flies straight up and falls under parachute straight down. A 2-D (or 3 DoF) model assumes that the rocket can travel vertically and horizontally, and rotate in the 2-D plane of motion. A 3-D (or 6 DoF) model assumes that the rocket can travel in 3-D space and rotate about any of its three principal axes. The required modeling in E178 is:
+
+Develop or prove an analytic 1-D model with constant thrust during motor burning, and a constant coefficient of drag during the flight.
+Learn to use a 2-D (3 DoF) open source program called Open Rocket to model and predict rocket behavior. Use this code for all three rockets you will construct.
+Develop and/or use a 1-D code to permit calculation of 𝐶𝐷
+and thrust curves from flight data.
 
 # 1-D models
 * Analytical with constant thrust and constant drag coefficient.

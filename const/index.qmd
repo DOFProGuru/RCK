@@ -4,3 +4,83 @@ author: "DOFPro group"
 ---
 
 This page will eventually contain information on construction techniques as well as information on how to construct a rocket suitable for a Level 1 flight, a Level 2 flight, and some other rockets.
+
+# Safety During Construction
+
+Always dry fit parts before applying epoxy, and sand if necessary so that they fit properly.
+
+When sliding circular parts together, hold them so that the epoxy forms a fillet and doesn't pool or drip off. The required orientation is usually vertical.
+
+If you slide two parts together, the epoxy will always be pushed forward off of the part on which the epoxy was applied. e.g, if you are epoxying a coupler to the inside of a body tube, the excess epoxy will be on the inside of the body tube if you apply the epoxy to the inside of the body tube, and on the outside of the body tube if you apply the epoxy to the outside of the coupler.
+
+Twisting circular parts while pushing them together will spread the epoxy more evenly in the joint.
+
+There is a student-written [TLDR](https://pages.hmc.edu/spjut/AdvRoc/DX3AssemblyTLDR.md.html) talking about hints when following the instruction. It was written for the MiniDX3, but it still largely applies to the other Level 1 rockets.
+
+There is a detailed student-written [blog](https://pages.hmc.edu/spjut/AdvRoc/DX3AssemblyBlog.md.html) on putting the rocket together. It was written primarily for the MiniDX3, but it still largely applies to the other Level 1 rockets.
+
+For more information about safety precautions, visit the [DocPro Rocketry Safety secion](https://dofpro.org/RCK/safety/)
+
+# Construction Hints
+
+## Aerotech Arreaux
+1. It’s worth buying an extra-length motor-mount tubes to cert level 1. A length of at
+   least 15" will work for Aerotech 29/180 or shorter motors. _You'll need to fiberglass your rocket
+   to fly motors with more than 180 Ns of impulse_. You will need a length of at
+   least 16¼" for the H115DM-14A, the H182R-14A, the H135W-14A, and the H195NT-14A, and a
+   length of at least 19¾" for the I205W-14A. For the extra-length motor mount tube, you can either order
+   the replacement motor mount tube  from [Aerotech](https://www.aerotechstore.com/products/product_16e318e6-c2fd-e5a5-d053-3e84f31591c7),
+   or [eRockets](http://www.erockets.biz/aerotech-motor-mount-tube-29-mm-x-17-3-4-inch-12918/).
+2. You won't need the 24 mm motor adaptor and don't need to construct it. Most of the parts
+   are no longer in the kit.
+3. You need to attach the included motor retainer instead of the Motor Hook, Thrust Ring,
+   and Thrust Ring Flange. These changes are detailed in the Arreaux Motor Retainer Upgrade
+   Notice. Attaching the motor retainer should be done AFTER the rest of the rocket construction
+   is completed (after Step 1 of the FINAL ASSEMBLY AND FINISHING in the instructions), otherewise
+   it will block the application of the cyannoacrylate to the fin roots and the aft Centering Ring.
+   Use JB Weld to attach it. The details are in the Aerotech 29 mm Motor Retainer Instructions
+   (all on the Aerotech website <http://www.aerotech-rocketry.com/resources.aspx?id=4> near the bottom of the page).
+4. Use tapped holes and threaded #6 nylon screws to secure the nosecone to the payload section.
+   Two is the minimum, three is recommended, four is allowed. Friction fitting with tape isn't sufficient.
+5. It's often useful to be able to replace either the body or the payload/nosecone. The recessed
+   screw eye on the payload section makes it difficult. You may want to make an extension out of
+   1/8" rope and a quik-link and attache the shock cord to the quik-link.
+6. Make sure you can dry-fit the fins BEFORE you CA them in place. You may need to sand down
+   the ridges a little to be able to snap the fins into place.
+
+## LOC Precision Vulcanite
+The [build instructions](VulcaniteRocketAssembly.md.html) for [Labs 4 and 5](labs.md.html)
+already incorporate most of the hints below.
+1. Be sure to roughen all surfaces to be epoxied, with 60, 80, or 100 grit sandpaper **before** you glue so
+   that the epoxy adheres better.
+2. Get an Aero Pack RA 38mm L motor retainer.
+3. Sand the bottom 3/8" of the motor mount tube until the motor retainer slides on easily.
+4. Replace the elastic shock cord in the kit with 12 ft to 15 ft of either tubular/strap nylon or tubular/strap Kevlar,
+   such as PML STRP-0.375, eRockets ER9044, Wildman [KEVLAR1/4"](https://wildmanrocketry.com/collections/kevlar/products/kevlar1-4), or Madcow SC_FLT_38_RED.
+5. Use either the PML mounting style or the Modified PML mounting style for the shock cord. For the PML style,
+   follow steps 1 & 2 in the [Phobos Instructions](https://publicmissiles.com/secure/images/Phobosinstructionbooklet.pdf).
+   You'll have to machine or file a notch in one of the centering rings to accomodate the shock cord.
+   The centering ring on the other end (held in place with tape), must be **at least** 3/8"
+   from the end of the motor mount tube and preferably 1/2" to accomodate the motor retainer.
+   When assembled, the motor mount will protrude from the end of the rocket a bit. The modified
+   PML style is similar, but instead of epoxying the shock cord axially to the motor mount, it is
+   tied radially around the motor mount tube and included in the epoxy fillet between the 
+   motor mount tube and the centering ring. Step 2 of the Madcow [Batray instructions](https://www.madcowrocketry.com/content/pdf/batray.pdf)
+   show the tying technique, but has the notch on the outside of the centering ring instead
+   of on the inside where it belongs. 
+6. If you want streamlined fins, round the leading edge, and taper the trailing edge. Leave
+   the inside and outside edges square.
+7. Consider laser-cutting a pair of fin guides to ensure the fins are perpendicular to the body tube.
+8. Use the PML technique to attach the fins as shown in Step 4 of the [Phobos Instructions](https://publicmissiles.com/secure/images/Phobosinstructionbooklet.pdf).
+   When you finally epoxy in the bottom centering ring, push it flush up against the fins.
+9. When prepping the Payload Bay, consider finding a screw eye that attaches with a nut and washer
+   rather than just a wood-screw end.
+10. When you epoxy in the coupler tube bulkhead, recess it at least 1/8" so that you can put
+    a decent fillet between the bulkhead and the coupler tube on the outside. **DO NOT make
+    the bulkhead flush with the end of the coupler tube.** The LOC instructions say to, but
+    they are seriously wrong and you may lose your payload section when the recovery charge goes off.
+11. Secure the nose cone to the payload section with three countersunk #4 flat head screws.
+    You can use the pan head screws but they don't sit as flush.
+12. If you are planning on Level 2 (J) flights, either replace or supplement the launch lugs
+    with rail guides, either [PML LRL-10-2](https://publicmissiles.com/product/hardware) or [Acme 54mm](https://giantleaprocketry.com/products/components_launch_systems.aspx#Acme_Conformal_Launch_Guides).
+13. Secure the motor retainer with JB Weld.

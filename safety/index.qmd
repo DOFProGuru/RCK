@@ -2,5 +2,67 @@
 title: "Basic Safety Information"
 author: "DOFPro group"
 ---
+High Power Rockets fall under code 1127 of the National Fire Protection Association. The text for Code 1127 can be found [here][NFPA]
 
-This page will eventually introduce the basics of safe guilding and flying of high power rockets.
+To meet the definition of a High Power Rocket under NFPA 1127, it must meet one or more of the following criteria:
+
+* Uses a motor with at least 160 Newton-seconds of impulse
+
+* Uses a motor with at least 80 Newtons average thrust or a hybrid motor
+
+* Exceeds 125 grams of propellant
+
+* Weighs at least 1,500 grams
+
+* Has airframe parts made out of ductile metal.
+
+When starting your journey to amateur high-powered rocketry certification, safety must always be your top priority. High-powered rocketry is an exhiting and rewarding experience, but it comes with inherent risks that require careful consideration to established safety protocols. Understanding and implementing these measures is crucial not only for your well-being but also for the safety of all individuals attending the launch.
+
+Whether you are getting certified through [NAR][NAR] or [TRA][TRA]it is important to look through their guidelines prior to your first launch. The [NAR Safety Code](https://www.nar.org/safety-codes-2/) and the [TRA Safety Code](https://www.tripoli.org/content.aspx?page_id=22&club_id=795696&module_id=520420) outline exactly what is expected for a safe launch that meets the qualifications for certification.
+
+# General Safety 
+
+It is strongly advised for all participants in high-powered rocketry to secure appropriate insurance through either NAR or TRA. These organizations offer liability coverage specifically designed for rocketry activities, providing peace of mind for both you and the launch site hosts.
+
+Make sure that all persons, builings, trees, or other possible obstructions are beyond the [minimum required distance][NARSC] of the lauch site for the duration of the launch.
+
+
+
+
+# Safety While Epoxying
+Always use a lab coat, nitrile gloves, and safety glasses when using epoxy. Repeated contact of epoxy with skin leads to very serious allergic reactions.
+
+Adhesives need to be used in a fume hood, a spray-paint booth, or outdoors away from any air inlets to buildings. Ensure adequate ventilation when using epoxy.
+
+Glass microspheres are an inhalation hazard. Use extreme caution and use a face mask if possible.
+
+The following steps make for good epoxy joints:
+
+* Sand every surface to be epoxied (including interior surfaces) with 80-to-110 grit sandpaper.
+
+* Clean the surface with a lint-free cloth or Swiffer.
+
+* For fiberglass, metals, or pastics, wipe the surface down with acetone or isopropyl alcohol and let dry before using the epoxy. Not necessary for cardboard, plywood, or paper
+
+* Protect any exterior surface where you don't want scratches or sanding marks with blue or masking tape before you begin sanding.
+
+* You can make the epoxy thicker and lighter (with a small decrease in strength) by mixing in glass or silica microspheres. A 1:1 volume ratio of microspheres to epoxy usually works well. You could use 1:2 or 2:1 if you wanted. This mixture works well for fillets that don't need to support large loads.
+
+* You can make the epoxy thicker and stiffer by mixing in chopped glass fibers. A 1:1 volume ratio of fibers to epoxy usually works well. If you want a smoother finish, use 1:2 or 1:3.
+
+* Epoxy cures to a much higher strength if the joint is heated by a heat lamp or placed inside a heater while it cures. Do not let the joint heat above 140 °F (60 °C).
+
+* If you use spray paint, be sure that the location has proper ventilation.
+
+* Use nitrile gloves, a face mask, and safety glasses when spray painting.
+
+
+
+
+
+
+
+[TRA]: http://www.tripoli.org
+[NAR]: http://www.nar.org
+[NFPA]: https://www.bing.com/ck/a?!&&p=bdc0f0e690ebf6ebJmltdHM9MTcyNzQ4MTYwMCZpZ3VpZD0zZGZjOTQ2Yy1iNTBmLTYwNGItMjIzOC04MDg0YjRmMTYxY2MmaW5zaWQ9NTIxOQ&ptn=3&ver=2&hsh=3&fclid=3dfc946c-b50f-604b-2238-8084b4f161cc&psq=nfpa+code+1127+pdf&u=a1aHR0cHM6Ly93d3cubmZwYS5vcmcvY29kZXMtYW5kLXN0YW5kYXJkcy9uZnBhLTExMjctc3RhbmRhcmQtZGV2ZWxvcG1lbnQvMTEyNw&ntb=1
+[NARSC]: https://www.bing.com/ck/a?!&&p=b980187ecbbbdd58JmltdHM9MTcyNzQ4MTYwMCZpZ3VpZD0zZGZjOTQ2Yy1iNTBmLTYwNGItMjIzOC04MDg0YjRmMTYxY2MmaW5zaWQ9NTQ2MQ&ptn=3&ver=2&hsh=3&fclid=3dfc946c-b50f-604b-2238-8084b4f161cc&psq=rocketry+minimum+distance+chart&u=a1aHR0cHM6Ly93d3cubmFyLm9yZy9zYWZldHktaW5mb3JtYXRpb24vbW9kZWwtcm9ja2V0LXNhZmV0eS1jb2RlLw&ntb=1
