@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.5.56">
+<meta name="generator" content="quarto-1.5.57">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -115,10 +115,21 @@ ul.task-list li input[type="checkbox"] {
     <a class="nav-link" href="../const/"> 
 <span class="menu-text">Construction</span></a>
   </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="../model/"> 
-<span class="menu-text">Modeling</span></a>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-modeling" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Modeling</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-modeling">    
+        <li>
+    <a class="dropdown-item" href="../model/index.html">
+ <span class="dropdown-text">Overview</span></a>
   </li>  
+        <li>
+    <a class="dropdown-item" href="../model/softWareDownloads.qmd">
+ <span class="dropdown-text">Software Downloads</span></a>
+  </li>  
+    </ul>
+  </li>
   <li class="nav-item compact">
     <a class="nav-link" href="../instr/"> 
 <span class="menu-text"></span></a>
@@ -138,10 +149,21 @@ ul.task-list li input[type="checkbox"] {
   </li>  
     </ul>
   </li>
-  <li class="nav-item">
-    <a class="nav-link" href="../fltdata/"> 
-<span class="menu-text">Flight Data</span></a>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-flight-data" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Flight Data</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-flight-data">    
+        <li>
+    <a class="dropdown-item" href="../fltdata/index.html">
+ <span class="dropdown-text">Overview</span></a>
   </li>  
+        <li>
+    <a class="dropdown-item" href="../fltdata/FlightData.html">
+ <span class="dropdown-text">Launch Data</span></a>
+  </li>  
+    </ul>
+  </li>
   <li class="nav-item">
     <a class="nav-link" href="../archive/"> 
 <span class="menu-text">Archive</span></a>
@@ -182,13 +204,9 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#level-1" id="toc-level-1" class="nav-link" data-scroll-target="#level-1">Level 1</a>
   <ul class="collapse">
   <li><a href="#level-1-strategy" id="toc-level-1-strategy" class="nav-link" data-scroll-target="#level-1-strategy">Level 1 Strategy</a></li>
-  <li><a href="#level-1-motor-recommendations" id="toc-level-1-motor-recommendations" class="nav-link" data-scroll-target="#level-1-motor-recommendations">Level 1 motor recommendations</a>
-  <ul class="collapse">
-  <li><a href="#aerotech-or-cti" id="toc-aerotech-or-cti" class="nav-link" data-scroll-target="#aerotech-or-cti">Aerotech or CTI?</a></li>
-  </ul></li>
+  <li><a href="#level-1-motor-recommendations" id="toc-level-1-motor-recommendations" class="nav-link" data-scroll-target="#level-1-motor-recommendations">Level 1 motor recommendations</a></li>
   <li><a href="#level-1-rocket-recommendations" id="toc-level-1-rocket-recommendations" class="nav-link" data-scroll-target="#level-1-rocket-recommendations">Level 1 rocket recommendations</a>
   <ul class="collapse">
-  <li><a href="#loc-weasel" id="toc-loc-weasel" class="nav-link" data-scroll-target="#loc-weasel">LOC Weasel</a></li>
   <li><a href="#madcow-1.6-mini-dx3" id="toc-madcow-1.6-mini-dx3" class="nav-link" data-scroll-target="#madcow-1.6-mini-dx3">Madcow 1.6” Mini DX3</a></li>
   <li><a href="#estes-pro-series-ii" id="toc-estes-pro-series-ii" class="nav-link" data-scroll-target="#estes-pro-series-ii">Estes Pro Series II</a></li>
   <li><a href="#aerotech-arreaux" id="toc-aerotech-arreaux" class="nav-link" data-scroll-target="#aerotech-arreaux">Aerotech Arreaux</a></li>
@@ -203,11 +221,6 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#level-3" id="toc-level-3" class="nav-link" data-scroll-target="#level-3">Level 3</a></li>
   <li><a href="#level-1-checklist" id="toc-level-1-checklist" class="nav-link" data-scroll-target="#level-1-checklist">Level 1 Checklist</a></li>
   <li><a href="#level-2-checklist" id="toc-level-2-checklist" class="nav-link" data-scroll-target="#level-2-checklist">Level 2 Checklist</a></li>
-  <li><a href="#construction-hints" id="toc-construction-hints" class="nav-link" data-scroll-target="#construction-hints">Construction Hints</a>
-  <ul class="collapse">
-  <li><a href="#aerotech-arreaux-1" id="toc-aerotech-arreaux-1" class="nav-link" data-scroll-target="#aerotech-arreaux-1">Aerotech Arreaux</a></li>
-  <li><a href="#loc-precision-vulcanite-1" id="toc-loc-precision-vulcanite-1" class="nav-link" data-scroll-target="#loc-precision-vulcanite-1">LOC Precision Vulcanite</a></li>
-  </ul></li>
   </ul>
 </nav>
     </div>
@@ -239,25 +252,13 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<div class="callout callout-style-default callout-note callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Note
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<pre><code>Much of the rocket information below has not been updated recently. Approach with caution.</code></pre>
-</div>
-</div>
 <p>To participate in High-Power Rocketry you need to be certified with either <a href="http://www.nar.org/high-power-rocketry-info/">NAR</a> or <a href="http://www.tripoli.org/Certification">TRA</a>. There are three levels of certification:</p>
 <ul>
 <li>Level 1 – You can fly with H and I motors.</li>
 <li>Level 2 – You can fly with J, K and L motors.</li>
-<li>Level 3 – You can fly with M and above motors.</li>
+<li>Level 3 – You can fly with M, N, and O motors.</li>
 </ul>
+<p>Level 2 certification requires that you hold a valid Level 1 certification before applying. Similarly, level 3 certification requires that you hold a valid Level 2 certification before applying.</p>
 <p>The purpose of this page is to briefly explain the process for certification, and to provide links to additional resources.</p>
 <section id="why-certify" class="level1">
 <h1>Why Certify?</h1>
@@ -267,12 +268,12 @@ Note
 <h1>TRA or NAR?</h1>
 <p>To become certified you must belong to either the Tripoli Rocketry Association <a href="http://www.tripoli.org">TRA</a> or the National Association of Rocketry <a href="http://www.nar.org">NAR</a> and certify with <a href="http://www.tripoli.org/Certification">one</a> or the <a href="http://www.nar.org/high-power-rocketry-info/">other</a> (or both if you want). Either is acceptable and in general, if you are certified by one of them, you can fly at a launch administered by the other of them. Here is a list of the major differences:</p>
 <ul>
-<li><p>TRA is focused on high power rocketry and rocketry research, but they allow model rockets. NAR is focused on model rocketry, but they support high power as well.</p></li>
-<li><p>Certifying Level 1 with TRA requires that you have a Prefect observe the flight. Certifying Level 1 with NAR requires that you are observed by any member with Level 2 certification.</p></li>
-<li><p>NAR has many more member. TRA is a smaller community.</p></li>
+<li><p>TRA is focused on high power rocketry and rocketry research. NAR is focused on model rocketry, but they support high power as well.</p></li>
+<li><p>Certifying Level 1 with TRA requires that you have a prefect, technical advisory panal, or TRI director observe the flight. Certifying Level 1 with NAR requires that you are observed by any member with Level 2 certification or two members, one of which having a Level 1 certification.</p></li>
+<li><p>NAR has many more members. TRA is a smaller community.</p></li>
 <li><p>TRA’s annual national launch is LDRS (Large and Dangerous Rocket Ships). NAR’s annual launch is NSL (National Sport Launch).</p></li>
 </ul>
-<p>Once you’ve decided which to join, go to the relevant website and sign up. It is possible to join on site, the day that you certify, but it’s better to join a month or so before your certification flight. Tripoli describes membership <a href="http://www.tripoli.org/Membership">here</a> and the actual sign-up form is <a href="https://www.tripoli.org/content.aspx?page_id=60&amp;club_id=795696">here</a>. NAR describes membership <a href="http://www.nar.org/join-nar/">here</a> and the actual sign-up form is <a href="https://www.z2systems.com/np/clients/nar/membershipJoin.jsp">here</a>.</p>
+<p>Once you’ve decided which to join, go to the relevant website and sign up. It is possible to join on site, the day that you certify, but it’s better to join a month or so before your certification flight. Tripoli describes membership <a href="http://www.tripoli.org/Membership">here</a> and the actual sign-up form is <a href="https://www.tripoli.org/content.aspx?page_id=60&amp;club_id=795696">here</a>. NAR describes membership <a href="http://www.nar.org/join-nar/">here</a> and the actual sign-up form is <a href="https://nar.app.neoncrm.com/np/clients/nar/membershipJoin.jsp">here</a>.</p>
 <p>The high-power rocketry club that we most-often launch with is the <a href="https://rocstock.org">Rocketry Organization of California (ROC)</a>. Barring adverse weather conditions, they fly every month on the second Saturday at the <a href="https://rocstock.org/lucerne-dry-lake-launch-site/">Lucerne Valley dry lake bed</a>. They have a couple of TRA prefects and a large number of NAR observers. The high power on-site vendors keep changing due to economics and other factors. Check the <a href="https://rocstock.org/vendors/">Vendors List on the ROC website</a> to see who is likely to be on site.</p>
 </section>
 <section id="level-1" class="level1">
@@ -286,27 +287,19 @@ Note
 </ol>
 <section id="level-1-strategy" class="level2">
 <h2 class="anchored" data-anchor-id="level-1-strategy">Level 1 Strategy</h2>
-<p>Most people trying to certify Level 1 build the simplest, least expensive (SLE) rocket they can that will fly on a small H motor. The thinking is that once you are certified, you can experiment with more complicated configurations, but the first order of business is to get certified. However, if you are a person who pays attention to detail and are willing to ground test before flight, you can certify on a more complex, and more expensive rocket. My Level 1 rocket was fairly simple but not particularly inexpensive. My Level 2 was much more complicated than most people fly to certify, but it functioned perfectly.</p>
+<p>Most people trying to certify Level 1 build the simplest, least expensive (SLE) rocket they can that will fly on a small H motor. The thinking is that once you are certified, you can experiment with more complicated configurations, but the first order of business is to get certified. However, if you are a person who pays attention to detail and are willing to ground test before flight, you can certify on a more complex, and more expensive rocket.</p>
 <p>If you choose your rocket carefully, you can certify both Level 1 and Level 2 on the same rocket (and on the same day, but most senior people recommend against same-day multi-certs).</p>
 </section>
 <section id="level-1-motor-recommendations" class="level2">
 <h2 class="anchored" data-anchor-id="level-1-motor-recommendations">Level 1 motor recommendations</h2>
-<p>You can certify on either an H or an I motor, but you cannot take possession of the motor until just before your flight. You can have someone already Level 1 or above buy it for you and give it to you when you’re ready to prep for launch. Some on-line vendors are willing to sell you one motor for certification purposes, or you can buy it at the launch site when you’re ready to prep for launch if there is an on-site vendor.</p>
-<section id="aerotech-or-cti" class="level3">
-<h3 class="anchored" data-anchor-id="aerotech-or-cti">Aerotech or CTI?</h3>
-<p>You have three choices for a motor for a qualifying flight: An <a href="http://www.aerotech-rocketry.com">Aerotech</a> single-use motor, an <a href="http://www.aerotech-rocketry.com">Aerotech</a> reload, or a <a href="http://www.pro38.com">CTI</a> reload. Both the Aerotech and CTI reloads require you to have a motor case. Aerotech single-use motors are slightly more expensive than either brand of reload, but the CTI cases for the reloads are expensive, and the Aerotech cases for the reloads are even more expensive. Many rocketeers have cases you can borrow for the most common Aerotech sizes, and a case or two for CTI motors, so a reload with a borrowed case is the cheapest way to go. For a SLE rocket, the top two choices are the Aerotech <a href="https://www.siriusrocketry.biz/ishop/aerotech-high-power-h128w-14a-reload-kit-362.html">H128W-14A</a> reload and the CTI <a href="https://wildmanrocketry.com/collections/29mm-3-grain/products/pr29-3g-wt">H163-14A</a> reload, but for SLE you can use any H reload that fits in the <a href="https://wildmanrocketry.com/collections/29mm/products/29180m">Aerotech 29/180 case</a> or any H reload that fits in the <a href="https://www.apogeerockets.com/Rocket_Motors/Cesaroni_Casings/29mm_Casings/Cesaroni_29mm_3-Grain_Case">CTI 29mm 3-grain case</a>. Many vendors have a qualification discount for your first HP motor for a qualifying flight.</p>
-</section>
+<p>You can certify on either an H or an I motor, but you cannot take possession of the motor until just before your flight. You can have someone already Level 1 or above buy it for you and give it to you when you’re ready to prep for launch. Some on-line vendors are willing to sell you one motor for certification purposes, or you can buy it at the launch site when you’re ready to prep for launch if there is an on-site vendor. On the complete list of <a href="https://www.nar.org/standards-and-testing-committee/nar-certified-motor-list/">approved motors</a>, the naming of the motors is framed as (Impuse Class) (Average Thrust) - (Time Delay)(Color) The most popular choices for Level 1 and Level 2 certification are the <a href="http://www.aerotech-rocketry.com">Aerotech</a> single use motor, an <a href="http://www.aerotech-rocketry.com">Aerotech</a> reload, or a <a href="http://www.pro38.com">CTI</a> reload. Both the Aerotech and CTI reloads require you to have a motor case. Aerotech single-use motors are slightly more expensive than either brand of reload, but the CTI cases for the reloads are expensive, and the Aerotech cases for the reloads are even more expensive. Many rocketeers have cases you can borrow for the most common Aerotech sizes, and a case or two for CTI motors, so a reload with a borrowed case is the cheapest way to go. For a SLE rocket, the top two choices are the Aerotech <a href="https://www.siriusrocketry.biz/ishop/aerotech-high-power-h128w-14a-reload-kit-362.html">H128W-14A</a> reload and the CTI <a href="https://wildmanrocketry.com/collections/29mm-3-grain/products/pr29-3g-wt">H163-14A</a> reload, but for SLE you can use any H reload that fits in the <a href="https://wildmanrocketry.com/collections/29mm/products/29180m">Aerotech 29/180 case</a> or any H reload that fits in the <a href="https://www.apogeerockets.com/Rocket_Motors/Cesaroni_Casings/29mm_Casings/Cesaroni_29mm_3-Grain_Case">CTI 29mm 3-grain case</a>. Many vendors have a qualification discount for your first HP motor for a qualifying flight.</p>
 </section>
 <section id="level-1-rocket-recommendations" class="level2">
 <h2 class="anchored" data-anchor-id="level-1-rocket-recommendations">Level 1 rocket recommendations</h2>
 <p>There are lots of rockets that will work for Level 1 and Level 2 qualification flights. By no means consider the list below to be exhaustive.</p>
-<section id="loc-weasel" class="level3">
-<h3 class="anchored" data-anchor-id="loc-weasel">LOC Weasel</h3>
-<p>The LOC Weasel has recently gone out of production (OOP) but they may bring it back, and some on-line vendors may still have a stock of them. It will easily let you certify Level 1 (assuming you include a GPS Tracker) if you follow the linked construction techniques. In addition to the <a href="https://locprecision.com/collections/rockets-1-63-diameter/products/weasel">kit</a>, you will need an Estes 29mm motor retainer and 5-minute epoxy. The perfect cert motor for this rocket is the Aerotech H128W. Recommended assembly instructions are <a href="https://pages.hmc.edu/spjut/AdvRoc/CardboardWeaselRocketAssembly.md.html">here</a>.</p>
-</section>
 <section id="madcow-1.6-mini-dx3" class="level3">
 <h3 class="anchored" data-anchor-id="madcow-1.6-mini-dx3">Madcow 1.6” Mini DX3</h3>
-<p>This rocket is very similar to the LOC Weasel. It will easily let you certify Level 1 (assuming you include a GPS Tracker) if you follow the linked construction techniques. In addition to the <a href="https://www.madcowrocketry.com/1-6-mini-dx3/">kit</a>, you will need an Estes 29mm motor retainer and 5-minute epoxy. The perfect cert motor for this rocket is the Aerotech H128W. Recommended assembly instructions are found <a href="https://pages.hmc.edu/spjut/AdvRoc/CardboardDX3RocketAssembly.md.html">here</a>.</p>
+<p>Coming in at about $70, this rocket will easily let you certify Level 1 (assuming you include a GPS Tracker) if you follow the linked construction techniques. In addition to the <a href="https://www.madcowrocketry.com/1-6-mini-dx3/">kit</a>, you will need an Estes 29mm motor retainer and 5-minute epoxy. The perfect cert motor for this rocket is the Aerotech H128W. Recommended assembly instructions are found <a href="https://dofpro.org/RCK/const/">here</a>.</p>
 </section>
 <section id="estes-pro-series-ii" class="level3">
 <h3 class="anchored" data-anchor-id="estes-pro-series-ii">Estes Pro Series II</h3>
@@ -316,7 +309,7 @@ Note
 </section>
 <section id="aerotech-arreaux" class="level3">
 <h3 class="anchored" data-anchor-id="aerotech-arreaux">Aerotech Arreaux</h3>
-<p>The Aerotech Arreaux is an excellent SLE rocket. However, to fly H motors, you’ll need to replace the stock 12” motor mount tube with a 15” or ~18” motor mount tube. See the construction hints <a href="http://pages.hmc.edu/spjut/AdvRoc/RocketryCertification.md.html#constructionhints/aerotecharreaux">below</a>. Beyond the kit and the extra tube, all you need are CA adhesive and JB weld. We used modified Arreauxs in our classes for years. It’s much sturdier than the Estes Pro Series II, but not as sturdy as the Phobos, the Vulcanite, the Wildman Minis, or the Madcow thin-wall fiberglass. The rocket is available from <a href="https://wildmanrocketry.com/collections/aerotech-1-9-inch/products/arreaux">Wildman</a>, <a href="http://www.erockets.biz/aerotech-flying-model-rocket-kit-arreaux-w-alum-retainer-89013/">eRockets</a>, <a href="https://www.siriusrocketry.biz/ishop/aerotech-arreaux-739.html">Sirius</a>, <a href="https://www.apogeerockets.com/Rocket_Kits/Skill_Level_3_Kits/Arreaux?cPath=1_85&amp;zenid=l6mkupg4hcvh3itqubmpe2u9t3">Apogee Components</a>. The replacement motor mount tube is available from <a href="https://www.aerotechstore.com/products/product_16e318e6-c2fd-e5a5-d053-3e84f31591c7">Aerotech</a>, or <a href="http://www.erockets.biz/aerotech-motor-mount-tube-29-mm-x-17-3-4-inch-12918/">eRockets</a>.</p>
+<p>The Aerotech Arreaux is an excellent SLE rocket. However, to fly H motors, you’ll need to replace the stock 12” motor mount tube with a 15” or ~18” motor mount tube. See the construction hints <a href="https://dofpro.org/RCK/const/">below</a>. Beyond the kit and the extra tube, all you need are CA adhesive and JB weld. We used modified Arreauxs in our classes for years. It’s much sturdier than the Estes Pro Series II, but not as sturdy as the Phobos, the Vulcanite, the Wildman Minis, or the Madcow thin-wall fiberglass. The rocket is available from <a href="https://wildmanrocketry.com/collections/aerotech-1-9-inch/products/arreaux">Wildman</a>, <a href="http://www.erockets.biz/aerotech-flying-model-rocket-kit-arreaux-w-alum-retainer-89013/">eRockets</a>, <a href="https://www.siriusrocketry.biz/ishop/aerotech-arreaux-739.html">Sirius</a>, <a href="https://www.apogeerockets.com/Rocket_Kits/Skill_Level_3_Kits/Arreaux?cPath=1_85&amp;zenid=l6mkupg4hcvh3itqubmpe2u9t3">Apogee Components</a>. The replacement motor mount tube is available from <a href="https://www.aerotechstore.com/products/product_16e318e6-c2fd-e5a5-d053-3e84f31591c7">Aerotech</a>, or <a href="http://www.erockets.biz/aerotech-motor-mount-tube-29-mm-x-17-3-4-inch-12918/">eRockets</a>.</p>
 </section>
 <section id="pml-phobos" class="level3">
 <h3 class="anchored" data-anchor-id="pml-phobos">PML Phobos</h3>
@@ -344,8 +337,9 @@ Note
 <h1>Level 2</h1>
 <p>The detailed description of TRA’s Level 2 certification process is <a href="http://www.tripoli.org/Level2">here</a>. The detailed description of NAR’s Level 2 certification process is <a href="http://www.nar.org/high-power-rocketry-info/level-2-hpr-certification/">here</a>. In short, the process is:</p>
 <ol type="1">
+<li>Earn your Level 1 certification.</li>
 <li>By yourself, build a rocket designed to fly on J impulse, K impulse, or L impulse motors.</li>
-<li>Take and pass the Level 2 qualifying test. The TRA study guide is <a href="https://www.tripoli.org/docs.ashx?id=1104356">here</a> and the NAR study guide is <a href="https://www.nar.org/wp-content/uploads/2020/10/HPRL2-2020-V2_STUDY_GUIDE.pdf">here</a>. An equivalent exam will be part of the Advanced Rocketry class. The NAR exam consists of 37 questions taken from the list of questions. You must get 32 correct to pass (meaning you can miss up to 5 questions). The TRA exam consists of 50 questions taken from the list of questions. You must get 45 correct to pass (meaning you can miss up to 5 questions).</li>
+<li>Take and pass the Level 2 qualifying test. The TRA study guide is <a href="https://www.tripoli.org/docs.ashx?id=1104356">here</a> and the NAR study guide is <a href="https://www.nar.org/wp-content/uploads/2020/10/HPRL2-2020-V2_STUDY_GUIDE.pdf">here</a>. The NAR exam consists of 37 questions taken from the list of questions. You must get 32 correct to pass (meaning you can miss up to 5 questions). The TRA exam consists of 50 questions taken from the list of questions. You must get 45 correct to pass (meaning you can miss up to 5 questions).</li>
 <li>Prep the rocket for flight and prep the J, K, or L motor for flight by yourself.</li>
 <li>Fly the rocket while the required observer is watching (at a sponsored event).</li>
 <li>Bring back the safely recovered rocket to the observer to verify that no damage has occurred that would keep it from flying again.</li>
@@ -388,27 +382,8 @@ Note
 <li><label><input type="checkbox">Prep your motor and rocket according to your checklist. Nervous people without checklists make mistakes.</label></li>
 <li><label><input type="checkbox">Take your rocket and paperwork and find the person who will certify you, and follow their instructions.</label></li>
 </ul>
-</section>
-<section id="construction-hints" class="level1">
-<h1>Construction Hints</h1>
-<section id="aerotech-arreaux-1" class="level2">
-<h2 class="anchored" data-anchor-id="aerotech-arreaux-1">Aerotech Arreaux</h2>
-<ol type="1">
-<li>It’s worth buying an extra-length motor-mount tubes to cert level 1. A length of at least 15” will work for Aerotech 29/180 or shorter motors. <em>You’ll need to fiberglass your rocket to fly motors with more than 180 Ns of impulse</em>. You will need a length of at least 16¼” for the H115DM-14A, the H182R-14A, the H135W-14A, and the H195NT-14A, and a length of at least 19¾” for the I205W-14A. For the extra-length motor mount tube, you can either order the replacement motor mount tube from <a href="https://www.aerotechstore.com/products/product_16e318e6-c2fd-e5a5-d053-3e84f31591c7">Aerotech</a>, or <a href="http://www.erockets.biz/aerotech-motor-mount-tube-29-mm-x-17-3-4-inch-12918/">eRockets</a>.</li>
-<li>You won’t need the 24 mm motor adaptor and don’t need to construct it. Most of the parts are no longer in the kit.</li>
-<li>You need to attach the included motor retainer instead of the Motor Hook, Thrust Ring, and Thrust Ring Flange. These changes are detailed in the Arreaux Motor Retainer Upgrade Notice. Attaching the motor retainer should be done AFTER the rest of the rocket construction is completed (after Step 1 of the FINAL ASSEMBLY AND FINISHING in the instructions), otherewise it will block the application of the cyannoacrylate to the fin roots and the aft Centering Ring. Use JB Weld to attach it. The details are in the Aerotech 29 mm Motor Retainer Instructions (all on the Aerotech website <a href="http://www.aerotech-rocketry.com/resources.aspx?id=4" class="uri">http://www.aerotech-rocketry.com/resources.aspx?id=4</a> near the bottom of the page).</li>
-<li>Use tapped holes and threaded #6 nylon screws to secure the nosecone to the payload section. Two is the minimum, three is recommended, four is allowed. Friction fitting with tape isn’t sufficient.</li>
-<li>It’s often useful to be able to replace either the body or the payload/nosecone. The recessed screw eye on the payload section makes it difficult. You may want to make an extension out of 1/8” rope and a quik-link and attache the shock cord to the quik-link.</li>
-<li>Make sure you can dry-fit the fins BEFORE you CA them in place. You may need to sand down the ridges a little to be able to snap the fins into place.</li>
-<li>Other suggestions are on the <a href="https://pages.hmc.edu/spjut/RocketE80/RocketLaunchLab.html">old E80 website</a>.</li>
-</ol>
-</section>
-<section id="loc-precision-vulcanite-1" class="level2">
-<h2 class="anchored" data-anchor-id="loc-precision-vulcanite-1">LOC Precision Vulcanite</h2>
-<p>The <a href="VulcaniteRocketAssembly.md.html">build instructions</a> for <a href="labs.md.html">Labs 4 and 5</a> already incorporate most of the hints below. 1. Be sure to roughen all surfaces to be epoxied, with 60, 80, or 100 grit sandpaper <strong>before</strong> you glue so that the epoxy adheres better. 2. Get an Aero Pack RA 38mm L motor retainer. 3. Sand the bottom 3/8” of the motor mount tube until the motor retainer slides on easily. 4. Replace the elastic shock cord in the kit with 12 ft to 15 ft of either tubular/strap nylon or tubular/strap Kevlar, such as PML STRP-0.375, eRockets ER9044, Wildman <a href="https://wildmanrocketry.com/collections/kevlar/products/kevlar1-4">KEVLAR1/4”</a>, or Madcow SC_FLT_38_RED. 5. Use either the PML mounting style or the Modified PML mounting style for the shock cord. For the PML style, follow steps 1 &amp; 2 in the <a href="https://publicmissiles.com/secure/images/Phobosinstructionbooklet.pdf">Phobos Instructions</a>. You’ll have to machine or file a notch in one of the centering rings to accomodate the shock cord. The centering ring on the other end (held in place with tape), must be <strong>at least</strong> 3/8” from the end of the motor mount tube and preferably 1/2” to accomodate the motor retainer. When assembled, the motor mount will protrude from the end of the rocket a bit. The modified PML style is similar, but instead of epoxying the shock cord axially to the motor mount, it is tied radially around the motor mount tube and included in the epoxy fillet between the motor mount tube and the centering ring. Step 2 of the Madcow <a href="https://www.madcowrocketry.com/content/pdf/batray.pdf">Batray instructions</a> show the tying technique, but has the notch on the outside of the centering ring instead of on the inside where it belongs. 6. If you want streamlined fins, round the leading edge, and taper the trailing edge. Leave the inside and outside edges square. 7. Consider laser-cutting a pair of fin guides to ensure the fins are perpendicular to the body tube. 8. Use the PML technique to attach the fins as shown in Step 4 of the <a href="https://publicmissiles.com/secure/images/Phobosinstructionbooklet.pdf">Phobos Instructions</a>. When you finally epoxy in the bottom centering ring, push it flush up against the fins. 9. When prepping the Payload Bay, consider finding a screw eye that attaches with a nut and washer rather than just a wood-screw end. 10. When you epoxy in the coupler tube bulkhead, recess it at least 1/8” so that you can put a decent fillet between the bulkhead and the coupler tube on the outside. <strong>DO NOT make the bulkhead flush with the end of the coupler tube.</strong> The LOC instructions say to, but they are seriously wrong and you may lose your payload section when the recovery charge goes off. 11. Secure the nose cone to the payload section with three countersunk #4 flat head screws. You can use the pan head screws but they don’t sit as flush. 12. If you are planning on Level 2 (J) flights, either replace or supplement the launch lugs with rail guides, either <a href="https://publicmissiles.com/product/hardware">PML LRL-10-2</a> or <a href="https://giantleaprocketry.com/products/components_launch_systems.aspx#Acme_Conformal_Launch_Guides">Acme 54mm</a>. 13. Secure the motor retainer with JB Weld.</p>
 
 
-</section>
 </section>
 
 </main> <!-- /main -->

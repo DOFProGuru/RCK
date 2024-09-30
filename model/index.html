@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.5.56">
+<meta name="generator" content="quarto-1.5.57">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -144,10 +144,21 @@ window.Quarto = {
     <a class="nav-link" href="../const/"> 
 <span class="menu-text">Construction</span></a>
   </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="../model/"> 
-<span class="menu-text">Modeling</span></a>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-modeling" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Modeling</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-modeling">    
+        <li>
+    <a class="dropdown-item" href="../model/index.html">
+ <span class="dropdown-text">Overview</span></a>
   </li>  
+        <li>
+    <a class="dropdown-item" href="../model/softWareDownloads.qmd">
+ <span class="dropdown-text">Software Downloads</span></a>
+  </li>  
+    </ul>
+  </li>
   <li class="nav-item compact">
     <a class="nav-link" href="../instr/"> 
 <span class="menu-text"></span></a>
@@ -167,10 +178,21 @@ window.Quarto = {
   </li>  
     </ul>
   </li>
-  <li class="nav-item">
-    <a class="nav-link" href="../fltdata/"> 
-<span class="menu-text">Flight Data</span></a>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-flight-data" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Flight Data</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-flight-data">    
+        <li>
+    <a class="dropdown-item" href="../fltdata/index.html">
+ <span class="dropdown-text">Overview</span></a>
   </li>  
+        <li>
+    <a class="dropdown-item" href="../fltdata/FlightData.html">
+ <span class="dropdown-text">Launch Data</span></a>
+  </li>  
+    </ul>
+  </li>
   <li class="nav-item">
     <a class="nav-link" href="../archive/"> 
 <span class="menu-text">Archive</span></a>
@@ -241,7 +263,8 @@ window.Quarto = {
 </header>
 
 
-<p>Page development in process. It is still pretty rough. This page will eventually contain information on modeling of flight dynamics, modal vibrations, and other aspects of rocketry.</p>
+<p>A model is a set of equations or computer code that describes the flight of the rocket. The forces and torques in a rocket model come from gravity, thrust, lift, and drag. Models are classified as 1-D, 2-D, or 3-D models. A 1-D model assumes that the rocket flies straight up and falls under parachute straight down. A 2-D (or 3 DoF) model assumes that the rocket can travel vertically and horizontally, and rotate in the 2-D plane of motion. A 3-D (or 6 DoF) model assumes that the rocket can travel in 3-D space and rotate about any of its three principal axes. The required modeling in E178 is:</p>
+<p>Develop or prove an analytic 1-D model with constant thrust during motor burning, and a constant coefficient of drag during the flight. Learn to use a 2-D (3 DoF) open source program called Open Rocket to model and predict rocket behavior. Use this code for all three rockets you will construct. Develop and/or use a 1-D code to permit calculation of 𝐶𝐷 and thrust curves from flight data.</p>
 <section id="d-models" class="level1">
 <h1>1-D models</h1>
 <ul>
