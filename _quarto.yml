@@ -20,10 +20,10 @@ website:
         text: Construction
       - text: Modeling
         menu:
-          -href: model/index.qmd
-           text: Overview
-          -href: model/softWareDownloads.qmd
-           text: "Software Downloads"
+          - href: model/index.qmd
+            text: Overview
+          - href: model/softWareDownloads.qmd
+            text: "Software Downloads"
       - href: instr/
       - text: "Data Analysis"
         menu:
