@@ -21,7 +21,10 @@ website:
         - href: const/index.qmd
           text: General Tips
         - href: const/vulcanite.qmd
-          text: "Vulcanite Dual Deploy"      
+          text: "Vulcanite Dual Deploy"    
+        - href: const/DX3.qmd
+          text: 1.6" miniDX3
+            
       - text: Modeling
         menu:
           - href: model/index.qmd
@@ -60,6 +63,3 @@ format:
 
 execute:
   freeze: auto
-
-
-
