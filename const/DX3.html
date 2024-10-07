@@ -8,7 +8,7 @@
 
 <meta name="author" content="DOFPro group">
 
-<title>Construction Information – High Power Rocketry</title>
+<title>Mini DX3 Assembly Instructions – High Power Rocketry</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -210,11 +210,15 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#eggtimer-quark" id="toc-eggtimer-quark" class="nav-link active" data-scroll-target="#eggtimer-quark">Eggtimer Quark</a></li>
-  <li><a href="#testing-the-eggtimer-quark" id="toc-testing-the-eggtimer-quark" class="nav-link" data-scroll-target="#testing-the-eggtimer-quark">Testing the Eggtimer Quark</a></li>
-  <li><a href="#mounted-continuity-and-initiator-tests" id="toc-mounted-continuity-and-initiator-tests" class="nav-link" data-scroll-target="#mounted-continuity-and-initiator-tests">Mounted Continuity and Initiator Tests</a></li>
-  <li><a href="#testing-the-teensy-data-logger" id="toc-testing-the-teensy-data-logger" class="nav-link" data-scroll-target="#testing-the-teensy-data-logger">Testing the Teensy Data Logger</a></li>
-  <li><a href="#testing-the-raven-3" id="toc-testing-the-raven-3" class="nav-link" data-scroll-target="#testing-the-raven-3">Testing the Raven 3</a></li>
+  <li><a href="#step-1-sanding" id="toc-step-1-sanding" class="nav-link active" data-scroll-target="#step-1-sanding">Step 1: Sanding</a></li>
+  <li><a href="#step-2-motor-mount-assembly" id="toc-step-2-motor-mount-assembly" class="nav-link" data-scroll-target="#step-2-motor-mount-assembly">Step 2: Motor Mount Assembly</a></li>
+  <li><a href="#step-3-shock-cord" id="toc-step-3-shock-cord" class="nav-link" data-scroll-target="#step-3-shock-cord">Step 3: Shock Cord</a></li>
+  <li><a href="#step-4-forward-section" id="toc-step-4-forward-section" class="nav-link" data-scroll-target="#step-4-forward-section">Step 4: Forward Section</a></li>
+  <li><a href="#step-5-insert-motor-mount" id="toc-step-5-insert-motor-mount" class="nav-link" data-scroll-target="#step-5-insert-motor-mount">Step 5: Insert Motor Mount</a></li>
+  <li><a href="#step-6-fins" id="toc-step-6-fins" class="nav-link" data-scroll-target="#step-6-fins">Step 6: Fins</a></li>
+  <li><a href="#step-7-fin-fillets" id="toc-step-7-fin-fillets" class="nav-link" data-scroll-target="#step-7-fin-fillets">Step 7: Fin Fillets</a></li>
+  <li><a href="#step-8-chute-protector-and-parachute" id="toc-step-8-chute-protector-and-parachute" class="nav-link" data-scroll-target="#step-8-chute-protector-and-parachute">Step 8: Chute Protector and Parachute</a></li>
+  <li><a href="#step-9-painting" id="toc-step-9-painting" class="nav-link" data-scroll-target="#step-9-painting">Step 9: Painting</a></li>
   </ul>
 </nav>
     </div>
@@ -223,7 +227,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Construction Information</h1>
+<h1 class="title">Mini DX3 Assembly Instructions</h1>
 </div>
 
 
@@ -246,80 +250,113 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="eggtimer-quark" class="level2">
-<h2 class="anchored" data-anchor-id="eggtimer-quark">Eggtimer Quark</h2>
-<p>The test procedure for the <a href="https://eggtimerrocketry.com/home/altimeters-av-bay/">Eggtimer Quark</a> is outlined in Appendix A of the <a href="https://eggtimerrocketry.com/wp-content/uploads/2021/04/Eggtimer-Quark-Manual-D3.pdf">Eggtimer Quark User’s Guide</a> and in the Preliminary Testing section of the <a href="https://eggtimerrocketry.com/wp-content/uploads/2021/02/Eggtimer-Quark-Assembly-Manual-D3.pdf">Eggtimer Quark Assembly Manual</a>. More specific testing details are given below.</p>
-</section>
-<section id="testing-the-eggtimer-quark" class="level2">
-<h2 class="anchored" data-anchor-id="testing-the-eggtimer-quark">Testing the Eggtimer Quark</h2>
-<p>Before mounting the Eggtimer Quark on the Avionics Main Board, you need to test the continuity and the altimeter.</p>
+<p>The image below displays almost all of the parts that come in the kit. <strong>image</strong></p>
+<p>The following is a list of parts that are required separately from the kit.</p>
 <ul>
-<li><p>Make sure you have a charged 2S 300 mAh battery.</p></li>
-<li><p>Make certain that you have the two 100 Ω resistors in the Drogue and Main inputs.</p></li>
-<li><p>Connect the battery and wait for the beeps. There is a short beep upon power up followed by a beep-out of the altitude of the last flight, and finally some chirping. If you get the chirping, the Quark has passed the continuity tests. If instead you get some repeating sequence of either 4 beeps, or 5 beeps, or both, you either have not connected your resistors correctly or your Quark is faulty. Fix the problem before proceeding.</p></li>
-<li><p>Get one of the screw bottles with the syringe attached.</p></li>
-<li><p>Unscrew the lid from the bottle.</p></li>
-<li><p>Press the syringe plunger all of the way in.</p></li>
-<li><p>Connect (or reconnect) the battery to the Quark.</p></li>
-<li><p>Place it in the bottle.</p></li>
-<li><p>Screw on the lid.</p></li>
-<li><p>Wait until you hear the continuity chirps.</p></li>
-<li><p>Fairly rapidly pull the syring plunger most of the way out, but not all of the way out.</p></li>
-<li><p>Slowly push the plunger back in until it is all of the way seated.</p></li>
-<li><p>Open the bottle and listen for the maximum altitude beeps.</p></li>
-<li><p>If the maximum altitude is around 2500 feet, the altimeter and the bottle/syringe system are both working properly.</p></li>
+<li>An Estes 29mm motor retainer</li>
+<li>Three #2-56 × 3/16” pan-head screws</li>
 </ul>
+<section id="step-1-sanding" class="level2">
+<h2 class="anchored" data-anchor-id="step-1-sanding">Step 1: Sanding</h2>
+<p>Sand every surface to be epoxied (including interior surfaces) with 80-to-110 grit sandpaper. You may have to think about the assembly sequence to figure out where to sand. Don’t forget about the inside of the Estes motor retainer. Pretty much the entire exterior of the motor mount should be sanded or roughed up</p>
 </section>
-<section id="mounted-continuity-and-initiator-tests" class="level2">
-<h2 class="anchored" data-anchor-id="mounted-continuity-and-initiator-tests">Mounted Continuity and Initiator Tests</h2>
-<p>Make sure both screw switches are off.</p>
-<p>Mount and wire up the Quark on your Avionics Main Board.</p>
-<p>If not already done, wire up and mount your Teensy Logger or Raven 3.</p>
-<p>Mount both a 2S 300 mAh battery and a flat 1S 400 mAh battery with zip ties.</p>
-<p>Assemble the fully populated and wired Avionics Bay outside of the Avionics Bay Coupler Tube. You need to access the Quark and the Teensy or Raven.</p>
-<p>Connect a 100 Ω resistor to each of the Eurostyle Connectors.</p>
-<p>Power on the Quark with the appropriate screw switch and check for the Continuity chirping. If you get it, power down, remove the 100 Ω resistors and go find Professor Spjut.</p>
-<p>Gather up safety glasses, two Firewire initiators, the appropriate screwdriver, and one jumper for the Quark. Outside, in a safe place attach one initiator to the Drogue input.</p>
-<p>Follow the procedure in Appendix A of the User’s Guide to test the Drogue channel.</p>
-<p>If successful, remove the used initiator, attach the second one to the Main channel, and follow the procedure in Appendix A of the User’s Guide to test the Main channel.</p>
+<section id="step-2-motor-mount-assembly" class="level2">
+<h2 class="anchored" data-anchor-id="step-2-motor-mount-assembly">Step 2: Motor Mount Assembly</h2>
+<p>Test fit centering rings over the motor mount tube and sand centering rings if necessary.</p>
+<p>Also test fit the centering rings in the body tube and sand the rings if necessary.</p>
+<p>Place the inside part of your Estes motor retainer on one end of the motor mount tube. Make sure it is fully seated. Using a pen or pencil, mark the tube where the motor retainer hits the tube.</p>
+<p>Screw on the outside of the motor retainer.</p>
+<p>Insert the assembly into the slotted end of the rocket body tube so that the motor tube is still seated in the retainer and the outside of the retainer is resting against the body tube.</p>
+<p>Use a sharpened pencil or other marking implement that will reach and mark the location of the bottom of the bottom slot, and the top of the top slot on the motor mount tube.</p>
+<p>Remove the assembly and connect the marks to create two circles around the motor mount tube. If a centering ring will fit over the tube, you can use it as a guide for your circles. The space between the circles is where the fins will contact the motor mount tube and needs to be kept clear of epoxy or other materials while assembling the rocket before attaching the fins. The space between the ring for the top of the retainer and the bottom of the fins is where the bottom centering ring may be epoxied in place.</p>
+<p><strong>Note</strong> The strength of the bond between the fins and the motor mount can be greatly increased by putting internal fillets between the fins and motor mount tube, and the fins and the body tube. That strength is not needed for motors with 180 Ns of impulse and below, but should be considered if going above 180 Ns, and is required in the class 54mm fiberglass rocket. The next step makes creating internal fillets very difficult.</p>
+<p>Spread some epoxy on the outside of the motor tube somewhere between the retainer-ring mark and the bottom-of-the-fins mark and slide the bottom ring (without the notch) up the tube until it is centered between the marks, and wait for the epoxy to set. Be sure to clean off any epoxy that strayed beyond the lines.</p>
+<p>The placement of the top ring (the one with the notch) isn’t critical: It should be above the top of the fin mark, but no closer than 1/4” from the end of the tube. Usually about 1/2” for the top of the tube is about right. Spread some epoxy on the outside of the motor tube at your chosen location and slide the top ring (with the notch) up the tube until it is in position, and wait for the epoxy to set. Be sure to clean off any epoxy that strayed into the fin or motor retainer zones.</p>
+<p>Using JB-Weld (not any other epoxy) attach the inner part of the motor retainer to the bottom of the motor mount assembly. Spread the JB-Weld on the motor mount tube and not inside the motor retainer. Twist the motor retainer as you push it onto the tube.</p>
+<p>Inspect the inside of the motor mount tube-motor retainer and thoroughly wipe away any JB-Weld that made it inside.</p>
+<p>Place the assembly vertically (with the top notched ring pointed up), and let cure for at least 3 hours, preferably in a warm space. JB-Weld takes 24-48 hours to fully cure, but will usually not run after 3 hours.</p>
 </section>
-<section id="testing-the-teensy-data-logger" class="level2">
-<h2 class="anchored" data-anchor-id="testing-the-teensy-data-logger">Testing the Teensy Data Logger</h2>
-<p>If you have one of the Teensy Data Loggers for your Vulcanite, follow the sequence below to test it.</p>
+<section id="step-3-shock-cord" class="level2">
+<h2 class="anchored" data-anchor-id="step-3-shock-cord">Step 3: Shock Cord</h2>
+<p>The shock cord in this kit consists of a shorter section of Kevlar and a longer section of nylon cording. The two sections should be tied together using the line form of a <a href="https://en.wikipedia.org/wiki/Double_fisherman's_knot">double fisherman’s knot</a> (<a href="https://youtu.be/YHUv-oOMwRA">REI Video</a>). The Kevlar section will be attached to the motor mount and the nylon section will be attached to the payload section. Apply some epoxy like a fillet between the lower side of the top centering ring and the motor mount and wrap the Kevlar end of the shock cord around the motor mount into the epoxy. Make sure the cord lays flat enough so it will not interfere with the body tube when you slide the motor tube inside. Make sure the cord is secure and will not come loose later with ejection forces that will pull on the shock cord.</p>
+</section>
+<section id="step-4-forward-section" class="level2">
+<h2 class="anchored" data-anchor-id="step-4-forward-section">Step 4: Forward Section</h2>
+<p>Insert the eyebolt through the hole in the center of the bulkhead and secure using the washer and nut.</p>
+<p><strong>Apply some epoxy or CA to the nut and eyebolt threads to ensure the nut doesn’t come loose later.</strong></p>
+<p>Cut off the eyebolt (Dremel or hacksaw) leaving about 1/4”-to-1/8” above the nut and file or sand the end to remove any sharp edges.</p>
+<p><strong>Note</strong> The coupler tube may be hidden inside either the payload tube or the body tube. Reach inside and slide it out.</p>
+<p>Mark a line around the inside of the coupler tube 1/8” from the end. Apply epoxy to the inside of the tube and push the bulkhead in so that the line is visible and wait until the glue sets. There are two pieces that can assist you. The first is a spacer that can be placed against the bulkhead to hold it at the correct depth until the epoxy cures. The second is a stand with room for the eyebolt to hang down that will let you hold the spacer and bulkhead in the proper position while the epoxy cures.</p>
+<p>Apply a fillet of epoxy around the inside edge of the coupler bulkhead joint.</p>
+<p>Mark a line around the coupler 2” from the open end. Apply a very thin amount of epoxy on the first inch of the outside of the coupler, and twist and slide the coupler into the payload tube (forward body tube) until you reach the 2” mark. Quickly wipe off any excess epoxy at the payload tube-coupler joint. The payload tube will not join properly with the body tube if you leave excess epoxy at the joint.</p>
+<p>Measure down 1 9/16” from the shoulder of the nose cone, and using an X-acto knife or a saw, cut off the bottom of the nose cone, and if necessary, sand the cut square. It will be pressing against the avionics carrier and should be as square as possible.</p>
+<p>Insert the nose cone into the top of the payload tube.</p>
+<p>Holes for Payload – Nose Cone Screws: Mark three points equally spaced around the circumference of the payload tube halfway between the shoulder and the end of the payload tube. Easiest is to wrap a piece of paper around the tube and mark one circumference. Unwrap and measure the circumference and divide the distance by three and mark the paper accordingly, then transfer the marks to the payload tube by wrapping the paper back around the tube and marking.</p>
+<p>Holes for Altimeter Vents: Repeat the marking procedure 1” above the coupler-payload tube edge.</p>
+<p>Drill all six holes with a #52, #51, or #50 bit. Drill slowly to try to leave the inside edges of the holes as clean as possible. You might consider drilling, tapping, and putting in a screw for the first hole before drilling the other five, to avoid the tube and nose cone rotating relative to each other.</p>
+<p>Tap the top three holes with a #2-56 tap. These will secure the nose cone to the payload section.</p>
+<p>Screw a pan-head #2-56 screw into each threaded hole. These will hold the nose cone on during flight, but permit it to be removed to access the avionics.</p>
+<p>The other three holes are to permit the altimeter to measure the free stream pressure outside the rocket for calculating the altitude.</p>
+<p>If you are going to install an avionics carrier, you will want to put a layer of foam in the bottom of the payload section.</p>
+</section>
+<section id="step-5-insert-motor-mount" class="level2">
+<h2 class="anchored" data-anchor-id="step-5-insert-motor-mount">Step 5: Insert Motor Mount</h2>
+<p>Hold the motor mount assembly by the body tube at the position that it will be when epoxied in. Measure how far up the body tube the front centering ring will be.</p>
+<p>Using sandpaper attached to the end of a dowel, roughen up the inside of the body tube where the front centering ring will be attached.</p>
+<p>Put the shock cord inside of the motor mount tube so it’s out of the way while the motor mount assembly is epoxied in.</p>
+<p>Screw the outside of the motor retainer onto the end of the motor mount assembly.</p>
+<p><strong>Important</strong> The next several steps need to be completed quickly, before a batch of epoxy has time to set.</p>
+<p>Using one or more craft (popsicle) sticks taped together, place a ring of epoxy inside the body tube about 1/4” short of where the front centering ring will sit. You need to get the epoxy up the tube without dripping anywhere else in the tube.</p>
+<p>Insert the motor mount assembly part-way up the body tube.</p>
+<p>Put a ring of epoxy around the lower end of the body tube between the bottom end and the fin slots.</p>
+<p>Push and twist the motor mount assembly into the body tube. Be sure the bottom ring doesn’t extend into the fin slots.</p>
+<p>Make sure the rocket is vertical until the epoxy cures.</p>
+<p>Launch Lug Marking: * It’s easiest to mark the body tube for the launch lugs before putting on the fins. * Place a length of angle iron so that one edge is halfway between two sets of fin slots, and draw a vertical line up the body tube.</p>
+</section>
+<section id="step-6-fins" class="level2">
+<h2 class="anchored" data-anchor-id="step-6-fins">Step 6: Fins</h2>
+<p>Dry fit the fins and if necessary sand the slots until the fins fit. You don’t want them to be a loose fit.</p>
+<p>Make sure you have two or three fin jigs handy.</p>
+<p><strong>Important</strong> The next several steps need to be completed quickly, before a batch of epoxy has time to set.</p>
+<p>Apply a generous-but-not-overflowing amount of epoxy to the root end of each fin tang and insert it into the fin slots.</p>
+<p>Before the epoxy sets, place a fin jig on each side of the fins and place the assembly on a table to guarantee the fins are straight. A third jig at the end of the body tube will help you keep things level</p>
+<p>Before proceeding, make sure the epoxy has fully cured.</p>
+</section>
+<section id="step-7-fin-fillets" class="level2">
+<h2 class="anchored" data-anchor-id="step-7-fin-fillets">Step 7: Fin Fillets</h2>
+<p>Get a set of plastic spoons that will be used for pulling the fillets.</p>
+<p>Rub the edges of the spoon heavily with a pencil lead.</p>
+<p>Draw the spoon along the joint between the fin and the body tube. With luck, you’ll see a line where the spoon met the fin and where it met the body tube.</p>
+<p>Place blue tape along each line.</p>
+<p>Repeat the marking and taping for each of the remaining fin-body-tube joints.</p>
+<p>Place blue tape at the top and bottom of the fin/body tube where you want the fillet to end.</p>
+<p>Plan on doing two fillets at a time between adjacent fins.</p>
+<p>Measure out a batch of glass microballoons equal in volume to the batch of epoxy you are about to mix.</p>
+<p>Mix a batch of epoxy and quickly fold in the microballoons. It should have roughly the consistency of peanut butter.</p>
+<p>Lay the epoxy down in the joint and roughly smooth it with the stir stick.</p>
+<p>Using a plastic spoon, pull along the fillet, leaving a nice concave profile, with excess epoxy being gathered up by the spoon.</p>
+<p>Quickly touch up any flaws.</p>
+<p>Remove the blue tape along that particular set of fillets.</p>
+<p>Let them fully cure before moving on to the next fillets.</p>
+<p><strong>Sand both the body tube and the launch lug where they are going to join until you have removed the glassine (the white, shiny paper layer). Failure to do so may result in moments of panic at the launch stand when your launch lugs break off.</strong></p>
+<p>The launch lugs should be epoxied on and aligned with the vertical line you drew earlier. Placement isn’t critical, but the bottom one should be somewhere in between the top edge of the fins and the bottom edge of the fins (Madcow recommends 2” from the bottom of the rocket). The top one should be at least an inch or two below the top of the body tube. Madcow recommends at the center of pressure, which is 27” from the nose tip. Make sure they are aligned along the body tube.</p>
+</section>
+<section id="step-8-chute-protector-and-parachute" class="level2">
+<h2 class="anchored" data-anchor-id="step-8-chute-protector-and-parachute">Step 8: Chute Protector and Parachute</h2>
+<p>Shake or push the shock cord free out the top of the body tube.</p>
+<p>Thread the chute protector through the shock cord and slide down to the body.</p>
+<p>Roughly 2/3 of the shock cord length (the length from the body tube up) tie a <a href="https://www.101knots.com/butterfly-knot.html">butterfly knot</a> or a <a href="https://www.101knots.com/figure-8-on-a-bight.html">figure eight knot on a bight</a>.</p>
+<p>Attach the end of the shock cord to the screw eye in the payload section with a <a href="https://www.bing.com/ck/a?!&amp;&amp;p=166c64ea976c196aJmltdHM9MTcyODI1OTIwMCZpZ3VpZD0zZGZjOTQ2Yy1iNTBmLTYwNGItMjIzOC04MDg0YjRmMTYxY2MmaW5zaWQ9NTIxOQ&amp;ptn=3&amp;ver=2&amp;hsh=3&amp;fclid=3dfc946c-b50f-604b-2238-8084b4f161cc&amp;psq=PML+knot+rocketry&amp;u=a1aHR0cHM6Ly93d3cubmFra2Etcm9ja2V0cnkubmV0L2FydGljbGVzL3BtbGNodXRlcGFja2luZy5wZGY&amp;ntb=1">PML knot</a> and secure the end to the body with either electrical or blue tape rather than epoxy.</p>
+<p>Attach the parachute to the butterfly knot or the figure eight knot on a bight with a Lark’s Head knot. Gather the shroud-line loops. Push them through the bight on the shock cord. Pass the parachute through the shroud-line loops and pull.</p>
+<p>If you want to fold the parachute and pack it in the rocket use the <a href="https://dofpro.org/RCK/const/index">Instructions for Folding Parachutes</a></p>
+</section>
+<section id="step-9-painting" class="level2">
+<h2 class="anchored" data-anchor-id="step-9-painting">Step 9: Painting</h2>
+<p>If you desire to paint your rocket, please do so. There are lots of places on-line that will give you an overabundance of advice on how to do so. Many fliers prefer to make their rocket “earn it’s paint” by flying it unpainted, and then painting it if it survives the first flight.</p>
 <ul>
-<li><p>Make sure your Teensy Data Logger is properly mounted on your Avionics Main Board and that you have a charged 1S 400 mAh zip-tied to the board.</p></li>
-<li><p>If not already in that state, assemble the Avionics Bay outside of the Avionics Bay Coupler Tube. You will need to acces the microSD slot, the button on the underside of the Teensy, and the screw switch.</p></li>
-<li><p>Make sure that your microSD card is properly formatted and has room for additional data files.</p></li>
-<li><p>Insert the microSD card into the microSD slot on the Teensy.</p></li>
-<li><p>Place and hold the Avionics Bay in a fixed postion where you can see the underside of the logger, access the microswitch on the underside of the logger, and reach the screw switch.</p></li>
-<li><p>Turn on the screw switch.</p></li>
-<li><p>Observe if the red and green LEDs on the underside flash back and forth. If so, it is logging.</p></li>
-<li><p>Position the Avionics Bay in some known orientations and/or rotations, e.g., hold it with each of the six principal axes oriented up for a few seconds each.</p></li>
-<li><p>Press the microswitch on the underside until just the green light flashes.</p></li>
-<li><p>Power down the screw switch.</p></li>
-<li><p>Examine the .TXT file created in a text editor and make sure it has reasonable values.</p></li>
-<li><p>Use a MATLAB file reader such as ScanFaultyTeesyDataLogger and examine the plots to see if you can detect the motion or positions you used.</p></li>
+<li><p>You should mark the center of pressure with a center-of-pressure symbol, which is a circle with a dot in the middle, ⊙. A Sharpie® works great, but we do have water-slide decals if you want to get fancy.</p></li>
+<li><p>Label the rocket with your name and cell-phone number on both the body tube and payload section. Again a Sharpie® works great, but you can use print-on adhesive labels or Sam’s labeling machine as well.</p></li>
 </ul>
-</section>
-<section id="testing-the-raven-3" class="level2">
-<h2 class="anchored" data-anchor-id="testing-the-raven-3">Testing the Raven 3</h2>
-<p>If you have one of the Raven 3’s for your Vulcanite, follow the sequence below to test it.</p>
-<ul>
-<li><p>Make sure your Raven 3 is properly mounted on your Avionics Main Board and that you have a charged 1S 400 mAh zip-tied to the board.</p></li>
-<li><p>If not already in that state, assemble the Avionics Bay outside of the Avionics Bay Coupler Tube. You will need to acces the miniUSB on the Raven and the screw switch.</p></li>
-<li><p>Find a computer with the Featherweight Interface Program installed on it and an appropriate cable to connect the computer to the miniUSB connector on the Raven.</p></li>
-<li><p>Start up the FIP on the computer.</p></li>
-<li><p>Turn on the screw switch.</p></li>
-<li><p>Connect the computer to the Raven.</p></li>
-<li><p>Hopefully you’ll be asked which altimeter you have. The correct choice is the Raven.</p></li>
-<li><p>Examine the live data and see if you’re getting readings. Move the Raven into different positions and see if the live data respond properly.</p></li>
-<li><p>Click on the Cal/Test tab.</p></li>
-<li><p>Orient the Raven so that the green screw connector is on the uppermost side.</p></li>
-<li><p>Run a test flight.</p></li>
-<li><p>Try downloading one of the flight data files.</p></li>
-<li><p>Check to see if the plots look reasonable.</p></li>
-</ul>
-<p>You should have already tested your GPS tracker and base station. Verify that they are still working.</p>
 
 
 </section>
