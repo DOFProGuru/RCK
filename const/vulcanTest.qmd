@@ -1,0 +1,123 @@
+---
+title: "Construction Information"
+author: "DOFPro group"
+---
+
+## Eggtimer Quark
+
+The test procedure for the [Eggtimer Quark](https://eggtimerrocketry.com/home/altimeters-av-bay/) is outlined in Appendix A of the [Eggtimer Quark User's Guide](https://eggtimerrocketry.com/wp-content/uploads/2021/04/Eggtimer-Quark-Manual-D3.pdf) and in the Preliminary Testing section of the [Eggtimer Quark Assembly Manual](https://eggtimerrocketry.com/wp-content/uploads/2021/02/Eggtimer-Quark-Assembly-Manual-D3.pdf). More specific testing details are given below.
+
+## Testing the Eggtimer Quark
+
+Before mounting the Eggtimer Quark on the Avionics Main Board, you need to test the continuity and the altimeter.
+
+* Make sure you have a charged 2S 300 mAh battery.
+
+* Make certain that you have the two 100 Ω resistors in the Drogue and Main inputs.
+
+* Connect the battery and wait for the beeps. There is a short beep upon power up followed by a beep-out of the altitude of the last flight, and finally some chirping. If you get the chirping, the Quark has passed the continuity tests. If instead you get some repeating sequence of either 4 beeps, or 5 beeps, or both, you either have not connected your resistors correctly or your Quark is faulty. Fix the problem before proceeding.
+
+* Get one of the screw bottles with the syringe attached.
+
+* Unscrew the lid from the bottle.
+
+* Press the syringe plunger all of the way in.
+
+* Connect (or reconnect) the battery to the Quark.
+
+* Place it in the bottle.
+
+* Screw on the lid.
+
+* Wait until you hear the continuity chirps.
+
+* Fairly rapidly pull the syring plunger most of the way out, but not all of the way out.
+
+* Slowly push the plunger back in until it is all of the way seated.
+
+* Open the bottle and listen for the maximum altitude beeps.
+
+* If the maximum altitude is around 2500 feet, the altimeter and the bottle/syringe system are both working properly.
+
+## Mounted Continuity and Initiator Tests
+
+Make sure both screw switches are off.
+
+Mount and wire up the Quark on your Avionics Main Board.
+
+If not already done, wire up and mount your Teensy Logger or Raven 3.
+
+Mount both a 2S 300 mAh battery and a flat 1S 400 mAh battery with zip ties.
+
+Assemble the fully populated and wired Avionics Bay outside of the Avionics Bay Coupler Tube. You need to access the Quark and the Teensy or Raven.
+
+Connect a 100 Ω resistor to each of the Eurostyle Connectors.
+
+Power on the Quark with the appropriate screw switch and check for the Continuity chirping. If you get it, power down, remove the 100 Ω resistors and go find Professor Spjut.
+
+Gather up safety glasses, two Firewire initiators, the appropriate screwdriver, and one jumper for the Quark.
+Outside, in a safe place attach one initiator to the Drogue input.
+
+Follow the procedure in Appendix A of the User's Guide to test the Drogue channel.
+
+If successful, remove the used initiator, attach the second one to the Main channel, and follow the procedure in Appendix A of the User's Guide to test the Main channel.
+
+## Testing the Teensy Data Logger
+
+If you have one of the Teensy Data Loggers for your Vulcanite, follow the sequence below to test it.
+
+* Make sure your Teensy Data Logger is properly mounted on your Avionics Main Board and that you have a charged 1S 400 mAh zip-tied to the board.
+
+* If not already in that state, assemble the Avionics Bay outside of the Avionics Bay Coupler Tube. You will need to acces the microSD slot, the button on the underside of the Teensy, and the screw switch.
+
+* Make sure that your microSD card is properly formatted and has room for additional data files.
+
+* Insert the microSD card into the microSD slot on the Teensy.
+
+* Place and hold the Avionics Bay in a fixed postion where you can see the underside of the logger, access the microswitch on the underside of the logger, and reach the screw switch.
+
+* Turn on the screw switch.
+
+* Observe if the red and green LEDs on the underside flash back and forth. If so, it is logging.
+
+* Position the Avionics Bay in some known orientations and/or rotations, e.g., hold it with each of the six principal axes oriented up for a few seconds each.
+
+* Press the microswitch on the underside until just the green light flashes.
+
+* Power down the screw switch.
+
+* Examine the .TXT file created in a text editor and make sure it has reasonable values.
+
+* Use a MATLAB file reader such as ScanFaultyTeesyDataLogger and examine the plots to see if you can detect the motion or positions you used.
+
+## Testing the Raven 3
+
+If you have one of the Raven 3's for your Vulcanite, follow the sequence below to test it.
+
+* Make sure your Raven 3 is properly mounted on your Avionics Main Board and that you have a charged 1S 400 mAh zip-tied to the board.
+
+* If not already in that state, assemble the Avionics Bay outside of the Avionics Bay Coupler Tube. You will need to acces the miniUSB on the Raven and the screw switch.
+
+* Find a computer with the Featherweight Interface Program installed on it and an appropriate cable to connect the computer to the miniUSB connector on the Raven.
+
+* Start up the FIP on the computer.
+
+* Turn on the screw switch.
+
+* Connect the computer to the Raven.
+
+* Hopefully you'll be asked which altimeter you have. The correct choice is the Raven.
+
+* Examine the live data and see if you're getting readings. Move the Raven into different positions and see if the live data respond properly.
+
+* Click on the Cal/Test tab.
+
+* Orient the Raven so that the green screw connector is on the uppermost side.
+
+* Run a test flight.
+
+* Try downloading one of the flight data files.
+
+* Check to see if the plots look reasonable.
+
+You should have already tested your GPS tracker and base station. Verify that they are still working.

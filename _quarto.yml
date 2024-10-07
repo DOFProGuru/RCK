@@ -16,15 +16,18 @@ website:
           text: Certification
       - href: safety/
         text: Safety
-      - href: const/
-        text: Construction
+      - text: Construction
+        menu:   
+        - href: const/index.qmd
+          text: General Tips
+        - href: const/vulcanite.qmd
+          text: "Vulcanite Dual Deploy"      
       - text: Modeling
         menu:
           - href: model/index.qmd
             text: Overview
           - href: model/softWareDownloads.qmd
             text: "Software Downloads"
-      - href: instr/
       - text: "Data Analysis"
         menu:
         - href: instr/index.qmd

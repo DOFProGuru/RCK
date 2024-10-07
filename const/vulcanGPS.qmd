@@ -1,0 +1,65 @@
+---
+title: "Construction Information"
+author: "DOFPro group"
+---
+
+## Cutting Standard Parts
+
+There are two laser-cut support structures to cut. They are the GPS Support that goes in the nose cone bay, the Avionics Support that goes in the Avionics Bay. You can also print out the Screw Switch Holder that is threaded on to a piece of allthread and also goes into the Avionics Bay.
+
+There are two very similar sizes of Baltic birch plywood that can be used to make the laser-cut parts. They are 3 mm and 1/8 inch. The 3 mm plywood is nominally .117 in thick but varies from .111 in to .117 in. The 1/8 in plywood is nominally .125 in thick but varies from .120 in to .125 in. Measure the plywood you plan to use in the laser cutter. If it is in the 3 mm range, download the [Vulcanite_PDF_3mm.zip archive](https://pages.hmc.edu/spjut/AdvRoc/SolidWorks/VulcaniteDD/Vulcanite_PDF_3mm.zip). If the plywood is in the 1/8 in range, download the [Vulcanite_PDF_125.zip](https://pages.hmc.edu/spjut/AdvRoc/SolidWorks/VulcaniteDD/Vulcanite_PDF_125.zip) archive. Do not mix and match from the two archives. Chaos and frustration will follow if you do.
+
+To cut the parts, unzip the archive and import the .pdf files into your laser cutting software. For the GPS Support you will need to cut one each of
+
+*  VulcaniteGPSDaughterBoard
+
+* VulcaniteGPSMainBoard
+
+* VulcaniteGPSSpacerBoard
+
+and two each of
+
+* VulcaniteRoundNCSupport
+
+There are two different versions of the Avionics Support, one for the Teensy Logger, and one for the Raven 3
+
+For the Teensy Logger you will need to cut one each of:
+
+* VulcaniteEbaySled
+
+* VulcaniteEby2S300mAhSupport
+
+* VulcaniteEby400mAhSupport
+
+and two each of:
+
+
+* VulcaniteInnerEbayBulkhead
+
+* VulcaniteOuterEbayBulkhead
+
+For the Raven 3 you will need to cut one each of:
+
+* VulcaniteEbaySledRaven3_3mm.pdf
+
+* VulcaniteEby2S300mAhSupport_3mm.pdf
+
+and two each of:
+
+* VulcaniteEby400mAhSupport_3mm.pdf
+
+* VulcaniteEby400mAhTopSupport_3mm.pdf
+
+* VulcaniteInnerEbayBulkhead_3mm.pdf
+
+* VulcaniteOuterEbayBulkhead_3mm.pdf
+
+If your plywood isn't either of the two standard thicknesses or you need to change the kerf for changing how tight or loose the part fit is (standard is .004 inches, smaller is looser, larger is tighter), you will need to download the SolidWorks parts files, either [Vulcanite_DRW_PRT_3mm.zip](https://pages.hmc.edu/spjut/AdvRoc/SolidWorks/VulcaniteDD/Vulcanite_DRW_PRT_3mm.zip) or [Vulcanite_DRW_PRT_125.zip](https://pages.hmc.edu/spjut/AdvRoc/SolidWorks/VulcaniteDD/Vulcanite_DRW_PRT_125.zip).
+
+Unzip the chosen file and edit each of the four .SLDPRT files for the GPS Support and each of the five or six .SLDPRT files for the Avionics Support. To change the thickness go to “manage equations” and change the value of “t” to your actual thickness in inches, then save the file. To change the kerf go to “manage equations” and change the value of “kerf” to your actual thickness in inches, then save the file. Then open up the corresponding .SLDDRW file which should be linked to the .SLDPRT file and should update automatically. Save the file, then “Save As…” a .pdf file with the same name. Import the new .pdf files into your laser cutting software and cut the required pieces.
+
+## Changing other Parameters
+
+If you want to change other properties in the Global Variables, you can make the changes in all of the .SLDPRT files and follow the same process with the .SLDDRW and .pdf files. Be aware that if you change the number of holes in any part, you will probably have to recreate and re-dimension the final sketch, because it won’t know what to do with the extra or removed holes. Not all combinations of Global Variables will result in valid parts. You may have some work to do to get things to come out how you want, but the parameterized values should minimize the rework you have to do.
+
+If you want the print file for the screw holder it it [VulcaniteScrewSwitchHolder.STL](https://pages.hmc.edu/spjut/AdvRoc/SolidWorks/VulcaniteDD/VulcaniteScrewSwitchHolder.STL).

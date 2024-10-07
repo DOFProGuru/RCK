@@ -1,0 +1,532 @@
+---
+title: "Construction Information"
+author: "DOFPro group"
+---
+
+Make sure to review the [safety hints](https://dofpro.org/RCK/safety/) before attempting assembly of any high-powered rockets.
+
+## General Hints
+
+1. Be sure to roughen all surfaces to be epoxied, with 60, 80, or 100 grit sandpaper **before** you glue so that the epoxy adheres better.
+2. Get an Aero Pack RA 38mm L motor retainer.
+3. Sand the bottom 3/8" of the motor mount tube until the motor retainer slides on easily.
+4. Replace the elastic shock cord in the kit with 12 ft to 15 ft of either tubular/strap nylon or tubular/strap Kevlar, such as PML STRP-0.375, eRockets ER9044, Wildman [KEVLAR1/4"](https://wildmanrocketry.com/collections/kevlar/products/kevlar1-4), or Madcow SC_FLT_38_RED.
+5. Use either the PML mounting style or the Modified PML mounting style for the shock cord. For the PML style, follow steps 1 & 2 in the [Phobos Instructions](https://publicmissiles.com/secure/images/Phobosinstructionbooklet.pdf). You'll have to machine or file a notch in one of the centering rings to accomodate the shock cord. The centering ring on the other end (held in place with tape), must be **at least** 3/8" from the end of the motor mount tube and preferably 1/2" to accomodate the motor retainer. When assembled, the motor mount will protrude from the end of the rocket a bit. The modified PML style is similar, but instead of epoxying the shock cord axially to the motor mount, it is tied radially around the motor mount tube and included in the epoxy fillet between the motor mount tube and the centering ring. Step 2 of the Madcow [Batray instructions](https://www.madcowrocketry.com/content/pdf/batray.pdf) show the tying technique, but has the notch on the outside of the centering ring instead of on the inside where it belongs. 
+6. If you want streamlined fins, round the leading edge, and taper the trailing edge. Leave the inside and outside edges square.
+7. Consider laser-cutting a pair of fin guides to ensure the fins are perpendicular to the body tube.
+8. Use the PML technique to attach the fins as shown in Step 4 of the [Phobos Instructions](https://publicmissiles.com/secure/images/Phobosinstructionbooklet.pdf). When you finally epoxy in the bottom centering ring, push it flush up against the fins.
+9. When prepping the Payload Bay, consider finding a screw eye that attaches with a nut and washer rather than just a wood-screw end.
+10. When you epoxy in the coupler tube bulkhead, recess it at least 1/8" so that you can put a decent fillet between the bulkhead and the coupler tube on the outside. **DO NOT make the bulkhead flush with the end of the coupler tube.** The LOC instructions say to, but they are seriously wrong and you may lose your payload section when the recovery charge goes off.
+11. For the Vulcanite use Aeropoxy or BSI 30-minute epoxy for all assembly except for attaching the motor retainer, where you will use JBWeld, and for the initial attachment of the fins, where you can use BSI 5-minute epoxy instead. Do not use 5-minute epoxy on any of the fin fillets.
+12. For the BSI 30-minute or Aeropoxy, wait until the epoxy has cured sufficiently that there's no danger of running and then heat treat it at 60°C (140°F) for 3 hours. At home, shining an incandescent light an inch or so from the surface, or placing the part on the dashboard of a car in direct sunlight will provide sufficient heating.
+13. Secure the nose cone to the payload section with three countersunk #4 flat head screws. You can use the pan head screws but they don't sit as flush.
+14. If you are planning on Level 2 (J) flights, either replace or supplement the launch lugs with rail guides, either [PML LRL-10-2](https://publicmissiles.com/product/hardware) or [Acme 54mm](https://giantleaprocketry.com/products/components_launch_systems.aspx#Acme_Conformal_Launch_Guides).
+15. Secure the motor retainer with a JB Weld.
+
+## Assembly
+
+The image below displays almost all of the parts that used to come in the kit. Your nose cone is probably black and there are probably some parts to use a rail guides. You probably have a thin section of Kevlar instead of the Thick Shock Cord or the Round Shock Cord (shown in Figure 2). You are NOT going to use any of the shock cords. The chute protector that comes with the kit is hidden in the motor mount. It is too small to properly protect the chute and should be replaced with a 9×9 square protector (unless you're really talented at rolling the parachute into a small package, and at making burritos). You are NOT going to use the rail-guide parts that come with the kit, nor will you use the screw eye.
+
+**image**
+
+The Round Shock Cord is included in the kits very briefly. You should replace the Thick Shock Cord, The Round Shock Cord, or the thin piece of Kevlar with a 50" piece of kevlar shock cord that you cut from the reel.
+
+**image**
+
+The following is a list of parts that are not included in your kit but you need. You will be given some of them, but others you will have to locate in the lab.
+
+* A pair of conformal rail guides
+
+* An Aeropack (or PML) motor retainer
+
+* Three #10-24 eyebolt
+
+* Ten #10 washers, four of which need to be the small diameter ones.
+
+* Four normal diameter #10 nuts
+
+* Eight small pattern #10 nuts
+
+* Six 4-40 100° Flathead screws
+
+* A 9×9 (or larger) chute protector
+
+* A 6×6 chute protector
+
+* A 9" or 12" nylon parachute.
+
+* 5.5" length of body tube for the Nose Cone/GPS section
+
+* .75" length of body tube for the Switch Ring
+
+* The interior parts for the Nosecone GPS payload Bay
+
+* The interior parts for the Avionics Bay
+
+## Step 1: Sanding
+
+Sand every surface to be epoxied (including interior surfaces) with 80-to-110 grit sandpaper. You may have to think about the assembly sequence to figure out where to sand. A non-exhaustive list includes:
+
+* The inside of the Aeropack motor retainer.
+
+* The entire exterior of the motor mount
+
+* The interior of the body tube where the interior fin fillets will be.
+
+* The interior of the body tube in a band about 9.5" to 10.5" from the bottom end.
+
+* The interior of the payload section from one end to about 3" in.
+
+* 1/2 of the exterior of the coupler tube starting at one end.
+
+* A 1/2" band on the interior of the coupler tube on the end opposite from the 1/2 you just sanded.
+
+* The fin roots and sides up about 3/4" from the root end.
+
+* All surfaces on the motor centering rings.
+
+* The edges, center, and 1/4" in from the edges on the bulkhead.
+
+Wipe all surfaces with a Swiffer or other dust removal cloth after sanding.
+
+**images**
+
+## Step 2: Motor Mount
+
+* There are three centering rings. You can use either two or three. The optional one is the middle ring. The top ring has the two slots for mounting the large shock cord.
+
+* Test fit centering rings over the motor mount tube and sand centering rings if necessary. The rings should slide without much effort but not be loose.
+
+* Also test fit the centering rings in the body tube and sand the rings if necessary. The rings should be fairly loose, but should not rattle around.
+
+* Place the inside part of your Aeropack motor retainer on one end of the motor mount tube. Make sure it is fully seated. Using a pen or pencil, mark the tube where the motor retainer hits the tube.
+
+* Put the bottom centering ring on the tube and slide it down until it contacts the motor retainer. Mark the place where it contacts.
+
+* Use a sharpened pencil or other marking implement and put an arrow pointing up on the outside of the motor mount (to assist in keeping track of the marks).
+
+The middle centering ring is optional. It assists in keeping the motor mount straight in the tube during assembly, but it doesn't add much strength and it adds a little weight. They include it in the kit to use as the top ring for those who don't want to attach the shock cord to the motor mount. If you decide to use it, mark the tube 6" up from the bottom for positioning the middle centering ring during assembly. The placement isn't critical, but must be above the top of the fins when they're epoxied to the motor mount through the slots in the body tube.
+
+* Mark the position for the Top Centering Ring (the one with the two notches ) 1/2" from the top of the Motor Mount Tube. This placement isn't critical.
+
+* The Bottom Centering Ring will not be epoxied into position util after the fins are attached and filleted. To facilitate use of the Bottom Centering Ring, drill four small holes as shown.
+
+**images**
+
+* Thread a length of wire through the holes and secure as shown
+
+## Step 3: Shock Cord
+
+* Cut approximately a 50-inch length of the Kevlar for a Motor Mount Shock Cord.
+
+* Tie a [figure eight knot](https://www.101knots.com/figure-8-on-a-bight.html) on a bight at the midpoint of the Kevlar as shown.
+
+* If necessary, enlarge the two slots/grooves in the top centering ring until the Motor Mount Shock Cord will fit between it and the motor mount.
+
+* Place the Motor Mount Shock Cord on the top end of the motor mount.
+
+* Slide the Top Centering Ring over the shock cord and about 1/2" below the mark you made for it on the Motor Mount.
+
+* Ensure the two ends of the Motor Mont Shock Cord go through the slots in the top centering ring enough through to wrap halfway around the Motor Mount.
+
+* Mix some epoxy and place two bands of epoxy on the the Motor Mount Tube just above the Top Centering Ring. Make sure to leave gaps in the epoxy above the slots in the Top Centering Ring. You don't want the epoxy to drip through the slots.
+
+* Slide the Top Centering Ring into position to just touch the mark you made earlier for it. Sight around the tube and assure that the centering ring is level. If it looks necessary, use the end of a craft stick to remove excess epoxy, leaving fillets between the top of the ring and the motor tube. Use blue tape on the underside to secure it. Remove the blue tape once the epoxy has cured enough that the Top Centering Ring won't slide under gravity, but before the epoxy has fully cured.
+
+* If you are using it, slide the Middle Centering Ring in position about 1/2" below the mark you made for it.
+
+* If using the Middle Centering Ring, place a band of epoxy around the Motor Mount Tube just above the Middle Centering Ring, and slide the centering ring into position to just touch the mark you made earlier for it. Sight around the tube and assure that the centering ring is level. If it looks necessary, use the end of a craft stick to remove excess epoxy, leaving a fillet between the top of the ring and the motor tube. Use blue tape on the underside to secure the centering ring so that it doesn't slide while the epoxy cures. Remove the blue tape once the epoxy has cured enough that the Middle Centering Ring won't slide under gravity, but before the epoxy has fully cured. Otherwise, you may never get all of the tape off. It should not harm anything if you don't get the tape off or can't get all of the tape off as long as the tape is above the top of the fin line.
+
+
+
+* Apply some epoxy like a fillet between the lower side of the top centering ring and the motor mount and wrap the ends of the shock cord around the motor mount and push them into the epoxy. Make sure the cord lays flat enough so it will not interfere with the body tube when you slide the motor tube inside. Make sure the cord is secure and will not come loose later with ejection forces that will pull on the shock cord.
+
+* Place the Motor Mount Tube vertically with the fillet(s) facing upward until the epoxy cures.
+
+## Step 4: Lower Shock Cord
+
+* Cut a 12-foot piece of Kevlar from the roll for the Lower Shock Cord. It will connect the Motor Mount Shock Cord to the bottom end of the Avionics Bay. Tie the Lower Shock Cord to the loop in the Motor Mount Shock Cord with a PML knot and secure the free end of the cord to the body of the cord securely with blue or aluminum tape.
+
+* For the time being stuff both shock cords inside the Motor Mount Tube until after you have installed the fins to keep them from getting in the epoxy during assembly. A wadded-up paper towel placed inthe bottom of the Motor Mount Tube will keep the Lower Shock Cord from falling out.
+
+* The other end of the Lower Shock Cord will be attached to the Eyebolt in the payload section with a PML knot.
+
+## Step 5: Nose Cone/GPS Section
+
+* Drill a close-clearance hole for a #10-24 screw in the center of the bulkhead.
+
+* Place a nut followed by a washer all of the way to the eye-end of the eyebolt. Secure it with CA, epoxy, or thread lock.
+
+* Insert the eyebolt through the hole in the center of the bulkhead and secure using another washer and nut. Secure in place with CA, epoxy, or thread lock. Tighten securely.
+
+* Cut off the bolt (Dremel or hacksaw) leaving about 1/4"-to-1/8" above the nut and file or sand the end to remove any sharp edges
+
+Mark a line around the inside of the Coupler Tube 1/8" from the end. Apply epoxy to the inside of the tube and push the bulkhead in so that the line is visible and wait until the epoxy cures. Since BSI 30-minute or Aeropoxy have such long cure times, you will want to support the Coupler and the Bulkhead until the epoxy cures. The photos below show some pieces of 1×2 and a free-cut 1/8" plywood ring (which is attached to the bulkhead with double-sided tape) used as a support. Instead, you can use the existing laser-cut parts or cut your own.
+
+* Apply a fillet of epoxy around the inside edge of the coupler bulkhead joint.
+
+Measure the length of the coupler and mark a line around the circumference at 1/2 of the length. Place a ring of blue tape on the bulkhead side of the coupler so that it just touches the line. Apply a very thin amount of epoxy on the first inch or so of the inside of the 5.5" GPS tube. Put the open end (not the bulkhead end) of the coupler into the end of the payload tube with epoxy and twist and slide the coupler into the 5.5" GPS tube until you reach the blue tape. Place the assembly vertically with the bulkhead end down until the epoxy cures. Remove the blue tape.
+
+**Note** The epoxy is on the inside of the payload section instead of on the outside of the coupler, like in the Vulcanite, because drips on the inside of this payload section are not as critical as in the Mini-DX3, and getting the payload section to join smoothly with the body tube is more critical for the Vulcanite.
+
+* Insert the nose cone into the top of the 5.5" GPS tube and seat it securely.
+
+* Holes for GPS Bay – Nose Cone Screws: Mark three points equally spaced around the circumference of the 5.5" GPS tube 1" below the end of the 5.5" GPS tube. Easiest is to wrap a piece of paper around the tube and mark one circumference. Unwrap and measure the circumference and divide the distance by three and mark the paper accordingly, then transfer the marks to the 5.5" GPS tube by wrapping the paper back around the tube and marking.
+
+* Drill one of the holes with a #43 bit through both the GPS Tube and the nose cone.
+
+* Countersink the hole, preferably with a 100° countersink. Stop before you hit the nose cone.
+
+* Tap the hole in the nose cone with a #4-40 tap.
+
+* Insert and tighten a #4-40 100° flathead screw into the drilled, countersunk and tapped hole. The screw will keep the position of the nose cone stable.
+
+* Drill, countersink, and tap the remaining two holes.
+
+* If you are going to install the GPS support, you may consider putting a layer of foam in the bottom of the 5.5" GPS tube.
+
+## Step 6: GPS Support
+
+Instructions for cutting or modifying the plywood parts for the GPS Support are found [here](https://dofpro.org/RCK/const/vulcanGPS).
+
+The GPS Support is where the Featherweight GPS Tracker is mounted on the rocket. It is not mounted with the rest of the avionics to minimize RFI from the IMU and recovery altimeter.
+
+You will assemble the pieces of the GPS support with the Front View facing upwards. - Locate a set (four each) of long #2-56 screws, small #2 washers, and #2-56 small-patern nuts. These will be used for clamping together the pieces while the white glue dries.
+
+* Align GPS Main Board, the GPS Spacer Board, and the GPS Daughterboard with the Front Sides facing upwards and the large notches facing in the same direction.
+
+* Place the four #2 screws through the four outside holes of the GPS Daughterboard. Leave the screws facing up.
+
+* Cover the Back Face of the Spacer Board with white glue and slide it over the four #2 screws and onto the GPS Daughterboard. THe glue should be between the daughterboard and the spacer.
+
+* Cover the Front Face of the Spacer Board with white glue and slide the GPS Main Board over the #2 screws and down onto the Spacer Board.
+
+* Place the washers on the screws, and then thread on the nuts and tighten down to clamp the assembly together while the white glue dries.
+
+* After the glue has dried, remove the nuts, washers, and screws if desired.
+
+* The semicircular pieces need to be oriented with either both of the Front Sides up, or with both down. I chose both up. They will go through the slots just below the GPS Daughterboard assembly
+
+* Apply white glue along the Main Boars where one of the semicircular pieces will mate with it, between the two slits and between the slits and the edges.
+
+* Slide one of the semicircular pieces into position through the slots to contact the glue.
+Apply white glue along the edges of the semicircular piece where it will mate with the other semicircular piece and with the Main Board.
+Slide the second semicircular piece into position and hold it until the glue has set.
+
+## Step 7: Avionics Bay
+
+Instructions for cutting or modifying the plywood parts for the Avionics Bay are found [here](https://dofpro.org/RCK/const/vulcanGPS).
+
+Slide the Switch Ring over the Avionics Bay Coupler. Measure 2 7/8" (the midpoint) from one end and draw lines around both sides of the Switch Ring to mark where it is to be epoxied.
+
+Slide the Switch Ring off of the markings and place a thin layer of epoxy between the lines then slide and rotate the switch ring into place. Secure the side without epoxy with blue tap to maintain its position, and remove as much of the excess epoxy as possible from the other side. In final assembly, body tubes will need to slide as flush as possible against the Switch Ring.
+
+* Once the epoxy has cured measure the circumference around the center of the switch ring.
+
+* As before mark three points equally spaced around the circumference in the center of the Switch Ring. You also need to mark points for accessing the Screw Switches. Easiest is to wrap a piece of paper around the ring and mark one circumference. Unwrap and measure the circumference and divide the distance by three and mark the paper accordingly. Calculate what 5/36ths of the circumference is and mark two points separated by that distance, centered between two of the other marks. The Screw Switches are separated by 50° and need to be centered between two vent holes.
+
+* Transfer all five marks to the payload tube by wrapping the paper back around the tube and marking. Place the marks as close to the center of the Switch Ring as possible.
+
+* Drill the three equally spaced holes with a drill bit with a size between a #52 and a #44. A 1/16" bit will work fine. Drill slowly to try to leave the inside edges of the holes as clean as possible.
+
+* Drill the two Screw Switch Holes with a drill bit large enough to permit easy viewing of the switch screws and to permit easy access with a screwdriver.
+
+* Identify the Inside Bulkheads (the ones with the slots) and the Outside Bulkheads (the ones without the slots). When assembled the Front Sides (the ones with the fewest burn marks) will be facing away from the Avionics Bay, and the back sides (the ones with the most burn marks) will be facing inside the bay. In addition, when assembled, the triangular pattern of three holes must be aligned between the Inside and Outside Bulkhead.
+
+* Apply a layer of epoxy or two layers of thin CA on the front (outside) surface of the Outside Bulkheads. This coating will make cleaning of black-powder residue easier. Let dry completely.
+
+* Find six #10-24 bolts and six #10-24 nuts to use when clamping the bulkheads together as the glue dries.
+
+* Place the six bolts through the Outside Bulkheads starting from the Front Surface.
+
+* Place white glue on the Front Surface of the Inner Bulkheads.
+
+* Slide the Inner bulkheads onto the Outer Bulkheads making certain that all of the holes align.
+
+* Thread the nuts onto the bolts and tighten securely.
+
+* Use a wire or other thin tool to clear any glue out of the small holes
+
+Locate an eyebolt, a small-pattern #10-24 nut, a small #10 washer, a regular #10-24 nut, and a regular washer for each bulkhead assembly.
+
+* For each eyebolt, place the small-pattern nut followed by the small washer all of the way to the eye-end of the eyebolt. Secure it with CA, epoxy, or thread lock.
+
+* Insert the eyebolt through the hole in the center of the Outside Bulkhead and secure using the regular washer and nut. These will be snugged against the Inside Bulkhead. Secure in place with CA, epoxy, or thread lock. Tighten securely.
+
+* Cut off the eyebolts (Dremel or hacksaw) leaving about 1/4"-to-1/8" above the inside nuts and file or sand the ends to remove any sharp edges.
+
+**Note** The eyebolts and the cut-off pieces may be very hot (burn hazard) while and after you cut the eyebolts.
+
+* Tap the #4-40 Pilot Hole with a #4-40 tap.
+
+* Reinforce the threads with a couple of layers of thin CA. The CA will wick away from the tapped hole. The wicked CA will not harm anything.
+
+* Turn the Main Bard over so that you're looking at the back side. If you get this orientation wrong, you will be unable to populate your Avionics Board without drilling additional holes.
+
+* Glue the Large Battery Support into the lower slots (the ones just touching the two holes).
+
+* Glue the Small Battery Support into the upper slots (the ones near the oval cutout).
+
+To see if you have trimmed the eyebolts sufficiently, and to get a feeling for how the interior of the Avionics Bay will look when assembled, place the Avionics Bay Main Board in the slots in the two inner bulkheads.
+
+* Take the two pieces of 8" #10-24 Allthread and place two small-pattern nuts 6.50" from one end. In other words, the distance from the end of the allthread to the face of the first nut should be 6.50". The second nut should be as close to touching the first nut as it can be while keeping the hex faces aligned. If you don't keep the hex faces aligned, there will not be clearance between the nuts and the Euroconnector when you attempt to assemble the completed bay. Secure the nuts with thread lock, CA, or epoxy.
+
+* Trim the short end of the Allthread (sticking past the two nuts), so that the total is between 6 13/16" and 6 7/8" in length. Do not trim the long end. You need to be able to put an additional nut on it.
+
+* Assemble the unpopulated Avionics Bay by placing the Main Board in one of the two bulkheads, sliding the Main Board and Bulkhead into the Couple and Switch Ring assembly, positioning the other bulkhead on the other end. It takes practice to get the slots in the Inner Bulkhead to line up with the tabs on the Main Board and have the Bulkhead slide into place.
+
+* Secure the Avionics Bay assembly by threading the Allthreads through the both bulkheads and tightening a small washer and small-pattern nut on the end opposite the locked-in-place nuts.
+
+## Step 8: Upper Body Tube
+
+* Place the Upper Body Tube (the roughly 10" body tube”) onto the short end of the Avionics Bay and slide it up tightly against the coupler tube.
+
+* Holes for Mounting Screws Mark three points equally spaced around the circumference of the Upper Body Tube 1" above the Switch Ring. Easiest is to wrap a piece of paper around the tube and mark one circumference. Unwrap and measure the circumference and divide the distance by three and mark the paper accordingly, then transfer the marks to the payload tube by wrapping the paper back around the tube and marking. It's best if the marks are mid-way between the vent holes in the switch ring.
+
+* Drill one of the holes with a #43 bit through both the payload section and the nose cone. Drill slowly, trying to make the drill exit as smooth as possible inside the Avionics Bay coupler tube.
+
+* Countersink the hole, preferably with a 100° countersink. Stop before you hit the Avionics Bay.
+
+* Tap the hole in the nose cone with a #4-40 tap. Tap it slowly while maintaining firm pressure. It's very easy to rip, rather than thread the Avionics Bay coupler tube.
+
+* Insert and lightly tighten a #4-40 100° flathead screw into the drilled, countersunk and tapped hole. The screw will keep the position of the nose cone stable.
+
+* Drill, countersink, and tap the remaining two holes.
+
+* Remove all three screws. Slide off the Upper Body Tube. and apply a generous amount of thin CA to the threaded holes. You are trying to reinforce the threads with the CA so that they can withstand repeated placing and tightening and untightening of the #4-40 100° flathead screws.
+
+## Step 9: Inserting the Motor Mount Assembly
+
+The final assembly involves epoxying in the motor-mount assembly, attaching and filleting the fins, attaching the launch lugs, and attaching the chute protector, the parachute and the payload section.
+
+* Make sure the shock cord is stuffed inside the motor mount as shown in Figure ?.
+
+* Place (do not epoxy) the bottom centering ring on the motor mount with the wire loop facing downward.
+
+* Test fit the motor mount in the end of the body tube with the slots for the fins. The fit should be tight but smooth. Sand any centering rings that are too tight until they fit smoothly.
+
+* Hold the motor mount assembly next to the body tube at the position that it will be when epoxied in. Measure how far up the body tube the top centering ring will be.
+
+* Using sandpaper attached to the end of a dowel, roughen up the inside of the body tube where the top centering ring will be attached.
+
+* The motor mount tube will need to protrude below the bottom of the body tube by about 1/8". The easiest way to maintain the separation while the epoxy cures is to cut a hole in a piece of 1/8" plywood the size of the motor mount tube, as shown below. You can laser-cut a part suitable for this purpose.
+
+Using one or more craft (popsicle) sticks taped together, place a ring of epoxy inside the body tube about 1/4" short of where the front centering ring will sit. You need to get the epoxy up the tube without dripping anywhere else in the tube.
+
+Insert and push and twist the the motor mount assembly up into the body tube. Leave the 1/8" of the motor mount tube protruding out the bottom. You do want the bottom centering ring to be in position to keep the motor mount centered. You do not want the bottom centering ring to be glued in place. You need to be able to remove it once the epoxy sets.
+
+**NOTE** It is possible to epoxy the middle motor mount ring into position in the body tube, but the attempt to do so may get epoxy in lots of wrong places. You are on your own to do so. I recommend against it.
+
+Place the body tube vertically in the support to hold the motor mount properly spaced while the epoxy cures.
+
+Make sure the rocket is vertical until the epoxy cures.
+
+## Step 10: Launch Lug Centering Line Marking
+
+It's easiest to mark the centering line for the body tube for the launch lugs before putting on the fins. Place a length of angle iron so that one edge is halfway between two sets of fin slots, and draw a vertical line up the body tube.
+
+## Step 11: Fins
+
+* Dry fit the fins and if necessary sand the slots until the fins fit. You don't want them to be a loose fit.
+
+* Make sure you have two or three fin jigs handy.
+
+* Apply a generous-but-not-overflowing amount of epoxy to the root end of each fin tang and insert it into the fin slots. Be sure the fin rests securely against the motor mount tube.
+
+* Before the epoxy sets, place a fin jig on each side of the fins and place the assembly on a table to guarantee the fins are straight. A third jig at the end of the body tube will help you keep things level
+
+* You may want to run a band of blue tape around the fins to hold them in position while the epoxy cures
+Before proceeding, make sure the epoxy has fully cured.
+
+## Step 11: Internal Fillets
+
+* Remove the bottom centering ring with the wire.
+
+* Mix up a batch of epoxy, put it in a syringe, hold the rocket almost vertically, and carefully squeeze epoxy in to create internal fillets. Do two at a time on neighboring fins. Place/leave the rocket almost horizontal while the epoxy cures. Let the epoxy set before you do the next set of fillets. Do your best to keep the epoxy from running out past the near end of the fin. You want to be able to push the bottom centering ring against the base of the fins when you're finished. Do not worry if they're not perfect. Some filleting is better than none.
+
+* Remove the wire from the bottom centering ring.
+
+* Place a thin layer of epoxy on the inside of the body tube where the bottom centering goes and push the bottom centering ring into place.
+
+* Place the rocket vertically with the fin-end up until the epoxy cures.
+
+## Step 12: External Fillets
+
+Get a set of plastic spoons that will be used for pulling the fillets.
+
+* Rub the edges of the spoon heavily with a pencil lead.
+
+* Draw the spoon along the joint between the fin and the body tube. With luck, you'll see a line where the spoon met the fin and where it met the body tube.
+
+* Place blue tape along each line.
+
+* Repeat the marking and taping for each of the remaining fin-body-tube joints.
+
+* Place blue tape at the top and bottom of the fin/body tube where you want the fillet to end.
+
+* Plan on doing two fillets at a time between adjacent fins.
+
+* Measure out a batch of glass microballoons equal in volume to the batch of epoxy you are about to mix.
+
+* Mix a batch of epoxy and fold in the microballoons. It should have roughly the consistency of peanut butter.
+
+* Lay the epoxy down in the joint and roughly smooth it with the stir stick.
+
+* Using a plastic spoon, pull along the fillet, leaving a nice concave profile, with excess epoxy being gathered up by the spoon.
+
+* Quickly touch up any flaws.
+
+Wait 5 to 15 minutes.
+
+* Remove the blue tape along that particular set of fillets.
+
+* Let them fully cure before moving on to the next fillets.
+
+* Repeat with the remaining two sets of fillets.
+
+## Step 13: Rail Guides
+
+**Important** Sand both the body tube and the Rail Guides where they are going to join until you have removed the glassine (the shiny paper layer). Failure to do so may result in moments of panic at the launch stand when your launch lugs break off.
+
+The Rail Guides should be epoxied on and aligned with the vertical line you drew earlier. Placement isn't critical, but the bottom one should be somewhere in between the top edge of the fins and the bottom edge of the fins. The top one should be a few inches below the top of the body tube. Make sure the two launch lugs are aligned along the body tube. - Place a launch lug on the line on the body tube and trace the outline. - Outline the lines with blue tape.
+
+Sand the taped area.
+
+Epoxy the Rail Guides in place. They don't need a lot of epoxy. Tape them down until the epoxy cures. Remove the blue tape before the epoxy sets too hard.
+
+## Step 14: Motor Retainer
+
+* Using JB-Weld (not any other epoxy) attach the inner part of the motor retainer to the bottom of the motor mount assembly. Spread the JB-Weld on the motor mount tube and not inside the motor retainer. Twist the motor retainer as you push it onto the tube.
+
+* Inspect the inside of the motor mount tube-motor retainer and thoroughly wipe away any JB-Weld that made it inside.
+
+* Place the assembly vertically, and let cure for at least 3 hours, preferably in a warm space. JB-Weld takes 24-48 hours to fully cure, but will usually not run after 3 hours.
+
+## Step 15: Chute Protectors and Parachutes
+
+You are using two different parachutes and two different chute protectors with this rocket: a 9" or 12" nylon parachute with a 6“x6" chute protector for the drogue chute, and the chute that came with the kit with a 9“x9" chute protector for the main chute. The Drogue chute will be between the Lower Body Tube and the Lower Bulkhead Eyebolt on the Avionics Bay. The Main Chute goes between the Upper Bulkhead Eyebolt on the Avionics Bay and the Eyebolt on the GPS Holder/ Nose Cone.
+
+For the Drogue Chute:
+
+* Shake or push the Lower Shock Cord free out the top of the Lower Body Tube.
+* Roughly 2/3 of the shock cord length (the length from the Lower Body Tube up) tie a butterfly knot or a figure eight knot on a bight.
+
+* Attach the 9" or 12" parachute to the butterfly knot or the figure eight knot on a bight with a Lark's Head knot. Gather the shroud-line loops. Push them through the bight on the shock cord. Pass the parachute through the shroud-line loops and pull. See Step 5 of the Seeker Instructions if it's unclear.
+
+* Thread the 6“x6" chute protector through the shock cord and slide down to the knot.
+
+* Attach the end of the shock cord to the bottom eyebolt in the Avionics Bay with a PML Knot.
+
+For the Main Chute:
+
+* Attach the Upper Shock Cord to the eyebolt in the GPS/Nose Cone Section with a PML knot..
+
+* Roughly 2/3 of the shock cord length (the length from the free end of the shock cord) tie a butterfly knot or a figure eight knot on a bight.
+
+* Attach the main parachute to the butterfly knot or the figure eight knot on a bight with a Lark's Head knot. Gather the shroud-line loops. Push them through the bight on the shock cord. Pass the parachute through the shroud-line loops and pull. See Step 5 of the Seeker Instructions if it's unclear.
+
+* Thread the 9“x9" chute protector through the free end shock cord and slide up to the knot.
+
+* Thread the free end of the shock cord through the Upper Body Tube, starting with the end without holes and exiting through the end with the three countersunk holes.
+
+* Attach the end of the shock cord to the top eyebolt in the Avionics Bay with a PML Knot.
+
+* If you were prepping the rocket for launch, you would prep the Avionics Bay and main ejection charge, and then secure the Upper Body Tube to the Avionics Bay with the three #4-40 100° flat head screws.
+
+## Step 16: Folding the Parachute
+
+If you want to fold the parachute and pack it in the rocket use the [Instructions for Folding Parachutes](https://dofpro.org/RCK/const/index).
+
+## Step 17: Painting and Marking
+
+If you desire to paint your rocket, please do so. There are lots of places on-line that will give you an overabundance of advice on how to do so. Many fliers prefer to make their rocket “earn it's paint” by flying it unpainted, and then painting it if it survives the first flight.
+
+* You should mark the center of pressure with a center-of-pressure symbol, which is a circle with a dot in the middle, ⊙. A Sharpie® works great, but we do have water-slide decals if you want to get fancy.
+
+* Label the rocket with your name and cell-phone number on both the body tube and payload section. Again a Sharpie® works great, but you can use print-on adhesive labels or Sam's labeling machine as well.
+
+## Step 18: Populating the GPS Support
+
+The GPS is mounted to the Daughterboard with #4-40 screws, nylon washers, 1/8" nylon spacers and #4-40 nuts. The screws go through the nylon washers, then the GPS, then the Daughterboard. The nuts are fastened on back.
+
+The 1000 mAh battery is installed with Velcro.
+
+## Step 19: Populating the Avionics Bay
+
+Locate the Eurostyle Connectors with matching M2.5 screws, washers, and nuts. You will need two of each, one set for each bulkhead.
+
+Cut two 6" lengths of black 20-AWG silicone wire and two 6" lengths of red 20-AWG silicone wire. Do NOT use any other wire. The 20-AWG can easily handle the current load, and the silicone wire is very flexible and can be used with very sharp corners.
+
+Push a black and a red wire through the holes at the base of the isosceles triangles on each bulkhead from the inside to the outside. It's best if they have the same position on each bulkhead. Pull to a length of about 1".
+Strip a small section of insulation from the short end of each wire, and tin it with solder. The tinning is to make the connection with the Eurostyle connector stronger.
+
+Insert each tinned wire into a separate screw terminals on the same side of a Eurostyle connector and screw down firmly to secure the connector to the wires.
+
+Place a screw through the hole in the center of each Eurostyle connector, entering at the top (with the screw heads) and exiting through the bottom.
+
+Start the screw through the remaining hole in the Outer Bulkhead on each bulkhead.
+
+Simultaneously pull the wires and lower the Eurostyle connector to keep from kinking the wires and then secure the screw against the Inside Bulkhead with a washer and a nut.
+
+Mount the Teensy Data Logger on the Top surface of the Avionics Bay Main Board. There are two styles, The Large Teensy Data Logger and the Small Teensy Data Logger. You will probably be given a Small Teensy Data Logger. We have more explicit instructions for it.
+
+For the Small Teensy Data Logger,gather together
+
+* Two #4 .031" thick nylon washers
+
+* Two #4 3/16" (.188) nylon Spacers
+
+* One #4-40 3/8" (.375) screw
+
+* One #4-40 15/32" (.469) screw
+
+* One $4-40 standard nut
+
+Insert the 15/32" screw through the .031 washer, then through the Small Teensy near microUSB connector, then through a 3/16" spacer, then through the clearance hole between the oval cutout and the different-diameter holes on the Front Side of the Main Board. Thread the nut on the end but do not tighten.
+
+Insert the 3/8" screw through the .031 washer, then through the Small Teensy near microSD connector, then through a 3/16" spacer. Swing the board around to line the screw up with the threaded hole in the Main Board., and screw it into place. Do NOT overtighten. The threads in the plywood will not withstand a large load. The reason this screw does not have a matching nut is that there is not suficient space under the battery for a nut.
+
+Firmly tighten up the other screw. You want it to bear most of the load.
+
+If you are using the Large Teensy Board, mount it with four #4-40 screws, washers, spacers, and nuts. There is clearance of all four nuts.
+
+Gather together #2 mounting hardware for the Eggtimer Quark.
+
+Mount it in position on the top surface of the Avionics Bay Main board below the Teensy.
+
+At some point you'll need to cut a piece of Velcro for securing the 7.4 V 2S 300 mAh (the taller battery for the Quark) to the main board. The 3.7 V 1S 400 mAh battery for the Teensy Data Logger (the flatter battery) will be secured with zip ties because there isn't clearance for velcro between the battery and the switch holder.
+
+Tap the Screw Switch Holder with a #4-40 tap through the four switch mounting holes.
+
+Pass one of the Allthreads with the secured nuts through one of the Bulkheads in the hole by the Eurostyle Connector. Placing a small #10 washer over the Allthread before it passes through the bulkhead is optional. This Bulkhead is now the Top Bulkhead.
+
+Screw the Allthread into and through the Switch Holder. The Switch Holder is symmetric, so it doesn't matter which way you screw in the Allthread. The Allthread will need to extend about 3" beyond the Screw Holder. Screwing the Switch Holder a sufficient distance takes some ingenuity. Do not damage the threads in the process.
+
+Attach two of the Screw Switches to the screw switch holder using black oxide #4-40 screws. You will need to sight the shiny stainless steel main screw in each switch, and the black oxide will make it easier to avoid identifying one of the mounting screws as the switch screw. Having the soldering tabs pointing up toward the Top Bulkhead will probably make routing the wires easier.
+
+You will have to iteratively adjust the position os the Screw Switch Holder so that the screw switches can be switched on and off through the Switch Ring (maybe that's where it got its name).
+
+* Turn the Switch Holder so that the Screw Switches are facing outward and line the switch holder up with the Switch Holes in the Switch Ring in the Avionics Bay Coupler Tube.
+
+* Slide the Allthread and Switch Holder into the Coupler Tube, and seat the Top Bulkhead in the top of the Avionics Bay Coupler Tube. Make sure the Allthread nuts are seated against the bulkhead. Check if you can clearly see the sitch screws through the screw switch holes. Determine if you need to raise or lower the Screw Switch Holder on the Allthread. Remove the bulkhead assembly from the Coupler Tube and make the adjustment.
+
+* Repeat the cycle until the switch screws are centered in the Screw Swithc Holes.
+
+Slide the Bottom Bulkhead onto the Allthread (the side without the Eurostyle Connector).
+
+Thread the other Allthread through the other side of the bulkhead near the Eurostyle Connector, and out through the Top Bulkhead.
+
+Secure the Allthreads with a small washer and a small-pattern #10 nut. You have a tool in your toolbox to make tightening the nuts easy.
+
+Observe if you can still see the switch screws centered in the holes. If not, disassemble and adjust things until you can.
+
+Once everything is aligned, disassemble, place the batteries on the Main Board and assemble the Bulkheads, Main Board, and Allthreads without the Coupler Tube. The Switch Holder should fit over the 3.7 V 1S 400 mAh battery.
+
+With everything in place, you will want to complete the wiring. Check with Prof. Spjut on how to cut the wires to length, use the crimp connectors, and how to solder to the Screw Switches.
+
+## Step 20: Test your Rocket
+
+You have completed the construction. Next you need to test the electronics and finish flight prep. See the [Vulcanite Avionics Test page](https://dofpro.org/RCK/const/vulcanTest) for avionics testing.
+
+
+
