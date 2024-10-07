@@ -8,7 +8,7 @@
 
 <meta name="author" content="DOFPro group">
 
-<title>Instrumentation and Data Analysis – High Power Rocketry</title>
+<title>Construction Information – High Power Rocketry</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -201,15 +201,22 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#cutting-standard-parts" id="toc-cutting-standard-parts" class="nav-link active" data-scroll-target="#cutting-standard-parts">Cutting Standard Parts</a></li>
+  <li><a href="#changing-other-parameters" id="toc-changing-other-parameters" class="nav-link" data-scroll-target="#changing-other-parameters">Changing other Parameters</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Instrumentation and Data Analysis</h1>
+<h1 class="title">Construction Information</h1>
 </div>
 
 
@@ -232,10 +239,54 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>This page will eventually contain information about avionics and other instruments for collecting data aboard your rockets during flight, along with information on how to analyze the data and compare it with your flight models.</p>
-<p>As a sample, here is a link to <a href="../instr/baroalt.html">information about barometric altimeters</a>.</p>
+<section id="cutting-standard-parts" class="level2">
+<h2 class="anchored" data-anchor-id="cutting-standard-parts">Cutting Standard Parts</h2>
+<p>There are two laser-cut support structures to cut. They are the GPS Support that goes in the nose cone bay, the Avionics Support that goes in the Avionics Bay. You can also print out the Screw Switch Holder that is threaded on to a piece of allthread and also goes into the Avionics Bay.</p>
+<p>There are two very similar sizes of Baltic birch plywood that can be used to make the laser-cut parts. They are 3 mm and 1/8 inch. The 3 mm plywood is nominally .117 in thick but varies from .111 in to .117 in. The 1/8 in plywood is nominally .125 in thick but varies from .120 in to .125 in. Measure the plywood you plan to use in the laser cutter. If it is in the 3 mm range, download the <a href="https://pages.hmc.edu/spjut/AdvRoc/SolidWorks/VulcaniteDD/Vulcanite_PDF_3mm.zip">Vulcanite_PDF_3mm.zip archive</a>. If the plywood is in the 1/8 in range, download the <a href="https://pages.hmc.edu/spjut/AdvRoc/SolidWorks/VulcaniteDD/Vulcanite_PDF_125.zip">Vulcanite_PDF_125.zip</a> archive. Do not mix and match from the two archives. Chaos and frustration will follow if you do.</p>
+<p>To cut the parts, unzip the archive and import the .pdf files into your laser cutting software. For the GPS Support you will need to cut one each of</p>
+<ul>
+<li><p>VulcaniteGPSDaughterBoard</p></li>
+<li><p>VulcaniteGPSMainBoard</p></li>
+<li><p>VulcaniteGPSSpacerBoard</p></li>
+</ul>
+<p>and two each of</p>
+<ul>
+<li>VulcaniteRoundNCSupport</li>
+</ul>
+<p>There are two different versions of the Avionics Support, one for the Teensy Logger, and one for the Raven 3</p>
+<p>For the Teensy Logger you will need to cut one each of:</p>
+<ul>
+<li><p>VulcaniteEbaySled</p></li>
+<li><p>VulcaniteEby2S300mAhSupport</p></li>
+<li><p>VulcaniteEby400mAhSupport</p></li>
+</ul>
+<p>and two each of:</p>
+<ul>
+<li><p>VulcaniteInnerEbayBulkhead</p></li>
+<li><p>VulcaniteOuterEbayBulkhead</p></li>
+</ul>
+<p>For the Raven 3 you will need to cut one each of:</p>
+<ul>
+<li><p>VulcaniteEbaySledRaven3_3mm.pdf</p></li>
+<li><p>VulcaniteEby2S300mAhSupport_3mm.pdf</p></li>
+</ul>
+<p>and two each of:</p>
+<ul>
+<li><p>VulcaniteEby400mAhSupport_3mm.pdf</p></li>
+<li><p>VulcaniteEby400mAhTopSupport_3mm.pdf</p></li>
+<li><p>VulcaniteInnerEbayBulkhead_3mm.pdf</p></li>
+<li><p>VulcaniteOuterEbayBulkhead_3mm.pdf</p></li>
+</ul>
+<p>If your plywood isn’t either of the two standard thicknesses or you need to change the kerf for changing how tight or loose the part fit is (standard is .004 inches, smaller is looser, larger is tighter), you will need to download the SolidWorks parts files, either <a href="https://pages.hmc.edu/spjut/AdvRoc/SolidWorks/VulcaniteDD/Vulcanite_DRW_PRT_3mm.zip">Vulcanite_DRW_PRT_3mm.zip</a> or <a href="https://pages.hmc.edu/spjut/AdvRoc/SolidWorks/VulcaniteDD/Vulcanite_DRW_PRT_125.zip">Vulcanite_DRW_PRT_125.zip</a>.</p>
+<p>Unzip the chosen file and edit each of the four .SLDPRT files for the GPS Support and each of the five or six .SLDPRT files for the Avionics Support. To change the thickness go to “manage equations” and change the value of “t” to your actual thickness in inches, then save the file. To change the kerf go to “manage equations” and change the value of “kerf” to your actual thickness in inches, then save the file. Then open up the corresponding .SLDDRW file which should be linked to the .SLDPRT file and should update automatically. Save the file, then “Save As…” a .pdf file with the same name. Import the new .pdf files into your laser cutting software and cut the required pieces.</p>
+</section>
+<section id="changing-other-parameters" class="level2">
+<h2 class="anchored" data-anchor-id="changing-other-parameters">Changing other Parameters</h2>
+<p>If you want to change other properties in the Global Variables, you can make the changes in all of the .SLDPRT files and follow the same process with the .SLDDRW and .pdf files. Be aware that if you change the number of holes in any part, you will probably have to recreate and re-dimension the final sketch, because it won’t know what to do with the extra or removed holes. Not all combinations of Global Variables will result in valid parts. You may have some work to do to get things to come out how you want, but the parameterized values should minimize the rework you have to do.</p>
+<p>If you want the print file for the screw holder it it <a href="https://pages.hmc.edu/spjut/AdvRoc/SolidWorks/VulcaniteDD/VulcaniteScrewSwitchHolder.STL">VulcaniteScrewSwitchHolder.STL</a>.</p>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">

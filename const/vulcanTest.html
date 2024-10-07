@@ -8,7 +8,7 @@
 
 <meta name="author" content="DOFPro group">
 
-<title>Instrumentation and Data Analysis – High Power Rocketry</title>
+<title>Construction Information – High Power Rocketry</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -201,15 +201,25 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#eggtimer-quark" id="toc-eggtimer-quark" class="nav-link active" data-scroll-target="#eggtimer-quark">Eggtimer Quark</a></li>
+  <li><a href="#testing-the-eggtimer-quark" id="toc-testing-the-eggtimer-quark" class="nav-link" data-scroll-target="#testing-the-eggtimer-quark">Testing the Eggtimer Quark</a></li>
+  <li><a href="#mounted-continuity-and-initiator-tests" id="toc-mounted-continuity-and-initiator-tests" class="nav-link" data-scroll-target="#mounted-continuity-and-initiator-tests">Mounted Continuity and Initiator Tests</a></li>
+  <li><a href="#testing-the-teensy-data-logger" id="toc-testing-the-teensy-data-logger" class="nav-link" data-scroll-target="#testing-the-teensy-data-logger">Testing the Teensy Data Logger</a></li>
+  <li><a href="#testing-the-raven-3" id="toc-testing-the-raven-3" class="nav-link" data-scroll-target="#testing-the-raven-3">Testing the Raven 3</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Instrumentation and Data Analysis</h1>
+<h1 class="title">Construction Information</h1>
 </div>
 
 
@@ -232,10 +242,83 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>This page will eventually contain information about avionics and other instruments for collecting data aboard your rockets during flight, along with information on how to analyze the data and compare it with your flight models.</p>
-<p>As a sample, here is a link to <a href="../instr/baroalt.html">information about barometric altimeters</a>.</p>
+<section id="eggtimer-quark" class="level2">
+<h2 class="anchored" data-anchor-id="eggtimer-quark">Eggtimer Quark</h2>
+<p>The test procedure for the <a href="https://eggtimerrocketry.com/home/altimeters-av-bay/">Eggtimer Quark</a> is outlined in Appendix A of the <a href="https://eggtimerrocketry.com/wp-content/uploads/2021/04/Eggtimer-Quark-Manual-D3.pdf">Eggtimer Quark User’s Guide</a> and in the Preliminary Testing section of the <a href="https://eggtimerrocketry.com/wp-content/uploads/2021/02/Eggtimer-Quark-Assembly-Manual-D3.pdf">Eggtimer Quark Assembly Manual</a>. More specific testing details are given below.</p>
+</section>
+<section id="testing-the-eggtimer-quark" class="level2">
+<h2 class="anchored" data-anchor-id="testing-the-eggtimer-quark">Testing the Eggtimer Quark</h2>
+<p>Before mounting the Eggtimer Quark on the Avionics Main Board, you need to test the continuity and the altimeter.</p>
+<ul>
+<li><p>Make sure you have a charged 2S 300 mAh battery.</p></li>
+<li><p>Make certain that you have the two 100 Ω resistors in the Drogue and Main inputs.</p></li>
+<li><p>Connect the battery and wait for the beeps. There is a short beep upon power up followed by a beep-out of the altitude of the last flight, and finally some chirping. If you get the chirping, the Quark has passed the continuity tests. If instead you get some repeating sequence of either 4 beeps, or 5 beeps, or both, you either have not connected your resistors correctly or your Quark is faulty. Fix the problem before proceeding.</p></li>
+<li><p>Get one of the screw bottles with the syringe attached.</p></li>
+<li><p>Unscrew the lid from the bottle.</p></li>
+<li><p>Press the syringe plunger all of the way in.</p></li>
+<li><p>Connect (or reconnect) the battery to the Quark.</p></li>
+<li><p>Place it in the bottle.</p></li>
+<li><p>Screw on the lid.</p></li>
+<li><p>Wait until you hear the continuity chirps.</p></li>
+<li><p>Fairly rapidly pull the syring plunger most of the way out, but not all of the way out.</p></li>
+<li><p>Slowly push the plunger back in until it is all of the way seated.</p></li>
+<li><p>Open the bottle and listen for the maximum altitude beeps.</p></li>
+<li><p>If the maximum altitude is around 2500 feet, the altimeter and the bottle/syringe system are both working properly.</p></li>
+</ul>
+</section>
+<section id="mounted-continuity-and-initiator-tests" class="level2">
+<h2 class="anchored" data-anchor-id="mounted-continuity-and-initiator-tests">Mounted Continuity and Initiator Tests</h2>
+<p>Make sure both screw switches are off.</p>
+<p>Mount and wire up the Quark on your Avionics Main Board.</p>
+<p>If not already done, wire up and mount your Teensy Logger or Raven 3.</p>
+<p>Mount both a 2S 300 mAh battery and a flat 1S 400 mAh battery with zip ties.</p>
+<p>Assemble the fully populated and wired Avionics Bay outside of the Avionics Bay Coupler Tube. You need to access the Quark and the Teensy or Raven.</p>
+<p>Connect a 100 Ω resistor to each of the Eurostyle Connectors.</p>
+<p>Power on the Quark with the appropriate screw switch and check for the Continuity chirping. If you get it, power down, remove the 100 Ω resistors and go find Professor Spjut.</p>
+<p>Gather up safety glasses, two Firewire initiators, the appropriate screwdriver, and one jumper for the Quark. Outside, in a safe place attach one initiator to the Drogue input.</p>
+<p>Follow the procedure in Appendix A of the User’s Guide to test the Drogue channel.</p>
+<p>If successful, remove the used initiator, attach the second one to the Main channel, and follow the procedure in Appendix A of the User’s Guide to test the Main channel.</p>
+</section>
+<section id="testing-the-teensy-data-logger" class="level2">
+<h2 class="anchored" data-anchor-id="testing-the-teensy-data-logger">Testing the Teensy Data Logger</h2>
+<p>If you have one of the Teensy Data Loggers for your Vulcanite, follow the sequence below to test it.</p>
+<ul>
+<li><p>Make sure your Teensy Data Logger is properly mounted on your Avionics Main Board and that you have a charged 1S 400 mAh zip-tied to the board.</p></li>
+<li><p>If not already in that state, assemble the Avionics Bay outside of the Avionics Bay Coupler Tube. You will need to acces the microSD slot, the button on the underside of the Teensy, and the screw switch.</p></li>
+<li><p>Make sure that your microSD card is properly formatted and has room for additional data files.</p></li>
+<li><p>Insert the microSD card into the microSD slot on the Teensy.</p></li>
+<li><p>Place and hold the Avionics Bay in a fixed postion where you can see the underside of the logger, access the microswitch on the underside of the logger, and reach the screw switch.</p></li>
+<li><p>Turn on the screw switch.</p></li>
+<li><p>Observe if the red and green LEDs on the underside flash back and forth. If so, it is logging.</p></li>
+<li><p>Position the Avionics Bay in some known orientations and/or rotations, e.g., hold it with each of the six principal axes oriented up for a few seconds each.</p></li>
+<li><p>Press the microswitch on the underside until just the green light flashes.</p></li>
+<li><p>Power down the screw switch.</p></li>
+<li><p>Examine the .TXT file created in a text editor and make sure it has reasonable values.</p></li>
+<li><p>Use a MATLAB file reader such as ScanFaultyTeesyDataLogger and examine the plots to see if you can detect the motion or positions you used.</p></li>
+</ul>
+</section>
+<section id="testing-the-raven-3" class="level2">
+<h2 class="anchored" data-anchor-id="testing-the-raven-3">Testing the Raven 3</h2>
+<p>If you have one of the Raven 3’s for your Vulcanite, follow the sequence below to test it.</p>
+<ul>
+<li><p>Make sure your Raven 3 is properly mounted on your Avionics Main Board and that you have a charged 1S 400 mAh zip-tied to the board.</p></li>
+<li><p>If not already in that state, assemble the Avionics Bay outside of the Avionics Bay Coupler Tube. You will need to acces the miniUSB on the Raven and the screw switch.</p></li>
+<li><p>Find a computer with the Featherweight Interface Program installed on it and an appropriate cable to connect the computer to the miniUSB connector on the Raven.</p></li>
+<li><p>Start up the FIP on the computer.</p></li>
+<li><p>Turn on the screw switch.</p></li>
+<li><p>Connect the computer to the Raven.</p></li>
+<li><p>Hopefully you’ll be asked which altimeter you have. The correct choice is the Raven.</p></li>
+<li><p>Examine the live data and see if you’re getting readings. Move the Raven into different positions and see if the live data respond properly.</p></li>
+<li><p>Click on the Cal/Test tab.</p></li>
+<li><p>Orient the Raven so that the green screw connector is on the uppermost side.</p></li>
+<li><p>Run a test flight.</p></li>
+<li><p>Try downloading one of the flight data files.</p></li>
+<li><p>Check to see if the plots look reasonable.</p></li>
+</ul>
+<p>You should have already tested your GPS tracker and base station. Verify that they are still working.</p>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
