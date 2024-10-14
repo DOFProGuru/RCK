@@ -4,16 +4,21 @@ author: "DOFPro group"
 ---
 
 The image below displays almost all of the parts that come in the kit.
-**image**
+
+![The parts that come in the kit](https://dofprobucket2.s3.us-east-2.amazonaws.com/Images/DX3_rocket_parts.png)
 
 The following is a list of parts that are required separately from the kit.
 
 * An Estes 29mm motor retainer
 * Three #2-56 × 3/16" pan-head screws
 
+![The Estes 29mm Motor Retainer](https://dofprobucket2.s3.us-east-2.amazonaws.com/Images/DX3_Motor_Retainer.png)
+
 ## Step 1: Sanding
 
 Sand every surface to be epoxied (including interior surfaces) with 80-to-110 grit sandpaper. You may have to think about the assembly sequence to figure out where to sand. Don't forget about the inside of the Estes motor retainer. Pretty much the entire exterior of the motor mount should be sanded or roughed up
+
+![Sand the entire motor mount.](https://dofprobucket2.s3.us-east-2.amazonaws.com/Images/DX3_SandMM.png)
 
 ## Step 2: Motor Mount Assembly
 
@@ -31,11 +36,15 @@ Use a sharpened pencil or other marking implement that will reach and mark the l
 
 Remove the assembly and connect the marks to create two circles around the motor mount tube. If a centering ring will fit over the tube, you can use it as a guide for your circles. The space between the circles is where the fins will contact the motor mount tube and needs to be kept clear of epoxy or other materials while assembling the rocket before attaching the fins. The space between the ring for the top of the retainer and the bottom of the fins is where the bottom centering ring may be epoxied in place.
 
+![The Marked Motor Mount. Note: Tube is fully sanded.](https://dofprobucket2.s3.us-east-2.amazonaws.com/Images/DX3_MotorMountWLines.png)
+
 **Note** The strength of the bond between the fins and the motor mount can be greatly increased by putting internal fillets between the fins and motor mount tube, and the fins and the body tube. That strength is not needed for motors with 180 Ns of impulse and below, but should be considered if going above 180 Ns, and is required in the class 54mm fiberglass rocket. The next step makes creating internal fillets very difficult.
 
 Spread some epoxy on the outside of the motor tube somewhere between the retainer-ring mark and the bottom-of-the-fins mark and slide the bottom ring (without the notch) up the tube until it is centered between the marks, and wait for the epoxy to set. Be sure to clean off any epoxy that strayed beyond the lines.
 
 The placement of the top ring (the one with the notch) isn't critical: It should be above the top of the fin mark, but no closer than 1/4" from the end of the tube. Usually about 1/2" for the top of the tube is about right. Spread some epoxy on the outside of the motor tube at your chosen location and slide the top ring (with the notch) up the tube until it is in position, and wait for the epoxy to set. Be sure to clean off any epoxy that strayed into the fin or motor retainer zones.
+
+![The Motor Mount with Centering Rings.](https://dofprobucket2.s3.us-east-2.amazonaws.com/Images/DX3_MotorMountWRings.png)
 
 Using JB-Weld (not any other epoxy) attach the inner part of the motor retainer to the bottom of the motor mount assembly. Spread the JB-Weld on the motor mount tube and not inside the motor retainer. Twist the motor retainer as you push it onto the tube.
 
@@ -48,25 +57,41 @@ Place the assembly vertically (with the top notched ring pointed up), and let cu
 The shock cord in this kit consists of a shorter section of Kevlar and a longer section of nylon cording. The two sections should be tied together using the line form of a [double fisherman’s knot](https://en.wikipedia.org/wiki/Double_fisherman's_knot) ([REI Video](https://youtu.be/YHUv-oOMwRA)). The Kevlar section will be attached to the motor mount and the nylon section will be attached to the payload section.
 Apply some epoxy like a fillet between the lower side of the top centering ring and the motor mount and wrap the Kevlar end of the shock cord around the motor mount into the epoxy. Make sure the cord lays flat enough so it will not interfere with the body tube when you slide the motor tube inside. Make sure the cord is secure and will not come loose later with ejection forces that will pull on the shock cord.
 
+![The Complete Motor Mount Assembly.](https://dofprobucket2.s3.us-east-2.amazonaws.com/Images/DX3_MotorMountAssembly.png)
+
 ## Step 4: Forward Section
 
 Insert the eyebolt through the hole in the center of the bulkhead and secure using the washer and nut.
 
 **Apply some epoxy or CA to the nut and eyebolt threads to ensure the nut doesn’t come loose later.**
 
+![The Assembled Bulkhead.](https://dofprobucket2.s3.us-east-2.amazonaws.com/Images/DX3_ScrewBulkhead.png)
+
 Cut off the eyebolt (Dremel or hacksaw) leaving about 1/4"-to-1/8" above the nut and file or sand the end to remove any sharp edges.
 
 **Note** The coupler tube may be hidden inside either the payload tube or the body tube. Reach inside and slide it out.
 
+![The Assembled Bulkhead with the Screw Eye Trimmed.](https://dofprobucket2.s3.us-east-2.amazonaws.com/Images/DX3_ScrewTrimSand.png)
+
 Mark a line around the inside of the coupler tube 1/8" from the end. Apply epoxy to the inside of the tube and push the bulkhead in so that the line is visible and wait until the glue sets. There are two pieces that can assist you. The first is a spacer that can be placed against the bulkhead to hold it at the correct depth until the epoxy cures. The second is a stand with room for the eyebolt to hang down that will let you hold the spacer and bulkhead in the proper position while the epoxy cures.
+
+![The Bulkhead Recessed in Coupler.](https://dofprobucket2.s3.us-east-2.amazonaws.com/Images/DX3_BulkheadRecess.png)
 
 Apply a fillet of epoxy around the inside edge of the coupler bulkhead joint.
 
+![The Bulkhead/Coupler Fillet.](https://dofprobucket2.s3.us-east-2.amazonaws.com/Images/DX3_CouplerFillet.png)
+
 Mark a line around the coupler 2" from the open end. Apply a very thin amount of epoxy on the first inch of the outside of the coupler, and twist and slide the coupler into the payload tube (forward body tube) until you reach the 2" mark. Quickly wipe off any excess epoxy at the payload tube-coupler joint. The payload tube will not join properly with the body tube if you leave excess epoxy at the joint.
+
+![The Coupler/Payload Joint](https://dofprobucket2.s3.us-east-2.amazonaws.com/Images/DX3_CouplerPayloadJoint.png)
 
 Measure down 1 9/16" from the shoulder of the nose cone, and using an X-acto knife or a saw, cut off the bottom of the nose cone, and if necessary, sand the cut square. It will be pressing against the avionics carrier and should be as square as possible.
 
+![The Trimmed Nose Cone](https://dofprobucket2.s3.us-east-2.amazonaws.com/Images/Images/DX3_NoseCone.png)
+
 Insert the nose cone into the top of the payload tube.
+
+![The Payload with Nose Cone.](https://dofprobucket2.s3.us-east-2.amazonaws.com/Images/DX3_PayloadSection.png)
 
 Holes for Payload – Nose Cone Screws: Mark three points equally spaced around the circumference of the payload tube halfway between the shoulder and the end of the payload tube. Easiest is to wrap a piece of paper around the tube and mark one circumference. Unwrap and measure the circumference and divide the distance by three and mark the paper accordingly, then transfer the marks to the payload tube by wrapping the paper back around the tube and marking.
 
@@ -87,6 +112,8 @@ If you are going to install an avionics carrier, you will want to put a layer of
 Hold the motor mount assembly by the body tube at the position that it will be when epoxied in. Measure how far up the body tube the front centering ring will be.
 
 Using sandpaper attached to the end of a dowel, roughen up the inside of the body tube where the front centering ring will be attached.
+
+![The Sanding Rod for Top Centering Ring](https://dofprobucket2.s3.us-east-2.amazonaws.com/Images/DX3_SandingRod.png)
 
 Put the shock cord inside of the motor mount tube so it's out of the way while the motor mount assembly is epoxied in.
 
@@ -120,6 +147,10 @@ Apply a generous-but-not-overflowing amount of epoxy to the root end of each fin
 
 Before the epoxy sets, place a fin jig on each side of the fins and place the assembly on a table to guarantee the fins are straight. A third jig at the end of the body tube will help you keep things level
 
+![The Fin Jigs (all three)](https://dofprobucket2.s3.us-east-2.amazonaws.com/Images/DX3_FinGuidesLong.png)
+
+![The Fin Jigs](https://dofprobucket2.s3.us-east-2.amazonaws.com/Images/DX3_FinGuides.png)
+
 Before proceeding, make sure the epoxy has fully cured.
 
 ## Step 7: Fin Fillets
@@ -135,6 +166,8 @@ Place blue tape along each line.
 Repeat the marking and taping for each of the remaining fin-body-tube joints.
 
 Place blue tape at the top and bottom of the fin/body tube where you want the fillet to end.
+
+![The Taped Up Fins.](https://dofprobucket2.s3.us-east-2.amazonaws.com/Images/DX3_Taped.png)
 
 Plan on doing two fillets at a time between adjacent fins.
 
@@ -152,9 +185,13 @@ Remove the blue tape along that particular set of fillets.
 
 Let them fully cure before moving on to the next fillets.
 
+![A View of the Completed FIllets.](https://dofprobucket2.s3.us-east-2.amazonaws.com/Images/DX3_Fillet_View.png)
+
 **Sand both the body tube and the launch lug where they are going to join until you have removed the glassine (the white, shiny paper layer). Failure to do so may result in moments of panic at the launch stand when your launch lugs break off.**
 
 The launch lugs should be epoxied on and aligned with the vertical line you drew earlier. Placement isn't critical, but the bottom one should be somewhere in between the top edge of the fins and the bottom edge of the fins (Madcow recommends 2" from the bottom of the rocket). The top one should be at least an inch or two below the top of the body tube. Madcow recommends at the center of pressure, which is 27" from the nose tip. Make sure they are aligned along the body tube.
+
+![The Attached Launch Lugs.](https://dofprobucket2.s3.us-east-2.amazonaws.com/Images/DX3_Launch_Lugs.png)
 
 ## Step 8: Chute Protector and Parachute
 Shake or push the shock cord free out the top of the body tube.
