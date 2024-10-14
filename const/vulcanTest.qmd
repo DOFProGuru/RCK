@@ -41,6 +41,8 @@ Before mounting the Eggtimer Quark on the Avionics Main Board, you need to test 
 
 ## Mounted Continuity and Initiator Tests
 
+![The Eggtimer Quark mounted on Avionics Bay Main Board](https://dofprobucket2.s3.us-east-2.amazonaws.com/Images/Vul_Quark.png)
+
 Make sure both screw switches are off.
 
 Mount and wire up the Quark on your Avionics Main Board.
@@ -65,6 +67,10 @@ If successful, remove the used initiator, attach the second one to the Main chan
 ## Testing the Teensy Data Logger
 
 If you have one of the Teensy Data Loggers for your Vulcanite, follow the sequence below to test it.
+
+![The Small Teensy Data Logger with mounting hardware](https://dofprobucket2.s3.us-east-2.amazonaws.com/Images/Vul_TeensySmall_w_MountingHardware.png)
+
+![The Small Teensy Data Logger mounted on the Avionics Main Board. Note there is no nut for the rightmost screw](https://dofprobucket2.s3.us-east-2.amazonaws.com/Images/Vul_TeensySmall_Mounted_SideView.png)
 
 * Make sure your Teensy Data Logger is properly mounted on your Avionics Main Board and that you have a charged 1S 400 mAh zip-tied to the board.
 

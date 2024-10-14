@@ -21,8 +21,8 @@ For more information about safety precautions, visit the [DocPro Rocketry Safety
 
 # Construction Hints
 
-## Aerotech Arreaux
-1. It’s worth buying an extra-length motor-mount tubes to cert level 1. A length of at
+## Aerotech Arreaux Motors
+1. It’s worth buying an extra-length motor-mount tubes when attempting the level 1 certification. A length of at
    least 15" will work for Aerotech 29/180 or shorter motors. _You'll need to fiberglass your rocket
    to fly motors with more than 180 Ns of impulse_. You will need a length of at
    least 16¼" for the H115DM-14A, the H182R-14A, the H135W-14A, and the H195NT-14A, and a
@@ -57,44 +57,50 @@ The goals in folding a parachute are the following:
 
 Begin by stretching the parachute out by two opposing shroud lines to form a half circle (or half hexagon or half octagon, depending on how the chute is cut).
 
+![The Parachute Folded in Half](https://dofprobucket2.s3.us-east-2.amazonaws.com/Images/VUL_OpenChute.jpeg)
+
 The illustrated chute is for the Vulcanite. It has eight shroud lines. In this case we fold the two outermost lines to meet in the center with the center shroud line. For a hexagonal (six shroud line) chute like for the miniDX3, you would fold so that the shroud lines meet the opposing shroud lines to form a triangle.
+
+![The First Two Folds](https://dofprobucket2.s3.us-east-2.amazonaws.com/Images/VUL_FirstFold.jpeg)
 
 **If necessary** For an eight shroud line chute it's necessary to fold the chute in half again to form a triangle. For a six shroud line chute, the first two folds of the 1/2 chute should have formed a triangle and the third fold is unnecessary.
 
+![The Third Fold](https://dofprobucket2.s3.us-east-2.amazonaws.com/Images/VUL_SecondFold.jpeg)
+
 We are going to fold the shroud lines inside the chute to reduce the chances that they will tangle or get snagged on something during ejection. Place the shroud lined on top of the chute as shown.
+
+![Placing the Shroud Lines in the Triangle](https://dofprobucket2.s3.us-east-2.amazonaws.com/Images/VUL_ShroudLines.jpeg)
 
 Then fold the triangle over the lines by bringing the two sets of shroud-line attachments together to form a thin right triangle. Then fold the long tip of the triangle down to the base (where the shock cord meets the shroud lines, and fold the remaining triangle tip over to form a rectangle as shown).
 
+![Protecting the Shroud Lines in the Chute and forming a rectangle](https://dofprobucket2.s3.us-east-2.amazonaws.com/Images/VUL_Rectangle.jpeg)
+
 Beginning at the top of the rectangle (the side furthest from the shock cord), roll the chute tightly into a cylinder as shown.
+
+![The Parachute Fully Rolled](https://dofprobucket2.s3.us-east-2.amazonaws.com/Images/VUL_Rolled.jpeg)
 
 Place the chute in the center of the Chute Protector with the two parts of the shock cord going to your left, as shown.
 
+![The Chute Placed on the Chute Protector](https://dofprobucket2.s3.us-east-2.amazonaws.com/Images/VUL_ParInCover.jpeg)
+
 Take the lower corner of the chute protector and wrap it around and tuck it under the chute, like starting to roll a burrito, as shown.
+
+![The Bottom of the Chute Protector Rolled around the Chute](https://dofprobucket2.s3.us-east-2.amazonaws.com/Images/VUL_FirstRoll.jpeg)
 
 Fold the two horizontal corners of the chute protector into the middle of the chute protector, just like you were rolling a burrito. The one shock cord will pass through the hole in the chute protector, and the other one will be routed approximately as shown.
 
+![The Sides Folded Over](https://dofprobucket2.s3.us-east-2.amazonaws.com/Images/VUL_InPocket.jpeg)
+
 Now finish rolling up the chute inside the chute protector, like you were finishing a burrito or a spring roll. Try to ensure that none of the parachute is exposed outside of the chute protector. Any that is exposed is guaranteed to have a hole burned through it from the hot ejection gases and ash.
+
+![The Parachute Fully Rolled in the Chute Protector](https://dofprobucket2.s3.us-east-2.amazonaws.com/Images/VUL_FullyRolled.jpeg)
 
 Again, to offer maximum protection to the chute, orient it so the end without the shock cords will enter the body tube first, and the end with the shock cords faces the nose cone or payload section.
 
+![Preparing to Place the Chute in the Body Tube](https://dofprobucket2.s3.us-east-2.amazonaws.com/Images/VUL_ByTube.jpeg)
+
 First place all of the shock cord that is below the parachute into the body tube with as few tangles and twists as possible. Then slide the parachute into the body tube. If you've folded and rolled it correctly, it should slide into the body tube with very little effort. Slide it in as far as your finger will pushe it, and then place the remaining shock cord on top of it, and place the payload section or nose cone on top of the body tube.
 
+![The Parachute Placed Largely in the Body Tube](https://dofprobucket2.s3.us-east-2.amazonaws.com/Images/VUL_InTube.jpeg)
+
 While I have found the illustrated method to be completely reliable, there are alternate methods for folding a parachute. Here are some of the alternates. - [YA Method](https://www.youtube.com/watch?v=h230AdEenTY) - [Apogee Components](https://www.youtube.com/watch?v=Sg-2YqTT7lQ) - [Apogee Components II](https://www.youtube.com/watch?v=8n45_ubOy8w) - [Queensland Rocketry](http://qldrocketry.com/wp-content/uploads/2013/01/QRS_Folding_Hexagonal_Parachute.pdf) - [Rocketman](https://the-rocketman.com/packing/) - [Fruity Chutes Iris](https://fruitychutes.com/help_for_parachutes/parachute-help/how_to_fold_a_iris_parachute.htm).
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
