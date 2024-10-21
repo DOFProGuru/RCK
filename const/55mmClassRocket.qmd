@@ -1,0 +1,487 @@
+---
+title: "54 mm Rocket Assembly Instructions"
+author: "DOFPro group"
+---
+
+## General Information 
+
+For the Class Rocket use Aeropoxy for all assembly except for attaching the motor retainer, where you will use JBWeld, and for the initial attachment of the fins, where you can use BSI 5-minute epoxy instead. Do not use 5-minute epoxy on any of the fin fillets.
+
+For the Aeropoxy, wait until the epoxy has cured sufficiently that there's no danger of running and then heat treat it at 60°C (140°F) for 3 hours. You may use either the heat lamps or the Thermotron if it's working.
+
+Always dry fit parts before applying epoxy, and (wet) sand if necessary so that they fit properly. When sliding circular parts together, hold them so that the epoxy forms a fillet and doesn't pool or drip off. The orientation is usually vertical.
+
+If you slide two parts together, the epoxy will always be pushed forward off of the part on which the epoxy was applied. e.g, if you are epoxying a coupler to the inside of a body tube the excess epoxy will be on the inside of the body tube if you apply the epoxy to the inside of the body tube, and on the outside of the body tube if you apply the epoxy to the outside of the coupler. Twisting circular parts while pushing them together will spread the epoxy more evenly in the joint.
+
+## Step 1: Get the parts
+Here is a complete list off all of the parts in the 55mm Class Rocket: 
+
+* The slotted Lower Body Tube
+* The Motor-mount Tube
+* Upper Centering Ring
+* Lower Centering Ring
+* Three Fins
+* Shock Cord Attachment Point
+* Two 15-foot Kevlar shock cords or one 30-foot Kevlar shock cord cut in half
+* Tailcone Motor Retainer
+* 2 Long Shaft 1/4-20 Eyebolts
+* 2 Short Shaft 1/4-20 Eyebolts
+* A collection of 1/4 Washers
+* A collection of 1/4-20 nuts
+* A pair of conformal rail guides
+* An Aeropack (or PML) motor retainer
+* A #10-24 eyebolt
+* A pair of #10 washers
+* Two #10 nuts
+* Seventeen #2-56 100° Flathead screws
+* A 9×9 (or larger) chute protector.
+
+## Step 2: Sanding the Surfaces
+
+You will eventually need to (wet) sand every surface to be epoxied (including interior surfaces) with 80-to-110 grit sandpaper. Some of the steps include sanding directions. You may have to think about the assembly sequence to figure out where to sand. A non-exhaustive list includes:
+
+* The inside of the Aeropack Tailcone Motor Retainer
+
+* The entire exterior of the Motor-mount Tube
+
+* The interior of the Lower Body Tube where the interior fin fillets will be
+
+* The interior of the Lower Body Tube in a band just above the top of the fin slots
+
+* The interior of the Nosecone Coupler Tube section from the lower end to about 1/2" in
+
+* All surfaces on the motor centering rings.
+
+* The edges, center, and 1/4" in from the edges on the bulkhead.
+
+* Wipe all surfaces with a Swiffer or other dust removal cloth after sanding.
+
+## Step 3: The Shock Cord Attachment Point
+
+The Shock Cord Attachment Point is held in place by a series of countersunk 100° #2-56 flat-head screws. It should be removable in case you need to get access to a motor casing that gets stuck in the motor mount.
+ 
+1. If not already removed from the Lower Body Tube, loosen the screws and remove the Shock Cord Attachment Point from the Lower Body Tube.
+
+2. Thread a standard 1/4" eye ring through the center hole in the Shock Cord Attachment Point. Place a washer on the end and secure it with a nut. Cut off the bolt about 1/4" beyond the nut. Use either CA or epoxy on the cut end of the eyebolt to ensure it won't come loose during flight.
+
+3. Tie one end of a 15-foot kevlar shock cord onto the eye of the eyebolt using the PML knot, and secure the free end with blue or electrical tape.
+
+![The Shock Cord Attachment with the Eye Ring Epoxied in Place and the Shock Cord Attached](https://dofprobucket2.s3.us-east-2.amazonaws.com/Images/Adv_ShockCordAnchor.png)
+
+4. Gently lower the Shock Cord Attachment Point down into the Lower Body Tube and secure it in place with the 100° #2-56 flat-head screws.
+
+![The Anchor Screws for the Shock Cord Anchor](https://dofprobucket2.s3.us-east-2.amazonaws.com/Images/Adv_AnchorScrews.png)
+
+![The Anchor Screws for the Shock Cord Anchor, Fully Tightened](https://dofprobucket2.s3.us-east-2.amazonaws.com/Images/Adv_AnchoScrewsFlush.png)
+
+## Step 4: Motor Mount Assembly
+
+There are two identical centering rings.
+
+Test fit the centering rings over the motor mount tube and (wet) sand them if necessary. The rings should slide without much effort but not be loose.
+
+Wet sand the Motor Mount tube with 80-to-120 grit sandpaper over its entire length and clean off any remaining grit.
+Place the Motor Mount in the Motor Retainer. Holding it in place with bule tape is not a bad idea.
+
+![The Motor Mount in the Motor Retainer](https://dofprobucket2.s3.us-east-2.amazonaws.com/Images/Adv_MM_in_MotorRetainer.png)
+
+While keeping the Motor Mount firmly in the motor retainer, align the lip of the Motor Retainer with the bottom of the Lower Body Tube. Place marks on the Motor Mount in line with the bottom of the fin slot. After making the marks, connect them with a ring that encircles the Motor Mount. This line is not strictly necessary, but the Lower Centering Ring should not go above this line, to avoid interfering with the fins.
+
+![The Placement of the Line for the Centering Ring at the Base of the Motor Retainer](https://dofprobucket2.s3.us-east-2.amazonaws.com/Images/Adv_MM_in_MR_CR_line_placement.png)
+
+![The Placement of the Line for the Centering Ring at the Base of the Motor Retainer 2nd View](https://dofprobucket2.s3.us-east-2.amazonaws.com/Images/Adv_MM_in_MR_CR_line_placement_2.png)
+
+![The Placement of the Line for the Centering Ring at the Base of the Motor Retainer](https://dofprobucket2.s3.us-east-2.amazonaws.com/Images/Adv_MM_in_MR_horiz.png)
+
+Repeat the above step, but at the top of the fin slot. You may find it useful to put an empty motor casing through the motor retainer ind into the Motor Mount to keep everything aligned. This line marks the lowest point where the upper centering ring can be placed to avoid interfering with the fins. You should probably place it about 1/4" higher on the motor mount.
+
+![The Placement of the Line for the Centering Ring at the top of the Motor Retainer](https://dofprobucket2.s3.us-east-2.amazonaws.com/Images/Adv_MM_in_MR_Upper_CR_line_placement.png)
+
+![Marking the Line for the Top Centering Ring](https://dofprobucket2.s3.us-east-2.amazonaws.com/Images/Adv_MM_upper-line-marking.png)
+
+![The Motor Mount Sanded and Marked for the Centering Ring Placement](https://dofprobucket2.s3.us-east-2.amazonaws.com/Images/ADV_MM_Marked_Top_Bottom_View.png)
+
+It is easiest to use spacers to keep the Upper Centering Ring stable while the epoxy cures. Hand or laser cut some holes into a couple of pieces of 1/8" plywood or a piece of 1/4" plywood. Place a thin bead of epoxy around the motor mount and slide the Upper Centering Ring into place and then set the two into/onto the spacers.
+
+![The Spacers for Keeping the Top Cenering Ring Level while the Epoxy Cures](https://dofprobucket2.s3.us-east-2.amazonaws.com/Images/Adv_MM_with_Spacer_no_CR.png)
+
+![The Top Cenering Ring Resting on the Spacers while the Epoxy Cures](https://dofprobucket2.s3.us-east-2.amazonaws.com/Images/Adv_MM_with_CR_spacer_View_2.png)
+
+Make sure there are adequate fillets on both sides of the centering ring, but that the lower one does not go below the line indicating the top of the fins.
+
+![The Fillets on the Top Centering Ring](https://dofprobucket2.s3.us-east-2.amazonaws.com/Images/Adv_MM_Top_CR_Fillets.png)
+
+![The Fillets on the Top Centering Ring in Close Up](https://dofprobucket2.s3.us-east-2.amazonaws.com/Images/Adv_MM_Top_CR_Fillets_CloseUp.png)
+
+If possible, sand and clean the area inside the lower body tube above the fin slots for an epoxy joint. Prepare a means, such as a craft stick taped to the end of a dowel, to spread epoxy in the Lower Body Tube above the top of the fin slot.
+
+![The Extension for Spreading Epoxy for the Upper Centering Ring](https://dofprobucket2.s3.us-east-2.amazonaws.com/Images/Adv_BT_Glue_Stick.png)
+
+Spread a thin band of epoxy in the Lower Body Tube above the fin slots. Make sure the Motor Mount is in the Motor Retainer. Slide the Motor Mount up into the Lower Body Tube and make sure the body tube rests against the lip of the motor retainer. Let the epoxy fully cure with the Lower Body Tube vertical and resting on the Motor Retainer. Make sure no epoxy gets on the Motor Retainer. You will need to remove it to apply the internal fillets.
+
+## Step 5: Launch Lug Centering Line Marking
+
+It's easiest to mark the centering line for the body tube for the launch lugs before putting on the fins. Place a length of angle iron so that one edge is halfway between two sets of fin slots, and draw a vertical line up the body tube.
+
+## Step 6: Fins
+
+Prep the Fins for sanding along the root edge by placing blue tape in the appropriate locations. The lower side with the vertical edges will go into the fin slots. We do not yet want to sand above the portion of the fins that will be inside the Lower Body Tube.
+
+![The Fins Prepped for the Initial Sanding for the Through-The-Wall Attachment](https://dofprobucket2.s3.us-east-2.amazonaws.com/Images/Adv_Fins_prepped_for_Initial_Sanding.png)
+
+Wet sand the roots of the Fins with 80-to-120 grit sandpaper.
+
+![The Fins with the Initial Sanding for the Through-The-Wall Attachment](https://dofprobucket2.s3.us-east-2.amazonaws.com/Images/Adv_Fins_W_initial_sanding.png)
+
+Mix a small batch of epoxy and spread a little on the base of each fin in turn and slide the fin through the slot in the Lower Body Tube, press it against the motor mount, and slide the fin so it rests against the top of the fin slot. After all three fins are in place, slide two fin guides onto the fins to ensure they are normal to the Lower Body Tube. Secure them against the motor mount by wrapping blue tape around them. Support the assembly so that the fins remain level until the epoxy has cured.
+
+![The Fins Held in Place by the Fin Guides as the Epoxy Cures](https://dofprobucket2.s3.us-east-2.amazonaws.com/Images/Adv_Fins_FinGuide.png)
+
+**You can do the internal and external fillets in either order. Internal, then external, or external, then internal.**
+
+Remove the Motor Retainer from the end of the Lower Body Tube.
+
+Create internal fillets along the fins between the Motor Mount and the Lower Body Tube. Be careful to keep epoxy off of the space between the end of the Fins and the end of the Lower Body Tube and the Motor Mount (or clean it off quickly if some spills). When you've finished the fillets, you need to be able to epoxy the Lower Centering Ring and the Motor Retainer in place. A small squeeze bottle with a long nozzle may assist in creating the internal fillets.
+
+Using the object you will use for pulling the fillets, mark the Lower Body Tube and the Fins where the edge of the fillets will be (pencil lead, and Sharpie ink both work well). Then use blue tape to mask off the Lower Body Tube and Fins at the edge of the fillets.
+
+Using 80-to-120 grit sandpaper, wet sand the unmasked areas on the Lower Body Tube and Fins where the fillets will go. After you finish wet sanding, remove the wet blue tape and clean and dry the Lower Body Tube and Fins. Acetone or isopropyl alcohol work well.
+
+Remask the Lower Body Tube and Fins with blue tape.
+
+![The Body and Fins Prepped for the Fillets](https://dofprobucket2.s3.us-east-2.amazonaws.com/Images/Adv_Fins_Prepped_for_Fillets.png)
+
+![A Close View of the Fins Prepped for the Fillets](https://dofprobucket2.s3.us-east-2.amazonaws.com/Images/Adv_Fins_Prepped_For_Fillets_Closer.png)
+
+Plan on doing two fillets at a time between adjacent fins.
+
+Measure out a batch of glass microballoons equal in volume to the batch of epoxy you are about to mix.
+
+Mix a batch of epoxy and fold in the microballoons. It should have roughly the consistency of peanut butter.
+
+Lay the epoxy down in the joint and roughly smooth it with the stir stick.
+
+Using a plastic spoon, pull along the fillet, leaving a nice concave profile, with excess epoxy being gathered up by the spoon.
+
+Quickly touch up any flaws.
+
+![One Set of Fillets Completed](https://dofprobucket2.s3.us-east-2.amazonaws.com/Images/Adv_Fins_w_Fillets_one_set.png)
+
+![The Full View of the Completed Fin Fillets](https://dofprobucket2.s3.us-east-2.amazonaws.com/Images/Adv_Fin_Fillets_All_All.png)
+
+![A Close Up of the Completed Fin Fillets](https://dofprobucket2.s3.us-east-2.amazonaws.com/Images/Adv_Fin_Fillets_All.png)
+
+## Step 7: Lower Centering Ring and Motor Retainer
+
+If you desire, you can epoxy the Lower Centering Ring in place. Make sure no epoxy interferes with where you are going to attach the Tailcone Motor Retainer.
+
+Using JB-Weld (not any other epoxy) attach the inner part of the motor retainer to the bottom of the motor mount assembly. Spread the JB-Weld on the motor mount tube and not inside the motor retainer. Twist the motor retainer as you push it onto the tube. Make sure the Lower Bofy Tube rests on the lip of the Tailcone Motor Retainer.
+
+Inspect the inside of the motor mount tube-motor retainer and thoroughly wipe away any JB-Weld that made it inside.
+
+Place the assembly vertically, and let cure for at least 3 hours, preferably in a warm space. JB-Weld takes 24-48 hours to fully cure, but will usually not run after 3 hours.
+
+## Step 8: Nose Cone
+
+If not already present, drill a close-clearance hole for a 1/4-20 screw in the center of the bulkhead.
+
+Insert the long eyebolt through the hole in the center of the bulkhead and secure using a washer and nut. Tighten securely. **DO NOT CUT OFF THE BOLT**.
+
+Apply some epoxy or CA to the nut and eyebolt threads to ensure the nut doesn’t come loose later.
+
+![The Nose Cone Screwed to the Extension before the Bulkhead has been Attached](https://dofprobucket2.s3.us-east-2.amazonaws.com/Images/Adv_Nosecone_screws_bulkhead.png)
+
+Mark a line around the inside of the Nose Cone Coupler Tube 1/8" from the end without screw holes. Apply epoxy to the inside of the tube and push the bulkhead in so that the line is visible and wait until the epoxy cures. Since Aeropoxy has such long cure times, you will want to support the Coupler and the Bulkhead until the epoxy cures. You can laser-cut parts to use.
+
+Apply a fillet of epoxy around the inside edge of the coupler bulkhead joint.
+
+If it wan't obvious, the coupler is secured to the nose cone with 100° #2-56 flathead screws. You will mount your Featherweight GPS in the nose cone using the 3D-printed holder.
+
+## Step 9: The Rail Guides
+
+![The Location for the Lower Rail Guide Prepped for Sanding](https://dofprobucket2.s3.us-east-2.amazonaws.com/Images/Adv_Rail_Guide_Prep_Fins.png)
+
+![The Location for the Upper Rail Guide Prepped for Sanding](https://dofprobucket2.s3.us-east-2.amazonaws.com/Images/Adv_Rail_Guide_Prep_Upper.png)
+
+![The Sanded Rail Guide](https://dofprobucket2.s3.us-east-2.amazonaws.com/Images/Adv_Rail_Guides_Sanded.png)
+
+![The Sanded Location for the Lower Rail Guide](https://dofprobucket2.s3.us-east-2.amazonaws.com/Images/Adv_Rail_Guide_fin_Spot_Sanded.png)
+
+![The Sanded Location for the Upper Rail Guide](https://dofprobucket2.s3.us-east-2.amazonaws.com/Images/Adv_Rail_Guides_Tube_Top_Sanded.png)
+
+## Step 10: Avionics Section
+
+The Avionics Section contains all of the avionics except for the Featherweight GPS, which goes in the nose cone. The assembled avionics section is mounted between the lower body tube and the upper body tube. On the outside of the bulkhead are mounted the recovery ejection charges and the back-up recovery ejecting charges, as well as attachment eyebolts for the lower shock cord and the upper shock cord. The lower boy tube is attached to the avionics section with two shear pins (#2-56 nylon screws), and the lower body tube separates from the avionics section at apogee when the ejection charge fires. The upper body tube attaches to the avionics section with four 100° #2-56 flathead screws and does not separate during flight. The nose cone separates and the main parachute ejects from the opposite end of the upper body tube.
+
+## Step 11: Prepping the Bulkheads
+
+If necessary, you should sand down the inner bulkheads so that they just fit inside the avionics bay tube.
+Each bulkhead has nine holes drilled in it:
+
+* The large one in the center for a 1/4-20 eyebolt
+
+* Two for mounting the Eurostyle connectors for the ejection charges
+
+* Two for passing the wires from the two flight computers to the Eurostyle connectors
+
+* Two for the #10-24 threaded rods that holds the avionics section together
+
+Insert a 1/4-20 eyebolt through the center hole and place a washer and then a nut on the opposite side. Think about the alignment. You do not want the eyebolt to interfere with the nuts on the all thread or the screws on the Eurostyle connector. Securely tighten the nut, and use either CA or epoxy to lock the threads.
+
+Cut off the eyebolt about 1/8"-to-1/4" from the nut and file or sand round to avoid damaging the wires that will run nearby.
+
+Mount the two Eurostyle connectors on the same side as the eye of the eyebolt using TBD screws. Align them so that you will be easily able to attach the wires coming through from the inside and the wires attached to the ejection charge. Secure the threads with either CA or epoxy.
+
+## Step 12: Wiring the Avionics
+
+# Silicone Wiring and JST Connectors
+
+For most of the wiring, use the 24 AWG flexible silicone-insulated wire. We have large spools of the red and black because most of the wiring is either power or ground, but feel free to use the other colors to color-code your assembly. The flexible silicone-insulated wire can be bent in very tight corners without damaging the wires, which is invaluable when wiring the avionics bay, where clearances are very tight. Be sure to tin the end of a silicone-insulated wire that will be inserted into a screw terminal.
+
+The three batteries use [JST PH](https://www.jst.com/products/crimp-style-connectors-wire-to-board-type/ph-connector/) connectors.
+
+I recommend using [JST RCY](http://www.jst-mfg.com/product/pdf/eng/eRCY.pdf) connectors for connecting the recovery-charge Eurostyle terminals on the bulkheads to the Raven and RRC2L. You have two ways to attach JST connectors to your wiring. Best is to use the [PA-09 crimping tool](http://www.engineer.jp/en/products/pa09e.html) to crimp pins onto the 24 AWG flexible silicone-insulated wire, and then insert the pins into connector housings. This method will keep you from having non-flexible portions of the wire where spliced-and-soldered joints are. The [JST Connector Crimping Procedure](https://iotexpert.com/2018/01/18/jst-connector-crimping-insanity/) toward the bottom of the page has detailed instructions on using the crimp tool.
+
+The second method is to use the pre-wired JST RCY connectors. They can be spliced in to existing wiring with solder and heat-shrink tubing. 
+
+![The inexpensive and slightly better pre-wired JST RCX connectors](https://dofprobucket2.s3.us-east-2.amazonaws.com/Images/JSTRCY.png)
+
+The reason to include the connectors is to make it easy to disassemble the avionics section without having to remove wires from the screw-terminal connectors on the Flight Computers. You can set up the polarity of the connectors to make it impossible to mix up the Raven and RRC2L connections if you desire.
+
+# Wiring the Raven
+
+The manufacturer schematic for the wiring of the Featherweight Raven is found on Page 1 of this link. It is a little deceptive.
+
+**The wires in the photos have been left long to illustrate the connections. You probably want to cut them much shorter to fit more neatly in the Avionics Bay.**
+
+The sequence of connecting wires with recommended colors is as follows:
+
+* Either assemble (preferred) two JST RCY connectors with a red and black wire, or use two pre-wired JST RCY connectors.
+
+* Splice together the two red wires of the JST RCY connectors and two other red wires. You can instead just slide back some of the insulation on the two red wires from the JST RCY connectors and twist the bare sections together.
+
+![The Connector Wires Spliced Together for the Raven](https://dofprobucket2.s3.us-east-2.amazonaws.com/Images/Adv_Raven_Red_Wires_Spliced_No_Solder.png)
+
+![The Raven Red Wires Spliced and Solder](https://dofprobucket2.s3.us-east-2.amazonaws.com/Images/Adv_Rsaven_Red_Wires_Spliced_Soldered.png)
+
+Connect the other end of one of the red wires to one side of the screw switch for the Raven.
+
+![The Raven Splice with Heat Shrink Tubing and the Screw Switch Soldered](https://dofprobucket2.s3.us-east-2.amazonaws.com/Images/Adv_Raven_Spliced_HeatShrink_Switch_Soldered.png)
+
+1. Connect the other end of one of the red wires to the "+" terminal of the Raven.
+
+2. Connect the red wire of a [JST PH](https://www.adafruit.com/product/3814) connector to the other side of the screw switch.
+
+3. Connect the black wire of the JST PH connector to the “Gnd” (2nd) terminal of the Raven.
+
+4. Connect the black wire of one of the JST RCY connectors to the “Apo” terminal of the Raven.
+
+5. Connect the black wire of the other of the JST RCY connectors to the “Main” terminal of the Raven.
+
+6. Either assemble (preferred) two JST RCY connectors with a red and black wire, or use two pre-wired JST RCY connectors with the opposite genders of the ones in Step 1. These aren't actually critical, but it's best to make sure red matches with red and black with black.
+
+7. Run one of the pairs of wires from one of the connectors through one of the wire holes in a bulkhead. Secure them in two of the terminals one one side of one of the remaining Eurostyle connector. Secure the wires with silicone sealant on both sides of the bulkhead. You can also fill the space around the wires in the Eurostyle connector with silicone sealant as well. Be sure to leave the screw terminals on the other side of the Eurostyle connectors free (without silicone) to make it possible to insert the e-match leads.
+
+8. Repeat Step 6 with the other bulkhead.
+
+![The Complete Wiring Harness for the Raven](https://dofprobucket2.s3.us-east-2.amazonaws.com/Images/Adv_Raven_Wired.png)
+
+# Wiring the RRCL2
+
+The power transistors on the RRC2L can only handle 3 A. The LiPo batteries can provide much more than 3 A, so we need to wire a 1 Ω resistor in series with the battery. The manufacturer schematic for the wiring of the RRC2L is found on Page 2 of this link.
+
+The sequence of connecting wires with recommended colors is as follows:
+
+1. Connect the black wire of a [JST PH](https://www.adafruit.com/product/3814) connector to a 1 Ω resistor.
+
+2. Connect the other end of the resistor to a black wire and use heat-shrink tubing to cover the resistor and the two solder joints.
+
+3. Connect the red wire of the JST PH connector to one side of the screw switch for the RRC2L.
+
+4. Connect a red wire from the screw switch to the "+ BAT” terminal of the RRC2L.
+
+![The Screw Switch and the Current-Limiting Resistor for the RRC2L Soldered Together](https://dofprobucket2.s3.us-east-2.amazonaws.com/Images/Adv_Raven_Sw_Res_Soldered.png)
+
+5. Connect the other end of the black wire to the "– BAT” terminal of the RRC2L.
+
+6. Either assemble (preferred) two JST RCY connectors with a red and black wire, or use two pre-wired JST RCY connectors.
+
+7. Connect the black wire of one of the connectors to the "– DROGUE” terminal of the RRC2L.
+
+8. Connect the red wire of the chosen connector to the "+ DROGUE” terminal of the RRC2L.
+
+9. Repeat the process with the other connector and the "– MAIN” and "+ MAIN” terminals of the RRC2L.
+
+10. Either assemble (preferred) two JST RCY connectors with a red and black wire, or use two pre-wired JST RCY connectors with the opposite genders of the ones in Steps 4 through 7. These aren't actually critical, but it's best to make sure red matches with red and black with black.
+
+11. Run one of the pairs of wires from one of the connectors through one of the wire holes in a bulkhead. Secure them in two of the terminals one one side of one of the Eurostyle connectors. Secure the wires with silicone sealant on both sides of the bulkhead. You can also fill the space around the wires in the Eurostyle connector with silicone sealant as well. Be sure to leave the screw terminals on the other side of the Eurostyle connectors free (without silicone) to make it possible to insert the e-match leads.
+
+12. Repeat Step 9 with the other bulkhead.
+
+![The Complete Wiring Harness for the RRC2L](https://dofprobucket2.s3.us-east-2.amazonaws.com/Images/Adv_RRC2L_Wired.png)
+
+# Wiring the Teensy Data Logger
+
+Connect the two ends of a Molex connector to the two sides of the screw switch for the Teensy Data Logger.
+
+![The Molex Connector and the Screw Switch for the Teensy Logger](https://dofprobucket2.s3.us-east-2.amazonaws.com/Images/Adv_Teensy_Switch_Unsoldered.png)
+
+![The The Molex Connector Soldered to the Screw Switch for the Teensy Logger](https://dofprobucket2.s3.us-east-2.amazonaws.com/Images/Adv_Teensy_Switch_Soldered.png)
+
+Connect the two ends of a JST PH connector to the power screw terminal. Match the red wire with the "+" input and the black wire with the “Gnd” input.
+
+![The Complete Wiring Harness Attached to the Small Teensy](https://dofprobucket2.s3.us-east-2.amazonaws.com/Images/Adv_Teensy_Small_Wired.png)
+
+![The Complete Wiring Harness Attached to the Large Teensy](https://dofprobucket2.s3.us-east-2.amazonaws.com/Images/Adv_Teensy_Large_Wired.png)
+
+## Step 12: Attaching the Avionics
+There are three avionics boards and three switch boards to attach to the 3D-printed avionics board holder:
+
+* The Raven 3 as the main flight computer
+
+* The RRC2L as the back-up flight computer
+
+* Either the Small Teensy Board or the Large Teensy Board for data collection and storage.
+
+* The [three screw switches](https://www.missileworks.com/store/#!/6-32-PCB-Screw-Switch/p/38076724/category=5760490)
+
+You will have to decide whether to connect the wiring before or after mounting the avionics to the avionics holder.
+
+Mount the Raven on the avionics board holder. It requires #2 screws. It's wise to put thin nylon washers below the screw heads to keep from shorting anything on the board. The board should be mounted with the screw terminals toward the front of the rocket.
+
+![The Prototype Avionics](https://dofprobucket2.s3.us-east-2.amazonaws.com/Images/Adv_Avionics_Old.png)
+
+![One of the Avionics Bulkheads with the Charge Wells and the Power Feedthroughs](https://dofprobucket2.s3.us-east-2.amazonaws.com/Images/Adv_Avionics_Bulkhead_w_Attachments.png)
+
+You will need to keep track of the order of the switches for when you are powering the rocket. My chosen sequence was:
+
+| Switch Locations | Poweres |
+|-----------|------|
+| Bottom | Teensy data logger |
+| Middle | RRC2L computer |
+| Top | Raven computer |
+
+# Attaching the threaded rods
+
+The avionics board holder has two holes for the threaded rods (all thread rod or ATR) which hold the avionics bay together. It is easiest to put them in place by lightly placing them in the chuck of a handheld drill. You do not want to crush the threads because you will need to thread nuts on the ends. Alternately, you can place a pair of nuts with a washer between them on the end of a rod and use a nutdriver to screw the rods in place. Using the drill or the nutdriver, screw the threaded rods into the two channels on the avionics board holder. You want to position them so that the holes in the avionics bay will line up with the three screw switches.
+
+## Step 13: Chute Protectors and Parachutes
+
+The Class Rocket uses dual deploy with redundant flight computers. The drogue chute is a 12" or 18" parachute. The main chute is a 45" parachute.
+
+Thread the chute protector through the shock cord and slide down to the body.
+Roughly 2/3 of the shock cord length (the length from the body tube up) tie a [butterfly knot](https://www.101knots.com/butterfly-knot.html) or a [figure eight knot on a bight](https://www.101knots.com/figure-8-on-a-bight.html).
+
+![A Butterfly Knot in the Shock Cord](https://dofprobucket2.s3.us-east-2.amazonaws.com/Images/VUL_ButterflyKnot.png)
+
+Attach the parachute to the butterfly knot or the figure eight knot on a bight with a Lark's Head knot. Gather the shroud-line loops. Push them through the bight on the shock cord. Pass the parachute through the shroud-line loops and pull. See Step 5 of the Seeker Instructions if it's unclear.
+Attach the end of the shock cord to the screw eye in the payload section with a PML Knot.
+
+## Step 14: Folding the Parachute
+
+If you want to fold the parachute and pack it in the rocket use the [Instructions for Folding Parachutes](https://dofpro.org/RCK/const/index).
+
+## Step 15: Painting and Marking
+
+If you desire to paint your rocket, please do so. There are lots of places on-line that will give you an overabundance of advice on how to do so. Many fliers prefer to make their rocket “earn it's paint” by flying it unpainted, and then painting it if it survives the first flight.
+
+You should mark the center of pressure with a center-of-pressure symbol, which is a circle with a dot in the middle, ⊙. A Sharpie® works great, but we do have water-slide decals if you want to get fancy.
+
+Label the rocket with your name and cell-phone number on both the body tube and payload section. Again a Sharpie® works great, but you can use print-on adhesive labels or Sam's labeling machine as well.
+
+## Step 16: Testing Flight Computers
+
+**Do not test the flight computers with actual ejection charges (black powder) or rocket motors attached. Serious personal injury can result. Only use bare e-matches, Firewire initiators, and/or First Fire initiators, as appropriate.**
+
+# AIM XTRA
+
+1. Put on safety glasses.
+
+2. Wire up the AIM XTRA, battery, and electronics bay as it would be for flight, but leave the bottom coupler tube off (you need access to the mini-USB connector on the AIM), connect both bulkheads, and verify that both screw switches are off.
+
+3. Connect an e-match or Firewire initiator to the screw terminals on each bulkhead. Make sure they are not near or touching anything flammable.
+
+4. Connect the AIM XTRA to your computer and start the AIM XTRA program.
+
+5. Turn on the the Computer screw switch and then the Pyro screw switch. Verify that the voltages reported in the Inputs & Power subtab under the Live Data tab are what you expect.
+
+6. Verify that both Channels A and B show continuity, and click on the Control Panel tab.
+
+7. To fire the Drogue/Apogee click on the Fire Line A button. Verify that the e-match or Firewire initiator connected to the bottom bulkhead fired.
+
+8. To fire the Main click on the Fire Line B button. Verify that the e-match or Firewire initiator connected to the top bulkhead fired.
+
+# Featherweight Raven
+
+The instructions for testing e-matches or Firewire initiators are covered in the Running a Flight Simulation section of the Raven Users' Manual. For our purposes you'll want to do the following:
+
+1. Make sure you've configured the Raven how you want.
+
+2. Put on safety glasses.
+
+3. Wire up the Raven, battery, and electronics bay as it would be for flight, but leave the top coupler tube off (you need access to the mini-USB connector on the Raven), connect both bulkheads, and verify that the Raven screw switch is off.
+
+4. Connect the relevant e-matchs, Firewire initiators, and/or First Fire initiators to the appropriate terminals as for flight. Make sure they are not near or touching anything flammable.
+
+5. Hold the electronics bay with the top end pointing toward the ground (The Raven Screw Terminal Block must be pointed up). Turn on the the screw switch and verify that you are getting the expected beep pattern.
+
+6. Connect the Raven to your computer and start the FIP.
+
+7. Click on the cal/test tab of the FIP.
+
+8. Follow the on-screen directions and button labels to perform a flight simulation.
+
+9. Verify that the relevant device fires as expected at the correct stage of the flight. Don't forget that you're holding the electronics bay upside down.
+
+# Testing Ejection Charges
+You'll want to test the ejection charges with your rocket essentially complete. However, you don't want to test fire the ejection charges using the flight computers. It's too hard to be a safe distance away. It's best to have the bulkhead connector connected to a line that runs out through the port for the thermistor and then runs to a launch controller. You want to be a safe distance, a minimum of 30 feet, from the DUT. Follow the usual safety precautions for static tests, with an area marked off by safety cones, everyone wearing safety glasses, the usual arming and countdown sequence, and waiting at least 60 seconds if there is a misfire.
+
+For our purposes, the desired sequence is:
+
+1. Make sure the launch controller is off with the safety key removed and in the possession of the LCO.
+
+2. Make sure the shock cord of the test end is secured to both the electronics bay and either the nose cone or payload section for the Main tests or the lower body tube for the apogee/drogue tests.
+
+3. Make sure everyone has on safety glasses.
+
+4. Mount the end of the electronics bay opposite from the test end to the hose clamps.
+
+5. Use the crosspiece to elevate the electronics bay to a reasonable angle. It doesn't hurt to anchor the end of the support piece with the hose clamps to the ground with tent stakes.
+
+6. Load one of the initiator-centrifuge-tube containers with the desired amount of black powder. Fill the space above the black powder with recovery wadding, and snap on the lid and plastic lock.
+
+7. Untwist the leads and connect them to the relevant screw terminal
+
+8. Prep the parachute and recovery equipment and secure everything to the electronics bay.
+
+ ** For the apogee/drogue test
+
+* Make sure an empty motor casing is in the tube and is secured with the motor retainer.
+
+* Fold the drogue 'chute and wrap it tightly in several layers of recovery wadding.
+
+* Load the parachute and shock cord into the lower body tube.
+
+* Secure the tube to the electronics bay with two shear pins (#2-56 nylon screws).
+
+ ** For the Main test
+
+* Fold the parachute and wrap it tightly in several layers of recovery wadding.
+
+* Insert the parachute into the upper body tube.
+
+* Insert the nose cone in the top of the upper body tube and secure it with two shear pins (#2-56 nylon screws).
+
+* Insert the chute blast protector and the balance of the shock cord into the bottom of the upper body tube. You want to try to protect the 'chute with both the shock cord and the chute blast protector.
+
+* Secure the upper body tube to the electronics bay with three #2-1/4" 100° flathead screws.
+
+9. Clear everyone out of the test area.
+
+10. Arm the launch controller.
+
+11. Give a countdown from 5.
+
+12. Fire the ejection charge.
+
+The prototype rocket required 0.6 g of black powder for the apogee charge, and 0.5 g for the Main charge. These are reasonable places to start your own tests. The correct amount of powder will cause the rocket to forcefully separate, and reach the end of the shock cord without too much jerk when the cord reaches its full extent. You don't want the parts of the rocket to recoil and hit each other.

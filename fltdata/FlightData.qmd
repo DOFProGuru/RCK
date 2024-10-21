@@ -18,19 +18,9 @@ This page contains links to the flight data files for data analysis and comparin
 
 A I140W-14 motor was used for the feb-23 flight, and a J270W-14 was used for the jul-23 flight. The weather was fair. 1mph wind for the fed-23 flight. 7mph winds for the jul-23 flight. Both flights were performed with temperatures around 65°F.
 
-* [20230211_1_Vulcanite_I140W-14_Trimmed.TXT](https://pages.hmc.edu/spjut/AdvRoc/FlightData/DDVulcanite/20230211_1_Vulcanite_I140W-14_Trimmed.TXT)
+* [2023-02-11 TkSpjutVul 20-07-29.csv](https://dofprobucket2.s3.us-east-2.amazonaws.com/DDVulcanite/2023-02-11_(TkSpjutVul)_20-07-29.csv)
 
-* [20230211_1_Vulcanite_I140W-14.TXT](https://pages.hmc.edu/spjut/AdvRoc/FlightData/DDVulcanite/20230211_1_Vulcanite_I140W-14.TXT)
-
-* [2023-02-11 TkSpjutVul 20-07-29.csv](https://pages.hmc.edu/spjut/AdvRoc/FlightData/DDVulcanite/2023-02-11_TkSpjutVul_20-07-29.csv)
-
-* [2023-02-11_Spjut Vulcanite I140W-14 OnBoardGPS .xlsx](https://pages.hmc.edu/spjut/AdvRoc/FlightData/DDVulcanite/2023-02-11_Spjut_Vulcanite_I140W-14_OnBoardGPS_.xlsx)
-
-* [2023-02-11-Log.csv](https://pages.hmc.edu/spjut/AdvRoc/FlightData/DDVulcanite/2023-02-11-Log.csv)
-
-* [2023-02-11-Spjut-Wea-Vul-Flights.xlsx](https://pages.hmc.edu/spjut/AdvRoc/FlightData/DDVulcanite/2023-02-11-Spjut-Wea-Vul-Flights.xlsx)
-
-* [2023-07-08_DDVulcanite_J270_14-37-34.csv](https://pages.hmc.edu/spjut/AdvRoc/FlightData/DDVulcanite/2023-07-08_DDVulcanite_J270_14-37-34.csv)
+* [2023-07-08_DDVulcanite_J270_14-37-34.csv](https://dofprobucket2.s3.us-east-2.amazonaws.com/DDVulcanite/2023-07-08_DDVulcanite_J270_14-37-34.csv)
 
 * [2023-07-08_DDVulcanite_J270_14-37-34.xlsx](https://pages.hmc.edu/spjut/AdvRoc/FlightData/DDVulcanite/2023-07-08_DDVulcanite_J270_14-37-34.xlsx)
 

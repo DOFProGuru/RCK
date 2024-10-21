@@ -1,0 +1,348 @@
+---
+title: "33mm Rocket Assembly Instructions"
+author: "DOFPro group"
+---
+
+## Step 1: Electronics Bay
+
+The plans and photos have not been fully updated for the 2019 modifications. Please ask if there is any doubt of what to do. The main electronics board is designed to hold the AIM XTRA, the Raven, the thermistor conditioning board, the three batteries, and the three screw switches. It also provides mounting points for the thermistor holders. A video of the assembly is [here](https://youtu.be/nYhkCrSkq08). The assembly drawing differs from the production version in the following ways:
+
+1. The wiring is not shown.
+
+2. The electric-match screw connectors are not shown on the top or bottom bulkheads.
+
+3. The mounting hardware (screws, nuts, washers, spacers) are not shown.
+
+4. The top and bottom bulkheads are now a solid piece without a separate screw eye.
+
+5. The midsection is now in two pieces, a top and a bottom 3D-printed piece.
+
+6. The antenna-support bulkhead and the battery bulkhead now have additional openings for wiring to pass through.
+
+7. The thermistors and the thermistor supports are not shown.
+
+8. The drawing has a 1/4" fiberglass rod. The current design has #5 allthread with nuts.
+
+![A See-Through Drawing of the Assembled Electronics Bay](https://dofprobucket2.s3.us-east-2.amazonaws.com/Images/AssembledEBay.jpg)
+
+The existing SolidWorks parts are listed on the [home page](https://pages.hmc.edu/spjut/AdvRoc/index.md.html#toc2).
+
+## Step 2: Silicone Wiring and JST Connectors
+
+For most of the wiring, use the 24 AWG flexible silicone-insulated wire. We have large spools of the red and black because most of the wiring is either power or ground, but feel free to use the other colors to color-code your assembly. The flexible silicone-insulated wire can be bent in very tight corners without damaging the wires, which is invaluable when wiring the electronics bay, where clearances are very tight.
+
+Two of the three batteries use JST RCY connectors. The prototype also uses [JST RCY](http://www.jst-mfg.com/product/pdf/eng/eRCY.pdf) connectors for connecting the recovery-charge screw terminals on the bulkheads to the Raven and AIM XTRA. You have two ways to attach JST connectors to your wiring. Best is to use the PA-09 [crimping tool](http://www.engineer.jp/en/products/pa09e.html) to crimp pins onto the 24 AWG flexible silicone-insulated wire, and then insert the pins into connector housings. This method will keep you from having non-flexible portions of the wire where spliced-and-soldered joints are. The [JST Connector Crimping Procedure](https://iotexpert.com/2018/01/18/jst-connector-crimping-insanity/) toward the bottom of the page has detailed instructions on using the crimp tool.
+
+The second method is to use the pre-wired JST RCY connectors. They can be spliced in to existing wiring with solder and heat-shrink tubing. We have two kinds. The first is the really cheap kind with really thin wire and fairly inflexible insulation. These should ONLY be used for testing, never for actual electronics bay wiring. The second has a slightly heavier gauge wire and more flexible insulation (the seller claims it's silicone, but it's not). These can be used for electronics bay wiring.
+
+![The inexpensive and slightly better pre-wired JST RCX connectors](https://dofprobucket2.s3.us-east-2.amazonaws.com/Images/JSTRCY.png)
+
+The thermistors and the Raven battery use the small Molex connectors. We have pre-wired connectors that are acceptable for use. The ones for thermistor connection can be used as is. The Raven battery one will probably have to be spliced into the rest of the wiring for the Raven. Don't forget the heat-shrink tubing.
+
+![The Molex mini connectors](https://dofprobucket2.s3.us-east-2.amazonaws.com/Images/MolexConn.png)
+
+## Stpe 3: Assembly
+The assembly instruction sequence below is only one of many possible assembly sequences.
+
+1. You may have to drill and tap the antenna support bulkhead and the forward battery bulkhead. I recommend 1/4" 4-40 screws.
+
+**The antenna support bulkhead and forward battery bulkhead are DIFFERENT from each other. Be sure to use one of each, and don't make the other teams either have to machine the leftovers to work or laser cut new ones.**
+
+![The Antenna and Battery Bulkheads](https://dofprobucket2.s3.us-east-2.amazonaws.com/Images/BulkheadsDrillAndTapTop.jpg)
+
+![The Antenna and Battery Bulkhead Drill and Tap Locations](https://dofprobucket2.s3.us-east-2.amazonaws.com/Images/BulkheadsDrillAndTapBottom.jpg)
+
+2. You may need to drill vent holes through the top and bottom supports. They have been drilled through the outer tube, but may need to be drilled into the center section. Install the top and bottom supports with the low-profile #4 wood screws. Slide the outer tube on, making sure the screw-switch hole are visible through the slot in the outer tube when the thermistor holder openings are aligned with the threaded thermistor holder holes. With the outer tube in position, install the two thermistor holders with the #1-72 flat head wood screws. Then, drill the three altimeter vent holes the rest of the way into the top and bottom supports, and then disassemble the pieces.
+
+3. You will need to create the wiring harnesses for the electronics. You may arrange things how you want. Connection to the screw switches is by far easiest if you use the crimp-on connectors and the crimping tool.
+
+![The crimping terminals for the screw switches and matching crimper](https://dofprobucket2.s3.us-east-2.amazonaws.com/Images/TermForScrewSwitches.png)
+
+![The Wiring Harness](https://dofprobucket2.s3.us-east-2.amazonaws.com/Images/WireHarnessesHorizontal.jpg)
+
+4. The recovery-charge screw terminals need to be installed in the top and bottom bulkheads. You'll want to determine if you want male or female JST connectors for the inside. The prototype rocket used both male connectors on each end, which were labeled with permanent marker as to AIM (A) or Raven (R). If you used one male and one female (and the matching connectors on the harness), you could not get them mixed up when assembling the electronics bay. Once you've decided on the connectors, cut them so that the leads are fairly short, but still long enough to pass through the bulkheads and be soldered to the screw connectors. Make sure you know which way you want the screw connectors to face.
+
+* Pass the trimmed and stripped wires of the JST connector through the two holes from the inside to the outside.
+
+* Solder the stripped wires to the screw connector, making sure the connector is oriented correctly with the connector holes pointed away from the allthread.
+
+* Fill the two holes and the space under the screw connector with silicone and push the screw connector against the bulkhead.
+
+* Put a small daub of silicone on the inside between and around the two wires to anchor things from the inside.
+
+* Repeat steps 1 through 4 for the other connector.
+
+* Repeat steps 1 through 5 for the other bulkhead.
+
+* Let the silicone cure before installing the bulkheads.
+
+![The recovery-charge screw terminals](https://dofprobucket2.s3.us-east-2.amazonaws.com/Images/ScrewTerminals.png)
+
+![The Bolted Screw Eye and the Siliconed Wires on the Top Bulkhead](https://dofprobucket2.s3.us-east-2.amazonaws.com/Images/TopBulkheadSideView.jpg)
+
+5. There are three batteries for the electronics bay. The computer side of the AIM XTRA should be powered by a 1000 mAh 3.7 V LiPo. The pyrotechnics/recovery charge side should be powered by a 300 mAh 7.4 V LiPo. The Raven should be powered by a 130 mAh or 170 mAh 3.7 V LiPo. The Raven is the back-up system, and the AIM XTRA is the main recovery system.
+
+![The 1000 mAh, 300 mAh, and 130 mAh LiPo batteries](https://dofprobucket2.s3.us-east-2.amazonaws.com/Images/ThreeBatteries.jpg)
+
+6. The Raven requires #2 screws, nuts and spacers. It's wise to put thin nylon washers below the screw heads to keep from shorting anything on the board. The AIM requires #4 screws threaded up through the bottom, with spacers and #4 small-pattern hex nuts on top. It's probably best to mount the antenna support bulkhead now. The battery bulkhead needs to be attached at some point. This might be a good point to do so. Depending on how you wire the Raven, it may be easier to install the bulkhead either before or after wiring the Raven.
+
+![The mounting points for the AIM XTRA and the Raven](https://dofprobucket2.s3.us-east-2.amazonaws.com/Images/AIMAndRaven.jpg)
+
+7. The screw switches mount on the underside of the electronics board but the electrical connection is on the top side. The stack from top to bottom is:
+
+* #2 screw
+
+* #2 brass washer
+
+* #2 crimp connector
+
+* #2 brass washer
+
+* Electronics board
+
+* 2 – #2 nylon washers
+
+* screw switch
+
+* 2 brass nut
+
+![The Bottom View of the Screw Switches](https://dofprobucket2.s3.us-east-2.amazonaws.com/Images/ScrewSwitchesBottomView.jpg) 
+
+![The Antenna and Battery Bulkheads](https://dofprobucket2.s3.us-east-2.amazonaws.com/Images/ScrewSwitchStack.jpg)
+
+![The Top View of the Screw Switches and Crimp Connectors](https://dofprobucket2.s3.us-east-2.amazonaws.com/Images/SwitchesCrimpsTopView.jpg)
+
+8. You will need to keep track of the order of the switches for when you are powering the rocket. My chosen sequence was:
+
+| Switch Location | Powers |
+|-----------------|--------|
+| Bottom (nearest AIM XTRA)| AIM XTRA computer |
+| Middle | AIM XTRA pyrotechnics (electric matches) |
+| Top (nearest Raven)| Raven |
+
+9. The thermistor conditioning board is mounted on top of the screw switches. It mounts using #2 screws (threaded up through the bottom), spacers, and nuts. You should consider using a #2 nylon washer between the top of the board and the nut to avoid shorting components. Most of the boards come with the 10-position screw terminal block installed. The terminal block makes installing the board and adding or removing wiring much easier, but it makes routing the thermistor connectors and wiring much more challenging. If you want or need a board without the connector, let me know. If your board does have the 10-pin connector, be sure to make sure the leads on the bottom side on the board are clipped so that they don't short out against the screw switches under high-g loads.
+
+10. The board layout with pin labels for the thermistor conditioning board is [here](https://pages.hmc.edu/spjut/AdvRoc/PDF/ThermistorBoardLayout.pdf). The schematic is [here](https://pages.hmc.edu/spjut/AdvRoc/PDF/ThermistorConditionerSchematic.pdf).
+
+![The Installed and Connected Thermistor Conditioning Board](https://dofprobucket2.s3.us-east-2.amazonaws.com/Images/ThermistorBoard.jpg)
+
+![Comparing clipped and unclipped leads on the Thermistor Conditioning Board](https://dofprobucket2.s3.us-east-2.amazonaws.com/Images/ThermCondBoard.png)
+
+The wiring for the AIM XTRA has very little clearance between the AIM and the lower connector tube.
+
+![Routing the wiring to the AIM XTRA](https://dofprobucket2.s3.us-east-2.amazonaws.com/Images/AIMWiring.jpg)
+
+11. Once the wiring is complete, the Top and Bottom supports need to be installed. The 3D-printed lower support must be placed so that the slot lines up with the screw switches. The upper support covers the thermistor board and a small portion of the AIM XTRA. It's easiest to feed the two thermistor connectors through the slots in the upper support at this point. Be sure not to bind or pinch any wires under the supports when you screw them down.
+
+![The Top and Bottom Supports](https://dofprobucket2.s3.us-east-2.amazonaws.com/Images/SupportsAssembled.jpg)
+
+![The Top View of the Electronics Bay Partially Assembled](https://dofprobucket2.s3.us-east-2.amazonaws.com/Images/PopulatedTopView.jpg)
+
+![The Bottom View of the Electronics Bay Partially Assembled](https://dofprobucket2.s3.us-east-2.amazonaws.com/Images/PopulatedBottomView.jpg)
+
+The #5 allthread rod is easiest to install at this point. It can be installed later, but is usually hard to slide through everything.
+
+12. At this point, the batteries need to be added. The 1000 mAh 3.7 V LiPo goes on first, followed by the 300 mAh 7.4 V LiPo, and finally the 130 mAh or 170 mAh 3.7 V LiPo. The connectors and everything needs to fit in the battery compartment. There isn't clearance to wrap electrical tape around the batteries to secure them unless you sand or grind places for the tape in the mounting board.
+
+13. The top coupler tube needs to be slid over the batteries and mated with the center support. It is critical that the pyro connectors are accessible through the top of the coupler, and that none of the wires are pinched or trapped between the coupler and anything else. If you are not careful, it easy to strip or sever pinched wires. The top coupler tube has three threaded holes that will line up with the countersunk holes in the main parachute section. Be sure that the holes are aligned how you want them.
+
+14. The Bottom coupler tube needs to be slid over the AIM XTRA and mated with the center support. It is critical that the pyro connectors are accessible through the bottom of the coupler, and that none of the wires are pinched or trapped between the coupler and anything else. If you are not careful, it easy to strip or sever pinched wires. The bottom coupler has two holes for shear pins that mate up with holes in your bottom body tube/motor mount. You want to make sure that when you put in the shear pins that the screw switches are on the opposite side of the rocket from the launch lugs. Otherwise, you will not be able to arm the rocket on the pad.
+
+![The Top and Bottom Couplers in Place](https://dofprobucket2.s3.us-east-2.amazonaws.com/Images/PartiallyAssembledTopView.jpg)
+
+15. The pyro connectors from the AIM XTRA and the Raven must be connected with the pyro connectors in the top and bottom bulkheads. Make sure you know which is which, because you will use different amounts of black powder with the principal recovery (AIM) and the back-up recovery (Raven). After the pyro connectors are attached, slide the top and bottom bulkheads into position and secure them first with the component board lock plates and #4 screws. Then secure them with the #5 allthread, a washer, and a pair of #5 nuts on each end.
+
+![The Assembled Top End Bulkhead](https://dofprobucket2.s3.us-east-2.amazonaws.com/Images/TopEndAssembled.jpg)
+
+![The Top View with No Cover](https://dofprobucket2.s3.us-east-2.amazonaws.com/Images/CoverOffTopView.jpg)
+
+![The Bottom View with No Cover](https://dofprobucket2.s3.us-east-2.amazonaws.com/Images/CoverOffBottomView.jpg)
+
+16. Slide the ebay cover over the assembled parts. Make sure that the screw holes are aligned with the screw slot on the bottom support and the threaded holes for the thermistor holders are visible.
+
+![The Top and Bottom Couplers in Place](https://dofprobucket2.s3.us-east-2.amazonaws.com/Images/AssembledBottomView.jpg)
+
+17. Connect the thermistors to the thermistor connectors and screw down the thermistor holders with #1-72 flat-head wood screws. Be careful not the strain the fine-gauge wires during any part of the assembly process. It often helps to have the AIM XTRA powered up and transmitting telemetry on the thermistors as you attach them, feed the excess wire into the hole and screw down the thermistor holders, to verify that they're functioning. Be sure that the holders are pointing with the thermistors toward the rear of the rocket.
+
+## Step 4: Fins
+
+Fin placement isn't critical, but roughly 1.5 to 2 inches above the base of the lower body tube provides good aerodynamics and keeps the fins from hitting first and breaking when the rocket lands.
+
+The fin fillets can be hard to smooth with the added glass fiber. Alternatively, you can use wooden dowels or lengths of PVC pipe on top of wax paper or parchment paper and held in place with rubber bands to make smooth.
+
+Make sure to remove the blue or masking tape before the epoxy hardens too much.
+
+Remember, the fillets are all that's holding on your fins against the supersonic drag forces, and the hard landings. Make sure they are robust enough.
+
+## Step 5: Nose Cone
+
+If you are not using an additional payload section, you need to attach a screw eye and the bulkhead to the nose cone connector tube. Epoxy the bulkhead far enough into the connector tube to permit a good fillet. The nose cone connector tube is attached to the nose cone with screws to permit access to the inside (perhaps for electronics). after the screw eye and bulkhead are attached.
+
+![The Nosecone Coupler Bulkhead and Screw Eye Hardware](https://dofprobucket2.s3.us-east-2.amazonaws.com/Images/NoseconeBulkheadScrewEye.jpg)
+
+## Step 6: Launch Lugs
+
+The launch lugs should be epoxied on. Placement isn't critical, but the bottom one should be somewhere in between the top edge of the fins and the bottom edge of the fins. The top one should be an inch or two below the top of the lower body tube. Make sure they are aligned along the body tube.
+
+## Step 7: Motor Retainer
+
+There are two motor retainers in your kit: A minimum-diameter retainer interior to your rocket, which we use primerily for attaching the shock cord, and a slim-line retainer for holding the motor in. However, the slim line has a fairly large detrimental effect on the performance of your rocket. Before installing the slim-line motor retainer, run flight simulations showing how much difference you have in performance (top speed and altitude) if you leave the retainer off or if you include it.
+
+**Whether you use the minimum-diameter retainer for just securing the shock cord, or for also retaining the motor, it is CRITICAL that you secure the screw eye to the motor retainer with Loc-tite or CA. We have had the screw eye loosen and come free during descent, which led to the aft end of the rocket and motor casing falling from a substantial height, and failure of a Level 2 cert flight.**
+
+If you decide to install the slim-line motor retainer retainer and the adapter cone:
+
+* The transition and motor retainer should be installed last.
+
+* Make sure that the transition and retainer are flush with each other when dry fit.
+
+* Use JB Weld to install the motor retainer because it is so near the burning motor.
+
+* The retainer base has a threaded side that fits the threaded ring and one that doesn't. Make sure that the threaded side is facing away from the rocket. Otherwise the retainer is pointless.
+
+* Don't forget to sand the outside of the tube where the motor retainer will join.
+
+* The retainer is designed for thick-walled tubes, not thin like we are using. You have to use a few extra steps to ensure the tube and retainer are aligned.
+
+ -The steps are:
+
+1. Get an Aerotech motor casing and attach an aft closure after superlubing the threads.
+
+2. Wrap parchment paper or wax paper around the motor casing and closure to keep epoxy from sticking to it.
+
+3. Thread the motor casing through the motor retainer and secure the casing with the threaded ring.
+
+4. Apply a generous amount of JB Weld to the outside of the lower body tube.
+
+5. Thread the motor casing into the lower body tube, being sure to keep epoxy off the casing.
+
+6. Twist the motor-retainer assembly onto the lower body tube to make sure the JB Weld spreads evenly until it bottoms out.
+
+7. Wipe off any JB Weld showing above the retainer.
+
+8. Stand the tube vertically with the retainer on the bottom.
+
+9. After 20 minutes to an hour unscrew the threaded ring and make sure the motor tube can still slide smoothly. If so, reattach and tighten the threaded ring and stand the tube vertically with the retainer on the bottom for at least 12 hours.
+
+10. Removed the motor casing.
+
+11. Secure the transition to the retainer with JB Weld.
+
+## Step 8: Shock Cords
+
+You should cut the 30 foot kevlar cord into two 15 foot sections.
+
+To attach the shock cord to the screw eye inside the lower body/motor mount tube, use the long Aerotech motor casing with the threaded forward closure. Slide it in from the bottom and screw it in to the minimum-diameter motor retainer. Remove the six #2 flat head screws and pull the retainer out of the rocket.
+
+**Important** While you have the retainer out of the rocket: It is CRITICAL that you secure the screw eye to the motor retainer with Loc-tite or CA.
+
+Attach the shock cord to the screw eye (don't forget the electrical tape). Thread the shock cord through the body tube and reinstall the fixture with the six #2 flat head screws.
+
+## Step 9: Parachutes
+
+The main parachute (the 30" one) goes in the forward body tube. The drogue (the 12" one if you use it) goes in the top of the lower body/motor mount tube. In high-power rocketry, the parachute is rarely attached to the nose cone. It's usually attached at the 1/3 — 2/3 point of the shock cord with the heavier section on the 2/3 side. That way the two sections will not collide with each other as the rocket descends. There are several methods for attaching the parachute to the shock cord. I prefer a [figure-eight knot on a bight](https://youtu.be/kbB85p_uJsE) on the shock cord and then the usual lark's head knot with the parachute shroud lines.
+
+Optional Payload Section
+If your rocket requires space for electronics beyond what will fit in the nose cone, you can add an optional payload section.
+
+# Testing Flight Computers and Ejection Charges
+
+You have to verify that the flight-computer-and-battery combination will function with your chosen e-matches, Firewire initiators, or First Fire initiators. You also have to determine the correct amount of black powder for separation and parachute ejection. E-matches and firewire initiators will work with a 3.7 V or larger battery. First Fire initiators require 11 V batteries or larger. You will want to use either the 3rd or 4th channel on a Raven to power a First Fire, because these channels can handle up to 40 A of current, while the main and apogee can handle about 9 A of current.
+
+# AIM XTRA
+
+**Do not test the flight computers with actual ejection charges (black powder) or rocket motors attached. Serious personal injury can result. Only use bare e-matches, Firewire initiators, and/or First Fire initiators, as appropriate.**
+
+For our purposes you'll want to do the following:
+
+1. Put on safety glasses.
+
+2. Wire up the AIM XTRA, battery, and electronics bay as it would be for flight, but leave the bottom coupler tube off (you need access to the mini-USB connector on the AIM), connect both bulkheads, and verify that both screw switches are off.
+
+3. Connect an e-match or Firewire initiator to the screw terminals on each bulkhead. Make sure they are not near or touching anything flammable.
+
+4. Connect the AIM XTRA to your computer and start the AIM XTRA program.
+
+5. Turn on the the Computer screw switch and then the Pyro screw switch. Verify that the voltages reported in the Inputs & Power subtab under the Live Data tab are what you expect.
+
+6. Verify that both Channels A and B show continuity.
+
+7. Click on the Control Panel tab.
+
+8. To fire the Drogue/Apogee click on the Fire Line A button. Verify that the e-match or Firewire initiator connected to the bottom bulkhead fired.
+
+9. To fire the Main click on the Fire Line B button. Verify that the e-match or Firewire initiator connected to the top bulkhead fired.
+
+# Featherweight Raven
+
+The instructions for testing e-matches or Firewire initiators are covered in the Running a Flight Simulation section of the Raven Users' Manual. For our purposes you'll want to do the following:
+
+1. Make sure you've configured the Raven how you want.
+
+2. Put on safety glasses.
+
+3. Wire up the Raven, battery, and electronics bay as it would be for flight, but leave the top coupler tube off (you need access to the mini-USB connector on the Raven), connect both bulkheads, and verify that the Raven screw switch is off.
+
+4. Connect the relevant e-matchs, Firewire initiators, and/or First Fire initiators to the appropriate terminals as for flight. Make sure they are not near or touching anything flammable.
+
+5. Hold the electronics bay with the top end pointing toward the ground (The Raven Screw Terminal Block must be pointed up). Turn on the the screw switch and verify that you are getting the expected beep pattern.
+
+6. Connect the Raven to your computer and start the FIP.
+
+7. Click on the cal/test tab of the FIP.
+
+8. Follow the on-screen directions and button labels to perform a flight simulation.
+
+9. Verify that the relevant device fires as expected at the correct stage of the flight. Don't forget that you're holding the electronics bay upside down.
+
+# Testing Ejection Charges
+
+You'll want to test the ejection charges with your rocket essentially complete. However, you don't want to test fire the ejection charges using the flight computers. It's too hard to be a safe distance away. It's best to have the bulkhead connector connected to a line that runs out through the port for the thermistor and then runs to a launch controller. You want to be a safe distance, a minimum of 30 feet, from the DUT. Follow the usual safety precautions for static tests, with an area marked off by safety cones, everyone wearing safety glasses, the usual arming and countdown sequence, and waiting at least 60 seconds if there is a misfire.
+
+For our purposes, the desired sequence is:
+
+1. Make sure the launch controller is off with the safety key removed and in the possession of the LCO.
+
+2. Make sure the shock cord of the test end is secured to both the electronics bay and either the nose cone or payload section for the Main tests or the lower body tube for the apogee/drogue tests.
+
+3. Make sure everyone has on safety glasses.
+
+4. Mount the end of the electronics bay opposite from the test end to the hose clamps.
+
+5. Use the crosspiece to elevate the electronics bay to a reasonable angle. It doesn't hurt to anchor the end of the support piece with the hose clamps to the ground with tent stakes.
+
+6. Load one of the initiator-centrifuge-tube containers with the desired amount of black powder. Fill the space above the black powder with recovery wadding, and snap on the lid and plastic lock.
+
+7. Untwist the leads and connect them to the relevant screw terminal
+
+8. Prep the parachute and recovery equipment and secure everything to the electronics bay.
+For the apogee/drogue test
+
+*  Make sure an empty motor casing is in the tube and is secured with the motor retainer.
+
+* Fold the drogue 'chute and wrap it tightly in several layers of recovery wadding.
+
+* Load the parachute and shock cord into the lower body tube.
+
+* Secure the tube to the electronics bay with two shear pins (#2-56 nylon screws).
+For the Main test
+
+* Fold the parachute and wrap it tightly in several layers of recovery wadding.
+
+* Insert the parachute into the upper body tube.
+
+* Insert the nose cone in the top of the upper body tube and secure it with two shear pins (#2-56 nylon screws).
+
+* Insert the chute blast protector and the balance of the shock cord into the bottom of the upper body tube. You want to try to protect the 'chute with both the shock cord and the chute blast protector.
+
+* Secure the upper body tube to the electronics bay with three #2-1/4" 100° flathead screws.
+
+9. Clear everyone out of the test area.
+
+10. Arm the launch controller.
+
+11. Give a countdown from 5.
+
+12. Fire the ejection charge.
+
+The class prototype rocket required 0.6 g of black powder for the apogee charge, and 0.5 g for the Main charge. These are reasonable places to start your own tests. The correct amount of powder will cause the rocket to forcefully separate, and reach the end of the shock cord without too much jerk when the cord reaches its full extent. You don't want the parts of the rocket to recoil and hit each other.

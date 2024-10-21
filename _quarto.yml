@@ -24,6 +24,10 @@ website:
           text: "Vulcanite Dual Deploy"    
         - href: const/DX3.qmd
           text: 1.6" miniDX3
+        - href: 55mmClassRocket.qmd
+          text: 55mm HMC Rocket
+        - href: 33mmClassRocket.qmd
+          text: 33mm HMC Rocket
             
       - text: Modeling
         menu:
