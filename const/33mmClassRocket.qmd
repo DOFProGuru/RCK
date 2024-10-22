@@ -3,6 +3,8 @@ title: "33mm Rocket Assembly Instructions"
 author: "DOFPro group"
 ---
 
+Make sure to review the [safety hints](https://dofpro.org/RCK/safety/) before attempting assembly of any high-powered rockets.
+
 ## Step 1: Electronics Bay
 
 The plans and photos have not been fully updated for the 2019 modifications. Please ask if there is any doubt of what to do. The main electronics board is designed to hold the AIM XTRA, the Raven, the thermistor conditioning board, the three batteries, and the three screw switches. It also provides mounting points for the thermistor holders. A video of the assembly is [here](https://youtu.be/nYhkCrSkq08). The assembly drawing differs from the production version in the following ways:

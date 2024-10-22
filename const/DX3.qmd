@@ -3,6 +3,8 @@ title: "Mini DX3 Assembly Instructions"
 author: "DOFPro group"
 ---
 
+Make sure to review the [safety hints](https://dofpro.org/RCK/safety/) before attempting assembly of any high-powered rockets.
+
 The image below displays almost all of the parts that come in the kit.
 
 ![The parts that come in the kit](https://dofprobucket2.s3.us-east-2.amazonaws.com/Images/DX3_rocket_parts.png)

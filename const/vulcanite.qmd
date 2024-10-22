@@ -466,7 +466,7 @@ Before proceeding, make sure the epoxy has fully cured.
 
 ![Rear View of Fins in Fin Jigs](https://dofprobucket2.s3.us-east-2.amazonaws.com/Images/https://VUL_RearFinsFinGuide.png)
 
-## Step 11: Internal Fillets
+## Step 12: Internal Fillets
 
 * Remove the bottom centering ring with the wire.
 
@@ -482,7 +482,7 @@ Before proceeding, make sure the epoxy has fully cured.
 
 ![Bottom Centering Ring Epoxied in Place.](https://dofprobucket2.s3.us-east-2.amazonaws.com/Images/VUL_BottomCenteringRing.png)
 
-## Step 12: External Fillets
+## Step 13: External Fillets
 
 Get a set of plastic spoons that will be used for pulling the fillets.
 
@@ -526,7 +526,7 @@ Wait 5 to 15 minutes.
 
 ![A View of the Completed Fillets](https://dofprobucket2.s3.us-east-2.amazonaws.com/Images/VUL_Fillet_View.png)
 
-## Step 13: Rail Guides
+## Step 14: Rail Guides
 
 **Important** Sand both the body tube and the Rail Guides where they are going to join until you have removed the glassine (the shiny paper layer). Failure to do so may result in moments of panic at the launch stand when your launch lugs break off.
 
@@ -542,7 +542,7 @@ Epoxy the Rail Guides in place. They don't need a lot of epoxy. Tape them down u
 
 ![The Finished Rail Guide (Blue Tape can be sanded or cut off)](https://dofprobucket2.s3.us-east-2.amazonaws.com/Images/VUL_LaunchLug.png)
 
-## Step 14: Motor Retainer
+## Step 15: Motor Retainer
 
 * Using JB-Weld (not any other epoxy) attach the inner part of the motor retainer to the bottom of the motor mount assembly. Spread the JB-Weld on the motor mount tube and not inside the motor retainer. Twist the motor retainer as you push it onto the tube.
 
@@ -552,7 +552,7 @@ Epoxy the Rail Guides in place. They don't need a lot of epoxy. Tape them down u
 
 ![The Base of the Motor Retainer Epoxied to the Motor Mount Tube](https://dofprobucket2.s3.us-east-2.amazonaws.com/Images/VUL_MotorRetainer.png)
 
-## Step 15: Chute Protectors and Parachutes
+## Step 16: Chute Protectors and Parachutes
 
 You are using two different parachutes and two different chute protectors with this rocket: a 9" or 12" nylon parachute with a 6“x6" chute protector for the drogue chute, and the chute that came with the kit with a 9“x9" chute protector for the main chute. The Drogue chute will be between the Lower Body Tube and the Lower Bulkhead Eyebolt on the Avionics Bay. The Main Chute goes between the Upper Bulkhead Eyebolt on the Avionics Bay and the Eyebolt on the GPS Holder/ Nose Cone.
 
@@ -560,14 +560,6 @@ For the Drogue Chute:
 
 * Shake or push the Lower Shock Cord free out the top of the Lower Body Tube.
 * Roughly 2/3 of the shock cord length (the length from the Lower Body Tube up) tie a butterfly knot or a figure eight knot on a bight.
-
-![A Butterfly Knot in the Shock Cord. Yours should be yellow Kevlar, not black nylon](https://dofprobucket2.s3.us-east-2.amazonaws.com/Images/VUL_ButterflyKnot.png)
-
-* Attach the 9" or 12" parachute to the butterfly knot or the figure eight knot on a bight with a Lark's Head knot. Gather the shroud-line loops. Push them through the bight on the shock cord. Pass the parachute through the shroud-line loops and pull. See Step 5 of the Seeker Instructions if it's unclear.
-
-* Thread the 6“x6" chute protector through the shock cord and slide down to the knot.
-
-* Attach the end of the shock cord to the bottom eyebolt in the Avionics Bay with a PML Knot.
 
 For the Main Chute:
 
@@ -587,11 +579,11 @@ For the Main Chute:
 
 * If you were prepping the rocket for launch, you would prep the Avionics Bay and main ejection charge, and then secure the Upper Body Tube to the Avionics Bay with the three #4-40 100° flat head screws.
 
-## Step 16: Folding the Parachute
+## Step 17: Folding the Parachute
 
 If you want to fold the parachute and pack it in the rocket use the [Instructions for Folding Parachutes](https://dofpro.org/RCK/const/index).
 
-## Step 17: Painting and Marking
+## Step 18: Painting and Marking
 
 If you desire to paint your rocket, please do so. There are lots of places on-line that will give you an overabundance of advice on how to do so. Many fliers prefer to make their rocket “earn it's paint” by flying it unpainted, and then painting it if it survives the first flight.
 
@@ -599,7 +591,7 @@ If you desire to paint your rocket, please do so. There are lots of places on-li
 
 * Label the rocket with your name and cell-phone number on both the body tube and payload section. Again a Sharpie® works great, but you can use print-on adhesive labels or Sam's labeling machine as well.
 
-## Step 18: Populating the GPS Support
+## Step 19: Populating the GPS Support
 
 The GPS is mounted to the Daughterboard with #4-40 screws, nylon washers, 1/8" nylon spacers and #4-40 nuts. The screws go through the nylon washers, then the GPS, then the Daughterboard. The nuts are fastened on back.
 
@@ -611,7 +603,7 @@ The 1000 mAh battery is installed with Velcro.
 
 ![The GPS Support with GPS and Battery Attached. Note the Clamping Screws Have Been Removed.](https://dofprobucket2.s3.us-east-2.amazonaws.com/Images/Vul_GPS_Populated_Top_View.png)
 
-## Step 19: Populating the Avionics Bay
+## Step 20: Populating the Avionics Bay
 
 Locate the Eurostyle Connectors with matching M2.5 screws, washers, and nuts. You will need two of each, one set for each bulkhead.
 
@@ -710,7 +702,7 @@ With everything in place, you will want to complete the wiring. Cut the wires to
 
 ![The Populated Avionics Bay Back View](https://dofprobucket2.s3.us-east-2.amazonaws.com/Images/Vul_AVBay_Bulkheads_Populated_RearView.png)
 
-## Step 20: Test your Rocket
+## Step 21: Test your Rocket
 
 You have completed the construction. Next you need to test the electronics and finish flight prep. See the [Vulcanite Avionics Test page](https://dofpro.org/RCK/const/vulcanTest) for avionics testing.
 
