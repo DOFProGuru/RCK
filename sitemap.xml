@@ -2,74 +2,78 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://DOFProGuru.github.io/RCK/fltdata/index.html</loc>
-    <lastmod>2024-10-21T22:28:59.379Z</lastmod>
+    <lastmod>2024-10-22T04:19:07.422Z</lastmod>
   </url>
   <url>
     <loc>https://DOFProGuru.github.io/RCK/model/index.html</loc>
-    <lastmod>2024-10-21T22:28:59.379Z</lastmod>
+    <lastmod>2024-10-22T04:19:07.422Z</lastmod>
   </url>
   <url>
     <loc>https://DOFProGuru.github.io/RCK/intro/index.html</loc>
-    <lastmod>2024-10-21T22:28:59.379Z</lastmod>
+    <lastmod>2024-10-22T04:19:07.422Z</lastmod>
   </url>
   <url>
     <loc>https://DOFProGuru.github.io/RCK/index.html</loc>
-    <lastmod>2024-10-21T22:28:59.379Z</lastmod>
+    <lastmod>2024-10-22T04:19:07.422Z</lastmod>
   </url>
   <url>
     <loc>https://DOFProGuru.github.io/RCK/archive/index.html</loc>
-    <lastmod>2024-10-21T22:28:59.379Z</lastmod>
+    <lastmod>2024-10-22T04:19:07.422Z</lastmod>
   </url>
   <url>
     <loc>https://DOFProGuru.github.io/RCK/instr/baroalt.html</loc>
-    <lastmod>2024-10-21T22:28:59.379Z</lastmod>
+    <lastmod>2024-10-22T04:19:07.422Z</lastmod>
   </url>
   <url>
     <loc>https://DOFProGuru.github.io/RCK/const/vulcanite.html</loc>
-    <lastmod>2024-10-21T22:28:59.379Z</lastmod>
-  </url>
-  <url>
-    <loc>https://DOFProGuru.github.io/RCK/const/vulcanGPS.html</loc>
-    <lastmod>2024-10-21T22:28:59.379Z</lastmod>
-  </url>
-  <url>
-    <loc>https://DOFProGuru.github.io/RCK/const/DX3.html</loc>
-    <lastmod>2024-10-21T22:28:59.379Z</lastmod>
-  </url>
-  <url>
-    <loc>https://DOFProGuru.github.io/RCK/const/55mmClassRocket.html</loc>
-    <lastmod>2024-10-21T22:28:59.379Z</lastmod>
-  </url>
-  <url>
-    <loc>https://DOFProGuru.github.io/RCK/const/33mmClassRocket.html</loc>
-    <lastmod>2024-10-21T22:28:59.379Z</lastmod>
+    <lastmod>2024-10-22T04:19:07.422Z</lastmod>
   </url>
   <url>
     <loc>https://DOFProGuru.github.io/RCK/const/vulcanTest.html</loc>
-    <lastmod>2024-10-21T22:28:59.379Z</lastmod>
+    <lastmod>2024-10-22T04:19:07.422Z</lastmod>
+  </url>
+  <url>
+    <loc>https://DOFProGuru.github.io/RCK/const/33mmClassRocket.html</loc>
+    <lastmod>2024-10-22T04:19:07.422Z</lastmod>
+  </url>
+  <url>
+    <loc>https://DOFProGuru.github.io/RCK/const/55mmClassRocket.html</loc>
+    <lastmod>2024-10-22T04:19:07.422Z</lastmod>
+  </url>
+  <url>
+    <loc>https://DOFProGuru.github.io/RCK/const/DX3.html</loc>
+    <lastmod>2024-10-22T04:19:07.422Z</lastmod>
+  </url>
+  <url>
+    <loc>https://DOFProGuru.github.io/RCK/const/vulcanGPS.html</loc>
+    <lastmod>2024-10-22T04:19:07.422Z</lastmod>
+  </url>
+  <url>
+    <loc>https://DOFProGuru.github.io/RCK/const/standardVulcanite.html</loc>
+    <lastmod>2024-10-22T04:19:07.422Z</lastmod>
   </url>
   <url>
     <loc>https://DOFProGuru.github.io/RCK/const/index.html</loc>
-    <lastmod>2024-10-21T22:28:59.379Z</lastmod>
+    <lastmod>2024-10-22T04:19:07.422Z</lastmod>
   </url>
   <url>
     <loc>https://DOFProGuru.github.io/RCK/instr/index.html</loc>
-    <lastmod>2024-10-21T22:28:59.379Z</lastmod>
+    <lastmod>2024-10-22T04:19:07.422Z</lastmod>
   </url>
   <url>
     <loc>https://DOFProGuru.github.io/RCK/safety/index.html</loc>
-    <lastmod>2024-10-21T22:28:59.379Z</lastmod>
+    <lastmod>2024-10-22T04:19:07.422Z</lastmod>
   </url>
   <url>
     <loc>https://DOFProGuru.github.io/RCK/intro/cert.html</loc>
-    <lastmod>2024-10-21T22:28:59.379Z</lastmod>
+    <lastmod>2024-10-22T04:19:07.422Z</lastmod>
   </url>
   <url>
     <loc>https://DOFProGuru.github.io/RCK/model/softwareDownloads.html</loc>
-    <lastmod>2024-10-21T22:28:59.379Z</lastmod>
+    <lastmod>2024-10-22T04:19:07.422Z</lastmod>
   </url>
   <url>
     <loc>https://DOFProGuru.github.io/RCK/fltdata/FlightData.html</loc>
-    <lastmod>2024-10-21T22:28:59.379Z</lastmod>
+    <lastmod>2024-10-22T04:19:07.422Z</lastmod>
   </url>
 </urlset>
