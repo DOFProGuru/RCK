@@ -1,0 +1,474 @@
+---
+title: "Standard Vulanite Assembly Instructions"
+author: "DOFPro group"
+---
+
+Make sure to review the [safety hints](https://dofpro.org/RCK/safety/) before attempting assembly of any high-powered rockets.
+
+## General Hints
+
+1. Be sure to roughen all surfaces to be epoxied, with 60, 80, or 100 grit sandpaper **before** you glue so that the epoxy adheres better.
+
+2. Get an Aero Pack RA 38mm L motor retainer.
+
+3. Sand the bottom 3/8" of the motor mount tube until the motor retainer slides on easily.
+
+4. Replace the elastic shock cord in the kit with 12 ft to 15 ft of either tubular/strap nylon or tubular/strap Kevlar, such as PML STRP-0.375, eRockets ER9044, Wildman [KEVLAR1/4"](https://wildmanrocketry.com/collections/kevlar/products/kevlar1-4), or Madcow SC_FLT_38_RED.
+
+5. Use either the PML mounting style or the Modified PML mounting style for the shock cord. For the PML style, follow steps 1 & 2 in the [Phobos Instructions](https://publicmissiles.com/secure/images/Phobosinstructionbooklet.pdf). You'll have to machine or file a notch in one of the centering rings to accomodate the shock cord. The centering ring on the other end (held in place with tape), must be **at least** 3/8" from the end of the motor mount tube and preferably 1/2" to accomodate the motor retainer. When assembled, the motor mount will protrude from the end of the rocket a bit. The modified PML style is similar, but instead of epoxying the shock cord axially to the motor mount, it is tied radially around the motor mount tube and included in the epoxy fillet between the motor mount tube and the centering ring. Step 2 of the Madcow [Batray instructions](https://www.madcowrocketry.com/content/pdf/batray.pdf) show the tying technique, but has the notch on the outside of the centering ring instead of on the inside where it belongs. 
+
+6. If you want streamlined fins, round the leading edge, and taper the trailing edge. Leave the inside and outside edges square.
+
+7. Consider laser-cutting a pair of fin guides to ensure the fins are perpendicular to the body tube.
+
+8. Use the PML technique to attach the fins as shown in Step 4 of the [Phobos Instructions](https://publicmissiles.com/secure/images/Phobosinstructionbooklet.pdf). When you finally epoxy in the bottom centering ring, push it flush up against the fins.
+
+9. When prepping the Payload Bay, consider finding a screw eye that attaches with a nut and washer rather than just a wood-screw end.
+
+10. When you epoxy in the coupler tube bulkhead, recess it at least 1/8" so that you can put a decent fillet between the bulkhead and the coupler tube on the outside. **DO NOT make the bulkhead flush with the end of the coupler tube.** The LOC instructions say to, but they are seriously wrong and you may lose your payload section when the recovery charge goes off.
+
+11. For the Vulcanite use Aeropoxy or BSI 30-minute epoxy for all assembly except for attaching the motor retainer, where you will use JBWeld, and for the initial attachment of the fins, where you can use BSI 5-minute epoxy instead. Do not use 5-minute epoxy on any of the fin fillets.
+
+12. For the BSI 30-minute or Aeropoxy, wait until the epoxy has cured sufficiently that there's no danger of running and then heat treat it at 60°C (140°F) for 3 hours. At home, shining an incandescent light an inch or so from the surface, or placing the part on the dashboard of a car in direct sunlight will provide sufficient heating.
+
+13. Secure the nose cone to the payload section with three countersunk #4 flat head screws. You can use the pan head screws but they don't sit as flush.
+
+14. If you are planning on Level 2 (J) flights, either replace or supplement the launch lugs with rail guides, either [PML LRL-10-2](https://publicmissiles.com/product/hardware) or [Acme 54mm](https://giantleaprocketry.com/products/components_launch_systems.aspx#Acme_Conformal_Launch_Guides).
+
+15. Secure the motor retainer with a JB Weld.
+
+## Assembly
+
+The image below displays almost all of the parts that come in the kit. The chute protector that comes with the kit is hidden in the motor mount. It is too small to properly protect the chute and should be replaced with a 9×9 square protector (unless you're really talented at rolling the parachute into a small package, and at making burritos).
+
+![parts](https://dofprobucket2.s3.us-east-2.amazonaws.com/Images/VUL_Parts.png)
+
+The Thick Shock Cord pictured was included in the kits very briefly. Your kit will most likely contain the Round Shock Cord pictured below, or possibly one of a slightly different appearance. If you have the Round Shock Cord, you should replace it with a 50" piece of kevlar shock cord that you cut from the reel.
+
+![Round Shock Cord](https://dofprobucket2.s3.us-east-2.amazonaws.com/Images/VUL_Alt_Shock_Cord.jpeg)
+
+The following is a list of parts that are not included in your kit. They will be packaged separately from the kit.
+
+* A pair of conformal rail guides
+
+* An Aeropack (or PML) motor retainer
+
+* A #10-24 eyebolt
+
+* A pair of #10 washers
+
+* Two #10 nuts
+
+* Three 4-40 100° Flathead screws
+
+* A 9×9 (or larger) chute protector.
+
+![Supplemental Parts](https://dofprobucket2.s3.us-east-2.amazonaws.com/Images/VUL_AdditionalParts.png)
+
+## Step 1: Sanding
+
+Sand every surface to be epoxied (including interior surfaces) with 80-to-110 grit sandpaper. You may have to think about the assembly sequence to figure out where to sand. A non-exhaustive list includes:
+
+* The inside of the Aeropack motor retainer.
+
+* The entire exterior of the motor mount
+
+* The interior of the body tube where the interior fin fillets will be.
+
+* The interior of the body tube in a band about 9.5" to 10.5" from the bottom end.
+
+* The interior of the payload section from one end to about 3" in.
+
+* 1/2 of the exterior of the coupler tube starting at one end.
+
+* A 1/2" band on the interior of the coupler tube on the end opposite from the 1/2 you just sanded.
+
+* The fin roots and sides up about 3/4" from the root end.
+
+* All surfaces on the motor centering rings.
+
+* The edges, center, and 1/4" in from the edges on the bulkhead.
+
+Wipe all surfaces with a Swiffer or other dust removal cloth after sanding.
+
+![Sand the Motor Mount](https://dofprobucket2.s3.us-east-2.amazonaws.com/Images/VUL_SandedMotorMount.png)
+
+![Sand inside the Body Tube](https://dofprobucket2.s3.us-east-2.amazonaws.com/Images/VUL_SandedBodyTube.png)
+
+![Sand the coupler and payload tube](https://dofprobucket2.s3.us-east-2.amazonaws.com/Images/VUL_PayloadAndCoupler.png)
+
+![Sanded fins, rings, and other parts](https://dofprobucket2.s3.us-east-2.amazonaws.com/Images/VUL_SandedFinsRings.png)
+
+## Step 2: Motor Mount
+
+There are three centering rings. You can use either two or three. The optional one is the middle ring. The top ring has the two slots for mounting the large shock cord.
+
+Test fit centering rings over the motor mount tube and sand centering rings if necessary. The rings should slide without much effort but not be loose.
+
+Also test fit the centering rings in the body tube and sand the rings if necessary. The rings should be fairly loose, but should not rattle around.
+
+Place the inside part of your Aeropack motor retainer on one end of the motor mount tube. Make sure it is fully seated. Using a pen or pencil, mark the tube where the motor retainer hits the tube.
+
+![The Motor Mount tube, Motor Retainer, and Fore and Aft Centering Rings](https://dofprobucket2.s3.us-east-2.amazonaws.com/Images/Vul_Motor_Mount_Parts.png)
+
+* There are three centering rings. You can use either two or three. The optional one is the middle ring. The top ring has the two slots for mounting the large shock cord.
+
+* Test fit centering rings over the motor mount tube and sand centering rings if necessary. The rings should slide without much effort but not be loose.
+
+* Also test fit the centering rings in the body tube and sand the rings if necessary. The rings should be fairly loose, but should not rattle around.
+
+* Place the inside part of your Aeropack motor retainer on one end of the motor mount tube. Make sure it is fully seated. Using a pen or pencil, mark the tube where the motor retainer hits the tube.
+
+![Mark the Motor Retainer Position](https://dofprobucket2.s3.us-east-2.amazonaws.com/Images/VUL_MarkMotorRetainer.png)
+
+![The Marked Motor Retainer Position](https://dofprobucket2.s3.us-east-2.amazonaws.com/Images/VUL_MarkedForMotorRetainer.png)
+
+* Put the bottom centering ring on the tube and slide it down until it contacts the motor retainer. Mark the place where it contacts.
+
+![Mark the Bottom Centering Ring](https://dofprobucket2.s3.us-east-2.amazonaws.com/Images/VUL_MarkBottomRing.png)
+
+* Use a sharpened pencil or other marking implement and put an arrow pointing up on the outside of the motor mount (to assist in keeping track of the marks).
+
+![The Bottom Centering Ring mark and the Up Arrow](https://dofprobucket2.s3.us-east-2.amazonaws.com/Images/VUL_MarkedBottomRingRetainerAndUp.png)
+
+The middle centering ring is optional. It assists in keeping the motor mount straight in the tube during assembly, but it doesn't add much strength and it adds a little weight. They include it in the kit to use as the top ring for those who don't want to attach the shock cord to the motor mount. If you decide to use it, mark the tube 6" up from the bottom for positioning the middle centering ring during assembly. The placement isn't critical, but must be above the top of the fins when they're epoxied to the motor mount through the slots in the body tube.
+
+![Mark for the Middle Ring.](https://dofprobucket2.s3.us-east-2.amazonaws.com/Images/VUL_MarkForMiddleRing.png)
+
+* Mark the position for the Top Centering Ring (the one with the two notches ) 1/2" from the top of the Motor Mount Tube. This placement isn't critical.
+
+![Mark for the Top Ring](https://dofprobucket2.s3.us-east-2.amazonaws.com/Images/VUL_MarkForTopRing.png)
+
+![The Centering Ring and Motor Retainer Positions](https://dofprobucket2.s3.us-east-2.amazonaws.com/Images/VUL_RingPositions.png)
+
+* The Bottom Centering Ring will not be epoxied into position util after the fins are attached and filleted. To facilitate use of the Bottom Centering Ring, drill four small holes as shown.
+
+![The Drilled Bottom Centering Ring](https://dofprobucket2.s3.us-east-2.amazonaws.com/Images/Vul_DrilledCenteringRing.png)
+
+* Thread a length of wire through the holes and secure as shown
+
+![The Bottom Centering Ring with Removal Wire Attached](https://dofprobucket2.s3.us-east-2.amazonaws.com/Images/Vul_WiredCRView2.png)
+
+## Step 3: Shock Cord
+
+* Cut approximately a 50-inch length of the Kevlar for a Motor Mount Shock Cord.
+
+* Tie a [figure eight knot](https://www.101knots.com/figure-8-on-a-bight.html) on a bight at the midpoint of the Kevlar as shown.
+
+![The Figure Eight Knot in the Kevlar Motor Mount Shock Cord](https://dofprobucket2.s3.us-east-2.amazonaws.com/Images/VUL_ShockCord_Fig_8_CloseUp.jpeg)
+
+* If necessary, enlarge the two slots/grooves in the top centering ring until the Motor Mount Shock Cord will fit between it and the motor mount.
+
+![The Motor Mount Shock Cord threaded through the Upper Centering Ring. The line for the final position is visible](https://dofprobucket2.s3.us-east-2.amazonaws.com/Images/Vul_ShockCordThreaded.png)
+
+* Place the Motor Mount Shock Cord on the top end of the motor mount.
+
+* Slide the Top Centering Ring over the shock cord and about 1/2" below the mark you made for it on the Motor Mount.
+
+* Ensure the two ends of the Motor Mont Shock Cord go through the slots in the top centering ring enough through to wrap halfway around the Motor Mount.
+
+* Mix some epoxy and place two bands of epoxy on the the Motor Mount Tube just above the Top Centering Ring. Make sure to leave gaps in the epoxy above the slots in the Top Centering Ring. You don't want the epoxy to drip through the slots.
+
+* Slide the Top Centering Ring into position to just touch the mark you made earlier for it. Sight around the tube and assure that the centering ring is level. If it looks necessary, use the end of a craft stick to remove excess epoxy, leaving fillets between the top of the ring and the motor tube. Use blue tape on the underside to secure it. Remove the blue tape once the epoxy has cured enough that the Top Centering Ring won't slide under gravity, but before the epoxy has fully cured.
+
+* If you are using it, slide the Middle Centering Ring in position about 1/2" below the mark you made for it.
+
+* If using the Middle Centering Ring, place a band of epoxy around the Motor Mount Tube just above the Middle Centering Ring, and slide the centering ring into position to just touch the mark you made earlier for it. Sight around the tube and assure that the centering ring is level. If it looks necessary, use the end of a craft stick to remove excess epoxy, leaving a fillet between the top of the ring and the motor tube. Use blue tape on the underside to secure the centering ring so that it doesn't slide while the epoxy cures. Remove the blue tape once the epoxy has cured enough that the Middle Centering Ring won't slide under gravity, but before the epoxy has fully cured. Otherwise, you may never get all of the tape off. It should not harm anything if you don't get the tape off or can't get all of the tape off as long as the tape is above the top of the fin line.
+
+![The Motor Mount Shock Cord threaded through the Upper Centering Ring](https://dofprobucket2.s3.us-east-2.amazonaws.com/Images/VUL_AltShockCordInRing.jpeg)
+
+* Apply some epoxy like a fillet between the lower side of the top centering ring and the motor mount and wrap the ends of the shock cord around the motor mount and push them into the epoxy. Make sure the cord lays flat enough so it will not interfere with the body tube when you slide the motor tube inside. Make sure the cord is secure and will not come loose later with ejection forces that will pull on the shock cord.
+
+![The Motor Mount Shock Cord in position where it should be epoxied in place](https://dofprobucket2.s3.us-east-2.amazonaws.com/Images/VUL_AnchorShockCordCloseUp.jpeg)
+
+* Place the Motor Mount Tube vertically with the fillet(s) facing upward until the epoxy cures.
+
+## Step 4: Thick Shock Cord Steps
+
+**The following steps are if you have the Thick Shock Cord. If not, skip over them.**
+
+Place one more mark 4" from the top of the Motor Mount Tube for placement of the thick shock cord.
+
+![The Mark for Shock Cord Placement](https://dofprobucket2.s3.us-east-2.amazonaws.com/Images/VUL_MarkedForThickShockCord.png)
+
+Slide the top centering ring over the two thick shock cords and tape the bottom of the shock cords to the Motor Mount Tube at the 4" mark you made earlier. The shock cords should be as straight as possible. Slide the centering ring about 1/2" below the mark you made earlier.
+
+If you are using it, slide the Middle Centering Ring in position about 1/2" below the mark you made for it.
+
+![The Shock Cord Taped and the Top Ring Slid Down](https://dofprobucket2.s3.us-east-2.amazonaws.com/Images/Vul_TapedCR_CR_Down_View2.png)
+
+Mix some epoxy and place a band of epoxy around the Motor Mount Tube just above the Top Centering Ring, and slide the centering ring into position to just touch the mark you made earlier for it. Sight around the tube and assure that the centering ring is level. If it looks necessary, use the end of a craft stick to remove excess epoxy, leaving a fillet between the top of the ring and the motor tube. Friction with the shock cord should hold the ring in position until the epoxy cures, but you can use blue tape on the underside to secure it if necessary.
+
+![The Top Centering Ring Epoxied in Position (Side View)](https://dofprobucket2.s3.us-east-2.amazonaws.com/Images/Vul_CR_GluedSideView.png)
+
+![The Top Centering Ring Epoxied in Position (Top View)](https://dofprobucket2.s3.us-east-2.amazonaws.com/Images/Vul_TopCR_GluedTopView.png)
+
+If using the Middle Centering Ring, place a band of epoxy around the Motor Mount Tube just above the Middle Centering Ring, and slide the centering ring into position to just touch the mark you made earlier for it. Sight around the tube and assure that the centering ring is level. If it looks necessary, use the end of a craft stick to remove excess epoxy, leaving a fillet between the top of the ring and the motor tube. Use blue tape on the underside to secure the centering ring so that it doesn't slide while the epoxy cures. Remove the blue tape once the epoxy has cured enough that the Middle Centering Ring won't slide under gravity, but before the epoxy has fully cured. Otherwise, you may never get all of the tape off. It should not harm anything if you don't get the tape off or can't get all of the tape off as long as the tape is above the top of the fin line.
+
+![The Middle Centering Ring Epoxied in Place (Side View)](https://dofprobucket2.s3.us-east-2.amazonaws.com/Images/Vul_MR_GluedTopView.png)
+
+Place the Motor Mount Tube vertically with the fillet(s) facing upward until the epoxy cures.
+
+Remove the tape from the Thick Shock Cord, lift each side and apply a generous amount of epoxy to the underside.
+
+Tape the Thick Shock Cord tightly to the Motor Mount Tube in two or three places. If you want to remove the tape, do so after the epoxy has largely, but not fully cured. There is no harm in leaving the tape permanently attached.
+
+Place an epoxy fillet around the bottom side of the Top Centering Tube, being sure to cover the places where the Shock Cord passes through the Top Centering Ring.
+
+**If using the Thick Shock Cord, skip over the Alternate Shock Cord Steps and proceed to the Shock Cord steps.**
+
+## Step 5: Upper Shock Cord
+
+The Upper Shock Cord in this kit is a long section of thin nylon with a loop sewn in each end. It is tied onto either the Kevlar Lower Shock Cord or the Thick Shock Cord using a [lark's head knot](https://en.wikipedia.org/wiki/Cow_hitch), as demonstrated in the photos below.
+
+![The Initial Placement to Tie the Shock Cords Together](https://dofprobucket2.s3.us-east-2.amazonaws.com/Images/Vul_LarksHeadStart.png)
+
+![The Completed Lark's Head Knot (Top View)](https://dofprobucket2.s3.us-east-2.amazonaws.com/Images/Vul_LarksHeadAlmostTightened.png)
+
+![The Completed Lark's Head Knot (Bottom View)](https://dofprobucket2.s3.us-east-2.amazonaws.com/Images/Vul_TightenedLarksHead.png)
+
+For the time being stuff both shock cords inside the Motor Mount Tube until after you have installed the fins to keep them from getting in the epoxy during assembly. A wadded-up paper towel placed inthe bottom of the Motor Mount Tube will keep the Thin Shock Cord from falling out.
+
+The other end of the Thin Shock Cord will be attached to the Eyebolt in the payload section with the D-ring.
+
+## Step 6: Forward Section
+
+Drill a close-clearance hole for a #10-24 screw in the center of the bulkhead.
+
+Place a nut followed by a washer all of the way to the eye-end of the eyebolt..
+
+Insert the eyebolt through the hole in the center of the bulkhead and secure using another washer and nut. Tighten securely.
+
+**Apply some epoxy or CA to the nut and eyebolt threads to ensure the nut doesn’t come loose later.**
+
+![The Assembled Bulkhead](https://dofprobucket2.s3.us-east-2.amazonaws.com/Images/Vul_EyeboltView1.png)
+
+![The Opposite Side](https://dofprobucket2.s3.us-east-2.amazonaws.com/Images/Vul_DrilledEyeboltView2.png)
+
+Cut off the nut (Dremel or hacksaw) leaving about 1/4"-to-1/8" above the nut and file or sand the end to remove any sharp edges
+
+**The eyebolt and the cut-off piece may be very hot (burn hazard) while and after you cut the eyebolt.**
+
+![The Assembled Bulkhead with the Screw Eye Trimmed](https://dofprobucket2.s3.us-east-2.amazonaws.com/Images/Vul_EyeboltCutOff.png)
+
+Mark a line around the inside of the Coupler Tube 1/8" from the end. Apply epoxy to the inside of the tube and push the bulkhead in so that the line is visible and wait until the epoxy cures. Since BSI 30-minute or Aeropoxy have such long cure times, you will want to support the Coupler and the Bulkhead until the epoxy cures. The photos below show some pieces of 1×2 and a free-cut 1/8" plywood ring (which is attached to the bulkhead with double-sided tape) used as a support. You can laser-cut parts to use instead.
+
+![Some Makeshift Spacers for Attaching the Bulkhead](https://dofprobucket2.s3.us-east-2.amazonaws.com/Images/Vul_SpacersForCoupler.png)
+
+![The 1/8" Plywood Spacer Taped to the Bulkhead](https://dofprobucket2.s3.us-east-2.amazonaws.com/Images/Vul_Spacer2STaped.png)
+
+![Another View of the Spacer](https://dofprobucket2.s3.us-east-2.amazonaws.com/Images/Vul_Spacer2STapedView2.png)
+
+![The Epoxied Bulkhead Curing on the Spacers](https://dofprobucket2.s3.us-east-2.amazonaws.com/Images/Vul_CouplerBulkheadOnSpacersView2.png)
+
+Apply a fillet of epoxy around the inside edge of the coupler bulkhead joint.
+
+![The Bulkhead/Coupler Fillet](https://dofprobucket2.s3.us-east-2.amazonaws.com/Images/VUL_CouplerFillet.png)
+
+Measure the length of the coupler and mark a line around the circumference at 1/2 of the length. Place a ring of blue tape on the bulkhead side of the coupler so that it just touches the line. Apply a very thin amount of epoxy on the first inch or so of the inside of the payload tube. Put the open end (not the bulkhead end) of the coupler into the end of the payload tube with epoxy and twist and slide the coupler into the payload tube (forward body tube) until you reach the blue tape. Place the assembly vertically with the bulkhead end down until the epoxy cures. Remove the blue tape.
+
+**The epoxy is on the inside of the payload section instead of on the outside of the coupler, like in the Mini-DX3, because drips on the inside of this payload section are not as critical as in the Mini-DX3, and getting the payload section to join smoothly with the body tube is more critical for the Vulcanite.**
+
+![The Coupler/Payload Joint with Blue Tape](https://dofprobucket2.s3.us-east-2.amazonaws.com/Images/VUL_CouplerPayloadJoint.png)
+
+Insert the nose cone into the top of the payload tube and seat it securely.
+
+Holes for Payload – Nose Cone Screws: Mark three points equally spaced around the circumference of the payload tube 1" below the end of the payload tube. Easiest is to wrap a piece of paper around the tube and mark one circumference. Unwrap and measure the circumference and divide the distance by three and mark the paper accordingly, then transfer the marks to the payload tube by wrapping the paper back around the tube and marking.
+
+![The Marking Guide for the Drill Holes on the Payload Section](https://dofprobucket2.s3.us-east-2.amazonaws.com/Images/VUL_MarkingStrip.png)
+
+Drill one of the holes with a #43 bit through both the payload section and the nose cone.
+
+Countersink the hole, preferably with a 100° countersink. Stop before you hit the nose cone.
+
+Tap the hole in the nose cone with a #4-40 tap.
+
+Insert and tighten a #4-40 100° flathead screw into the drilled, countersunk and tapped hole. The screw will keep the position of the nose cone stable.
+
+Drill, countersink, and tap the remaining two holes.
+
+![The Drilled, Countersunk, and Tapped Nose Cone/Payload Joint with Flathead Screws](https://dofprobucket2.s3.us-east-2.amazonaws.com/Images/VUL_ScrewNCPayload.png)
+
+Holes for Altimeter Vents: Repeat the marking procedure 1" above the coupler-payload tube edge.
+
+Drill the three holes with a drill bit with a size between a #52 and a #44. A 1/16" bit will work fine. Drill slowly to try to leave the inside edges of the holes as clean as possible.
+
+If you are going to install an avionics carrier, you may consider putting a layer of foam in the bottom of the payload section.
+
+## Step 7: Inserting the Motor Mount Assembly
+
+Make sure the shock cord is stuffed inside the motor mount as shown in Figure 24.
+
+Place (do not epoxy) the bottom centering ring on the motor mount with the wire loop facing downward.
+
+Test fit the motor mount in the end of the body tube with the slots for the fins. The fit should be tight but smooth. Sand any centering rings that are too tight until they fit smoothly.
+
+Hold the motor mount assembly next to the body tube at the position that it will be when epoxied in. Measure how far up the body tube the top centering ring will be.
+
+Using sandpaper attached to the end of a dowel, roughen up the inside of the body tube where the top centering ring will be attached.
+
+The motor mount tube will need to protrude below the bottom of the body tube by about 1/8". The easiest way to maintain the separation while the epoxy cures is to cut a hole in a piece of 1/8" plywood the size of the motor mount tube, as shown below. You can laser-cut a part suitable for this purpose.
+
+![The Support for the Body Tube while the Motor Mount Cures](https://dofprobucket2.s3.us-east-2.amazonaws.com/Images/VUL_MotorMountSupport.png)
+
+Using one or more craft (popsicle) sticks taped together, place a ring of epoxy inside the body tube about 1/4" short of where the front centering ring will sit. You need to get the epoxy up the tube without dripping anywhere else in the tube.
+
+![Measuring the Glue Stick for the Motor Mount](https://dofprobucket2.s3.us-east-2.amazonaws.com/Images/VUL_PopsicleGlueStick.png)
+
+Insert and push and twist the the motor mount assembly up into the body tube. Leave the 1/8" of the motor mount tube protruding out the bottom. You do want the bottom centering ring to be in position to keep the motor mount centered. You do not want the bottom centering ring to be glued in place. You need to be able to remove it once the epoxy sets.
+
+**It is possible to epoxy the middle motor mount ring into position in the body tube, but the attempt to do so may get epoxy in lots of wrong places. You are on your own to do so. I recommend against it.**
+
+Place the body tube vertically in the support to hold the motor mount properly spaced while the epoxy cures.
+
+![Body Tube and Motor Mount in Spacer while Curing](https://dofprobucket2.s3.us-east-2.amazonaws.com/Images/VUL_BodyTubeMotorMountInSpacer.png)
+
+Make sure the rocket is vertical until the epoxy cures.
+
+## Step 8: Launch Lug Centering Line Marking
+
+It's easiest to mark the centering line for the body tube for the launch lugs before putting on the fins. Place a length of angle iron so that one edge is halfway between two sets of fin slots, and draw a vertical line up the body tube.
+
+![Angle Iron in Position to Mark for Launch lugs](https://dofprobucket2.s3.us-east-2.amazonaws.com/Images/VUL_AngleIronOnBodyTube.png)
+
+![Launch Lug Marking Line (Gap is Unintentional)](https://dofprobucket2.s3.us-east-2.amazonaws.com/Images/VUL_LaunchLugMarkingLine.png)
+
+## Step 9: Fins
+
+* Dry fit the fins and if necessary sand the slots until the fins fit. You don't want them to be a loose fit.
+
+* Make sure you have two or three fin jigs handy.
+
+* Apply a generous-but-not-overflowing amount of epoxy to the root end of each fin tang and insert it into the fin slots. Be sure the fin rests securely against the motor mount tube.
+
+* Before the epoxy sets, place a fin jig on each side of the fins and place the assembly on a table to guarantee the fins are straight. A third jig at the end of the body tube will help you keep things level
+
+* You may want to run a band of blue tape around the fins to hold them in position while the epoxy cures
+Before proceeding, make sure the epoxy has fully cured.
+
+![Top View of Fins in Fin Jigs](https://dofprobucket2.s3.us-east-2.amazonaws.com/Images/VUL_FinsFinGuide.png)
+
+![Front View of Fins in Fin Jigs](https://dofprobucket2.s3.us-east-2.amazonaws.com/Images/VUL_FrontFinsFinGuide.png)
+
+![Rear View of Fins in Fin Jigs](https://dofprobucket2.s3.us-east-2.amazonaws.com/Images/https://VUL_RearFinsFinGuide.png)
+
+## Step 11: Internal Fillets
+
+* Remove the bottom centering ring with the wire.
+
+* Mix up a batch of epoxy, put it in a syringe, hold the rocket almost vertically, and carefully squeeze epoxy in to create internal fillets. Do two at a time on neighboring fins. Place/leave the rocket almost horizontal while the epoxy cures. Let the epoxy set before you do the next set of fillets. Do your best to keep the epoxy from running out past the near end of the fin. You want to be able to push the bottom centering ring against the base of the fins when you're finished. Do not worry if they're not perfect. Some filleting is better than none.
+
+![Poorly Done Internal Fillets. You may have to look closely](https://dofprobucket2.s3.us-east-2.amazonaws.com/Images/VUL_InternalFins.png)
+
+* Remove the wire from the bottom centering ring.
+
+* Place a thin layer of epoxy on the inside of the body tube where the bottom centering goes and push the bottom centering ring into place.
+
+* Place the rocket vertically with the fin-end up until the epoxy cures.
+
+![Bottom Centering Ring Epoxied in Place.](https://dofprobucket2.s3.us-east-2.amazonaws.com/Images/VUL_BottomCenteringRing.png)
+
+## Step 12: External Fillets
+
+Get a set of plastic spoons that will be used for pulling the fillets.
+
+![Spoon, Pencil, and Fin](https://dofprobucket2.s3.us-east-2.amazonaws.com/Images/VUL_FinPencilSpoon.png)
+
+* Rub the edges of the spoon heavily with a pencil lead.
+
+* Draw the spoon along the joint between the fin and the body tube. With luck, you'll see a line where the spoon met the fin and where it met the body tube.
+
+![Graphite Lines from Spoon](https://dofprobucket2.s3.us-east-2.amazonaws.com/Images/VUL_FINGraqphiteLines.png)
+
+* Place blue tape along each line.
+
+* Repeat the marking and taping for each of the remaining fin-body-tube joints.
+
+* Place blue tape at the top and bottom of the fin/body tube where you want the fillet to end.
+
+![The Taped Up Fillet Areas](https://dofprobucket2.s3.us-east-2.amazonaws.com/Images/VUL_Taped.png)
+
+* Plan on doing two fillets at a time between adjacent fins.
+
+* Measure out a batch of glass microballoons equal in volume to the batch of epoxy you are about to mix.
+
+* Mix a batch of epoxy and fold in the microballoons. It should have roughly the consistency of peanut butter.
+
+* Lay the epoxy down in the joint and roughly smooth it with the stir stick.
+
+* Using a plastic spoon, pull along the fillet, leaving a nice concave profile, with excess epoxy being gathered up by the spoon.
+
+* Quickly touch up any flaws.
+
+![The Poured and Pulled Fillets before the Tape is Removed](https://dofprobucket2.s3.us-east-2.amazonaws.com/Images/VUL_PouredPulledFIllets.png)
+
+Wait 5 to 15 minutes.
+
+* Remove the blue tape along that particular set of fillets.
+
+* Let them fully cure before moving on to the next fillets.
+
+* Repeat with the remaining two sets of fillets.
+
+![A View of the Completed Fillets](https://dofprobucket2.s3.us-east-2.amazonaws.com/Images/VUL_Fillet_View.png)
+
+## Step 13: Launch Lugs
+
+**Sand both the body tube and the launch lug where they are going to join until you have removed the glassine (the shiny paper layer). Failure to do so may result in moments of panic at the launch stand when your launch lugs break off.**
+
+The launch lugs should be epoxied on and aligned with the vertical line you drew earlier. Placement isn't critical, but the bottom one should be somewhere in between the top edge of the fins and the bottom edge of the fins. The top one should be a few inches below the top of the body tube. Make sure the two launch lugs are aligned along the body tube. - Place a launch lug on the line on the body tube and trace the outline. - Outline the lines with blue tape.
+
+![The marked and Taped Area for a Rail Guide](https://dofprobucket2.s3.us-east-2.amazonaws.com/Images/VUL_TracedTapedLaunchLug.png)
+
+Sand the taped area.
+
+![The Sanded Area for a Rail Guide](https://dofprobucket2.s3.us-east-2.amazonaws.com/Images/VUL_SandedLaunchLugSpot.png)
+
+Epoxy the launch lugs in place. They don't need a lot of epoxy. Tape them down until the epoxy cures.
+
+Remove the blue tape before the epoxy sets too hard.
+
+![The Finished Rail Guide (Blue Tape can be sanded or cut off)](https://dofprobucket2.s3.us-east-2.amazonaws.com/Images/VUL_LaunchLug.png)
+
+## Step 14: Motor Retainer
+
+* Using JB-Weld (not any other epoxy) attach the inner part of the motor retainer to the bottom of the motor mount assembly. Spread the JB-Weld on the motor mount tube and not inside the motor retainer. Twist the motor retainer as you push it onto the tube.
+
+* Inspect the inside of the motor mount tube-motor retainer and thoroughly wipe away any JB-Weld that made it inside.
+
+* Place the assembly vertically, and let cure for at least 3 hours, preferably in a warm space. JB-Weld takes 24-48 hours to fully cure, but will usually not run after 3 hours.
+
+![The Base of the Motor Retainer Epoxied to the Motor Mount Tube](https://dofprobucket2.s3.us-east-2.amazonaws.com/Images/VUL_MotorRetainer.png)
+
+## Step 15: Chute Protectors and Parachutes
+
+You are using two different parachutes and two different chute protectors with this rocket: a 9" or 12" nylon parachute with a 6“x6" chute protector for the drogue chute, and the chute that came with the kit with a 9“x9" chute protector for the main chute. The Drogue chute will be between the Lower Body Tube and the Lower Bulkhead Eyebolt on the Avionics Bay. The Main Chute goes between the Upper Bulkhead Eyebolt on the Avionics Bay and the Eyebolt on the GPS Holder/ Nose Cone.
+
+For the Drogue Chute:
+
+* Shake or push the Lower Shock Cord free out the top of the Lower Body Tube.
+* Roughly 2/3 of the shock cord length (the length from the Lower Body Tube up) tie a butterfly knot or a figure eight knot on a bight.
+
+![A Butterfly Knot in the Shock Cord. Yours should be yellow Kevlar, not black nylon](https://dofprobucket2.s3.us-east-2.amazonaws.com/Images/VUL_ButterflyKnot.png)
+
+* Attach the main parachute to the butterfly knot or the figure eight knot on a bight with a Lark's Head knot. Gather the shroud-line loops. Push them through the bight on the shock cord. Pass the parachute through the shroud-line loops and pull. See Step 5 of the Seeker Instructions if it's unclear.
+
+* Thread the 9“x9" chute protector through the free end shock cord and slide up to the knot.
+
+* Thread the free end of the shock cord through the Upper Body Tube, starting with the end without holes and exiting through the end with the three countersunk holes.
+
+* Attach the end of the shock cord to the top eyebolt in the Avionics Bay with a PML Knot.
+
+* If you were prepping the rocket for launch, you would prep the Avionics Bay and main ejection charge, and then secure the Upper Body Tube to the Avionics Bay with the three #4-40 100° flat head screws.
+
+## Step 16: Folding the Parachute
+
+If you want to fold the parachute and pack it in the rocket use the [Instructions for Folding Parachutes](https://dofpro.org/RCK/const/index).
+
+## Step 17: Painting and Marking
+
+If you desire to paint your rocket, please do so. There are lots of places on-line that will give you an overabundance of advice on how to do so. Many fliers prefer to make their rocket “earn it's paint” by flying it unpainted, and then painting it if it survives the first flight.
+
+* You should mark the center of pressure with a center-of-pressure symbol, which is a circle with a dot in the middle, ⊙. A Sharpie® works great, but we do have water-slide decals if you want to get fancy.
+
+* Label the rocket with your name and cell-phone number on both the body tube and payload section. Again a Sharpie® works great, but you can use print-on adhesive labels or Sam's labeling machine as well.

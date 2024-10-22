@@ -1,7 +1,9 @@
 ---
-title: "54 mm Rocket Assembly Instructions"
+title: "55 mm Rocket Assembly Instructions"
 author: "DOFPro group"
 ---
+
+Make sure to review the [safety hints](https://dofpro.org/RCK/safety/) before attempting assembly of any high-powered rockets.
 
 ## General Information 
 
