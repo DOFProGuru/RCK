@@ -22,9 +22,6 @@ A I140W-14 motor was used for the feb-23 flight, and a J270W-14 was used for the
 
 * [2023-07-08_DDVulcanite_J270_14-37-34.csv](https://dofprobucket2.s3.us-east-2.amazonaws.com/DDVulcanite/2023-07-08_DDVulcanite_J270_14-37-34.csv)
 
-* [2023-07-08_DDVulcanite_J270_14-37-34.xlsx](https://pages.hmc.edu/spjut/AdvRoc/FlightData/DDVulcanite/2023-07-08_DDVulcanite_J270_14-37-34.xlsx)
-
-
 # Madcow Adventurer
 
 [OpenRocket File](https://pages.hmc.edu/spjut/AdvRoc/SimModels/ClassAdventurer.ork)
@@ -37,61 +34,35 @@ A I140W-14 motor was used for the feb-23 flight, and a J270W-14 was used for the
 
 A J530 motor was used for all flights with the Madcow adventurer. Both of the 17 Apr 2021 flights weathercocked a fair amount. On the same flights, the thermistors were somehow reading about 70°F. The humidity, RH, was about 20%, and the wind read 9mph.
 
-* [Adventurer_J510W_1_Raven.csv](https://pages.hmc.edu/spjut/AdvRoc/FlightData/Adventurer/20210417_Adventurer_J510W_1_Raven.csv)
+* [Adventurer_J510W_1_Raven.csv](https://dofprobucket2.s3.us-east-2.amazonaws.com/Adventurer/20210417_Adventurer_J510W_1_Raven.csv)
 
-* [Adventurer_J510W_1_Trimmed.TXT](https://pages.hmc.edu/spjut/AdvRoc/FlightData/Adventurer/20210417_Adventurer_J510W_1_Trimmed.TXT)
+* [Adventurer_J530_1_Raven.csv](https://dofprobucket2.s3.us-east-2.amazonaws.com/Adventurer/20210417_Adventurer_J530_1_Raven.csv)
 
-* [Adventurer_J510W_1.FIPa](https://pages.hmc.edu/spjut/AdvRoc/FlightData/Adventurer/20210417_Adventurer_J510W_1.FIPa)
+* [22020609_Adv_J825R_F1_Trimmed.TXT](https://dofprobucket2.s3.us-east-2.amazonaws.com/Adventurer/22020609_Adv_J825R_F1_Trimmed.TXT)
 
-* [Adventurer_J510W_1.pf2](https://pages.hmc.edu/spjut/AdvRoc/FlightData/Adventurer/20210417_Adventurer_J510W_1.pf2)
+* [20220610_ADV_J570_Trimmed.TXT](https://dofprobucket2.s3.us-east-2.amazonaws.com/Adventurer/20220610_ADV_J570_Trimmed.TXT)
 
-* [The full Adventurer_J510W_1.TXT](https://pages.hmc.edu/spjut/AdvRoc/FlightData/Adventurer/20210417_Adventurer_J510W_1.TXT)
-
-* [Adventurer_J530_1_Raven.csv](https://pages.hmc.edu/spjut/AdvRoc/FlightData/Adventurer/20210417_Adventurer_J530_1_Raven.csv)
-
-* [Adventurer_J530_1_Trimmed.TXT](https://pages.hmc.edu/spjut/AdvRoc/FlightData/Adventurer/20210417_Adventurer_J530_1_Trimmed.TXT)
-
-* [Adventurer_J530_1.FIPa](https://pages.hmc.edu/spjut/AdvRoc/FlightData/Adventurer/20210417_Adventurer_J530_1.FIPa)
-
-* [Adventurer_J530_1.pf2](https://pages.hmc.edu/spjut/AdvRoc/FlightData/Adventurer/20210417_Adventurer_J530_1.pf2)
-
-* [The full Adventurer_J530_1.TXT](https://pages.hmc.edu/spjut/AdvRoc/FlightData/Adventurer/20210417_Adventurer_J530_1.TXT)
-
-* [22020609_Adv_J825R_F1_Trimmed.TXT](https://pages.hmc.edu/spjut/AdvRoc/FlightData/Adventurer/22020609_Adv_J825R_F1_Trimmed.TXT)
-
-* [22020609_Adv_J825R_F1.FIPa](https://pages.hmc.edu/spjut/AdvRoc/FlightData/Adventurer/22020609_Adv_J825R_F1.FIPa)
-
-* [20220610_ADV_J570_Trimmed.TXT](https://pages.hmc.edu/spjut/AdvRoc/FlightData/Adventurer/20220610_ADV_J570_Trimmed.TXT)
-
-* [20220610_ADV_J570.FIPa](https://pages.hmc.edu/spjut/AdvRoc/FlightData/Adventurer/20220610_ADV_J570.FIPa)
-
-* [20220610_ADV_J530_Trimmed.TXT](https://pages.hmc.edu/spjut/AdvRoc/FlightData/Adventurer/20220610_ADV_J530_Trimmed.TXT)
-
-* [20220610_ADV_J530.FIPa](https://pages.hmc.edu/spjut/AdvRoc/FlightData/Adventurer/20220610_ADV_J530.FIPa)
-
-* [20220611_Adv_J530_Trimmed.TXT](https://pages.hmc.edu/spjut/AdvRoc/FlightData/Adventurer/20220611_Adv_J530_Trimmed.TXT)
-
-* [20220611_Adv_J530.FIPa](https://pages.hmc.edu/spjut/AdvRoc/FlightData/Adventurer/20220611_Adv_J530.FIPa)
+* [20220611_Adv_J530_Trimmed.TXT](https://dofprobucket2.s3.us-east-2.amazonaws.com/Adventurer/20220611_Adv_J530_Trimmed.TXT)
 
 The following are CSV log files of data from the Featherweight GPS.
 
-* [The Ground Log GPS Data from both flights 20210417](https://pages.hmc.edu/spjut/AdvRoc/FlightData/Adventurer/2021-04-17-Log_GPS.csv)
+* [The Ground Log GPS Data from both flights 20210417](https://dofprobucket2.s3.us-east-2.amazonaws.com/Adventurer/2021-04-17-Log_GPS.csv)
 
-* [The on-board GPS data for the J510W20210417](https://pages.hmc.edu/spjut/AdvRoc/FlightData/Adventurer/20210417_Adventurer_J510W_1_GPS.csv)
+* [The on-board GPS data for the J510W20210417](https://dofprobucket2.s3.us-east-2.amazonaws.com/Adventurer/20210417_Adventurer_J510W_1_GPS.csv)
 
-* [The on-board GPS data for the J53020210417](https://pages.hmc.edu/spjut/AdvRoc/FlightData/Adventurer/20210417_Adventurer_J530_1_GPS.csv)
+* [The on-board GPS data for the J53020210417](https://dofprobucket2.s3.us-east-2.amazonaws.com/Adventurer/20210417_Adventurer_J530_1_GPS.csv)
 
 The following are Microsoft Excel Files that came from the Featherweight GPS .csv files. They have been edited to add time in seconds from the start of logging. They also have plots of the time vs. altitude data for the flights.
 
-* [The Ground Log GPS Data from 20220609. Has one Adventurer and two other flights](https://pages.hmc.edu/spjut/AdvRoc/FlightData/Adventurer/2022-06-09-Log.xlsx)
+* [The Ground Log GPS Data from 20220609. Has one Adventurer and two other flights](https://dofprobucket2.s3.us-east-2.amazonaws.com/Adventurer/2022-06-09-Log.xlsx)
 
-* [The Ground Log GPS Data from 20220610. Has the J570 and the J530 flights.](https://pages.hmc.edu/spjut/AdvRoc/FlightData/Adventurer/2022-06-10-Log.xlsx)
+* [The Ground Log GPS Data from 20220610. Has the J570 and the J530 flights.](https://dofprobucket2.s3.us-east-2.amazonaws.com/Adventurer/2022-06-10-Log.xlsx)
 
-* [The on-board GPS for the J570 from 20220610](https://pages.hmc.edu/spjut/AdvRoc/FlightData/Adventurer/2022-06-10_Adventurere_J570_14-31-04.xlsx)
+* [The on-board GPS for the J570 from 20220610](https://dofprobucket2.s3.us-east-2.amazonaws.com/Adventurer/2022-06-10_Adventurere_J570_14-31-04.xlsx)
 
-* [The on-board GPS for the J530 from 20220610](https://pages.hmc.edu/spjut/AdvRoc/FlightData/Adventurer/2022-06-10_Adventurer_J530_17-33-38.xlsx)
+* [The on-board GPS for the J530 from 20220610](https://dofprobucket2.s3.us-east-2.amazonaws.com/Adventurer/2022-06-10_Adventurer_J530_17-33-38.xlsx)
 
-* [The on-board GPS for the J530 from 20220611](https://pages.hmc.edu/spjut/AdvRoc/FlightData/Adventurer/2022-06-11_Adventurer_J530_16-13-26.xlsx)    
+* [The on-board GPS for the J530 from 20220611](https://dofprobucket2.s3.us-east-2.amazonaws.com/Adventurer/2022-06-11_Adventurer_J530_16-13-26.xlsx)    
 
 # Madcow Mini DX3 First Flight
 
@@ -108,63 +79,41 @@ For the 15th of November, 2019 flights, we used an F67-9 motor. The Nov-15 weath
 
 Note: the following use [ParseTeensyLoggerEggfinder.m](https://pages.hmc.edu/spjut/AdvRoc/MATLABModels/ParseTeensyLoggerEggfinder.m).
 
-* [DX3_F67-9W_1_GPS.TXT](https://pages.hmc.edu/spjut/AdvRoc/FlightData/First_Flight_DX3/20191115_DX3_F67-9W_1_GPS.TXT)
+* [DX3_F67-9W_1_GPS.TXT](https://dofprobucket2.s3.us-east-2.amazonaws.com/First_Flight_DX3/20191115_DX3_F67-9W_1_GPS.TXT)
 
-* [DX3_F67-9W_1_Teensy.TXT](https://pages.hmc.edu/spjut/AdvRoc/FlightData/First_Flight_DX3/20191115_DX3_F67-9W_1_Teensy.TXT)
+* [DX3_F67-9W_2_GPS.TXT](https://dofprobucket2.s3.us-east-2.amazonaws.com/First_Flight_DX3/20191115_DX3_F67-9W_2_GPS.TXT)
 
-* [DX3_F67-9W_2_GPS.TXT](https://pages.hmc.edu/spjut/AdvRoc/FlightData/First_Flight_DX3/20191115_DX3_F67-9W_2_GPS.TXT)
+* [DX3_F67-9W_3_GPS.TXT](https://dofprobucket2.s3.us-east-2.amazonaws.com/First_Flight_DX3/20191115_DX3_F67-9W_3_GPS.TXT)
 
-* [DX3_F67-9W_2_Teensy.TXT](https://pages.hmc.edu/spjut/AdvRoc/FlightData/First_Flight_DX3/20191115_DX3_F67-9W_2_Teensy.TXT)
+* [DX3_F67-9W_4_GPS.TXT](https://dofprobucket2.s3.us-east-2.amazonaws.com/First_Flight_DX3/20191115_DX3_F67-9W_4_GPS.TXT)
 
-* [DX3_F67-9W_3_GPS.TXT](https://pages.hmc.edu/spjut/AdvRoc/FlightData/First_Flight_DX3/20191115_DX3_F67-9W_3_GPS.TXT)
+* [DX3_F67-9W_5_GPS.TXT](https://dofprobucket2.s3.us-east-2.amazonaws.com/First_Flight_DX3/20191115_DX3_F67-9W_5_GPS.TXT)
 
-* [DX3_F67-9W_3_Teensy.TXT](https://pages.hmc.edu/spjut/AdvRoc/FlightData/First_Flight_DX3/20191115_DX3_F67-9W_3_Teensy.TXT)
+* [DX3_F67-9W_6_GPS.TXT](https://dofprobucket2.s3.us-east-2.amazonaws.com/First_Flight_DX3/20191115_DX3_F67-9W_6_GPS.TXT)
 
-* [DX3_F67-9W_4_GPS.TXT](https://pages.hmc.edu/spjut/AdvRoc/FlightData/First_Flight_DX3/20191115_DX3_F67-9W_4_GPS.TXT)
+* [DX3_F67-9W_7_GPS.TXT](https://dofprobucket2.s3.us-east-2.amazonaws.com/First_Flight_DX3/20191115_DX3_F67-9W_7_GPS.TXT)
 
-* [DX3_F67-9W_4_Teensy.TXT](https://pages.hmc.edu/spjut/AdvRoc/FlightData/First_Flight_DX3/20191115_DX3_F67-9W_4_Teensy.TXT)
-
-* [DX3_F67-9W_5_GPS.TXT](https://pages.hmc.edu/spjut/AdvRoc/FlightData/First_Flight_DX3/20191115_DX3_F67-9W_5_GPS.TXT)
-
-* [DX3_F67-9W_5_Teensy.TXT](https://pages.hmc.edu/spjut/AdvRoc/FlightData/First_Flight_DX3/20191115_DX3_F67-9W_5_Teensy.TXT)
-
-* [DX3_F67-9W_6_GPS.TXT](https://pages.hmc.edu/spjut/AdvRoc/FlightData/First_Flight_DX3/20191115_DX3_F67-9W_6_GPS.TXT)
-
-* [DX3_F67-9W_6_Teensy.TXT](https://pages.hmc.edu/spjut/AdvRoc/FlightData/First_Flight_DX3/20191115_DX3_F67-9W_6_Teensy.TXT)
-
-* [DX3_F67-9W_7_GPS.TXT](https://pages.hmc.edu/spjut/AdvRoc/FlightData/First_Flight_DX3/20191115_DX3_F67-9W_7_GPS.TXT)
-
-* [DX3_F67-9W_7_Teensy.TXT](https://pages.hmc.edu/spjut/AdvRoc/FlightData/First_Flight_DX3/20191115_DX3_F67-9W_7_Teensy.TXT)
-
-* [DX3_F67-9W_8_GPS.TXT](https://pages.hmc.edu/spjut/AdvRoc/FlightData/First_Flight_DX3/20191115_DX3_F67-9W_8_GPS.TXT)
+* [DX3_F67-9W_8_GPS.TXT](https://dofprobucket2.s3.us-east-2.amazonaws.com/First_Flight_DX3/20191115_DX3_F67-9W_8_GPS.TXT)
 
 The following use [ScanTeensyDataLogger.m](https://pages.hmc.edu/spjut/AdvRoc/MATLABModels/ScanTeensyDataLogger.m). The “trimmed” files have been trimmed to contain only the flight data with a little pre- and post-flight data. The untrimmed files contain all of the data from the time logging was started until when it was stopped.
 
-* [MiniDX3_G77-10R_trimmed.TXT](https://pages.hmc.edu/spjut/AdvRoc/FlightData/First_Flight_DX3/20210205_MiniDX3_G77-10R-L_trimmed.TXT)
+* [MiniDX3_G77-10R_trimmed.TXT](https://dofprobucket2.s3.us-east-2.amazonaws.com/First_Flight_DX3/20210205_MiniDX3_G77-10R-L_trimmed.TXT)
 
-* [MiniDX3_G77-10R.TXT](https://pages.hmc.edu/spjut/AdvRoc/FlightData/First_Flight_DX3/20210205_MiniDX3_G77-10R-L.TXT)
+* [MiniDX3_G79-10W_trimmed.TXT](https://dofprobucket2.s3.us-east-2.amazonaws.com/First_Flight_DX3/20210205_MiniDX3_G79-10W-L_trimmed.TXT)
 
-* [MiniDX3_G79-10W_trimmed.TXT](https://pages.hmc.edu/spjut/AdvRoc/FlightData/First_Flight_DX3/20210205_MiniDX3_G79-10W-L_trimmed.TXT)
+* [MiniDX3_H128W-14 Trimmed.TXT](https://dofprobucket2.s3.us-east-2.amazonaws.com/First_Flight_DX3/20210410_MiniDX3_H128W-14_Trimmed.TXT)
 
-* [MiniDX3_G79-10W.TXT](https://pages.hmc.edu/spjut/AdvRoc/FlightData/First_Flight_DX3/20210205_MiniDX3_G79-10W-L.TXT)
-
-* [MiniDX3_H128W-14 Trimmed.TXT](https://pages.hmc.edu/spjut/AdvRoc/FlightData/First_Flight_DX3/20210410_MiniDX3_H128W-14_Trimmed.TXT)
-
-* [MiniDX3_H128W-14 .TXT](https://pages.hmc.edu/spjut/AdvRoc/FlightData/First_Flight_DX3/20210410_MiniDX3_H128W-14.TXT)
-
-* [MiniDX3_G138T-14 Trimmed.TXT](https://pages.hmc.edu/spjut/AdvRoc/FlightData/First_Flight_DX3/20210410_MiniDX3_G138T-14_Trimmed.TXT) (rocket shredded at Max-Q)
-
-* [MiniDX3_G138T-14 .TXT](https://pages.hmc.edu/spjut/AdvRoc/FlightData/First_Flight_DX3/20210410_MiniDX3_G138T-14.TXT) (rocket shredded at Max-Q)
+* [MiniDX3_G138T-14 Trimmed.TXT](https://dofprobucket2.s3.us-east-2.amazonaws.com/First_Flight_DX3/20210410_MiniDX3_G138T-14_Trimmed.TXT) (rocket shredded at Max-Q)
 
 The following are CSV log files of data from the Featherweight GPS.
 
-* [MiniDX3_G77_and_G79_GPS_Log.csv](https://pages.hmc.edu/spjut/AdvRoc/FlightData/First_Flight_DX3/20210205_MiniDX3_G77_and_G79_GPS_Log.csv)
+* [MiniDX3_G77_and_G79_GPS_Log.csv](https://dofprobucket2.s3.us-east-2.amazonaws.com/First_Flight_DX3/20210205_MiniDX3_G77_and_G79_GPS_Log.csv)
 
-* [2021-04-10_(E178_TK_01)17-30-09.csv_17-30-09.csv](https://pages.hmc.edu/spjut/AdvRoc/FlightData/First_Flight_DX3/2021-04-10_(E178_TK_01))
+* [2021-04-10_(E178_TK_01)17-30-09.csv_17-30-09.csv](https://dofprobucket2.s3.us-east-2.amazonaws.com/First_Flight_DX3/2021-04-10_(E178_TK_01))
 
-* [2021-04-10(E178_TK_02)_18-16-30.csv_18-16-30.csv](https://pages.hmc.edu/spjut/AdvRoc/FlightData/First_Flight_DX3/2021-04-10_(E178_TK_02))
+* [2021-04-10(E178_TK_02)_18-16-30.csv_18-16-30.csv](https://dofprobucket2.s3.us-east-2.amazonaws.com/First_Flight_DX3/2021-04-10_(E178_TK_02))
 
-* [2021-04-10-Log.csv](https://pages.hmc.edu/spjut/AdvRoc/FlightData/First_Flight_DX3/2021-04-10-Log.csv) (Contains data from both Vulcanite and Mini DX3 flights)
+* [2021-04-10-Log.csv](https://dofprobucket2.s3.us-east-2.amazonaws.com/First_Flight_DX3/2021-04-10-Log.csv) (Contains data from both Vulcanite and Mini DX3 flights)
 
 # LOC Precision Vulcanite
 
@@ -182,28 +131,20 @@ Mar-10 flight 2: H128W-10 motor, 69°F, 8mph winds, 22% humidity
 
 Note: The 5-Feb-21 flight data had a lot of interference from the GPS that was located too close to the logger. The trimmed and pruned file has beeen cut down to the flight data with just a little pre- and post-flight data, and it's had most of the bad points removed from the file.
 
-* [Vulcanite_G78-10G Trimmed.TXT](https://pages.hmc.edu/spjut/AdvRoc/FlightData/Vulcanite/20210205_Vulcanite_G78-10G-L_trimmed.TXT)
+* [Vulcanite_G78-10G Trimmed.TXT](https://dofprobucket2.s3.us-east-2.amazonaws.com/Vulcanite/20210205_Vulcanite_G78-10G-L_trimmed.TXT)
 
-* [Vulcanite_G78-10G.TXT](https://pages.hmc.edu/spjut/AdvRoc/FlightData/Vulcanite/20210205_Vulcanite_G78-10G-L.TXT)
+* [Vulcanite_J270W-14 Trimmed.TXT](https://dofprobucket2.s3.us-east-2.amazonaws.com/Vulcanite/20210410_Vulcanite_J270W-14A_Trimmed.TXT)
 
-* [Vulcanite_G78-10G Trimmed and Pruned.TXT](https://pages.hmc.edu/spjut/AdvRoc/FlightData/Vulcanite/20210205_Vulcanite_G78-10G-L_trimmed_pruned.TXT)
+* [Vulcanite_H123W-10 Trimmed.TXT](https://dofprobucket2.s3.us-east-2.amazonaws.com/Vulcanite/20210410_Vulcanite_H128W-10_Trimmed.TXT)
 
-* [Vulcanite_J270W-14 Trimmed.TXT](https://pages.hmc.edu/spjut/AdvRoc/FlightData/Vulcanite/20210410_Vulcanite_J270W-14A_Trimmed.TXT)
-
-* [Vulcanite_J270W-14 .TXT](https://pages.hmc.edu/spjut/AdvRoc/FlightData/Vulcanite/20210410_Vulcanite_J270W-14A.TXT)
-
-* [Vulcanite_H123W-10 Trimmed.TXT](https://pages.hmc.edu/spjut/AdvRoc/FlightData/Vulcanite/20210410_Vulcanite_H128W-10_Trimmed.TXT)
-
-* [Vulcanite_H123W-10 .TXT](https://pages.hmc.edu/spjut/AdvRoc/FlightData/Vulcanite/20210410_Vulcanite_H128W-10.TXT)
-
-The 1-D processed data for the [Vulcanite_G78-10G.TXT](https://pages.hmc.edu/spjut/AdvRoc/FlightData/Vulcanite/20210205_Vulcanite_G78-10G-L_trimmed.TXT) flight is in [VulcaniteG78-10G_Flight_Data.xlsx](https://pages.hmc.edu/spjut/AdvRoc/FlightData/Vulcanite/VulcaniteG78-10G_Flight_Data.xlsx).
+The 1-D processed data for the [Vulcanite_G78-10G.TXT](https://dofprobucket2.s3.us-east-2.amazonaws.com/Vulcanite/20210205_Vulcanite_G78-10G-L_trimmed.TXT) flight is in [VulcaniteG78-10G_Flight_Data.xlsx](https://pages.hmc.edu/spjut/AdvRoc/FlightData/Vulcanite/VulcaniteG78-10G_Flight_Data.xlsx).
 
 The following are CSV log files of data from the Featherweight GPS.
 
-* [Vulcanite_G78_GPS_Log.csv](https://pages.hmc.edu/spjut/AdvRoc/FlightData/Vulcanite/20210205_Vulcanite_G78_GPS_Log.csv)
+* [Vulcanite_G78_GPS_Log.csv](https://dofprobucket2.s3.us-east-2.amazonaws.com/Vulcanite/20210205_Vulcanite_G78_GPS_Log.csv)
 * [2021-04-10_(E178_TK_01)15-10-00.csv_15-10-00.csv](https://pages.hmc.edu/spjut/AdvRoc/FlightData/Vulcanite/2021-04-10_(E178_TK_01))
 * [2021-04-10(E178_TK_01)_17-30-09.csv_17-30-09.csv](https://pages.hmc.edu/spjut/AdvRoc/FlightData/Vulcanite/2021-04-10_(E178_TK_01))
-* [2021-04-10-Log.csv](https://pages.hmc.edu/spjut/AdvRoc/FlightData/Vulcanite/2021-04-10-Log.csv) (has both the Vulcanite and Mini DX3 data)
+* [2021-04-10-Log.csv](https://dofprobucket2.s3.us-east-2.amazonaws.com/Vulcanite/2021-04-10-Log.csv) (has both the Vulcanite and Mini DX3 data)
 
 # 38mm Prototype Rocket (Modified GoDevil 38)
 
@@ -224,76 +165,46 @@ dec-9 flights: J150 motor, 65°F ,13% humidity, 2mph wind
 
 # Aerotech H148R
 * [E190_1JUL2017_H148R_1_BASE.csv](https://pages.hmc.edu/spjut/AdvRoc/FlightData/E190_Prototype/H148R/E190_1JUL2017_H148R_1_BASE.csv)
-* [E190_1JUL2017_H148R_1_BASE.xtra](https://pages.hmc.edu/spjut/AdvRoc/FlightData/E190_Prototype/H148R/E190_1JUL2017_H148R_1_BASE.xtra)
 * [E190_1JUL2017_H148R_1_Raven.csv](https://pages.hmc.edu/spjut/AdvRoc/FlightData/E190_Prototype/H148R/E190_1JUL2017_H148R_1_Raven.csv)
-* [E190_1JUL2017_H148R_1_Raven.FIPa](https://pages.hmc.edu/spjut/AdvRoc/FlightData/E190_Prototype/H148R/E190_1JUL2017_H148R_1_Raven.FIPa)
 * [E190_1JUL2017_H148R_1_XTRA.csv](https://pages.hmc.edu/spjut/AdvRoc/FlightData/E190_Prototype/H148R/E190_1JUL2017_H148R_1_XTRA.csv)
-* [E190_1JUL2017_H148R_1_XTRA.kml](https://pages.hmc.edu/spjut/AdvRoc/FlightData/E190_Prototype/H148R/E190_1JUL2017_H148R_1_XTRA.kml)
-* [E190_1JUL2017_H148R_1_XTRA.xtra](https://pages.hmc.edu/spjut/AdvRoc/FlightData/E190_Prototype/H148R/E190_1JUL2017_H148R_1_XTRA.xtra)
 
 # CTI J150
 
 * [E190_9DEC2017_J150_BASE.xtra](https://pages.hmc.edu/spjut/AdvRoc/FlightData/E190_Prototype/J150/E190_9DEC2017_J150_BASE.xtra)
 * [E190_9DEC2017_J150_OnBoard.csv](https://pages.hmc.edu/spjut/AdvRoc/FlightData/E190_Prototype/J150/E190_9DEC2017_J150_OnBoard.csv)
-* [E190_9DEC2017_J150_OnBoard.kml](https://pages.hmc.edu/spjut/AdvRoc/FlightData/E190_Prototype/J150/E190_9DEC2017_J150_OnBoard.kml)
-* [E190_9DEC2017_J150_OnBoard.xtra](https://pages.hmc.edu/spjut/AdvRoc/FlightData/E190_Prototype/J150/E190_9DEC2017_J150_OnBoard.xtra)
 * [E190_9DEC2017_J150_Raven.csv](https://pages.hmc.edu/spjut/AdvRoc/FlightData/E190_Prototype/J150/E190_9DEC2017_J150_Raven.csv)
-* [E190_9DEC2017_J150_Raven.FIPa](https://pages.hmc.edu/spjut/AdvRoc/FlightData/E190_Prototype/J150/E190_9DEC2017_J150_Raven.FIPa)
 
 # CTI J354
 
 * [E190_9SEP2017_J354_1_BASE.csv](https://pages.hmc.edu/spjut/AdvRoc/FlightData/E190_Prototype/J354/E190_9SEP2017_J354_1_BASE.csv)
-* [E190_9SEP2017_J354_1_BASE.kml](https://pages.hmc.edu/spjut/AdvRoc/FlightData/E190_Prototype/J354/E190_9SEP2017_J354_1_BASE.kml)
-* [E190_9SEP2017_J354_1_BASE.xtra](https://pages.hmc.edu/spjut/AdvRoc/FlightData/E190_Prototype/J354/E190_9SEP2017_J354_1_BASE.xtra)
 * [E190_9SEP2017_J354_1_XTRA.csv](https://pages.hmc.edu/spjut/AdvRoc/FlightData/E190_Prototype/J354/E190_9SEP2017_J354_1_XTRA.csv)
-* [E190_9SEP2017_J354_1_XTRA.kml](https://pages.hmc.edu/spjut/AdvRoc/FlightData/E190_Prototype/J354/E190_9SEP2017_J354_1_XTRA.kml)
-* [E190_9SEP2017_J354_1_XTRA.xtra](https://pages.hmc.edu/spjut/AdvRoc/FlightData/E190_Prototype/J354/E190_9SEP2017_J354_1_XTRA.xtra)
 * [E190_9SEP2017_J354_Raven.csv](https://pages.hmc.edu/spjut/AdvRoc/FlightData/E190_Prototype/J354/E190_9SEP2017_J354_Raven.csv )
-* [E190_9SEP2017_J354_Raven.FIPa](https://pages.hmc.edu/spjut/AdvRoc/FlightData/E190_Prototype/J354/E190_9SEP2017_J354_Raven.FIPa)
 
 # CTI J394
 
 * [E190_7OCT2017_J394_1_BASE.csv](https://pages.hmc.edu/spjut/AdvRoc/FlightData/E190_Prototype/J394/E190_7OCT2017_J394_1_BASE.csv)
-* [E190_7OCT2017_J394_1_BASE.kml](https://pages.hmc.edu/spjut/AdvRoc/FlightData/E190_Prototype/J394/E190_7OCT2017_J394_1_BASE.kml)
-* [E190_7OCT2017_J394_1_BASE.xtra](https://pages.hmc.edu/spjut/AdvRoc/FlightData/E190_Prototype/J394/E190_7OCT2017_J394_1_BASE.xtra)
 * [E190_7OCT2017_J394_1_Raven.csv](https://pages.hmc.edu/spjut/AdvRoc/FlightData/E190_Prototype/J394/E190_7OCT2017_J394_1_Raven.csv)
-* [E190_7OCT2017_J394_1_Raven.FIPa](https://pages.hmc.edu/spjut/AdvRoc/FlightData/E190_Prototype/J394/E190_7OCT2017_J394_1_Raven.FIPa)
 * [E190_7OCT2017_J394_1_XTRA.csv](https://pages.hmc.edu/spjut/AdvRoc/FlightData/E190_Prototype/J394/E190_7OCT2017_J394_1_XTRA.csv)
-* [E190_7OCT2017_J394_1_XTRA.kml](https://pages.hmc.edu/spjut/AdvRoc/FlightData/E190_Prototype/J394/E190_7OCT2017_J394_1_XTRA.kml)
-* [E190_7OCT2017_J394_1_XTRA.xtra](https://pages.hmc.edu/spjut/AdvRoc/FlightData/E190_Prototype/J394/E190_7OCT2017_J394_1_XTRA.xtra)
 
 # Aerotech J500G
 
 * [E190_8JUL2017_J500G_1_BASE.csv](https://pages.hmc.edu/spjut/AdvRoc/FlightData/E190_Prototype/J500G/E190_8JUL2017_J500G_1_BASE.csv)
-* [E190_8JUL2017_J500G_1_BASE.kml](https://pages.hmc.edu/spjut/AdvRoc/FlightData/E190_Prototype/J500G/E190_8JUL2017_J500G_1_BASE.kml)
-* [E190_8JUL2017_J500G_1_BASE.xtra](https://pages.hmc.edu/spjut/AdvRoc/FlightData/E190_Prototype/J500G/E190_8JUL2017_J500G_1_BASE.xtra)
 * [E190_8JUL2017_J500G_Raven.csv](https://pages.hmc.edu/spjut/AdvRoc/FlightData/E190_Prototype/J500G/E190_8JUL2017_J500G_Raven.csv)
-* [E190_8JUL2017_J500G_Raven.FIPa](https://pages.hmc.edu/spjut/AdvRoc/FlightData/E190_Prototype/J500G/E190_8JUL2017_J500G_Raven.FIPa)
 
 # Aerotech J510W
 
 * [E190_8JUL2017_J510W_1_BASE.csv](https://pages.hmc.edu/spjut/AdvRoc/FlightData/E190_Prototype/J510W/E190_8JUL2017_J510W_1_BASE.csv)
-* [E190_8JUL2017_J510W_1_BASE.kml](https://pages.hmc.edu/spjut/AdvRoc/FlightData/E190_Prototype/J510W/E190_8JUL2017_J510W_1_BASE.kml)
-* [E190_8JUL2017_J510W_1_BASE.xtra](https://pages.hmc.edu/spjut/AdvRoc/FlightData/E190_Prototype/J510W/E190_8JUL2017_J510W_1_BASE.xtra)
 * [E190_8JUL2017_J510W_1_XTRA_213.csv](https://pages.hmc.edu/spjut/AdvRoc/FlightData/E190_Prototype/J510W/E190_8JUL2017_J510W_1_XTRA_213.csv)
 * [E190_8JUL2017_J510W_1_XTRA.csv](https://pages.hmc.edu/spjut/AdvRoc/FlightData/E190_Prototype/J510W/E190_8JUL2017_J510W_1_XTRA.csv)
-* [E190_8JUL2017_J510W_1_XTRA.kml](https://pages.hmc.edu/spjut/AdvRoc/FlightData/E190_Prototype/J510W/E190_8JUL2017_J510W_1_XTRA.kml)
-* [E190_8JUL2017_J510W_1_XTRA.xtra](https://pages.hmc.edu/spjut/AdvRoc/FlightData/E190_Prototype/J510W/E190_8JUL2017_J510W_1_XTRA.xtra)
 * [E190_8JUL2017_J510W_EmulationData.csv](https://pages.hmc.edu/spjut/AdvRoc/FlightData/E190_Prototype/J510W/E190_8JUL2017_J510W_EmulationData.csv)
 * [E190_8JUL2017_J510W_Raven.csv](https://pages.hmc.edu/spjut/AdvRoc/FlightData/E190_Prototype/J510W/E190_8JUL2017_J510W_Raven.csv)
-* [E190_8JUL2017_J510W_Raven.FIPa](https://pages.hmc.edu/spjut/AdvRoc/FlightData/E190_Prototype/J510W/E190_8JUL2017_J510W_Raven.FIPa)
 * [J510W_T_P_vs_altitude.xlsx](https://pages.hmc.edu/spjut/AdvRoc/FlightData/E190_Prototype/J510W/J510W_T_P_vs_altitude.xlsx)
 
 # Aerotech J570W
 
 * [E190_9DEC2017_J570W_BASE.csv](https://pages.hmc.edu/spjut/AdvRoc/FlightData/E190_Prototype/J570W/E190_9DEC2017_J570W_BASE.csv)
-* [E190_9DEC2017_J570W_BASE.kml](https://pages.hmc.edu/spjut/AdvRoc/FlightData/E190_Prototype/J570W/E190_9DEC2017_J570W_BASE.kml)
-* [E190_9DEC2017_J570W_BASE.xtra](https://pages.hmc.edu/spjut/AdvRoc/FlightData/E190_Prototype/J570W/E190_9DEC2017_J570W_BASE.xtra)
 * [E190_9DEC2017_J570W_OnBoard.csv](https://pages.hmc.edu/spjut/AdvRoc/FlightData/E190_Prototype/J570W/E190_9DEC2017_J570W_OnBoard.csv)
-* [E190_9DEC2017_J570W_OnBoard.kml](https://pages.hmc.edu/spjut/AdvRoc/FlightData/E190_Prototype/J570W/E190_9DEC2017_J570W_OnBoard.kml)
-* [E190_9DEC2017_J570W_OnBoard.xtra](https://pages.hmc.edu/spjut/AdvRoc/FlightData/E190_Prototype/J570W/E190_9DEC2017_J570W_OnBoard.xtra)
 * [E190_9DEC2017_J570W_Raven.csv](https://pages.hmc.edu/spjut/AdvRoc/FlightData/E190_Prototype/J570W/E190_9DEC2017_J570W_Raven.csv)
-* [E190_9DEC2017_J570W_Raven.FIPa](https://pages.hmc.edu/spjut/AdvRoc/FlightData/E190_Prototype/J570W/E190_9DEC2017_J570W_Raven.FIPa)
 
 # Estes Top Shot
 
@@ -307,26 +218,13 @@ dec-9 flights: J150 motor, 65°F ,13% humidity, 2mph wind
 
 Dec-14 flights: E12-6 Motor, 40°F, 17% humidity, 3mph winds
 
-* [TopShot_14DEC2017_E12-6_1.csv](https://pages.hmc.edu/spjut/AdvRoc/FlightData/Top_Shot/TopShot_14DEC2017_E12-6_1.csv)
-* [TopShot_14DEC2017_E12-6_1.FIPa](https://pages.hmc.edu/spjut/AdvRoc/FlightData/Top_Shot/TopShot_14DEC2017_E12-6_1.FIPa)
-* [TopShot_14DEC2017_E12-6_1.pf2](https://pages.hmc.edu/spjut/AdvRoc/FlightData/Top_Shot/TopShot_14DEC2017_E12-6_1.pf2)
-* [TopShot_14DEC2017_E12-6_2.csv](https://pages.hmc.edu/spjut/AdvRoc/FlightData/Top_Shot/TopShot_14DEC2017_E12-6_2.csv)
-* [TopShot_14DEC2017_E12-6_2.FIPa](https://pages.hmc.edu/spjut/AdvRoc/FlightData/Top_Shot/TopShot_14DEC2017_E12-6_2.FIPa)
-* [TopShot_14DEC2017_E12-6_2.pf2](https://pages.hmc.edu/spjut/AdvRoc/FlightData/Top_Shot/TopShot_14DEC2017_E12-6_2.pf2)
-* [TopShot_14DEC2017_E12-6_3.csv](https://pages.hmc.edu/spjut/AdvRoc/FlightData/Top_Shot/TopShot_14DEC2017_E12-6_3.csv)
-* [TopShot_14DEC2017_E12-6_3.FIPa](https://pages.hmc.edu/spjut/AdvRoc/FlightData/Top_Shot/TopShot_14DEC2017_E12-6_3.FIPa)
-* [TopShot_14DEC2017_E12-6_3.pf2](https://pages.hmc.edu/spjut/AdvRoc/FlightData/Top_Shot/TopShot_14DEC2017_E12-6_3.pf2)
-* [TopShot_14DEC2017_E12-6_4.csv](https://pages.hmc.edu/spjut/AdvRoc/FlightData/Top_Shot/TopShot_14DEC2017_E12-6_4.csv)
-* [TopShot_14DEC2017_E12-6_4.FIPa](https://pages.hmc.edu/spjut/AdvRoc/FlightData/Top_Shot/TopShot_14DEC2017_E12-6_4.FIPa)
-* [TopShot_14DEC2017_E12-6_4.pf2](https://pages.hmc.edu/spjut/AdvRoc/FlightData/Top_Shot/TopShot_14DEC2017_E12-6_4.pf2)
-* [TopShot_14DEC2017_E12-6_5.csv](https://pages.hmc.edu/spjut/AdvRoc/FlightData/Top_Shot/TopShot_14DEC2017_E12-6_5.csv)
-* [TopShot_14DEC2017_E12-6_5.FIPa](https://pages.hmc.edu/spjut/AdvRoc/FlightData/Top_Shot/TopShot_14DEC2017_E12-6_5.FIPa)
-* [TopShot_14DEC2017_E12-6_5.pf2](https://pages.hmc.edu/spjut/AdvRoc/FlightData/Top_Shot/TopShot_14DEC2017_E12-6_5.pf2)
-* [TopShot_14DEC2017_E12-6_6.csv](https://pages.hmc.edu/spjut/AdvRoc/FlightData/Top_Shot/TopShot_14DEC2017_E12-6_6.csv)
-* [TopShot_14DEC2017_E12-6_6.FIPa](https://pages.hmc.edu/spjut/AdvRoc/FlightData/Top_Shot/TopShot_14DEC2017_E12-6_6.FIPa)
-* [TopShot_14DEC2017_E12-6_6.pf2](https://pages.hmc.edu/spjut/AdvRoc/FlightData/Top_Shot/TopShot_14DEC2017_E12-6_6.pf2)
-* [TopShot_14DEC2017_E9-6_7_cato.csv](https://pages.hmc.edu/spjut/AdvRoc/FlightData/Top_Shot/TopShot_14DEC2017_E9-6_7_cato..csv)
-* [TopShot_14DEC2017_E9-6_7_cato.FIPa](https://pages.hmc.edu/spjut/AdvRoc/FlightData/Top_Shot/TopShot_14DEC2017_E9-6_7_cato.FIPa)
+* [TopShot_14DEC2017_E12-6_1.csv](https://dofprobucket2.s3.us-east-2.amazonaws.com/Top_Shot/TopShot_14DEC2017_E12-6_1.csv)
+* [TopShot_14DEC2017_E12-6_2.csv](https://dofprobucket2.s3.us-east-2.amazonaws.com/Top_Shot/TopShot_14DEC2017_E12-6_2.csv)
+* [TopShot_14DEC2017_E12-6_3.csv](https://dofprobucket2.s3.us-east-2.amazonaws.com/Top_Shot/TopShot_14DEC2017_E12-6_3.csv)
+* [TopShot_14DEC2017_E12-6_4.csv](https://dofprobucket2.s3.us-east-2.amazonaws.com/Top_Shot/TopShot_14DEC2017_E12-6_4.csv)
+* [TopShot_14DEC2017_E12-6_5.csv](https://dofprobucket2.s3.us-east-2.amazonaws.com/Top_Shot/TopShot_14DEC2017_E12-6_5.csv)
+* [TopShot_14DEC2017_E12-6_6.csv](https://dofprobucket2.s3.us-east-2.amazonaws.com/Top_Shot/TopShot_14DEC2017_E12-6_6.csv)
+* [TopShot_14DEC2017_E9-6_7_cato.csv](https://dofprobucket2.s3.us-east-2.amazonaws.com/Top_Shot/TopShot_14DEC2017_E9-6_7_cato..csv)
 
 # Madcow Mini DX3 Modified
 
@@ -341,43 +239,17 @@ Dec-14 flights: E12-6 Motor, 40°F, 17% humidity, 3mph winds
 Jun-30 Flights: Aerotech G69N-P Motor, 68°F, 26% humidity, no wind
 Oct-18 Flights: Aerotech G69N-P
 
-* [G69_22OCT2018_G69N-P_1_FIPa.csv](https://pages.hmc.edu/spjut/AdvRoc/FlightData/G69_Rocket/G69_22OCT2018_G69N-P_1_FIPa.csv)
-* [G69_22OCT2018_G69N-P_1.FIPa](https://pages.hmc.edu/spjut/AdvRoc/FlightData/G69_Rocket/G69_22OCT2018_G69N-P_1.FIPa)
-* [G69_22OCT2018_G69N-P_1.pf2](https://pages.hmc.edu/spjut/AdvRoc/FlightData/G69_Rocket/G69_22OCT2018_G69N-P_1.pf2)
-* [G69_22OCT2018_G69N-P_1.TXT](https://pages.hmc.edu/spjut/AdvRoc/FlightData/G69_Rocket/G69_22OCT2018_G69N-P_1.TXT)
-* [G69_22OCT2018_G69N-P_2_FIPa.csv](https://pages.hmc.edu/spjut/AdvRoc/FlightData/G69_Rocket/G69_22OCT2018_G69N-P_2_FIPa.csv)
-* [G69_22OCT2018_G69N-P_2.FIPa](https://pages.hmc.edu/spjut/AdvRoc/FlightData/G69_Rocket/G69_22OCT2018_G69N-P_2.FIPa)
-* [G69_22OCT2018_G69N-P_2.pf2](https://pages.hmc.edu/spjut/AdvRoc/FlightData/G69_Rocket/G69_22OCT2018_G69N-P_2.pf2)
-* [G69_22OCT2018_G69N-P_3_FIPa.csv](https://pages.hmc.edu/spjut/AdvRoc/FlightData/G69_Rocket/G69_22OCT2018_G69N-P_3_FIPa.csv)
-* [G69_22OCT2018_G69N-P_3.FIPa](https://pages.hmc.edu/spjut/AdvRoc/FlightData/G69_Rocket/G69_22OCT2018_G69N-P_3.FIPa)
-* [G69_22OCT2018_G69N-P_3.pf2](https://pages.hmc.edu/spjut/AdvRoc/FlightData/G69_Rocket/G69_22OCT2018_G69N-P_3.pf2)
-* [G69_22OCT2018_G69N-P_3.TXT](https://pages.hmc.edu/spjut/AdvRoc/FlightData/G69_Rocket/G69_22OCT2018_G69N-P_3.TXT)
-* [G69_22OCT2018_G69N-P_4_FIPa.csv](https://pages.hmc.edu/spjut/AdvRoc/FlightData/G69_Rocket/G69_22OCT2018_G69N-P_4_FIPa.csv)
-* [G69_22OCT2018_G69N-P_4.FIPa](https://pages.hmc.edu/spjut/AdvRoc/FlightData/G69_Rocket/G69_22OCT2018_G69N-P_4.FIPa)
-* [G69_22OCT2018_G69N-P_4.pf2](https://pages.hmc.edu/spjut/AdvRoc/FlightData/G69_Rocket/G69_22OCT2018_G69N-P_4.pf2)
-* [G69_22OCT2018_G69N-P_4.TXT](https://pages.hmc.edu/spjut/AdvRoc/FlightData/G69_Rocket/G69_22OCT2018_G69N-P_4.TXT)
-* [G69_22OCT2018_G69N-P_5_FIPa.csv](https://pages.hmc.edu/spjut/AdvRoc/FlightData/G69_Rocket/G69_22OCT2018_G69N-P_5_FIPa.csv)
-* [G69_22OCT2018_G69N-P_5.FIPa](https://pages.hmc.edu/spjut/AdvRoc/FlightData/G69_Rocket/G69_22OCT2018_G69N-P_5.FIPa)
-* [G69_22OCT2018_G69N-P_5.pf2](https://pages.hmc.edu/spjut/AdvRoc/FlightData/G69_Rocket/G69_22OCT2018_G69N-P_5.pf2)
-* [G69_22OCT2018_G69N-P_5.TXT](https://pages.hmc.edu/spjut/AdvRoc/FlightData/G69_Rocket/G69_22OCT2018_G69N-P_5.TXT)
-* [G69_30JUN2017_G69N-P_1_FIP.csv](https://pages.hmc.edu/spjut/AdvRoc/FlightData/G69_Rocket/G69_30JUN2017_G69N-P_1_FIP.csv)
-* [G69_30JUN2017_G69N-P_1.FIPa](https://pages.hmc.edu/spjut/AdvRoc/FlightData/G69_Rocket/G69_30JUN2017_G69N-P_1.FIPa)
-* [G69_30JUN2017_G69N-P_1.pf2](https://pages.hmc.edu/spjut/AdvRoc/FlightData/G69_Rocket/G69_30JUN2017_G69N-P_1.pf2)
-* [G69_30JUN2017_G69N-P_2_FIP.csv](https://pages.hmc.edu/spjut/AdvRoc/FlightData/G69_Rocket/G69_30JUN2017_G69N-P_2_FIP.csv)
-* [G69_30JUN2017_G69N-P_2.FIPa](https://pages.hmc.edu/spjut/AdvRoc/FlightData/G69_Rocket/G69_30JUN2017_G69N-P_2.FIPa)
-* [G69_30JUN2017_G69N-P_2.pf2](https://pages.hmc.edu/spjut/AdvRoc/FlightData/G69_Rocket/G69_30JUN2017_G69N-P_2.pf2)
-* [G69_30JUN2017_G69N-P_3_FIP.csv](https://pages.hmc.edu/spjut/AdvRoc/FlightData/G69_Rocket/G69_30JUN2017_G69N-P_3_FIP.csv)
-* [G69_30JUN2017_G69N-P_3.FIPa](https://pages.hmc.edu/spjut/AdvRoc/FlightData/G69_Rocket/G69_30JUN2017_G69N-P_3.FIPa)
-* [G69_30JUN2017_G69N-P_3.pf2](https://pages.hmc.edu/spjut/AdvRoc/FlightData/G69_Rocket/G69_30JUN2017_G69N-P_3.pf2)
-* [G69_30JUN2017_G69N-P_4_FIP.csv](https://pages.hmc.edu/spjut/AdvRoc/FlightData/G69_Rocket/G69_30JUN2017_G69N-P_4_FIP.csv)
-* [G69_30JUN2017_G69N-P_4.FIPa](https://pages.hmc.edu/spjut/AdvRoc/FlightData/G69_Rocket/G69_30JUN2017_G69N-P_4.FIPa)
-* [G69_30JUN2017_G69N-P_4.pf2](https://pages.hmc.edu/spjut/AdvRoc/FlightData/G69_Rocket/G69_30JUN2017_G69N-P_4.pf2)
-* [G69_30JUN2017_G69N-P_5_FIP.csv](https://pages.hmc.edu/spjut/AdvRoc/FlightData/G69_Rocket/G69_30JUN2017_G69N-P_5_FIP.csv)
-* [G69_30JUN2017_G69N-P_5.FIPa](https://pages.hmc.edu/spjut/AdvRoc/FlightData/G69_Rocket/G69_30JUN2017_G69N-P_5.FIPa)
-* [G69_30JUN2017_G69N-P_5.pf2](https://pages.hmc.edu/spjut/AdvRoc/FlightData/G69_Rocket/G69_30JUN2017_G69N-P_5.pf2)
-* [G69_30JUN2017_G69N-P_6_FIP.csv](https://pages.hmc.edu/spjut/AdvRoc/FlightData/G69_Rocket/G69_30JUN2017_G69N-P_6_FIP.csv)
-* [G69_30JUN2017_G69N-P_6.FIPa](https://pages.hmc.edu/spjut/AdvRoc/FlightData/G69_Rocket/G69_30JUN2017_G69N-P_6.FIPa)
-* [G69_30JUN2017_G69N-P_6.pf2](https://pages.hmc.edu/spjut/AdvRoc/FlightData/G69_Rocket/G69_30JUN2017_G69N-P_6.pf2)
+* [G69_22OCT2018_G69N-P_1_FIPa.csv](https://dofprobucket2.s3.us-east-2.amazonaws.com/G69_Rocket/G69_22OCT2018_G69N-P_1_FIPa.csv)
+* [G69_22OCT2018_G69N-P_2_FIPa.csv](https://dofprobucket2.s3.us-east-2.amazonaws.com/G69_Rocket/G69_22OCT2018_G69N-P_2_FIPa.csv)
+* [G69_22OCT2018_G69N-P_3_FIPa.csv](https://dofprobucket2.s3.us-east-2.amazonaws.com/G69_Rocket/G69_22OCT2018_G69N-P_3_FIPa.csv)
+* [G69_22OCT2018_G69N-P_4_FIPa.csv](https://dofprobucket2.s3.us-east-2.amazonaws.com/G69_Rocket/G69_22OCT2018_G69N-P_4_FIPa.csv)
+* [G69_22OCT2018_G69N-P_5_FIPa.csv](https://dofprobucket2.s3.us-east-2.amazonaws.com/G69_Rocket/G69_22OCT2018_G69N-P_5_FIPa.csv)
+* [G69_30JUN2017_G69N-P_1_FIP.csv](https://dofprobucket2.s3.us-east-2.amazonaws.com/G69_Rocket/G69_30JUN2017_G69N-P_1_FIP.csv)
+* [G69_30JUN2017_G69N-P_2_FIP.csv](https://dofprobucket2.s3.us-east-2.amazonaws.com/G69_Rocket/G69_30JUN2017_G69N-P_2_FIP.csv)
+* [G69_30JUN2017_G69N-P_3_FIP.csv](https://dofprobucket2.s3.us-east-2.amazonaws.com/G69_Rocket/G69_30JUN2017_G69N-P_3_FIP.csv)
+* [G69_30JUN2017_G69N-P_4_FIP.csv](https://dofprobucket2.s3.us-east-2.amazonaws.com/G69_Rocket/G69_30JUN2017_G69N-P_4_FIP.csv)
+* [G69_30JUN2017_G69N-P_5_FIP.csv](https://dofprobucket2.s3.us-east-2.amazonaws.com/G69_Rocket/G69_30JUN2017_G69N-P_5_FIP.csv)
+* [G69_30JUN2017_G69N-P_6_FIP.csv](https://dofprobucket2.s3.us-east-2.amazonaws.com/G69_Rocket/G69_30JUN2017_G69N-P_6_FIP.csv)
 
 # Estes Emerald Streak
 
@@ -389,25 +261,15 @@ Oct-18 Flights: Aerotech G69N-P
 | Center of Mass | 12.4 | in | From tip of nose |
 | Diameter | 28 | mm | From specs, not measurement |
 
-* [Emerald_Streak_9MAR2017_C6-5_1.csv](https://pages.hmc.edu/spjut/AdvRoc/FlightData/Emerald_Streak/Emerald_Streak_9MAR2017_C6-5_1.csv)
-* [Emerald_Streak_9MAR2017_C6-5_1.FIPa](https://pages.hmc.edu/spjut/AdvRoc/FlightData/Emerald_Streak/Emerald_Streak_9MAR2017_C6-5_1.FIPa)
-* [Emerald_Streak_9MAR2017_C6-5_2.csv](https://pages.hmc.edu/spjut/AdvRoc/FlightData/Emerald_Streak/Emerald_Streak_9MAR2017_C6-5_2.csv)
-* [Emerald_Streak_9MAR2017_C6-5_2.FIPa](https://pages.hmc.edu/spjut/AdvRoc/FlightData/Emerald_Streak/Emerald_Streak_9MAR2017_C6-5_2.FIPa)
-* [Emerald_Streak_9MAR2017_C6-5_3.csv](https://pages.hmc.edu/spjut/AdvRoc/FlightData/Emerald_Streak/Emerald_Streak_9MAR2017_C6-5_3.csv)
-* [Emerald_Streak_9MAR2017_C6-5_3.FIPa](https://pages.hmc.edu/spjut/AdvRoc/FlightData/Emerald_Streak/Emerald_Streak_9MAR2017_C6-5_3.FIPa)
-* [Emerald_Streak_9MAR2017_C6-7_1.csv](https://pages.hmc.edu/spjut/AdvRoc/FlightData/Emerald_Streak/Emerald_Streak_9MAR2017_C6-7_1.csv)
-* [Emerald_Streak_9MAR2017_C6-7_1.FIPa](https://pages.hmc.edu/spjut/AdvRoc/FlightData/Emerald_Streak/Emerald_Streak_9MAR2017_C6-7_1.FIPa)
-* [Emerald_Streak_9MAR2017_C6-7_2.csv](https://pages.hmc.edu/spjut/AdvRoc/FlightData/Emerald_Streak/Emerald_Streak_9MAR2017_C6-7_2.csv)
-* [Emerald_Streak_9MAR2017_C6-7_2.FIPa](https://pages.hmc.edu/spjut/AdvRoc/FlightData/Emerald_Streak/Emerald_Streak_9MAR2017_C6-7_2.FIPa)
-* [Emerald_Streak_9MAR2017_C6-7_3.csv](https://pages.hmc.edu/spjut/AdvRoc/FlightData/Emerald_Streak/Emerald_Streak_9MAR2017_C6-7_3.csv)
-* [Emerald_Streak_9MAR2017_C6-7_3.FIPa](https://pages.hmc.edu/spjut/AdvRoc/FlightData/Emerald_Streak/Emerald_Streak_9MAR2017_C6-7_3.FIPa)
-* [Emerald_Streak_9MAR2017_D13-10W_1.csv](https://pages.hmc.edu/spjut/AdvRoc/FlightData/Emerald_Streak/Emerald_Streak_9MAR2017_D13-10W_1.csv)
-* [Emerald_Streak_9MAR2017_D13-10W_1.FIPa](https://pages.hmc.edu/spjut/AdvRoc/FlightData/Emerald_Streak/Emerald_Streak_9MAR2017_D13-10W_1.FIPa)
-* [Emerald_Streak_9MAR2017_QC6-5_1.csv](https://pages.hmc.edu/spjut/AdvRoc/FlightData/Emerald_Streak/Emerald_Streak_9MAR2017_QC6-5_1.csv)
-* [Emerald_Streak_9MAR2017_QC6-5_1.FIPa](https://pages.hmc.edu/spjut/AdvRoc/FlightData/Emerald_Streak/Emerald_Streak_9MAR2017_QC6-5_1.FIPa)
-* [Emerald_Streak_9MAR2017_QC6-5_2.csv](https://pages.hmc.edu/spjut/AdvRoc/FlightData/Emerald_Streak/Emerald_Streak_9MAR2017_QC6-5_2.csv)
-* [Emerald_Streak_9MAR2017_QC6-5_2.FIPa](https://pages.hmc.edu/spjut/AdvRoc/FlightData/Emerald_Streak/Emerald_Streak_9MAR2017_QC6-5_2.FIPa)
-* [Emerald_Streak_9MAR2017_QC6-5_3.csv](https://pages.hmc.edu/spjut/AdvRoc/FlightData/Emerald_Streak/Emerald_Streak_9MAR2017_QC6-5_3.csv)
-* [Emerald_Streak_9MAR2017_QC6-5_3.FIPa](https://pages.hmc.edu/spjut/AdvRoc/FlightData/Emerald_Streak/Emerald_Streak_9MAR2017_QC6-5_3.FIPa)
+* [Emerald_Streak_9MAR2017_C6-5_1.csv](https://dofprobucket2.s3.us-east-2.amazonaws.com/Emerald_Streak/Emerald_Streak_9MAR2017_C6-5_1.csv)
+* [Emerald_Streak_9MAR2017_C6-5_2.csv](https://dofprobucket2.s3.us-east-2.amazonaws.com/Emerald_Streak/Emerald_Streak_9MAR2017_C6-5_2.csv)
+* [Emerald_Streak_9MAR2017_C6-5_3.csv](https://dofprobucket2.s3.us-east-2.amazonaws.com/Emerald_Streak/Emerald_Streak_9MAR2017_C6-5_3.csv)
+* [Emerald_Streak_9MAR2017_C6-7_1.csv](https://dofprobucket2.s3.us-east-2.amazonaws.com/Emerald_Streak/Emerald_Streak_9MAR2017_C6-7_1.csv)
+* [Emerald_Streak_9MAR2017_C6-7_2.csv](https://dofprobucket2.s3.us-east-2.amazonaws.com/Emerald_Streak/Emerald_Streak_9MAR2017_C6-7_2.csv)
+* [Emerald_Streak_9MAR2017_C6-7_3.csv](https://dofprobucket2.s3.us-east-2.amazonaws.com/Emerald_Streak/Emerald_Streak_9MAR2017_C6-7_3.csv)
+* [Emerald_Streak_9MAR2017_D13-10W_1.csv](https://dofprobucket2.s3.us-east-2.amazonaws.com/Emerald_Streak/Emerald_Streak_9MAR2017_D13-10W_1.csv)
+* [Emerald_Streak_9MAR2017_QC6-5_1.csv](https://dofprobucket2.s3.us-east-2.amazonaws.com/Emerald_Streak/Emerald_Streak_9MAR2017_QC6-5_1.csv)
+* [Emerald_Streak_9MAR2017_QC6-5_2.csv](https://dofprobucket2.s3.us-east-2.amazonaws.com/Emerald_Streak/Emerald_Streak_9MAR2017_QC6-5_2.csv)
+* [Emerald_Streak_9MAR2017_QC6-5_3.csv](https://dofprobucket2.s3.us-east-2.amazonaws.com/Emerald_Streak/Emerald_Streak_9MAR2017_QC6-5_3.csv)
 
 Note: The LabVIEW Raven VIs require the [bILAToByte.vi](https://pages.hmc.edu/spjut/AdvRoc/LabVIEWModels/bILAToByte.vi) subVI to function properly.
