@@ -2,78 +2,110 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://DOFProGuru.github.io/RCK/fltdata/index.html</loc>
-    <lastmod>2024-11-11T06:21:35.840Z</lastmod>
+    <lastmod>2024-11-24T21:25:41.192Z</lastmod>
   </url>
   <url>
     <loc>https://DOFProGuru.github.io/RCK/model/index.html</loc>
-    <lastmod>2024-11-11T06:21:35.840Z</lastmod>
+    <lastmod>2024-11-24T21:25:41.192Z</lastmod>
   </url>
   <url>
     <loc>https://DOFProGuru.github.io/RCK/intro/index.html</loc>
-    <lastmod>2024-11-11T06:21:35.840Z</lastmod>
+    <lastmod>2024-11-24T21:25:41.192Z</lastmod>
   </url>
   <url>
     <loc>https://DOFProGuru.github.io/RCK/index.html</loc>
-    <lastmod>2024-11-11T06:21:35.840Z</lastmod>
+    <lastmod>2024-11-24T21:25:41.192Z</lastmod>
   </url>
   <url>
-    <loc>https://DOFProGuru.github.io/RCK/archive/index.html</loc>
-    <lastmod>2024-11-11T06:21:35.836Z</lastmod>
+    <loc>https://DOFProGuru.github.io/RCK/archive/assignment3.html</loc>
+    <lastmod>2024-11-24T21:25:41.188Z</lastmod>
+  </url>
+  <url>
+    <loc>https://DOFProGuru.github.io/RCK/archive/assignment8.html</loc>
+    <lastmod>2024-11-24T21:25:41.188Z</lastmod>
+  </url>
+  <url>
+    <loc>https://DOFProGuru.github.io/RCK/archive/assignment4.html</loc>
+    <lastmod>2024-11-24T21:25:41.188Z</lastmod>
+  </url>
+  <url>
+    <loc>https://DOFProGuru.github.io/RCK/archive/assignment2.html</loc>
+    <lastmod>2024-11-24T21:25:41.188Z</lastmod>
+  </url>
+  <url>
+    <loc>https://DOFProGuru.github.io/RCK/archive/assignment5.html</loc>
+    <lastmod>2024-11-24T21:25:41.188Z</lastmod>
   </url>
   <url>
     <loc>https://DOFProGuru.github.io/RCK/instr/baroalt.html</loc>
-    <lastmod>2024-11-11T06:21:35.840Z</lastmod>
+    <lastmod>2024-11-24T21:25:41.192Z</lastmod>
   </url>
   <url>
     <loc>https://DOFProGuru.github.io/RCK/const/vulcanite.html</loc>
-    <lastmod>2024-11-11T06:21:35.840Z</lastmod>
+    <lastmod>2024-11-24T21:25:41.192Z</lastmod>
   </url>
   <url>
     <loc>https://DOFProGuru.github.io/RCK/const/vulcanTest.html</loc>
-    <lastmod>2024-11-11T06:21:35.840Z</lastmod>
+    <lastmod>2024-11-24T21:25:41.188Z</lastmod>
   </url>
   <url>
     <loc>https://DOFProGuru.github.io/RCK/const/33mmClassRocket.html</loc>
-    <lastmod>2024-11-11T06:21:35.840Z</lastmod>
+    <lastmod>2024-11-24T21:25:41.188Z</lastmod>
   </url>
   <url>
     <loc>https://DOFProGuru.github.io/RCK/const/55mmClassRocket.html</loc>
-    <lastmod>2024-11-11T06:21:35.840Z</lastmod>
+    <lastmod>2024-11-24T21:25:41.188Z</lastmod>
   </url>
   <url>
     <loc>https://DOFProGuru.github.io/RCK/const/DX3.html</loc>
-    <lastmod>2024-11-11T06:21:35.840Z</lastmod>
+    <lastmod>2024-11-24T21:25:41.188Z</lastmod>
   </url>
   <url>
     <loc>https://DOFProGuru.github.io/RCK/const/vulcanGPS.html</loc>
-    <lastmod>2024-11-11T06:21:35.840Z</lastmod>
+    <lastmod>2024-11-24T21:25:41.188Z</lastmod>
   </url>
   <url>
     <loc>https://DOFProGuru.github.io/RCK/const/standardVulcanite.html</loc>
-    <lastmod>2024-11-11T06:21:35.840Z</lastmod>
+    <lastmod>2024-11-24T21:25:41.188Z</lastmod>
   </url>
   <url>
     <loc>https://DOFProGuru.github.io/RCK/const/index.html</loc>
-    <lastmod>2024-11-11T06:21:35.840Z</lastmod>
+    <lastmod>2024-11-24T21:25:41.188Z</lastmod>
   </url>
   <url>
     <loc>https://DOFProGuru.github.io/RCK/instr/index.html</loc>
-    <lastmod>2024-11-11T06:21:35.840Z</lastmod>
+    <lastmod>2024-11-24T21:25:41.192Z</lastmod>
+  </url>
+  <url>
+    <loc>https://DOFProGuru.github.io/RCK/archive/assignment6.html</loc>
+    <lastmod>2024-11-24T21:25:41.188Z</lastmod>
+  </url>
+  <url>
+    <loc>https://DOFProGuru.github.io/RCK/archive/assignment1.html</loc>
+    <lastmod>2024-11-24T21:25:41.188Z</lastmod>
+  </url>
+  <url>
+    <loc>https://DOFProGuru.github.io/RCK/archive/index.html</loc>
+    <lastmod>2024-11-24T21:25:41.188Z</lastmod>
+  </url>
+  <url>
+    <loc>https://DOFProGuru.github.io/RCK/archive/assignment7.html</loc>
+    <lastmod>2024-11-24T21:25:41.188Z</lastmod>
   </url>
   <url>
     <loc>https://DOFProGuru.github.io/RCK/safety/index.html</loc>
-    <lastmod>2024-11-11T06:21:35.840Z</lastmod>
+    <lastmod>2024-11-24T21:25:41.192Z</lastmod>
   </url>
   <url>
     <loc>https://DOFProGuru.github.io/RCK/intro/cert.html</loc>
-    <lastmod>2024-11-11T06:21:35.840Z</lastmod>
+    <lastmod>2024-11-24T21:25:41.192Z</lastmod>
   </url>
   <url>
     <loc>https://DOFProGuru.github.io/RCK/model/softwareDownloads.html</loc>
-    <lastmod>2024-11-11T06:21:35.840Z</lastmod>
+    <lastmod>2024-11-24T21:25:41.192Z</lastmod>
   </url>
   <url>
     <loc>https://DOFProGuru.github.io/RCK/fltdata/FlightData.html</loc>
-    <lastmod>2024-11-11T06:21:35.840Z</lastmod>
+    <lastmod>2024-11-24T21:25:41.192Z</lastmod>
   </url>
 </urlset>

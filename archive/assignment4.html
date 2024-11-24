@@ -8,7 +8,7 @@
 
 <meta name="author" content="DOFPro group">
 
-<title>Mini DX3 Assembly Instructions – High Power Rocketry</title>
+<title>Practice Problems 4 – High Power Rocketry</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -68,6 +68,35 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 <link rel="stylesheet" href="../styles.css">
 </head>
@@ -222,15 +251,11 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#step-1-sanding" id="toc-step-1-sanding" class="nav-link active" data-scroll-target="#step-1-sanding">Step 1: Sanding</a></li>
-  <li><a href="#step-2-motor-mount-assembly" id="toc-step-2-motor-mount-assembly" class="nav-link" data-scroll-target="#step-2-motor-mount-assembly">Step 2: Motor Mount Assembly</a></li>
-  <li><a href="#step-3-shock-cord" id="toc-step-3-shock-cord" class="nav-link" data-scroll-target="#step-3-shock-cord">Step 3: Shock Cord</a></li>
-  <li><a href="#step-4-forward-section" id="toc-step-4-forward-section" class="nav-link" data-scroll-target="#step-4-forward-section">Step 4: Forward Section</a></li>
-  <li><a href="#step-5-insert-motor-mount" id="toc-step-5-insert-motor-mount" class="nav-link" data-scroll-target="#step-5-insert-motor-mount">Step 5: Insert Motor Mount</a></li>
-  <li><a href="#step-6-fins" id="toc-step-6-fins" class="nav-link" data-scroll-target="#step-6-fins">Step 6: Fins</a></li>
-  <li><a href="#step-7-fin-fillets" id="toc-step-7-fin-fillets" class="nav-link" data-scroll-target="#step-7-fin-fillets">Step 7: Fin Fillets</a></li>
-  <li><a href="#step-8-chute-protector-and-parachute" id="toc-step-8-chute-protector-and-parachute" class="nav-link" data-scroll-target="#step-8-chute-protector-and-parachute">Step 8: Chute Protector and Parachute</a></li>
-  <li><a href="#step-9-painting" id="toc-step-9-painting" class="nav-link" data-scroll-target="#step-9-painting">Step 9: Painting</a></li>
+  <li><a href="#agl-vs.-msl" id="toc-agl-vs.-msl" class="nav-link active" data-scroll-target="#agl-vs.-msl">AGL vs.&nbsp;MSL</a></li>
+  <li><a href="#barometric-pressure-variations" id="toc-barometric-pressure-variations" class="nav-link" data-scroll-target="#barometric-pressure-variations">Barometric Pressure Variations</a></li>
+  <li><a href="#temperature-variations" id="toc-temperature-variations" class="nav-link" data-scroll-target="#temperature-variations">Temperature Variations</a></li>
+  <li><a href="#relative-humidity-variations" id="toc-relative-humidity-variations" class="nav-link" data-scroll-target="#relative-humidity-variations">Relative Humidity Variations</a></li>
+  <li><a href="#put-it-all-together" id="toc-put-it-all-together" class="nav-link" data-scroll-target="#put-it-all-together">Put It All Together</a></li>
   </ul>
 </nav>
     </div>
@@ -239,7 +264,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Mini DX3 Assembly Instructions</h1>
+<h1 class="title">Practice Problems 4</h1>
 </div>
 
 
@@ -262,227 +287,43 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>Make sure to review the <a href="https://dofpro.org/RCK/safety/">safety hints</a> before attempting assembly of any high-powered rockets.</p>
-<p>The image below displays almost all of the parts that come in the kit.</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="https://dofprobucket2.s3.us-east-2.amazonaws.com/Images/DX3_rocket_parts.png" class="img-fluid figure-img"></p>
-<figcaption>The parts that come in the kit</figcaption>
-</figure>
-</div>
-<p>The following is a list of parts that are required separately from the kit.</p>
+<section id="agl-vs.-msl" class="level2">
+<h2 class="anchored" data-anchor-id="agl-vs.-msl">AGL vs.&nbsp;MSL</h2>
+<p>For regulatory purposes, the altitude relative to Mean Sea Level (MSL) is important. The FAA mandates maximum altitudes that cannot be exceeded for high-power rocket flights in terms of MSL. For example, the usual waiver at ROC launches in Lucerne Valley is for 10,000 feet MSL. The waiver for our class launch is 17,500 feet MSL. For modeling and flight performance purposes, the important measurement is the altitude relative to the altitude of the launch site, called Above Ground Level (AGL). This assignment is looking principally at errors in AGL measurements. AGL is always calculated by taking the calculated (not measured) altitude MSL at the launch pad, <span class="math inline">\(ℎ_{0-MSLcalc}\)</span>, and subtracting it from the calculated altitude MSL during flight, e.g.,</p>
+<p><span class="math display">\[
+ℎ_{AGL}=ℎ_{MSLcalc}−ℎ_{0-MSLcalc}
+\]</span></p>
+<p>The error in AGL is calculated as:</p>
+<p><span class="math display">\[
+𝜖_{AGL}=ℎ_{AGL}−ℎ_{true}
+\]</span></p>
+</section>
+<section id="barometric-pressure-variations" class="level2">
+<h2 class="anchored" data-anchor-id="barometric-pressure-variations">Barometric Pressure Variations</h2>
+<p>The barometric pressure is calculated by measuring the local absolute pressure, and then using the standard atmospheric model to calculate the pressure one would expect at mean sea level. When you read the barometric pressure in a weather report, you always have to correct to your current altitude. Normal atmospheric pressure at mean sea level is 101,325 Pa, 1013.25 millibar (mb), or 1.01325 bar. High pressure regions rarely go above 1050 mb or below 982 mb.</p>
+<p>Create a parametric plot that shows the error in MSL altitude from 0 m to 5000 m for <span class="math inline">\(𝑃_0\)</span>=1050 mb and <span class="math inline">\(𝑃_0\)</span>=982 mb as parameters Create an additional parametric plot that shows the error in AGL from 0 m to 5000 m for <span class="math inline">\(𝑃_0\)</span>=1050 mb and <span class="math inline">\(𝑃_0\)</span>=982 mb as parameters.</p>
+</section>
+<section id="temperature-variations" class="level2">
+<h2 class="anchored" data-anchor-id="temperature-variations">Temperature Variations</h2>
+<p>The Standard Atmospheric model assumes a temperature of 288.15 K (15°C) at mean sea level and a decrease of 6.5 K for every 1000 m gain in altitude. Obtaining data on variations in the lapse rate is challenging, but variations in ground temperature are fairly easy to measure. Lucerne Valley has a seasonal low of about –3°C and a seasonal high of about 38°C. Corrected for MSL, that is a <span class="math inline">\(𝑇_0\)</span> variation between 2.7°C and 43.7°C.</p>
+<p>Create a parametric plot that shows the error in AGL from 0 m to 5000 m for <span class="math inline">\(𝑇_0=2.7°C\)</span> and <span class="math inline">\(𝑇_0=43.7°C\)</span> mb as parameters.</p>
+<p>NAR requires all official altitude record attempts to have their pressure altimeter data corrected by multiplying the measured AGL by the ratio of the launch site temperature in K to 288.15 K. How well does the correction work for the data in this problem? Where did they get the 288.15 K in the ratio?</p>
+</section>
+<section id="relative-humidity-variations" class="level2">
+<h2 class="anchored" data-anchor-id="relative-humidity-variations">Relative Humidity Variations</h2>
+<p>Water has a molecular weight of 18.01528 g/mol or 0.01801528 kg/mol. Dry air has an average molecular weight of 28.9644 g/mol or 0.0289644 kg/mol. The density of air changes with the relative humidity. The relative humidity is defined as the partial pressure of water in the air divided by the vapor pressure of water at the air temperature.</p>
+<p>The molecular weight of an air-water mixture is the mole-weighted average of the molecular weight of air and the molecular weight of water. In practice, it is easiest to calculate <span class="math display">\[
+𝑀_{𝑚𝑖𝑥}=\frac{𝑀_{𝑎𝑖𝑟}𝑃_{𝑎𝑖𝑟}+𝑀_{𝑤𝑎𝑡𝑒𝑟}𝑃_{𝑤𝑎𝑡𝑒𝑟}}{𝑃}
+\]</span></p>
+<p>where <span class="math inline">\(𝑀_{𝑚𝑖𝑥}\)</span> is the molecular weight of the air-water vapor mixture, <span class="math inline">\(𝑀_{𝑎𝑖𝑟}\)</span> is the molecular weight of dry air, <span class="math inline">\(𝑀_{𝑤𝑎𝑡𝑒𝑟}\)</span> is the molecular weight of water vapor, <span class="math inline">\(𝑃_{𝑎𝑖𝑟}\)</span> is the partial pressure of dry air, <span class="math inline">\(𝑃_{𝑤𝑎𝑡𝑒𝑟}\)</span> is the partial pressure of water vapor, and 𝑃 is the overall pressure. Without measurements, it is difficult to know how the molecular weight of the air-water mixture varies with altitude. The easiest assumption is to measure the relative humidity (and of necessity, the temperature) at the launch site, calculate the molecular weight and assume it doesn’t change with altitude. Other assumptions require numerical integration of the pressure-altitude equations.</p>
+<p>Create a parametric plot that shows the error in AGL from 0 m to 5000 m, for <span class="math inline">\(𝐻_𝑟's\)</span> of 50%, and 100% at 316.85 K. Don’t correct <span class="math inline">\(𝑇_0\)</span>, just 𝑀.</p>
+</section>
+<section id="put-it-all-together" class="level2">
+<h2 class="anchored" data-anchor-id="put-it-all-together">Put It All Together</h2>
+<p>The linked data set contains the pressure-versus-time data for the first flight of the DX3 rocket on an F67-9W. Calculate the AGL altitude versus time both using the standard atmospheric model and applying the corrections for <span class="math inline">\(𝑇_0, 𝑃_0, ℎ_0, and 𝐻_𝑟\)</span>.</p>
 <ul>
-<li>An Estes 29mm motor retainer</li>
-<li>Three #2-56 × 3/16” pan-head screws</li>
-</ul>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="https://dofprobucket2.s3.us-east-2.amazonaws.com/Images/DX3_Motor_Retainer.png" class="img-fluid figure-img"></p>
-<figcaption>The Estes 29mm Motor Retainer</figcaption>
-</figure>
-</div>
-<section id="step-1-sanding" class="level2">
-<h2 class="anchored" data-anchor-id="step-1-sanding">Step 1: Sanding</h2>
-<p>Sand every surface to be epoxied (including interior surfaces) with 80-to-110 grit sandpaper. The epoxy needs the roughness created by sanding in order to be able to hold on to the surface. You may have to think about the assembly sequence to figure out where to sand. Don’t forget about the inside of the Estes motor retainer. Pretty much the entire exterior of the motor mount should be sanded or roughed up.</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="https://dofprobucket2.s3.us-east-2.amazonaws.com/Images/DX3_SandMM.png" class="img-fluid figure-img"></p>
-<figcaption>Sand the entire motor mount.</figcaption>
-</figure>
-</div>
-</section>
-<section id="step-2-motor-mount-assembly" class="level2">
-<h2 class="anchored" data-anchor-id="step-2-motor-mount-assembly">Step 2: Motor Mount Assembly</h2>
-<p>Test fit centering rings over the motor mount tube and sand centering rings if necessary.</p>
-<p>Also test fit the centering rings in the body tube and sand the rings if necessary.</p>
-<p>Place the inside part of your Estes motor retainer on one end of the motor mount tube. Make sure it is fully seated. Using a pen or pencil, mark the tube where the motor retainer hits the tube.</p>
-<p>Screw on the outside of the motor retainer.</p>
-<p>Insert the assembly into the slotted end of the rocket body tube so that the motor tube is still seated in the retainer and the outside of the retainer is resting against the body tube.</p>
-<p>Use a sharpened pencil or other marking implement that will reach and mark the location of the bottom of the bottom slot, and the top of the top slot on the motor mount tube.</p>
-<p>Remove the assembly and connect the marks to create two circles around the motor mount tube. If a centering ring will fit over the tube, you can use it as a guide for your circles. The space between the circles is where the fins will contact the motor mount tube and needs to be kept clear of epoxy or other materials while assembling the rocket before attaching the fins. The space between the ring for the top of the retainer and the bottom of the fins is where the bottom centering ring may be epoxied in place.</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="https://dofprobucket2.s3.us-east-2.amazonaws.com/Images/DX3_MotorMountWLines.png" class="img-fluid figure-img"></p>
-<figcaption>The Marked Motor Mount. Note: Tube is fully sanded.</figcaption>
-</figure>
-</div>
-<p><strong>Note</strong> The strength of the bond between the fins and the motor mount can be greatly increased by putting internal fillets between the fins and motor mount tube, and the fins and the body tube. That strength is not needed for motors with 180 Ns of impulse and below, but should be considered if going above 180 Ns, and is required in the class 54mm fiberglass rocket. The next step makes creating internal fillets very difficult.</p>
-<p>Spread some epoxy on the outside of the motor tube somewhere between the retainer-ring mark and the bottom-of-the-fins mark and slide the bottom ring (without the notch) up the tube until it is centered between the marks, and wait for the epoxy to set. Be sure to clean off any epoxy that strayed beyond the lines.</p>
-<p>The placement of the top ring (the one with the notch) isn’t critical: It should be above the top of the fin mark, but no closer than 1/4” from the end of the tube. Usually about 1/2” for the top of the tube is about right. Spread some epoxy on the outside of the motor tube at your chosen location and slide the top ring (with the notch) up the tube until it is in position, and wait for the epoxy to set. Be sure to clean off any epoxy that strayed into the fin or motor retainer zones.</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="https://dofprobucket2.s3.us-east-2.amazonaws.com/Images/DX3_MotorMountWRings.png" class="img-fluid figure-img"></p>
-<figcaption>The Motor Mount with Centering Rings.</figcaption>
-</figure>
-</div>
-<p>Using JB-Weld (not any other epoxy) attach the inner part of the motor retainer to the bottom of the motor mount assembly. Spread the JB-Weld on the motor mount tube and not inside the motor retainer. Twist the motor retainer as you push it onto the tube.</p>
-<p>Inspect the inside of the motor mount tube-motor retainer and thoroughly wipe away any JB-Weld that made it inside.</p>
-<p>Place the assembly vertically (with the top notched ring pointed up), and let cure for at least 3 hours, preferably in a warm space. JB-Weld takes 24-48 hours to fully cure, but will usually not run after 3 hours.</p>
-</section>
-<section id="step-3-shock-cord" class="level2">
-<h2 class="anchored" data-anchor-id="step-3-shock-cord">Step 3: Shock Cord</h2>
-<p>The shock cord in this kit consists of a shorter section of Kevlar and a longer section of nylon cording. The two sections should be tied together using the line form of a <a href="https://en.wikipedia.org/wiki/Double_fisherman's_knot">double fisherman’s knot</a> (<a href="https://youtu.be/YHUv-oOMwRA">REI Video</a>). The Kevlar section will be attached to the motor mount and the nylon section will be attached to the payload section. Apply some epoxy like a fillet between the lower side of the top centering ring and the motor mount and wrap the Kevlar end of the shock cord around the motor mount into the epoxy. Make sure the cord lays flat enough so it will not interfere with the body tube when you slide the motor tube inside. Make sure the cord is secure and will not come loose later with ejection forces that will pull on the shock cord.</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="https://dofprobucket2.s3.us-east-2.amazonaws.com/Images/DX3_MotorMountAssembly.png" class="img-fluid figure-img"></p>
-<figcaption>The Complete Motor Mount Assembly.</figcaption>
-</figure>
-</div>
-</section>
-<section id="step-4-forward-section" class="level2">
-<h2 class="anchored" data-anchor-id="step-4-forward-section">Step 4: Forward Section</h2>
-<p>Insert the eyebolt through the hole in the center of the bulkhead and secure using the washer and nut.</p>
-<p><strong>Apply some epoxy or CA to the nut and eyebolt threads to ensure the nut doesn’t come loose later.</strong></p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="https://dofprobucket2.s3.us-east-2.amazonaws.com/Images/DX3_ScrewBulkhead.png" class="img-fluid figure-img"></p>
-<figcaption>The Assembled Bulkhead.</figcaption>
-</figure>
-</div>
-<p>Cut off the eyebolt (Dremel or hacksaw) leaving about 1/4”-to-1/8” above the nut and file or sand the end to remove any sharp edges. Apply insta-cure cyanoacrylate to the bolt in the crevices near the bolt so that the bolt does not become undone. After applying the cyanoacrylate, spray insta-set accelerator onto the applied surface so that the cyanoacrylate sets faster. Alternatively, instead of using cyanoacrylate and accelerator, you can epoxy where the bolt meets the nut.</p>
-<p><strong>Note</strong> The coupler tube may be hidden inside either the payload tube or the body tube. Reach inside and slide it out.</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="https://dofprobucket2.s3.us-east-2.amazonaws.com/Images/DX3_ScrewTrimSand.png" class="img-fluid figure-img"></p>
-<figcaption>The Assembled Bulkhead with the Screw Eye Trimmed.</figcaption>
-</figure>
-</div>
-<p>Mark a line around the inside of the coupler tube 1/8” from the end. Apply epoxy to the inside of the tube and push the bulkhead in so that the line is visible and wait until the glue sets. There are two pieces that can assist you. The first is a spacer that can be placed against the bulkhead to hold it at the correct depth until the epoxy cures. The second is a stand with room for the eyebolt to hang down that will let you hold the spacer and bulkhead in the proper position while the epoxy cures.</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="https://dofprobucket2.s3.us-east-2.amazonaws.com/Images/DX3_BulkheadRecess.png" class="img-fluid figure-img"></p>
-<figcaption>The Bulkhead Recessed in Coupler.</figcaption>
-</figure>
-</div>
-<p>Apply a fillet of epoxy around the inside edge of the coupler bulkhead joint.</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="https://dofprobucket2.s3.us-east-2.amazonaws.com/Images/DX3_CouplerFillet.png" class="img-fluid figure-img"></p>
-<figcaption>The Bulkhead/Coupler Fillet.</figcaption>
-</figure>
-</div>
-<p>Mark a line around the coupler 2” from the open end. Apply a very thin amount of epoxy on the first inch of the outside of the coupler, and twist and slide the coupler into the payload tube (forward body tube) until you reach the 2” mark. Quickly wipe off any excess epoxy at the payload tube-coupler joint. The payload tube will not join properly with the body tube if you leave excess epoxy at the joint.</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="https://dofprobucket2.s3.us-east-2.amazonaws.com/Images/DX3_CouplerPayloadJoint.png" class="img-fluid figure-img"></p>
-<figcaption>The Coupler/Payload Joint</figcaption>
-</figure>
-</div>
-<p>Measure down 1 9/16” from the shoulder of the nose cone, and using an X-acto knife or a saw, cut off the bottom of the nose cone, and if necessary, sand the cut square. It will be pressing against the avionics carrier and should be as square as possible.</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="https://dofprobucket2.s3.us-east-2.amazonaws.com/Images/Images/DX3_NoseCone.png" class="img-fluid figure-img"></p>
-<figcaption>The Trimmed Nose Cone</figcaption>
-</figure>
-</div>
-<p>Insert the nose cone into the top of the payload tube.</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="https://dofprobucket2.s3.us-east-2.amazonaws.com/Images/DX3_PayloadSection.png" class="img-fluid figure-img"></p>
-<figcaption>The Payload with Nose Cone.</figcaption>
-</figure>
-</div>
-<p>Holes for Payload – Nose Cone Screws: Mark three points equally spaced around the circumference of the payload tube halfway between the shoulder and the end of the payload tube. Easiest is to wrap a piece of paper around the tube and mark one circumference. Unwrap and measure the circumference and divide the distance by three and mark the paper accordingly, then transfer the marks to the payload tube by wrapping the paper back around the tube and marking.</p>
-<p>Holes for Altimeter Vents: Repeat the marking procedure 1” above the coupler-payload tube edge.</p>
-<p>Drill all six holes with a #52, #51, or #50 bit. Drill slowly to try to leave the inside edges of the holes as clean as possible. You might consider drilling, tapping, and putting in a screw for the first hole before drilling the other five, to avoid the tube and nose cone rotating relative to each other.</p>
-<p>Tap the top three holes with a #2-56 tap. These will secure the nose cone to the payload section.</p>
-<p>Screw a pan-head #2-56 screw into each threaded hole. These will hold the nose cone on during flight, but permit it to be removed to access the avionics.</p>
-<p>The other three holes are to permit the altimeter to measure the free stream pressure outside the rocket for calculating the altitude.</p>
-<p>If you are going to install an avionics carrier, you will want to put a layer of foam in the bottom of the payload section.</p>
-</section>
-<section id="step-5-insert-motor-mount" class="level2">
-<h2 class="anchored" data-anchor-id="step-5-insert-motor-mount">Step 5: Insert Motor Mount</h2>
-<p>Hold the motor mount assembly by the body tube at the position that it will be when epoxied in. Measure how far up the body tube the front centering ring will be.</p>
-<p>Using sandpaper attached to the end of a dowel, roughen up the inside of the body tube where the front centering ring will be attached.</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="https://dofprobucket2.s3.us-east-2.amazonaws.com/Images/DX3_SandingRod.png" class="img-fluid figure-img"></p>
-<figcaption>The Sanding Rod for Top Centering Ring</figcaption>
-</figure>
-</div>
-<p>Put the shock cord inside of the motor mount tube so it’s out of the way while the motor mount assembly is epoxied in.</p>
-<p>Screw the outside of the motor retainer onto the end of the motor mount assembly.</p>
-<p><strong>Important</strong> The next several steps need to be completed quickly, before a batch of epoxy has time to set.</p>
-<p>Using one or more craft (popsicle) sticks taped together, place a ring of epoxy inside the body tube about 1/4” short of where the front centering ring will sit. You need to get the epoxy up the tube without dripping anywhere else in the tube.</p>
-<p>Insert the motor mount assembly part-way up the body tube.</p>
-<p>Put a ring of epoxy around the lower end of the body tube between the bottom end and the fin slots.</p>
-<p>Push and twist the motor mount assembly into the body tube. Be sure the bottom ring doesn’t extend into the fin slots.</p>
-<p>Make sure the rocket is vertical until the epoxy cures.</p>
-<p>Launch Lug Marking: * It’s easiest to mark the body tube for the launch lugs before putting on the fins. * Place a length of angle iron so that one edge is halfway between two sets of fin slots, and draw a vertical line up the body tube.</p>
-</section>
-<section id="step-6-fins" class="level2">
-<h2 class="anchored" data-anchor-id="step-6-fins">Step 6: Fins</h2>
-<p>Dry fit the fins and if necessary sand the slots until the fins fit. You don’t want them to be a loose fit.</p>
-<p>Make sure you have two or three fin jigs handy.</p>
-<p><strong>Important</strong> The next several steps need to be completed quickly, before a batch of epoxy has time to set.</p>
-<p>Apply a generous-but-not-overflowing amount of epoxy to the root end of each fin tang and insert it into the fin slots.</p>
-<p>Before the epoxy sets, place a fin jig on each side of the fins and place the assembly on a table to guarantee the fins are straight. A third jig at the end of the body tube will help you keep things level</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="https://dofprobucket2.s3.us-east-2.amazonaws.com/Images/DX3_FinGuidesLong.png" class="img-fluid figure-img"></p>
-<figcaption>The Fin Jigs (all three)</figcaption>
-</figure>
-</div>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="https://dofprobucket2.s3.us-east-2.amazonaws.com/Images/DX3_FinGuides.png" class="img-fluid figure-img"></p>
-<figcaption>The Fin Jigs</figcaption>
-</figure>
-</div>
-<p>Before proceeding, make sure the epoxy has fully cured.</p>
-</section>
-<section id="step-7-fin-fillets" class="level2">
-<h2 class="anchored" data-anchor-id="step-7-fin-fillets">Step 7: Fin Fillets</h2>
-<p>Get a set of plastic spoons that will be used for pulling the fillets.</p>
-<p>Rub the edges of the spoon heavily with a pencil lead.</p>
-<p>Draw the spoon along the joint between the fin and the body tube. With luck, you’ll see a line where the spoon met the fin and where it met the body tube.</p>
-<p>Place blue tape along each line.</p>
-<p>Repeat the marking and taping for each of the remaining fin-body-tube joints.</p>
-<p>Place blue tape at the top and bottom of the fin/body tube where you want the fillet to end.</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="https://dofprobucket2.s3.us-east-2.amazonaws.com/Images/DX3_Taped.png" class="img-fluid figure-img"></p>
-<figcaption>The Taped Up Fins.</figcaption>
-</figure>
-</div>
-<p>Plan on doing two fillets at a time between adjacent fins.</p>
-<p>Measure out a batch of glass microballoons equal in volume to the batch of epoxy you are about to mix.</p>
-<p>Mix a batch of epoxy and quickly fold in the microballoons. It should have roughly the consistency of peanut butter.</p>
-<p>Lay the epoxy down in the joint and roughly smooth it with the stir stick.</p>
-<p>Using a plastic spoon, pull along the fillet, leaving a nice concave profile, with excess epoxy being gathered up by the spoon.</p>
-<p>Quickly touch up any flaws.</p>
-<p>Remove the blue tape along that particular set of fillets.</p>
-<p>Let them fully cure before moving on to the next fillets.</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="https://dofprobucket2.s3.us-east-2.amazonaws.com/Images/DX3_Fillet_View.png" class="img-fluid figure-img"></p>
-<figcaption>A View of the Completed FIllets.</figcaption>
-</figure>
-</div>
-<p><strong>Sand both the body tube and the launch lug where they are going to join until you have removed the glassine (the white, shiny paper layer). Failure to do so may result in moments of panic at the launch stand when your launch lugs break off.</strong></p>
-<p>The launch lugs should be epoxied on and aligned with the vertical line you drew earlier. Placement isn’t critical, but the bottom one should be somewhere in between the top edge of the fins and the bottom edge of the fins (Madcow recommends 2” from the bottom of the rocket). The top one should be at least an inch or two below the top of the body tube. Madcow recommends at the center of pressure, which is 27” from the nose tip. Make sure they are aligned along the body tube.</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="https://dofprobucket2.s3.us-east-2.amazonaws.com/Images/DX3_Launch_Lugs.png" class="img-fluid figure-img"></p>
-<figcaption>The Attached Launch Lugs.</figcaption>
-</figure>
-</div>
-</section>
-<section id="step-8-chute-protector-and-parachute" class="level2">
-<h2 class="anchored" data-anchor-id="step-8-chute-protector-and-parachute">Step 8: Chute Protector and Parachute</h2>
-<p>Shake or push the shock cord free out the top of the body tube.</p>
-<p>Thread the chute protector through the shock cord and slide down to the body.</p>
-<p>Roughly 2/3 of the shock cord length (the length from the body tube up) tie a <a href="https://www.101knots.com/butterfly-knot.html">butterfly knot</a> or a <a href="https://www.101knots.com/figure-8-on-a-bight.html">figure eight knot on a bight</a>.</p>
-<p>Attach the end of the shock cord to the screw eye in the payload section with a <a href="https://www.bing.com/ck/a?!&amp;&amp;p=166c64ea976c196aJmltdHM9MTcyODI1OTIwMCZpZ3VpZD0zZGZjOTQ2Yy1iNTBmLTYwNGItMjIzOC04MDg0YjRmMTYxY2MmaW5zaWQ9NTIxOQ&amp;ptn=3&amp;ver=2&amp;hsh=3&amp;fclid=3dfc946c-b50f-604b-2238-8084b4f161cc&amp;psq=PML+knot+rocketry&amp;u=a1aHR0cHM6Ly93d3cubmFra2Etcm9ja2V0cnkubmV0L2FydGljbGVzL3BtbGNodXRlcGFja2luZy5wZGY&amp;ntb=1">PML knot</a> and secure the end to the body with either electrical or blue tape rather than epoxy.</p>
-<p>Attach the parachute to the butterfly knot or the figure eight knot on a bight with a Lark’s Head knot. Gather the shroud-line loops. Push them through the bight on the shock cord. Pass the parachute through the shroud-line loops and pull.</p>
-<p>If you want to fold the parachute and pack it in the rocket use the <a href="https://dofpro.org/RCK/const/index">Instructions for Folding Parachutes</a></p>
-</section>
-<section id="step-9-painting" class="level2">
-<h2 class="anchored" data-anchor-id="step-9-painting">Step 9: Painting</h2>
-<p>If you desire to paint your rocket, please do so. There are lots of places on-line that will give you an overabundance of advice on how to do so. Many fliers prefer to make their rocket “earn it’s paint” by flying it unpainted, and then painting it if it survives the first flight.</p>
-<ul>
-<li><p>You should mark the center of pressure with a center-of-pressure symbol, which is a circle with a dot in the middle, ⊙. A Sharpie® works great, but we do have water-slide decals if you want to get fancy.</p></li>
-<li><p>Label the rocket with your name and cell-phone number on both the body tube and payload section. Again a Sharpie® works great, but you can use print-on adhesive labels or Sam’s labeling machine as well.</p></li>
+<li>For this flight, how much of a difference did the corrections make?</li>
+<li>If you were trying for a record altitude flight, which would you prefer: to fly on a cold day or a hot day, under a high pressure or under a low pressure, under a high humidity or under a low humidity?</li>
 </ul>
 
 

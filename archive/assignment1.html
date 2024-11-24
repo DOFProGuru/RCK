@@ -8,7 +8,7 @@
 
 <meta name="author" content="DOFPro group">
 
-<title>Mini DX3 Assembly Instructions – High Power Rocketry</title>
+<title>Practice Problems 1 – High Power Rocketry</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -68,6 +68,35 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 <link rel="stylesheet" href="../styles.css">
 </head>
@@ -222,15 +251,11 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#step-1-sanding" id="toc-step-1-sanding" class="nav-link active" data-scroll-target="#step-1-sanding">Step 1: Sanding</a></li>
-  <li><a href="#step-2-motor-mount-assembly" id="toc-step-2-motor-mount-assembly" class="nav-link" data-scroll-target="#step-2-motor-mount-assembly">Step 2: Motor Mount Assembly</a></li>
-  <li><a href="#step-3-shock-cord" id="toc-step-3-shock-cord" class="nav-link" data-scroll-target="#step-3-shock-cord">Step 3: Shock Cord</a></li>
-  <li><a href="#step-4-forward-section" id="toc-step-4-forward-section" class="nav-link" data-scroll-target="#step-4-forward-section">Step 4: Forward Section</a></li>
-  <li><a href="#step-5-insert-motor-mount" id="toc-step-5-insert-motor-mount" class="nav-link" data-scroll-target="#step-5-insert-motor-mount">Step 5: Insert Motor Mount</a></li>
-  <li><a href="#step-6-fins" id="toc-step-6-fins" class="nav-link" data-scroll-target="#step-6-fins">Step 6: Fins</a></li>
-  <li><a href="#step-7-fin-fillets" id="toc-step-7-fin-fillets" class="nav-link" data-scroll-target="#step-7-fin-fillets">Step 7: Fin Fillets</a></li>
-  <li><a href="#step-8-chute-protector-and-parachute" id="toc-step-8-chute-protector-and-parachute" class="nav-link" data-scroll-target="#step-8-chute-protector-and-parachute">Step 8: Chute Protector and Parachute</a></li>
-  <li><a href="#step-9-painting" id="toc-step-9-painting" class="nav-link" data-scroll-target="#step-9-painting">Step 9: Painting</a></li>
+  <li><a href="#d-constant-thrust-constant-mass-constant-𝑔-drag-coefficient-𝐶_𝐷" id="toc-d-constant-thrust-constant-mass-constant-𝑔-drag-coefficient-𝐶_𝐷" class="nav-link active" data-scroll-target="#d-constant-thrust-constant-mass-constant-𝑔-drag-coefficient-𝐶_𝐷">1-D Constant Thrust, Constant Mass, Constant 𝑔, Drag Coefficient <span class="math inline">\(𝐶_𝐷\)</span></a></li>
+  <li><a href="#d-coasting-ascent-no-thrust-constant-𝑔-drag-coefficient-𝐶_𝐷" id="toc-d-coasting-ascent-no-thrust-constant-𝑔-drag-coefficient-𝐶_𝐷" class="nav-link" data-scroll-target="#d-coasting-ascent-no-thrust-constant-𝑔-drag-coefficient-𝐶_𝐷">1-D Coasting Ascent (No Thrust), Constant 𝑔, Drag Coefficient <span class="math inline">\(𝐶_𝐷\)</span></a></li>
+  <li><a href="#d-coasting-descent-from-apogee-no-thrust-constant-𝑔-drag-coefficient-𝐶_𝐷" id="toc-d-coasting-descent-from-apogee-no-thrust-constant-𝑔-drag-coefficient-𝐶_𝐷" class="nav-link" data-scroll-target="#d-coasting-descent-from-apogee-no-thrust-constant-𝑔-drag-coefficient-𝐶_𝐷">1-D Coasting Descent from Apogee (No Thrust), Constant 𝑔, Drag Coefficient <span class="math inline">\(𝐶_𝐷\)</span></a></li>
+  <li><a href="#time-from-apogee-to-ground" id="toc-time-from-apogee-to-ground" class="nav-link" data-scroll-target="#time-from-apogee-to-ground">Time from Apogee to Ground</a></li>
+  <li><a href="#comparison-with-open-rocketrocksim" id="toc-comparison-with-open-rocketrocksim" class="nav-link" data-scroll-target="#comparison-with-open-rocketrocksim">Comparison with Open Rocket/Rocksim</a></li>
   </ul>
 </nav>
     </div>
@@ -239,7 +264,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Mini DX3 Assembly Instructions</h1>
+<h1 class="title">Practice Problems 1</h1>
 </div>
 
 
@@ -262,228 +287,151 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>Make sure to review the <a href="https://dofpro.org/RCK/safety/">safety hints</a> before attempting assembly of any high-powered rockets.</p>
-<p>The image below displays almost all of the parts that come in the kit.</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="https://dofprobucket2.s3.us-east-2.amazonaws.com/Images/DX3_rocket_parts.png" class="img-fluid figure-img"></p>
-<figcaption>The parts that come in the kit</figcaption>
-</figure>
-</div>
-<p>The following is a list of parts that are required separately from the kit.</p>
+<p>In this first set of practice problems, we are going to be starting with the 1-D rocket equation. We will prove that the given models solve the equation for the chosen restrictions. We will use the models to determine drag coefficients and thrust curves from flight data.</p>
+<p>The set of equations that make up the rocket equation are: <span class="math display">\[
+\vec{𝑎} = \dot{\vec{𝑣}} = \frac{\vec{T}}{m}+ \vec{𝑔} −\frac{1}{2}{𝐶_𝐷}{𝐴_𝑃}{\frac{𝜌}{m}}\vec{𝑣}|\vec{𝑣}|
+\]</span> (1)</p>
+<p>and</p>
+<p><span class="math display">\[
+\dot{𝑚}=\frac{|\vec{𝑇}|}{|\vec{𝑣_𝑒}|}
+\]</span> (2)</p>
+<section id="d-constant-thrust-constant-mass-constant-𝑔-drag-coefficient-𝐶_𝐷" class="level2">
+<h2 class="anchored" data-anchor-id="d-constant-thrust-constant-mass-constant-𝑔-drag-coefficient-𝐶_𝐷">1-D Constant Thrust, Constant Mass, Constant 𝑔, Drag Coefficient <span class="math inline">\(𝐶_𝐷\)</span></h2>
+<p>Depending on what assumptions you make, you can get different solutions to the rocket equation. This practice problem proves or derives several of them. To explain the difference: prove means that you are given a solution to the differential equation, and you prove by plugging-in to the DE that it solves the equation and the boundary or initial conditions, derive means to use the solution techniques for differential equations and determine a solution that solves the DE and the boundary or initial conditions.</p>
+<p>Assume that the change in rocket mass is small compared to the rocket mass. The rocket ascends in the positive vertical, 𝑥, direction and begins at time, <span class="math inline">\(𝑡_0\)</span> , with position, <span class="math inline">\(𝑥_0\)</span> , velocity, <span class="math inline">\(𝑣_0\)</span>, and constant thrust, 𝑇. Further define <span class="math inline">\(𝑣_{max}\)</span> as</p>
+<p><span class="math display">\[
+𝑣_{max}=\sqrt{\frac{2(𝑇−𝑚𝑔)}{𝜌𝐶_𝐷𝐴_𝑃}}
+\]</span> (3)</p>
+<p>and 𝑏 as</p>
+<p><span class="math display">\[
+𝑏=\frac{𝑇−𝑚𝑔}{𝑚}
+\]</span> (4)</p>
+<p>Equation 1 then becomes</p>
+<p><span class="math display">\[
+𝑎=\dot{𝑣}=𝑏−\frac{1}{2}𝐶_𝐷𝐴_𝑃\frac{𝜌}{𝑚}𝑣|𝑣|
+\]</span> (5)</p>
+<p>Prove that the solution for <span class="math inline">\(𝑣_0&lt;𝑣_{max}\)</span> is</p>
+<p><span class="math display">\[
+𝑣=𝑣_{max}tanh[\frac{𝑏}{𝑣_{max}}(𝑡−𝑡_0)+{tanh}^{−1}\frac{𝑣_0}{𝑣_{max}}]
+\]</span> (6)</p>
+<p>and</p>
+<p><span class="math display">\[
+𝑥−𝑥_0=\frac{{𝑣_{max}}^2}{𝑏}[ln[cosh(\frac{𝑏}{𝑣_{max}}(𝑡−𝑡_0)+{tanh}^{−1}\frac{𝑣_0}{𝑣_{max}})]−ln[cosh({tanh}^{−1}\frac{𝑣_0}{𝑣_{max}})]]
+\]</span> (7)</p>
+<p>You can eliminate the absolute value sign by considering whether correct factor is <span class="math inline">\(−𝑣^2\)</span>$ or <span class="math inline">\(𝑣^2\)</span> depending on which direction is positive 𝑥 and whether the drag opposes the motion or adds to the motion.</p>
+<p>Prove that the solution for <span class="math inline">\(𝑣_0&gt;𝑣_{max}\)</span> is</p>
+<p><span class="math display">\[
+𝑣=𝑣_{max}coth[\frac{𝑏}{𝑣_{max}}(𝑡−𝑡0)+{coth}^{−1}\frac{𝑣_0}{𝑣_{max}}]
+\]</span> (8)</p>
+<p>and</p>
+<p><span class="math display">\[
+𝑥−𝑥_0=\frac{{𝑣_{max}}^{2}}{𝑏}[ln[sinh(\frac{𝑏}{𝑣_{max}}(𝑡−𝑡0)+{coth}^{−1}\frac{𝑣_0}{𝑣_{max}})]−ln[sinh({coth}^{−1}\frac{𝑣_0}{𝑣_{max}})]]
+\]</span> (9)</p>
+</section>
+<section id="d-coasting-ascent-no-thrust-constant-𝑔-drag-coefficient-𝐶_𝐷" class="level2">
+<h2 class="anchored" data-anchor-id="d-coasting-ascent-no-thrust-constant-𝑔-drag-coefficient-𝐶_𝐷">1-D Coasting Ascent (No Thrust), Constant 𝑔, Drag Coefficient <span class="math inline">\(𝐶_𝐷\)</span></h2>
+<p>The positive vertical direction is 𝑥. The rocket ascends in the positive vertical direction, and begins at time, <span class="math inline">\(𝑡_0\)</span>, with position, <span class="math inline">\(𝑥_0\)</span>, and velocity, <span class="math inline">\(𝑣_0\)</span>. Further define <span class="math inline">\(𝑣_𝑡\)</span> as</p>
+<p><span class="math display">\[
+𝑣_𝑡=\sqrt{\frac{2𝑚𝑔}{𝜌𝐶_𝐷𝐴_𝑃}}
+\]</span> (10)</p>
+<p>Equation 1 then becomes</p>
+<p><span class="math display">\[
+𝑎=\dot{𝑣}=−𝑔(1+\frac{𝑣^2}{𝑣_t^2})
+\]</span> (11)</p>
+<p>Prove that the solution is</p>
+<p><span class="math display">\[
+𝑣=𝑣_𝑡tan[\frac{−𝑔}{𝑣_𝑡}(𝑡−𝑡_0)+{tan}^{−1}\frac{𝑣_0}{𝑣_𝑡}]
+\]</span> (12)</p>
+<p>and</p>
+<p><span class="math display">\[
+𝑥−𝑥_0=\frac{𝑣^2_𝑡}{𝑔}(ln(cos[\frac{𝑔}{𝑣_𝑡}(𝑡−𝑡0)−{tan}^{−1}\frac{𝑣_0}{𝑣_𝑡}])+ln\sqrt{1+\frac{𝑣^2_0}{𝑣^2_𝑡}})
+\]</span> (13)</p>
+</section>
+<section id="d-coasting-descent-from-apogee-no-thrust-constant-𝑔-drag-coefficient-𝐶_𝐷" class="level2">
+<h2 class="anchored" data-anchor-id="d-coasting-descent-from-apogee-no-thrust-constant-𝑔-drag-coefficient-𝐶_𝐷">1-D Coasting Descent from Apogee (No Thrust), Constant 𝑔, Drag Coefficient <span class="math inline">\(𝐶_𝐷\)</span></h2>
+<p>The positive vertical direction is 𝑥. The rocket descends in the negative vertical direction, and begins at time, <span class="math inline">\(𝑡_{apogee}\)</span>, with position, <span class="math inline">\(𝑥_{apogee}\)</span>, and velocity, <span class="math inline">\(𝑣_{apogee}=0\)</span>. Further define <span class="math inline">\(𝑣_𝑡\)</span> as</p>
+<p><span class="math display">\[
+𝑣_𝑡=\sqrt{\frac{2𝑚𝑔}{𝜌𝐶_𝐷𝐴_𝑃}}
+\]</span> (14)</p>
+<p>Simplify Equation 5 for these conditions and prove that the solution is</p>
+<p><span class="math display">\[
+𝑣=𝑣_𝑡tanh[\frac{−𝑔}{𝑣_𝑡}(𝑡−𝑡_{apogee})]
+\]</span> (15)</p>
+<p>and</p>
+<p><span class="math display">\[
+𝑥−𝑥_{apogee}=\frac{𝑣^2_𝑡}{−𝑔}ln(cosh[\frac{−𝑔}{𝑣_𝑡}(𝑡−𝑡_{apogee})])
+\]</span> (16)</p>
+</section>
+<section id="time-from-apogee-to-ground" class="level2">
+<h2 class="anchored" data-anchor-id="time-from-apogee-to-ground">Time from Apogee to Ground</h2>
+<p>Use Equation 16 to determine the time, <span class="math inline">\(𝑡_{desc}\)</span> for a rocket to descend from apogee to the ground. For a ballistic fall you would use the <span class="math inline">\(𝐶_𝐷\)</span> of the rocket, and for a parachute descent, you would use the area and <span class="math inline">\(𝐶_𝐷\)</span> of the parachute.</p>
+<p>Show that for <span class="math inline">\(𝑔𝑥_0/𝑣^2_𝑡&gt;100\)</span> the approximation</p>
+<p><span class="math display">\[
+𝑡−𝑡_{apogee}=\frac{𝑥_{apogee}}{𝑣_𝑡}+\frac{𝑣_𝑡}{𝑔}ln2
+\]</span> (17)</p>
+<p>is accurate and doesn’t have the computational difficulties of your above solution.</p>
 <ul>
-<li>An Estes 29mm motor retainer</li>
-<li>Three #2-56 × 3/16” pan-head screws</li>
+<li><p>Use Equation 12 and the fact that 𝑣=0 at apogee to determine the time from burnout to apogee.</p></li>
+<li><p>Use the result from the previous step and Equation 13 to determine the distance from burnout to apogee.</p></li>
 </ul>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="https://dofprobucket2.s3.us-east-2.amazonaws.com/Images/DX3_Motor_Retainer.png" class="img-fluid figure-img"></p>
-<figcaption>The Estes 29mm Motor Retainer</figcaption>
-</figure>
-</div>
-<section id="step-1-sanding" class="level2">
-<h2 class="anchored" data-anchor-id="step-1-sanding">Step 1: Sanding</h2>
-<p>Sand every surface to be epoxied (including interior surfaces) with 80-to-110 grit sandpaper. The epoxy needs the roughness created by sanding in order to be able to hold on to the surface. You may have to think about the assembly sequence to figure out where to sand. Don’t forget about the inside of the Estes motor retainer. Pretty much the entire exterior of the motor mount should be sanded or roughed up.</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="https://dofprobucket2.s3.us-east-2.amazonaws.com/Images/DX3_SandMM.png" class="img-fluid figure-img"></p>
-<figcaption>Sand the entire motor mount.</figcaption>
-</figure>
-</div>
-</section>
-<section id="step-2-motor-mount-assembly" class="level2">
-<h2 class="anchored" data-anchor-id="step-2-motor-mount-assembly">Step 2: Motor Mount Assembly</h2>
-<p>Test fit centering rings over the motor mount tube and sand centering rings if necessary.</p>
-<p>Also test fit the centering rings in the body tube and sand the rings if necessary.</p>
-<p>Place the inside part of your Estes motor retainer on one end of the motor mount tube. Make sure it is fully seated. Using a pen or pencil, mark the tube where the motor retainer hits the tube.</p>
-<p>Screw on the outside of the motor retainer.</p>
-<p>Insert the assembly into the slotted end of the rocket body tube so that the motor tube is still seated in the retainer and the outside of the retainer is resting against the body tube.</p>
-<p>Use a sharpened pencil or other marking implement that will reach and mark the location of the bottom of the bottom slot, and the top of the top slot on the motor mount tube.</p>
-<p>Remove the assembly and connect the marks to create two circles around the motor mount tube. If a centering ring will fit over the tube, you can use it as a guide for your circles. The space between the circles is where the fins will contact the motor mount tube and needs to be kept clear of epoxy or other materials while assembling the rocket before attaching the fins. The space between the ring for the top of the retainer and the bottom of the fins is where the bottom centering ring may be epoxied in place.</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="https://dofprobucket2.s3.us-east-2.amazonaws.com/Images/DX3_MotorMountWLines.png" class="img-fluid figure-img"></p>
-<figcaption>The Marked Motor Mount. Note: Tube is fully sanded.</figcaption>
-</figure>
-</div>
-<p><strong>Note</strong> The strength of the bond between the fins and the motor mount can be greatly increased by putting internal fillets between the fins and motor mount tube, and the fins and the body tube. That strength is not needed for motors with 180 Ns of impulse and below, but should be considered if going above 180 Ns, and is required in the class 54mm fiberglass rocket. The next step makes creating internal fillets very difficult.</p>
-<p>Spread some epoxy on the outside of the motor tube somewhere between the retainer-ring mark and the bottom-of-the-fins mark and slide the bottom ring (without the notch) up the tube until it is centered between the marks, and wait for the epoxy to set. Be sure to clean off any epoxy that strayed beyond the lines.</p>
-<p>The placement of the top ring (the one with the notch) isn’t critical: It should be above the top of the fin mark, but no closer than 1/4” from the end of the tube. Usually about 1/2” for the top of the tube is about right. Spread some epoxy on the outside of the motor tube at your chosen location and slide the top ring (with the notch) up the tube until it is in position, and wait for the epoxy to set. Be sure to clean off any epoxy that strayed into the fin or motor retainer zones.</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="https://dofprobucket2.s3.us-east-2.amazonaws.com/Images/DX3_MotorMountWRings.png" class="img-fluid figure-img"></p>
-<figcaption>The Motor Mount with Centering Rings.</figcaption>
-</figure>
-</div>
-<p>Using JB-Weld (not any other epoxy) attach the inner part of the motor retainer to the bottom of the motor mount assembly. Spread the JB-Weld on the motor mount tube and not inside the motor retainer. Twist the motor retainer as you push it onto the tube.</p>
-<p>Inspect the inside of the motor mount tube-motor retainer and thoroughly wipe away any JB-Weld that made it inside.</p>
-<p>Place the assembly vertically (with the top notched ring pointed up), and let cure for at least 3 hours, preferably in a warm space. JB-Weld takes 24-48 hours to fully cure, but will usually not run after 3 hours.</p>
-</section>
-<section id="step-3-shock-cord" class="level2">
-<h2 class="anchored" data-anchor-id="step-3-shock-cord">Step 3: Shock Cord</h2>
-<p>The shock cord in this kit consists of a shorter section of Kevlar and a longer section of nylon cording. The two sections should be tied together using the line form of a <a href="https://en.wikipedia.org/wiki/Double_fisherman's_knot">double fisherman’s knot</a> (<a href="https://youtu.be/YHUv-oOMwRA">REI Video</a>). The Kevlar section will be attached to the motor mount and the nylon section will be attached to the payload section. Apply some epoxy like a fillet between the lower side of the top centering ring and the motor mount and wrap the Kevlar end of the shock cord around the motor mount into the epoxy. Make sure the cord lays flat enough so it will not interfere with the body tube when you slide the motor tube inside. Make sure the cord is secure and will not come loose later with ejection forces that will pull on the shock cord.</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="https://dofprobucket2.s3.us-east-2.amazonaws.com/Images/DX3_MotorMountAssembly.png" class="img-fluid figure-img"></p>
-<figcaption>The Complete Motor Mount Assembly.</figcaption>
-</figure>
-</div>
-</section>
-<section id="step-4-forward-section" class="level2">
-<h2 class="anchored" data-anchor-id="step-4-forward-section">Step 4: Forward Section</h2>
-<p>Insert the eyebolt through the hole in the center of the bulkhead and secure using the washer and nut.</p>
-<p><strong>Apply some epoxy or CA to the nut and eyebolt threads to ensure the nut doesn’t come loose later.</strong></p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="https://dofprobucket2.s3.us-east-2.amazonaws.com/Images/DX3_ScrewBulkhead.png" class="img-fluid figure-img"></p>
-<figcaption>The Assembled Bulkhead.</figcaption>
-</figure>
-</div>
-<p>Cut off the eyebolt (Dremel or hacksaw) leaving about 1/4”-to-1/8” above the nut and file or sand the end to remove any sharp edges. Apply insta-cure cyanoacrylate to the bolt in the crevices near the bolt so that the bolt does not become undone. After applying the cyanoacrylate, spray insta-set accelerator onto the applied surface so that the cyanoacrylate sets faster. Alternatively, instead of using cyanoacrylate and accelerator, you can epoxy where the bolt meets the nut.</p>
-<p><strong>Note</strong> The coupler tube may be hidden inside either the payload tube or the body tube. Reach inside and slide it out.</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="https://dofprobucket2.s3.us-east-2.amazonaws.com/Images/DX3_ScrewTrimSand.png" class="img-fluid figure-img"></p>
-<figcaption>The Assembled Bulkhead with the Screw Eye Trimmed.</figcaption>
-</figure>
-</div>
-<p>Mark a line around the inside of the coupler tube 1/8” from the end. Apply epoxy to the inside of the tube and push the bulkhead in so that the line is visible and wait until the glue sets. There are two pieces that can assist you. The first is a spacer that can be placed against the bulkhead to hold it at the correct depth until the epoxy cures. The second is a stand with room for the eyebolt to hang down that will let you hold the spacer and bulkhead in the proper position while the epoxy cures.</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="https://dofprobucket2.s3.us-east-2.amazonaws.com/Images/DX3_BulkheadRecess.png" class="img-fluid figure-img"></p>
-<figcaption>The Bulkhead Recessed in Coupler.</figcaption>
-</figure>
-</div>
-<p>Apply a fillet of epoxy around the inside edge of the coupler bulkhead joint.</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="https://dofprobucket2.s3.us-east-2.amazonaws.com/Images/DX3_CouplerFillet.png" class="img-fluid figure-img"></p>
-<figcaption>The Bulkhead/Coupler Fillet.</figcaption>
-</figure>
-</div>
-<p>Mark a line around the coupler 2” from the open end. Apply a very thin amount of epoxy on the first inch of the outside of the coupler, and twist and slide the coupler into the payload tube (forward body tube) until you reach the 2” mark. Quickly wipe off any excess epoxy at the payload tube-coupler joint. The payload tube will not join properly with the body tube if you leave excess epoxy at the joint.</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="https://dofprobucket2.s3.us-east-2.amazonaws.com/Images/DX3_CouplerPayloadJoint.png" class="img-fluid figure-img"></p>
-<figcaption>The Coupler/Payload Joint</figcaption>
-</figure>
-</div>
-<p>Measure down 1 9/16” from the shoulder of the nose cone, and using an X-acto knife or a saw, cut off the bottom of the nose cone, and if necessary, sand the cut square. It will be pressing against the avionics carrier and should be as square as possible.</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="https://dofprobucket2.s3.us-east-2.amazonaws.com/Images/Images/DX3_NoseCone.png" class="img-fluid figure-img"></p>
-<figcaption>The Trimmed Nose Cone</figcaption>
-</figure>
-</div>
-<p>Insert the nose cone into the top of the payload tube.</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="https://dofprobucket2.s3.us-east-2.amazonaws.com/Images/DX3_PayloadSection.png" class="img-fluid figure-img"></p>
-<figcaption>The Payload with Nose Cone.</figcaption>
-</figure>
-</div>
-<p>Holes for Payload – Nose Cone Screws: Mark three points equally spaced around the circumference of the payload tube halfway between the shoulder and the end of the payload tube. Easiest is to wrap a piece of paper around the tube and mark one circumference. Unwrap and measure the circumference and divide the distance by three and mark the paper accordingly, then transfer the marks to the payload tube by wrapping the paper back around the tube and marking.</p>
-<p>Holes for Altimeter Vents: Repeat the marking procedure 1” above the coupler-payload tube edge.</p>
-<p>Drill all six holes with a #52, #51, or #50 bit. Drill slowly to try to leave the inside edges of the holes as clean as possible. You might consider drilling, tapping, and putting in a screw for the first hole before drilling the other five, to avoid the tube and nose cone rotating relative to each other.</p>
-<p>Tap the top three holes with a #2-56 tap. These will secure the nose cone to the payload section.</p>
-<p>Screw a pan-head #2-56 screw into each threaded hole. These will hold the nose cone on during flight, but permit it to be removed to access the avionics.</p>
-<p>The other three holes are to permit the altimeter to measure the free stream pressure outside the rocket for calculating the altitude.</p>
-<p>If you are going to install an avionics carrier, you will want to put a layer of foam in the bottom of the payload section.</p>
-</section>
-<section id="step-5-insert-motor-mount" class="level2">
-<h2 class="anchored" data-anchor-id="step-5-insert-motor-mount">Step 5: Insert Motor Mount</h2>
-<p>Hold the motor mount assembly by the body tube at the position that it will be when epoxied in. Measure how far up the body tube the front centering ring will be.</p>
-<p>Using sandpaper attached to the end of a dowel, roughen up the inside of the body tube where the front centering ring will be attached.</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="https://dofprobucket2.s3.us-east-2.amazonaws.com/Images/DX3_SandingRod.png" class="img-fluid figure-img"></p>
-<figcaption>The Sanding Rod for Top Centering Ring</figcaption>
-</figure>
-</div>
-<p>Put the shock cord inside of the motor mount tube so it’s out of the way while the motor mount assembly is epoxied in.</p>
-<p>Screw the outside of the motor retainer onto the end of the motor mount assembly.</p>
-<p><strong>Important</strong> The next several steps need to be completed quickly, before a batch of epoxy has time to set.</p>
-<p>Using one or more craft (popsicle) sticks taped together, place a ring of epoxy inside the body tube about 1/4” short of where the front centering ring will sit. You need to get the epoxy up the tube without dripping anywhere else in the tube.</p>
-<p>Insert the motor mount assembly part-way up the body tube.</p>
-<p>Put a ring of epoxy around the lower end of the body tube between the bottom end and the fin slots.</p>
-<p>Push and twist the motor mount assembly into the body tube. Be sure the bottom ring doesn’t extend into the fin slots.</p>
-<p>Make sure the rocket is vertical until the epoxy cures.</p>
-<p>Launch Lug Marking: * It’s easiest to mark the body tube for the launch lugs before putting on the fins. * Place a length of angle iron so that one edge is halfway between two sets of fin slots, and draw a vertical line up the body tube.</p>
-</section>
-<section id="step-6-fins" class="level2">
-<h2 class="anchored" data-anchor-id="step-6-fins">Step 6: Fins</h2>
-<p>Dry fit the fins and if necessary sand the slots until the fins fit. You don’t want them to be a loose fit.</p>
-<p>Make sure you have two or three fin jigs handy.</p>
-<p><strong>Important</strong> The next several steps need to be completed quickly, before a batch of epoxy has time to set.</p>
-<p>Apply a generous-but-not-overflowing amount of epoxy to the root end of each fin tang and insert it into the fin slots.</p>
-<p>Before the epoxy sets, place a fin jig on each side of the fins and place the assembly on a table to guarantee the fins are straight. A third jig at the end of the body tube will help you keep things level</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="https://dofprobucket2.s3.us-east-2.amazonaws.com/Images/DX3_FinGuidesLong.png" class="img-fluid figure-img"></p>
-<figcaption>The Fin Jigs (all three)</figcaption>
-</figure>
-</div>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="https://dofprobucket2.s3.us-east-2.amazonaws.com/Images/DX3_FinGuides.png" class="img-fluid figure-img"></p>
-<figcaption>The Fin Jigs</figcaption>
-</figure>
-</div>
-<p>Before proceeding, make sure the epoxy has fully cured.</p>
-</section>
-<section id="step-7-fin-fillets" class="level2">
-<h2 class="anchored" data-anchor-id="step-7-fin-fillets">Step 7: Fin Fillets</h2>
-<p>Get a set of plastic spoons that will be used for pulling the fillets.</p>
-<p>Rub the edges of the spoon heavily with a pencil lead.</p>
-<p>Draw the spoon along the joint between the fin and the body tube. With luck, you’ll see a line where the spoon met the fin and where it met the body tube.</p>
-<p>Place blue tape along each line.</p>
-<p>Repeat the marking and taping for each of the remaining fin-body-tube joints.</p>
-<p>Place blue tape at the top and bottom of the fin/body tube where you want the fillet to end.</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="https://dofprobucket2.s3.us-east-2.amazonaws.com/Images/DX3_Taped.png" class="img-fluid figure-img"></p>
-<figcaption>The Taped Up Fins.</figcaption>
-</figure>
-</div>
-<p>Plan on doing two fillets at a time between adjacent fins.</p>
-<p>Measure out a batch of glass microballoons equal in volume to the batch of epoxy you are about to mix.</p>
-<p>Mix a batch of epoxy and quickly fold in the microballoons. It should have roughly the consistency of peanut butter.</p>
-<p>Lay the epoxy down in the joint and roughly smooth it with the stir stick.</p>
-<p>Using a plastic spoon, pull along the fillet, leaving a nice concave profile, with excess epoxy being gathered up by the spoon.</p>
-<p>Quickly touch up any flaws.</p>
-<p>Remove the blue tape along that particular set of fillets.</p>
-<p>Let them fully cure before moving on to the next fillets.</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="https://dofprobucket2.s3.us-east-2.amazonaws.com/Images/DX3_Fillet_View.png" class="img-fluid figure-img"></p>
-<figcaption>A View of the Completed FIllets.</figcaption>
-</figure>
-</div>
-<p><strong>Sand both the body tube and the launch lug where they are going to join until you have removed the glassine (the white, shiny paper layer). Failure to do so may result in moments of panic at the launch stand when your launch lugs break off.</strong></p>
-<p>The launch lugs should be epoxied on and aligned with the vertical line you drew earlier. Placement isn’t critical, but the bottom one should be somewhere in between the top edge of the fins and the bottom edge of the fins (Madcow recommends 2” from the bottom of the rocket). The top one should be at least an inch or two below the top of the body tube. Madcow recommends at the center of pressure, which is 27” from the nose tip. Make sure they are aligned along the body tube.</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="https://dofprobucket2.s3.us-east-2.amazonaws.com/Images/DX3_Launch_Lugs.png" class="img-fluid figure-img"></p>
-<figcaption>The Attached Launch Lugs.</figcaption>
-</figure>
-</div>
-</section>
-<section id="step-8-chute-protector-and-parachute" class="level2">
-<h2 class="anchored" data-anchor-id="step-8-chute-protector-and-parachute">Step 8: Chute Protector and Parachute</h2>
-<p>Shake or push the shock cord free out the top of the body tube.</p>
-<p>Thread the chute protector through the shock cord and slide down to the body.</p>
-<p>Roughly 2/3 of the shock cord length (the length from the body tube up) tie a <a href="https://www.101knots.com/butterfly-knot.html">butterfly knot</a> or a <a href="https://www.101knots.com/figure-8-on-a-bight.html">figure eight knot on a bight</a>.</p>
-<p>Attach the end of the shock cord to the screw eye in the payload section with a <a href="https://www.bing.com/ck/a?!&amp;&amp;p=166c64ea976c196aJmltdHM9MTcyODI1OTIwMCZpZ3VpZD0zZGZjOTQ2Yy1iNTBmLTYwNGItMjIzOC04MDg0YjRmMTYxY2MmaW5zaWQ9NTIxOQ&amp;ptn=3&amp;ver=2&amp;hsh=3&amp;fclid=3dfc946c-b50f-604b-2238-8084b4f161cc&amp;psq=PML+knot+rocketry&amp;u=a1aHR0cHM6Ly93d3cubmFra2Etcm9ja2V0cnkubmV0L2FydGljbGVzL3BtbGNodXRlcGFja2luZy5wZGY&amp;ntb=1">PML knot</a> and secure the end to the body with either electrical or blue tape rather than epoxy.</p>
-<p>Attach the parachute to the butterfly knot or the figure eight knot on a bight with a Lark’s Head knot. Gather the shroud-line loops. Push them through the bight on the shock cord. Pass the parachute through the shroud-line loops and pull.</p>
-<p>If you want to fold the parachute and pack it in the rocket use the <a href="https://dofpro.org/RCK/const/index">Instructions for Folding Parachutes</a></p>
-</section>
-<section id="step-9-painting" class="level2">
-<h2 class="anchored" data-anchor-id="step-9-painting">Step 9: Painting</h2>
-<p>If you desire to paint your rocket, please do so. There are lots of places on-line that will give you an overabundance of advice on how to do so. Many fliers prefer to make their rocket “earn it’s paint” by flying it unpainted, and then painting it if it survives the first flight.</p>
+<p>For the flight of a LOC Weasel on an F67-9W motor, calculate:</p>
 <ul>
-<li><p>You should mark the center of pressure with a center-of-pressure symbol, which is a circle with a dot in the middle, ⊙. A Sharpie® works great, but we do have water-slide decals if you want to get fancy.</p></li>
-<li><p>Label the rocket with your name and cell-phone number on both the body tube and payload section. Again a Sharpie® works great, but you can use print-on adhesive labels or Sam’s labeling machine as well.</p></li>
+<li>the velocity and altitude at burnout,</li>
+<li>the time from liftoff to apogee (ignore the 9-second delay for this part),</li>
+<li>the difference between the time to apogee and the 9-second delay,</li>
+<li>the altitude at apogee,</li>
+<li>the time required for a ballistic fall from apogee,</li>
+<li>the velocity at impact for a ballistic fall</li>
+<li>the time required for a parachute descent from apogee,</li>
+<li>the velocity at landing for a parachute descent from apogee.</li>
 </ul>
+<p>Data for a LOC Weasel with avionics on an F67-9W:</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Item</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Mass (no motor)</td>
+<td>453.0 g</td>
+</tr>
+<tr class="even">
+<td>Mass (w motor)</td>
+<td>534.0 g</td>
+</tr>
+<tr class="odd">
+<td>Propellant mass</td>
+<td>30 g</td>
+</tr>
+<tr class="even">
+<td>CG (no motor)</td>
+<td>23.72 in</td>
+</tr>
+<tr class="odd">
+<td>CG (w motor)</td>
+<td>27.48 in</td>
+</tr>
+<tr class="even">
+<td>diameter</td>
+<td>1.64 in</td>
+</tr>
+<tr class="odd">
+<td><span class="math inline">\(C_D\)</span></td>
+<td>0.70</td>
+</tr>
+<tr class="even">
+<td>motor data</td>
+<td><a href="https://www.thrustcurve.org/motors/AeroTech/F67W/">See Thrustcurve.org</a></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="comparison-with-open-rocketrocksim" class="level2">
+<h2 class="anchored" data-anchor-id="comparison-with-open-rocketrocksim">Comparison with Open Rocket/Rocksim</h2>
+<p>How do your calculations compare with the results from Open Rocket or Rocksim? An Open Rocket model for the above rocket is <a href="https://pages.hmc.edu/spjut/AdvRoc/SimModels/LOC-Weasel-E178.ork">here</a>. Open Rocket is a Java app, but a group of dedicated volunteers have created installers for it. Go to <a href="https://openrocket.info/">Open Rocket</a> to get a version that is appropriate for your computer and OS. There are some outdated hints for usage at Some <a href="https://pages.hmc.edu/spjut/AdvRoc/PDF/OpenRocketHints.pdf">Hints for Open Rocket</a>.</p>
 
 
 </section>

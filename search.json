@@ -35,11 +35,193 @@
     "text": "Introduction\nHigh Power Rocketry concerns rockets with a mass of greater than 1500 grams and/or a single motors with more than 160 Ns of impulse or a cluster of motors with more than 320 Ns of impulse. High Power Rocketry is more thoroughly defined in NFPA 1127 and by TRA and NAR. This website contains information on the safety regulations, construction guidelines and hints, modeling of rocket flight, instrumentation, avionics, and analysis of flight data. In addition, there is an archive of flight data, and archives of information from previous rocket courses.\nThis website is the descendent of the Harvey Mudd College High Power Rocketry course."
   },
   {
-    "objectID": "archive/index.html",
-    "href": "archive/index.html",
-    "title": "Data Archive",
+    "objectID": "archive/assignment3.html",
+    "href": "archive/assignment3.html",
+    "title": "Practice Problems 3",
     "section": "",
-    "text": "A great number of models, tutorials, and experimental data sets have been gathered in E80, The Rocket Version, and in E178. Much of that information will be reproduced here."
+    "text": "An analysis of the flight data recorded by the on-board avionics can reveal quite a bit of the performance of a rocket. The analysis usually involves starting with the rocket equation, and manipulating it to permit data fitting to determine performance data. This assignment will give you a chance to analyze flight data to look at the coefficient of drag (\\(𝐶_𝐷\\)), the thrust curve of the motor, and the rotation of the rocket about the axial direction, essentially the roll, during the boost phase.\nIf you prefer, you can analyze the data from your own flight, rather than the ones listed in the problem."
+  },
+  {
+    "objectID": "archive/assignment3.html#average-𝐶_𝐷",
+    "href": "archive/assignment3.html#average-𝐶_𝐷",
+    "title": "Practice Problems 3",
+    "section": "Average \\(𝐶_𝐷\\)",
+    "text": "Average \\(𝐶_𝐷\\)\nThe post-boost portion of the rocket flight can be used to look at \\(𝐶_𝐷\\), as explained in \\(𝐶_𝐷\\). From Post-Boost Flight Data, the average \\(𝐶_𝐷\\) can be determined by a plot of \\(\\frac{−2𝑚}{𝐴_𝑝𝜌}(𝑎+𝑔)\\) versus \\(𝑣^2\\) or a plot of $𝑎 versus \\(𝑣_2\\). Use the data from the first seven flights of the Madcow Mini DX3 to determine average \\(𝐶_𝐷\\) for this rocket. Include a 95% confidence intervals on the value of \\(𝐶_𝐷\\). There are refreshers on statistics here and here. The MATLAB file to parse the data is ParseTeensyLoggerEggfinder.m. Note that it doesn’t contain the code to get the average 𝐶𝐷 or the thrust curve. You are on your own to add that code."
+  },
+  {
+    "objectID": "archive/assignment3.html#𝐶_𝐷-as-a-function-of-velocity",
+    "href": "archive/assignment3.html#𝐶_𝐷-as-a-function-of-velocity",
+    "title": "Practice Problems 3",
+    "section": "\\(𝐶_𝐷\\) as a Function of Velocity",
+    "text": "\\(𝐶_𝐷\\) as a Function of Velocity\nIf your accelerometers are good enough, you can actually calculate the \\(𝐶_𝐷\\) as a function of velocity. As explained in \\(𝐶_𝐷\\) From Post-Boost Flight Data,\n\\[\n𝐶_𝐷=−\\frac{2𝑚(𝑎+𝑔)}{𝐴_𝑝𝜌𝑣^2}\n\\] (1)\nand you can then plot \\(𝐶_𝐷\\) versus 𝑣. However, the most accurate \\(𝐶_𝐷\\) plot is as a function of Mach number, and not just velocity. The equation relating the speed of sound, 𝑐, to the absolute temperature, 𝑇, for an ideal gas is\n\\[\n𝑐=\\sqrt{\\frac{𝛾𝑅𝑇}{𝑀}}\n\\] (2)\nwhere 𝛾 is the ratio of heat capacities (𝛾=1.4 for air), 𝑅 is the molar gas constant, and 𝑀 is the molar mass or molecular weight of the air.\nGenerate plots of the \\(𝐶_𝐷\\) as a function of velocity for either the 17 Apr 2021 flights of the Class Adventurer Prototype on the Aerotech J510W and the CTI J530 or the 11 Feb 2023 flights of the Weasel on the Aerotech G80 and the Dual Deploy Vulcanite on the Aerotech I140. There is also a MATLAB file that will make the process easier. If possible, include error bounds on your plot. Compare your results with the \\(𝐶_𝐷\\) versus velocity data for the same rocket and motors from any of Rocksim, Open Rocket, or RASAero II. There is a MATLAB file that will make the process easier.\nGenerate plots of the \\(𝐶_𝐷\\) as a function of Mach number for the 9 Sep 2017 flights of the E190 Prototype rocket on the CTI J354 and the Aerotech J825R. Correct the Mach number for the temperature as a function of altitude and correct the air density for temperature and pressure as a function of altitude, and molecular weight as a function of relative humidity. Include error bounds on your plot. Compare your results with the \\(𝐶_𝐷\\) versus velocity data for the same rocket from any of Rocksim, Open Rocket, or RASAero II."
+  },
+  {
+    "objectID": "archive/assignment3.html#thrust-curve",
+    "href": "archive/assignment3.html#thrust-curve",
+    "title": "Practice Problems 3",
+    "section": "Thrust Curve",
+    "text": "Thrust Curve\nWith either your average \\(𝐶_𝐷\\) or your \\(𝐶_𝐷\\) as a function of velocity, you are able to calculate the thrust curve for your motor from the accelerometer data. As explained in Thrust Curve from Acceleration and Velocity Flight Data you can calculate the thrust from an iterative solution of\n\\[\n𝑇=𝑚(𝑎+𝑔)+\\frac{1}{2}𝐶_𝐷𝐴_𝑝𝜌𝑣^2\n\\] (3)\nand\n\\[\n𝑚(𝑡)=𝑚_0+\\frac{1}{𝑣_𝑒}∫^𝑡_{𝑡_0}𝑇𝑑𝑡\n\\] (4)\nUsing the data from either the 17 Apr 2021 flights of the Class Adventurer Prototype on the Aerotech J510W and the CTI J530 or the 11 Feb 2023 flights of the Weasel on the Aerotech G80 and the Dual Deploy Vulcanite on the Aerotech I140, plot the thrust curves and compare with the thrust curves from ThrustCurve.org. There is a MATLAB file that will make the process easier.\nFrom the data for first six flights of the Estes Top Shot calculate the thrust curves for the Estes E12 motor. Give the mean and 95% confidence intervals for the burn time, peak thrust, average thrust, and total impulse. Compare with the data on ThrustCurve.org for the Estes E12. There is a VI, RavenCSVCDThrustCalcs.vi, that will make the process easier."
+  },
+  {
+    "objectID": "archive/assignment8.html",
+    "href": "archive/assignment8.html",
+    "title": "Practice Problems 8",
+    "section": "",
+    "text": "If you successfully completed your first set of flights, you can analyze the flight data from your first set of flights. If you were unsuccessful in your first set of flights, you can analyze the two flights of the prototype Class Adventurer rocket from 10 June 2022. It made four flights between 9 June 2022 and 11 June 2022. You will get to analyze the other two for Assignment 9.\nYour data collection may differ from the standard for the Class Adventurer. Your analysis should be appropriate for the data you collected."
+  },
+  {
+    "objectID": "archive/assignment8.html#analysis-of-first-set-of-flight-data",
+    "href": "archive/assignment8.html#analysis-of-first-set-of-flight-data",
+    "title": "Practice Problems 8",
+    "section": "Analysis of First Set of Flight Data",
+    "text": "Analysis of First Set of Flight Data\nDisplay as much as you can from the accelerometer data, the velocity data, and the altitude data from the Large Teensy data files, the Featherweight Raven Data files, the GPS files, and Open Rocket or Rocksim simulations of your flights or the two 10 June flights. An OpenRocket model for the Adventurer is here. Be sure to indicate regions of interest, such as supersonic/subsonic transitions, burnout, descent rates under drogue and main parachutes, etc.\nBoth the rate gyro data and the magnetometer data can be used to calculate the axial rotation angle from liftoff to apogee. You can either plot the angle versus time for each of the sensors separately, or do data fusion to combine them. A reasonable start for data fusion is in KalmanFilterExample."
+  },
+  {
+    "objectID": "archive/assignment4.html",
+    "href": "archive/assignment4.html",
+    "title": "Practice Problems 4",
+    "section": "",
+    "text": "For regulatory purposes, the altitude relative to Mean Sea Level (MSL) is important. The FAA mandates maximum altitudes that cannot be exceeded for high-power rocket flights in terms of MSL. For example, the usual waiver at ROC launches in Lucerne Valley is for 10,000 feet MSL. The waiver for our class launch is 17,500 feet MSL. For modeling and flight performance purposes, the important measurement is the altitude relative to the altitude of the launch site, called Above Ground Level (AGL). This assignment is looking principally at errors in AGL measurements. AGL is always calculated by taking the calculated (not measured) altitude MSL at the launch pad, \\(ℎ_{0-MSLcalc}\\), and subtracting it from the calculated altitude MSL during flight, e.g.,\n\\[\nℎ_{AGL}=ℎ_{MSLcalc}−ℎ_{0-MSLcalc}\n\\]\nThe error in AGL is calculated as:\n\\[\n𝜖_{AGL}=ℎ_{AGL}−ℎ_{true}\n\\]"
+  },
+  {
+    "objectID": "archive/assignment4.html#agl-vs.-msl",
+    "href": "archive/assignment4.html#agl-vs.-msl",
+    "title": "Practice Problems 4",
+    "section": "",
+    "text": "For regulatory purposes, the altitude relative to Mean Sea Level (MSL) is important. The FAA mandates maximum altitudes that cannot be exceeded for high-power rocket flights in terms of MSL. For example, the usual waiver at ROC launches in Lucerne Valley is for 10,000 feet MSL. The waiver for our class launch is 17,500 feet MSL. For modeling and flight performance purposes, the important measurement is the altitude relative to the altitude of the launch site, called Above Ground Level (AGL). This assignment is looking principally at errors in AGL measurements. AGL is always calculated by taking the calculated (not measured) altitude MSL at the launch pad, \\(ℎ_{0-MSLcalc}\\), and subtracting it from the calculated altitude MSL during flight, e.g.,\n\\[\nℎ_{AGL}=ℎ_{MSLcalc}−ℎ_{0-MSLcalc}\n\\]\nThe error in AGL is calculated as:\n\\[\n𝜖_{AGL}=ℎ_{AGL}−ℎ_{true}\n\\]"
+  },
+  {
+    "objectID": "archive/assignment4.html#barometric-pressure-variations",
+    "href": "archive/assignment4.html#barometric-pressure-variations",
+    "title": "Practice Problems 4",
+    "section": "Barometric Pressure Variations",
+    "text": "Barometric Pressure Variations\nThe barometric pressure is calculated by measuring the local absolute pressure, and then using the standard atmospheric model to calculate the pressure one would expect at mean sea level. When you read the barometric pressure in a weather report, you always have to correct to your current altitude. Normal atmospheric pressure at mean sea level is 101,325 Pa, 1013.25 millibar (mb), or 1.01325 bar. High pressure regions rarely go above 1050 mb or below 982 mb.\nCreate a parametric plot that shows the error in MSL altitude from 0 m to 5000 m for \\(𝑃_0\\)=1050 mb and \\(𝑃_0\\)=982 mb as parameters Create an additional parametric plot that shows the error in AGL from 0 m to 5000 m for \\(𝑃_0\\)=1050 mb and \\(𝑃_0\\)=982 mb as parameters."
+  },
+  {
+    "objectID": "archive/assignment4.html#temperature-variations",
+    "href": "archive/assignment4.html#temperature-variations",
+    "title": "Practice Problems 4",
+    "section": "Temperature Variations",
+    "text": "Temperature Variations\nThe Standard Atmospheric model assumes a temperature of 288.15 K (15°C) at mean sea level and a decrease of 6.5 K for every 1000 m gain in altitude. Obtaining data on variations in the lapse rate is challenging, but variations in ground temperature are fairly easy to measure. Lucerne Valley has a seasonal low of about –3°C and a seasonal high of about 38°C. Corrected for MSL, that is a \\(𝑇_0\\) variation between 2.7°C and 43.7°C.\nCreate a parametric plot that shows the error in AGL from 0 m to 5000 m for \\(𝑇_0=2.7°C\\) and \\(𝑇_0=43.7°C\\) mb as parameters.\nNAR requires all official altitude record attempts to have their pressure altimeter data corrected by multiplying the measured AGL by the ratio of the launch site temperature in K to 288.15 K. How well does the correction work for the data in this problem? Where did they get the 288.15 K in the ratio?"
+  },
+  {
+    "objectID": "archive/assignment4.html#relative-humidity-variations",
+    "href": "archive/assignment4.html#relative-humidity-variations",
+    "title": "Practice Problems 4",
+    "section": "Relative Humidity Variations",
+    "text": "Relative Humidity Variations\nWater has a molecular weight of 18.01528 g/mol or 0.01801528 kg/mol. Dry air has an average molecular weight of 28.9644 g/mol or 0.0289644 kg/mol. The density of air changes with the relative humidity. The relative humidity is defined as the partial pressure of water in the air divided by the vapor pressure of water at the air temperature.\nThe molecular weight of an air-water mixture is the mole-weighted average of the molecular weight of air and the molecular weight of water. In practice, it is easiest to calculate \\[\n𝑀_{𝑚𝑖𝑥}=\\frac{𝑀_{𝑎𝑖𝑟}𝑃_{𝑎𝑖𝑟}+𝑀_{𝑤𝑎𝑡𝑒𝑟}𝑃_{𝑤𝑎𝑡𝑒𝑟}}{𝑃}\n\\]\nwhere \\(𝑀_{𝑚𝑖𝑥}\\) is the molecular weight of the air-water vapor mixture, \\(𝑀_{𝑎𝑖𝑟}\\) is the molecular weight of dry air, \\(𝑀_{𝑤𝑎𝑡𝑒𝑟}\\) is the molecular weight of water vapor, \\(𝑃_{𝑎𝑖𝑟}\\) is the partial pressure of dry air, \\(𝑃_{𝑤𝑎𝑡𝑒𝑟}\\) is the partial pressure of water vapor, and 𝑃 is the overall pressure. Without measurements, it is difficult to know how the molecular weight of the air-water mixture varies with altitude. The easiest assumption is to measure the relative humidity (and of necessity, the temperature) at the launch site, calculate the molecular weight and assume it doesn’t change with altitude. Other assumptions require numerical integration of the pressure-altitude equations.\nCreate a parametric plot that shows the error in AGL from 0 m to 5000 m, for \\(𝐻_𝑟's\\) of 50%, and 100% at 316.85 K. Don’t correct \\(𝑇_0\\), just 𝑀."
+  },
+  {
+    "objectID": "archive/assignment4.html#put-it-all-together",
+    "href": "archive/assignment4.html#put-it-all-together",
+    "title": "Practice Problems 4",
+    "section": "Put It All Together",
+    "text": "Put It All Together\nThe linked data set contains the pressure-versus-time data for the first flight of the DX3 rocket on an F67-9W. Calculate the AGL altitude versus time both using the standard atmospheric model and applying the corrections for \\(𝑇_0, 𝑃_0, ℎ_0, and 𝐻_𝑟\\).\n\nFor this flight, how much of a difference did the corrections make?\nIf you were trying for a record altitude flight, which would you prefer: to fly on a cold day or a hot day, under a high pressure or under a low pressure, under a high humidity or under a low humidity?"
+  },
+  {
+    "objectID": "archive/assignment2.html",
+    "href": "archive/assignment2.html",
+    "title": "Practice Problems 2",
+    "section": "",
+    "text": "Open Rocket is a Java app, but a group of dedicated volunteers have created installers for it. Go to Open Rocket to get a version that is appropriate for your computer and OS. There are some outdated hints for usage at Some Hints for Open Rocket.\nCreate an Open Rocket model of your LOC Weasel from the data you measured. Weigh your avionics assembly or the example model avionics assembly (use 84 g if you don’t have access to the avionics, or you don’t have access to a scale), and include it as a mass in your model. Record and report the model mass and center of mass as calculated by Open Rocket.\nRecord and report the actual model mass and center of mass for the example rocket. Comment on the differences from the modeled mass and CM."
+  },
+  {
+    "objectID": "archive/assignment2.html#open-rocket",
+    "href": "archive/assignment2.html#open-rocket",
+    "title": "Practice Problems 2",
+    "section": "",
+    "text": "Open Rocket is a Java app, but a group of dedicated volunteers have created installers for it. Go to Open Rocket to get a version that is appropriate for your computer and OS. There are some outdated hints for usage at Some Hints for Open Rocket.\nCreate an Open Rocket model of your LOC Weasel from the data you measured. Weigh your avionics assembly or the example model avionics assembly (use 84 g if you don’t have access to the avionics, or you don’t have access to a scale), and include it as a mass in your model. Record and report the model mass and center of mass as calculated by Open Rocket.\nRecord and report the actual model mass and center of mass for the example rocket. Comment on the differences from the modeled mass and CM."
+  },
+  {
+    "objectID": "archive/assignment2.html#f67-9w-flight",
+    "href": "archive/assignment2.html#f67-9w-flight",
+    "title": "Practice Problems 2",
+    "section": "F67-9W Flight",
+    "text": "F67-9W Flight\nSimulate a flight of your LOC Weasel with an Aerotech F67-9W two different ways:\n\nUse Open Rocket and your measured mass and CM.\nUse the model from Assignment 1 and approximate the F67-9W thrust curve as you think appropriate."
+  },
+  {
+    "objectID": "archive/assignment2.html#h128w-14a-flight",
+    "href": "archive/assignment2.html#h128w-14a-flight",
+    "title": "Practice Problems 2",
+    "section": "H128W-14A Flight",
+    "text": "H128W-14A Flight\nSimulate a flight of your LOC Weasel with an Aerotech H128-14A two different ways:\n\nUse Open Rocket and your measured mass and CM.\nUse your 1D model from practice problems 1 and approximate the H128-14A thrust curve as you think appropriate.\n\nFor ground conditions, use the likely or reported weather conditions at 9 am in Lucerne Valley on Saturday, 10 February 2024 Compare your results from the two models. Determine if the ejection happens before or after apogee. If it’s after apogee, determine the optimal delay adjustment so that the parachute ejects right at apogee. It is not cheating to use the column labeled “Optimum delay” in the Open Rocket results. Rerun your Open Rocket model with the optimal delay. Compare these results with the GPS altitude data from the Weasel H128W-14A flight on 07/08/2023 in 2023-07-08-LogExcel.xlsx."
+  },
+  {
+    "objectID": "archive/assignment5.html",
+    "href": "archive/assignment5.html",
+    "title": "Practice Problems 5",
+    "section": "",
+    "text": "The format of the data in the data files from the teensy logger is ASCII. After the header rows describing the units, each row begins with a three-letter acronym:\nICM for the ICM-20948 Inertial Measurement Unit (IMU)  LIS for the H3LIS331 Three Axis High-g Accelerometer * MS5 for the MS5611-01BA03 High-Resolution Pressure Sensor * ADC for the temperatures calculated from the thermistors * VOL for the battery or supply voltage * GPS for the SAM-M8Q GPS unit on the Large Teensy Data Logger. It doesn’t appear in files from the Small Teensy Data Logger, or if the * GPS has been turned off in the code for the Large Teensy Data Logger. Following the acronym, there is a “t” for the time in microseconds as measured by the internal microsecond clock."
+  },
+  {
+    "objectID": "archive/assignment5.html#teensy-logger-data-format-and-file-size",
+    "href": "archive/assignment5.html#teensy-logger-data-format-and-file-size",
+    "title": "Practice Problems 5",
+    "section": "",
+    "text": "The format of the data in the data files from the teensy logger is ASCII. After the header rows describing the units, each row begins with a three-letter acronym:\nICM for the ICM-20948 Inertial Measurement Unit (IMU)  LIS for the H3LIS331 Three Axis High-g Accelerometer * MS5 for the MS5611-01BA03 High-Resolution Pressure Sensor * ADC for the temperatures calculated from the thermistors * VOL for the battery or supply voltage * GPS for the SAM-M8Q GPS unit on the Large Teensy Data Logger. It doesn’t appear in files from the Small Teensy Data Logger, or if the * GPS has been turned off in the code for the Large Teensy Data Logger. Following the acronym, there is a “t” for the time in microseconds as measured by the internal microsecond clock."
+  },
+  {
+    "objectID": "archive/assignment5.html#icm-20948",
+    "href": "archive/assignment5.html#icm-20948",
+    "title": "Practice Problems 5",
+    "section": "ICM-20948",
+    "text": "ICM-20948\nThe ICM sample rate for the accelerometers and rate gyros is approximately 1130 to 1140 SPS. The magnetometer is read at the same rate but its sample rate is closer to 100 SPS.\n\nt is the time in microseconds since data logging began.\nxa, ya, and za, are the accelerations measured in the x, y, and z directions as labeled on the board. The units are milli-g’s.\nxg, yg, and zg are the rotation rates measured in the x, y, and z directions as labeled on the board. The units are degrees/s.\nxm, ym, and zm are the magnetic field strengths as measured in the x, y, and z directions. The units are 𝜇T. You may want to check the chip specs to see how the axes for the magnetometer compare with those for the accelerometers and the rate gyros.\nT is the on-board chip temperature measured in °C."
+  },
+  {
+    "objectID": "archive/assignment5.html#h3lis331",
+    "href": "archive/assignment5.html#h3lis331",
+    "title": "Practice Problems 5",
+    "section": "H3LIS331",
+    "text": "H3LIS331\nThe LIS sample rate is approximately 1009 to 1022 SPS.\n\nt is the time in microseconds since data logging began.\nxh, yh, and zh are the accelerations measured in the x, y, and z directions as labeled on the board. The units are g’s."
+  },
+  {
+    "objectID": "archive/assignment5.html#ms5611-01ba03-codes",
+    "href": "archive/assignment5.html#ms5611-01ba03-codes",
+    "title": "Practice Problems 5",
+    "section": "MS5611-01BA03 Codes",
+    "text": "MS5611-01BA03 Codes\nThe MS5611 sample rate is approximately 55 SPS.\n\nt is the time in microseconds since data logging began.\nT is the on-board chip temperature measured in °C.\nP is the absolute pressure as measured in Pascal."
+  },
+  {
+    "objectID": "archive/assignment5.html#adc-codes",
+    "href": "archive/assignment5.html#adc-codes",
+    "title": "Practice Problems 5",
+    "section": "ADC Codes",
+    "text": "ADC Codes\nThe ADC sample rate is approximately 50 SPS.\nt is the time in microseconds since data logging began. T1 is the temperature in °C calculated from the voltage measured by the 12-bit ADC on the Teensy for thermistor 1. The Steinhart Hart constants are in the Teensy code for two different 10 kΩ thermistors. T2 is the temperature in °C calculated from the voltage measured by the 12-bit ADC on the Teensy for thermistor 2. The Steinhart Hart constants are in the Teensy code for two different 10 kΩ thermistors. C1 is the raw 12-bit ADC code from ADC channel 1. It can be converted to a voltage by multiplying the value by 3.3 and dividing by 4096. T1 was calculated from it. C2 is the raw 12-bit ADC code from ADC channel 2. It can be converted to a voltage by multiplying the value by 3.3 and dividing by 4096. T2 was calculated from it."
+  },
+  {
+    "objectID": "archive/assignment5.html#battery-voltage-code",
+    "href": "archive/assignment5.html#battery-voltage-code",
+    "title": "Practice Problems 5",
+    "section": "Battery Voltage Code",
+    "text": "Battery Voltage Code\nThe battery voltage sample rate is approximately 2 SPS.\n\nt is the time in microseconds since data logging began.\nV is the battery or supply voltage measured in Volts."
+  },
+  {
+    "objectID": "archive/assignment5.html#gps-codes",
+    "href": "archive/assignment5.html#gps-codes",
+    "title": "Practice Problems 5",
+    "section": "GPS Codes",
+    "text": "GPS Codes\nNote: The GPS codes are included for completeness. It is unlikely that you will get access to one of the Large Teensy Data Loggers that has a GPS, and even less likely that the GPS will be turned on.\nThe GPS sample rate is 10 SPS.\n\nt is the time in microseconds since data logging began.\nLa is the degrees latitude in 1E7°. Multiply by 1E-7 to convert to degrees.\nLo is the degrees longitude in 1E7°. Multiply by 1E-7 to convert to degrees.\nAl is the altitude in mm.\nAc is the uncertainty in the altitude in mm.\nSV is the satellites in view.\nDT is the UTC date and time in the ISO standard format."
+  },
+  {
+    "objectID": "archive/assignment5.html#file-size",
+    "href": "archive/assignment5.html#file-size",
+    "title": "Practice Problems 5",
+    "section": "File Size",
+    "text": "File Size\nBecause of the high sample rate, the file sizes for the data logging files are quite large. The storage rate is roughly 217kB/s. The resultant file sizes are:\n\n\n\nTime\nFile Size (MB)\n\n\n\n\n10s\n2.2\n\n\n30s\n6.5\n\n\n1 min\n13\n\n\n10 min\n130\n\n\n30 min\n390\n\n\n1 hr\n780\n\n\n\nThe code currently preallocates a file size of 780 MB (1 hour). If the logging is stopped before then, the file is resized to fit the logged data. If the logging is not stopped before the file size is reached, the logger closes the file at approximately 1 hour and waits for the next logging session to begin. If you suspect that the total time that your rocket may sit on the pad and spend in flight exceeds one hour, you can increase the preallocated file size by changing the LOG_FILE_SIZE definition.\nThese large file sizes mean that any software designed to process them is going to be very slow to parse the file and get it into memory."
+  },
+  {
+    "objectID": "archive/assignment5.html#processing-software",
+    "href": "archive/assignment5.html#processing-software",
+    "title": "Practice Problems 5",
+    "section": "Processing Software",
+    "text": "Processing Software\nThe MATLAB .m file for processing the dat is ScanTeensyDataLoggerGPSRotTempAdventurer.m. It does not have an indicator of how much of the file has been parsed or processed, so it requires some patience. I strongly recommend you run it using the Run-and-Advance button so that you can observe intermediate values and enter additional information as you run it. With it you can correct the pressure measurements to calculated the corrected barometric altitude. You can calculate the average \\(𝐶_𝐷\\) and the \\(𝐶_𝐷\\) as a function of 𝑣. You can also calculate the thrust curve. Quoting from the MATLAB .m file:\n% This m-file expects input files in the following formats.\n% 1. A (preferably trimmed) .TXT file from the Teensy Data Logger. It will % parse the data and create arrays of the sensor outputs. The parsing takes % a long time.\n% 2. An Open Rocket exported flight data file in CSV format. You should export: % Time in s % Altitude in m % Vertical velocity in m/s % Vertical acceleration in m/s^2 % Drag Coefficient % DO NOT export any other variables. You will have to edit the output file % to remove any events like lift-off or apogee. The final format should % just have a variabile-name row and rows of numbers.\n% 3. A CSV file with the GPS time in the first column and the GPS altitude % (expected to be in feet MSL) in the second column. You can use either % data from the log file or from the flight-specific file from the % Featherweight GPS."
+  },
+  {
+    "objectID": "archive/assignment5.html#gps-data",
+    "href": "archive/assignment5.html#gps-data",
+    "title": "Practice Problems 5",
+    "section": "GPS Data",
+    "text": "GPS Data\nThe Small Teensy Data Logger does not have a GPS on board. It was used for the data for this assignment. The Large Teensy Data Logger has an on-board GPS for logging GPS data. At the current time the software to log the GPS data without disrupting the sampling of the other chips doesn’t work properly, so the GPS is not currently used.\nThe Featherweight GPS, which is used for ground tracking of the position of the flights, logs all of the GPS data, whether valid or not at 1 Hz. It also has the possibility to store the GPS data at 10 Hz for the most recent flight. It stores altitude data as feet MSL. In practice, the GPS does not lock as often as it should, and the most-recent-flight data storage works rarely. However, we do have both a log file and an on-board file for the GPS for this flight. We also have an already-processed spreadsheet of the log file. It has both the Weasel and a Vulcanite flight on it.\nThe files can be opened with a spreadsheet. Most of the column names are self explanatory. The TIME is in minutes and seconds, and wraps around on the hour. Again, the altitude (ALT) is MSL in feet (not meters). The FIX is whether the GPS fix is 3-D or only 2-D. HORZV, VERTV, HEAD, and FLAGS can be ignored. #TOT is the total number of satellites used in calculating the position. &gt;40, &gt;32, &gt;24, RSSI, and BATT can be ignored.\nThe .m file will read in the GPS data, but it expects the data to be in a .csv file with only two columns: the time in seconds and the altitude in feet MSL. You need to massage the data to get them in this format. The spreadsheet shows how to do it for a log file, and this spreadsheet shows how to do it for the on-board GPS file.\nThe file can be opened with a spreadsheet. Most of the column names are self explanatory. The TIME is in minutes and seconds, and wraps around on the hour. Again, the altitude (ALT) is MSL in feet (not meters). The FIX is whether the GPS fix is 3-D or only 2-D. HORZV, VERTV, HEAD, and FLAGS can be ignored. #TOT is the total number of satellites used in calculating the position. &gt;40, &gt;32, &gt;24, RSSI, and BATT can be ignored."
   },
   {
     "objectID": "instr/baroalt.html",
@@ -480,7 +662,7 @@
     "href": "const/DX3.html#step-1-sanding",
     "title": "Mini DX3 Assembly Instructions",
     "section": "Step 1: Sanding",
-    "text": "Step 1: Sanding\nSand every surface to be epoxied (including interior surfaces) with 80-to-110 grit sandpaper. You may have to think about the assembly sequence to figure out where to sand. Don’t forget about the inside of the Estes motor retainer. Pretty much the entire exterior of the motor mount should be sanded or roughed up\n\n\n\nSand the entire motor mount."
+    "text": "Step 1: Sanding\nSand every surface to be epoxied (including interior surfaces) with 80-to-110 grit sandpaper. The epoxy needs the roughness created by sanding in order to be able to hold on to the surface. You may have to think about the assembly sequence to figure out where to sand. Don’t forget about the inside of the Estes motor retainer. Pretty much the entire exterior of the motor mount should be sanded or roughed up.\n\n\n\nSand the entire motor mount."
   },
   {
     "objectID": "const/DX3.html#step-2-motor-mount-assembly",
@@ -501,7 +683,7 @@
     "href": "const/DX3.html#step-4-forward-section",
     "title": "Mini DX3 Assembly Instructions",
     "section": "Step 4: Forward Section",
-    "text": "Step 4: Forward Section\nInsert the eyebolt through the hole in the center of the bulkhead and secure using the washer and nut.\nApply some epoxy or CA to the nut and eyebolt threads to ensure the nut doesn’t come loose later.\n\n\n\nThe Assembled Bulkhead.\n\n\nCut off the eyebolt (Dremel or hacksaw) leaving about 1/4”-to-1/8” above the nut and file or sand the end to remove any sharp edges.\nNote The coupler tube may be hidden inside either the payload tube or the body tube. Reach inside and slide it out.\n\n\n\nThe Assembled Bulkhead with the Screw Eye Trimmed.\n\n\nMark a line around the inside of the coupler tube 1/8” from the end. Apply epoxy to the inside of the tube and push the bulkhead in so that the line is visible and wait until the glue sets. There are two pieces that can assist you. The first is a spacer that can be placed against the bulkhead to hold it at the correct depth until the epoxy cures. The second is a stand with room for the eyebolt to hang down that will let you hold the spacer and bulkhead in the proper position while the epoxy cures.\n\n\n\nThe Bulkhead Recessed in Coupler.\n\n\nApply a fillet of epoxy around the inside edge of the coupler bulkhead joint.\n\n\n\nThe Bulkhead/Coupler Fillet.\n\n\nMark a line around the coupler 2” from the open end. Apply a very thin amount of epoxy on the first inch of the outside of the coupler, and twist and slide the coupler into the payload tube (forward body tube) until you reach the 2” mark. Quickly wipe off any excess epoxy at the payload tube-coupler joint. The payload tube will not join properly with the body tube if you leave excess epoxy at the joint.\n\n\n\nThe Coupler/Payload Joint\n\n\nMeasure down 1 9/16” from the shoulder of the nose cone, and using an X-acto knife or a saw, cut off the bottom of the nose cone, and if necessary, sand the cut square. It will be pressing against the avionics carrier and should be as square as possible.\n\n\n\nThe Trimmed Nose Cone\n\n\nInsert the nose cone into the top of the payload tube.\n\n\n\nThe Payload with Nose Cone.\n\n\nHoles for Payload – Nose Cone Screws: Mark three points equally spaced around the circumference of the payload tube halfway between the shoulder and the end of the payload tube. Easiest is to wrap a piece of paper around the tube and mark one circumference. Unwrap and measure the circumference and divide the distance by three and mark the paper accordingly, then transfer the marks to the payload tube by wrapping the paper back around the tube and marking.\nHoles for Altimeter Vents: Repeat the marking procedure 1” above the coupler-payload tube edge.\nDrill all six holes with a #52, #51, or #50 bit. Drill slowly to try to leave the inside edges of the holes as clean as possible. You might consider drilling, tapping, and putting in a screw for the first hole before drilling the other five, to avoid the tube and nose cone rotating relative to each other.\nTap the top three holes with a #2-56 tap. These will secure the nose cone to the payload section.\nScrew a pan-head #2-56 screw into each threaded hole. These will hold the nose cone on during flight, but permit it to be removed to access the avionics.\nThe other three holes are to permit the altimeter to measure the free stream pressure outside the rocket for calculating the altitude.\nIf you are going to install an avionics carrier, you will want to put a layer of foam in the bottom of the payload section."
+    "text": "Step 4: Forward Section\nInsert the eyebolt through the hole in the center of the bulkhead and secure using the washer and nut.\nApply some epoxy or CA to the nut and eyebolt threads to ensure the nut doesn’t come loose later.\n\n\n\nThe Assembled Bulkhead.\n\n\nCut off the eyebolt (Dremel or hacksaw) leaving about 1/4”-to-1/8” above the nut and file or sand the end to remove any sharp edges. Apply insta-cure cyanoacrylate to the bolt in the crevices near the bolt so that the bolt does not become undone. After applying the cyanoacrylate, spray insta-set accelerator onto the applied surface so that the cyanoacrylate sets faster. Alternatively, instead of using cyanoacrylate and accelerator, you can epoxy where the bolt meets the nut.\nNote The coupler tube may be hidden inside either the payload tube or the body tube. Reach inside and slide it out.\n\n\n\nThe Assembled Bulkhead with the Screw Eye Trimmed.\n\n\nMark a line around the inside of the coupler tube 1/8” from the end. Apply epoxy to the inside of the tube and push the bulkhead in so that the line is visible and wait until the glue sets. There are two pieces that can assist you. The first is a spacer that can be placed against the bulkhead to hold it at the correct depth until the epoxy cures. The second is a stand with room for the eyebolt to hang down that will let you hold the spacer and bulkhead in the proper position while the epoxy cures.\n\n\n\nThe Bulkhead Recessed in Coupler.\n\n\nApply a fillet of epoxy around the inside edge of the coupler bulkhead joint.\n\n\n\nThe Bulkhead/Coupler Fillet.\n\n\nMark a line around the coupler 2” from the open end. Apply a very thin amount of epoxy on the first inch of the outside of the coupler, and twist and slide the coupler into the payload tube (forward body tube) until you reach the 2” mark. Quickly wipe off any excess epoxy at the payload tube-coupler joint. The payload tube will not join properly with the body tube if you leave excess epoxy at the joint.\n\n\n\nThe Coupler/Payload Joint\n\n\nMeasure down 1 9/16” from the shoulder of the nose cone, and using an X-acto knife or a saw, cut off the bottom of the nose cone, and if necessary, sand the cut square. It will be pressing against the avionics carrier and should be as square as possible.\n\n\n\nThe Trimmed Nose Cone\n\n\nInsert the nose cone into the top of the payload tube.\n\n\n\nThe Payload with Nose Cone.\n\n\nHoles for Payload – Nose Cone Screws: Mark three points equally spaced around the circumference of the payload tube halfway between the shoulder and the end of the payload tube. Easiest is to wrap a piece of paper around the tube and mark one circumference. Unwrap and measure the circumference and divide the distance by three and mark the paper accordingly, then transfer the marks to the payload tube by wrapping the paper back around the tube and marking.\nHoles for Altimeter Vents: Repeat the marking procedure 1” above the coupler-payload tube edge.\nDrill all six holes with a #52, #51, or #50 bit. Drill slowly to try to leave the inside edges of the holes as clean as possible. You might consider drilling, tapping, and putting in a screw for the first hole before drilling the other five, to avoid the tube and nose cone rotating relative to each other.\nTap the top three holes with a #2-56 tap. These will secure the nose cone to the payload section.\nScrew a pan-head #2-56 screw into each threaded hole. These will hold the nose cone on during flight, but permit it to be removed to access the avionics.\nThe other three holes are to permit the altimeter to measure the free stream pressure outside the rocket for calculating the altitude.\nIf you are going to install an avionics carrier, you will want to put a layer of foam in the bottom of the payload section."
   },
   {
     "objectID": "const/DX3.html#step-5-insert-motor-mount",
@@ -719,6 +901,104 @@
     "title": "Instrumentation and Data Analysis",
     "section": "",
     "text": "This page will eventually contain information about avionics and other instruments for collecting data aboard your rockets during flight, along with information on how to analyze the data and compare it with your flight models.\nAs a sample, here is a link to information about barometric altimeters."
+  },
+  {
+    "objectID": "archive/assignment6.html",
+    "href": "archive/assignment6.html",
+    "title": "Practice Problems 6",
+    "section": "",
+    "text": "Open Rocket is a Java app, but a group of dedicated volunteers have created installers for it. Go to Open Rocket to get a version that is appropriate for your computer and OS. There are some outdated hints for usage at Some Hints for Open Rocket.\nCreate an Open Rocket model of your DD Vulcanite. You may use either measurements of your parts or measurement of the Example Rocket. Measure either the sample avionics assemblies or your actual avionics assemblies, and include them as masses in your model. Record and report the model mass and center of mass as either measured by you or calculated by Open Rocket. Compare your measurements with the given values in the Flight Data for the LOC Prercision Vulcanite."
+  },
+  {
+    "objectID": "archive/assignment6.html#i140w-14a-flight",
+    "href": "archive/assignment6.html#i140w-14a-flight",
+    "title": "Practice Problems 6",
+    "section": "I140W-14A Flight",
+    "text": "I140W-14A Flight\nSimulate a flight of your DD Vulcanite with an Aerotech I140W-14A two different ways: 1. Use Open Rocket and your measured mass and CM. 2. Use the model from Assignment 2 and approximate the I140W-14A thrust curve as you think appropriate. Compare your results with the actual flight data from the test flight on 11 February 2023 in the Flight Data page."
+  },
+  {
+    "objectID": "archive/assignment6.html#j270w-14a-flight",
+    "href": "archive/assignment6.html#j270w-14a-flight",
+    "title": "Practice Problems 6",
+    "section": "J270W-14A Flight",
+    "text": "J270W-14A Flight\nSimulate a flight of your DD Vulcanite with an Aerotech J270W-14A two different ways: 1. Use Open Rocket and your measured mass and CM. 2. Use the model from Practice Problem 2 and approximate the J270W-14A thrust curve as you think appropriate. For ground conditions, use the likely weather conditions at 9 am in Lucerne Valley on Saturday, 9 March 2024. Compare your results from the two models with the GPS altitude data from the DD Vulcanite J270W-14A flight on 07/08/2023 in 2023-07-08-LogExcel.xlsx."
+  },
+  {
+    "objectID": "archive/assignment1.html",
+    "href": "archive/assignment1.html",
+    "title": "Practice Problems 1",
+    "section": "",
+    "text": "In this first set of practice problems, we are going to be starting with the 1-D rocket equation. We will prove that the given models solve the equation for the chosen restrictions. We will use the models to determine drag coefficients and thrust curves from flight data.\nThe set of equations that make up the rocket equation are: \\[\n\\vec{𝑎} = \\dot{\\vec{𝑣}} = \\frac{\\vec{T}}{m}+ \\vec{𝑔} −\\frac{1}{2}{𝐶_𝐷}{𝐴_𝑃}{\\frac{𝜌}{m}}\\vec{𝑣}|\\vec{𝑣}|\n\\] (1)\nand\n\\[\n\\dot{𝑚}=\\frac{|\\vec{𝑇}|}{|\\vec{𝑣_𝑒}|}\n\\] (2)"
+  },
+  {
+    "objectID": "archive/assignment1.html#d-constant-thrust-constant-mass-constant-𝑔-drag-coefficient-𝐶_𝐷",
+    "href": "archive/assignment1.html#d-constant-thrust-constant-mass-constant-𝑔-drag-coefficient-𝐶_𝐷",
+    "title": "Practice Problems 1",
+    "section": "1-D Constant Thrust, Constant Mass, Constant 𝑔, Drag Coefficient \\(𝐶_𝐷\\)",
+    "text": "1-D Constant Thrust, Constant Mass, Constant 𝑔, Drag Coefficient \\(𝐶_𝐷\\)\nDepending on what assumptions you make, you can get different solutions to the rocket equation. This practice problem proves or derives several of them. To explain the difference: prove means that you are given a solution to the differential equation, and you prove by plugging-in to the DE that it solves the equation and the boundary or initial conditions, derive means to use the solution techniques for differential equations and determine a solution that solves the DE and the boundary or initial conditions.\nAssume that the change in rocket mass is small compared to the rocket mass. The rocket ascends in the positive vertical, 𝑥, direction and begins at time, \\(𝑡_0\\) , with position, \\(𝑥_0\\) , velocity, \\(𝑣_0\\), and constant thrust, 𝑇. Further define \\(𝑣_{max}\\) as\n\\[\n𝑣_{max}=\\sqrt{\\frac{2(𝑇−𝑚𝑔)}{𝜌𝐶_𝐷𝐴_𝑃}}\n\\] (3)\nand 𝑏 as\n\\[\n𝑏=\\frac{𝑇−𝑚𝑔}{𝑚}\n\\] (4)\nEquation 1 then becomes\n\\[\n𝑎=\\dot{𝑣}=𝑏−\\frac{1}{2}𝐶_𝐷𝐴_𝑃\\frac{𝜌}{𝑚}𝑣|𝑣|\n\\] (5)\nProve that the solution for \\(𝑣_0&lt;𝑣_{max}\\) is\n\\[\n𝑣=𝑣_{max}tanh[\\frac{𝑏}{𝑣_{max}}(𝑡−𝑡_0)+{tanh}^{−1}\\frac{𝑣_0}{𝑣_{max}}]\n\\] (6)\nand\n\\[\n𝑥−𝑥_0=\\frac{{𝑣_{max}}^2}{𝑏}[ln[cosh(\\frac{𝑏}{𝑣_{max}}(𝑡−𝑡_0)+{tanh}^{−1}\\frac{𝑣_0}{𝑣_{max}})]−ln[cosh({tanh}^{−1}\\frac{𝑣_0}{𝑣_{max}})]]\n\\] (7)\nYou can eliminate the absolute value sign by considering whether correct factor is \\(−𝑣^2\\)$ or \\(𝑣^2\\) depending on which direction is positive 𝑥 and whether the drag opposes the motion or adds to the motion.\nProve that the solution for \\(𝑣_0&gt;𝑣_{max}\\) is\n\\[\n𝑣=𝑣_{max}coth[\\frac{𝑏}{𝑣_{max}}(𝑡−𝑡0)+{coth}^{−1}\\frac{𝑣_0}{𝑣_{max}}]\n\\] (8)\nand\n\\[\n𝑥−𝑥_0=\\frac{{𝑣_{max}}^{2}}{𝑏}[ln[sinh(\\frac{𝑏}{𝑣_{max}}(𝑡−𝑡0)+{coth}^{−1}\\frac{𝑣_0}{𝑣_{max}})]−ln[sinh({coth}^{−1}\\frac{𝑣_0}{𝑣_{max}})]]\n\\] (9)"
+  },
+  {
+    "objectID": "archive/assignment1.html#d-coasting-ascent-no-thrust-constant-𝑔-drag-coefficient-𝐶_𝐷",
+    "href": "archive/assignment1.html#d-coasting-ascent-no-thrust-constant-𝑔-drag-coefficient-𝐶_𝐷",
+    "title": "Practice Problems 1",
+    "section": "1-D Coasting Ascent (No Thrust), Constant 𝑔, Drag Coefficient \\(𝐶_𝐷\\)",
+    "text": "1-D Coasting Ascent (No Thrust), Constant 𝑔, Drag Coefficient \\(𝐶_𝐷\\)\nThe positive vertical direction is 𝑥. The rocket ascends in the positive vertical direction, and begins at time, \\(𝑡_0\\), with position, \\(𝑥_0\\), and velocity, \\(𝑣_0\\). Further define \\(𝑣_𝑡\\) as\n\\[\n𝑣_𝑡=\\sqrt{\\frac{2𝑚𝑔}{𝜌𝐶_𝐷𝐴_𝑃}}\n\\] (10)\nEquation 1 then becomes\n\\[\n𝑎=\\dot{𝑣}=−𝑔(1+\\frac{𝑣^2}{𝑣_t^2})\n\\] (11)\nProve that the solution is\n\\[\n𝑣=𝑣_𝑡tan[\\frac{−𝑔}{𝑣_𝑡}(𝑡−𝑡_0)+{tan}^{−1}\\frac{𝑣_0}{𝑣_𝑡}]\n\\] (12)\nand\n\\[\n𝑥−𝑥_0=\\frac{𝑣^2_𝑡}{𝑔}(ln(cos[\\frac{𝑔}{𝑣_𝑡}(𝑡−𝑡0)−{tan}^{−1}\\frac{𝑣_0}{𝑣_𝑡}])+ln\\sqrt{1+\\frac{𝑣^2_0}{𝑣^2_𝑡}})\n\\] (13)"
+  },
+  {
+    "objectID": "archive/assignment1.html#d-coasting-descent-from-apogee-no-thrust-constant-𝑔-drag-coefficient-𝐶_𝐷",
+    "href": "archive/assignment1.html#d-coasting-descent-from-apogee-no-thrust-constant-𝑔-drag-coefficient-𝐶_𝐷",
+    "title": "Practice Problems 1",
+    "section": "1-D Coasting Descent from Apogee (No Thrust), Constant 𝑔, Drag Coefficient \\(𝐶_𝐷\\)",
+    "text": "1-D Coasting Descent from Apogee (No Thrust), Constant 𝑔, Drag Coefficient \\(𝐶_𝐷\\)\nThe positive vertical direction is 𝑥. The rocket descends in the negative vertical direction, and begins at time, \\(𝑡_{apogee}\\), with position, \\(𝑥_{apogee}\\), and velocity, \\(𝑣_{apogee}=0\\). Further define \\(𝑣_𝑡\\) as\n\\[\n𝑣_𝑡=\\sqrt{\\frac{2𝑚𝑔}{𝜌𝐶_𝐷𝐴_𝑃}}\n\\] (14)\nSimplify Equation 5 for these conditions and prove that the solution is\n\\[\n𝑣=𝑣_𝑡tanh[\\frac{−𝑔}{𝑣_𝑡}(𝑡−𝑡_{apogee})]\n\\] (15)\nand\n\\[\n𝑥−𝑥_{apogee}=\\frac{𝑣^2_𝑡}{−𝑔}ln(cosh[\\frac{−𝑔}{𝑣_𝑡}(𝑡−𝑡_{apogee})])\n\\] (16)"
+  },
+  {
+    "objectID": "archive/assignment1.html#time-from-apogee-to-ground",
+    "href": "archive/assignment1.html#time-from-apogee-to-ground",
+    "title": "Practice Problems 1",
+    "section": "Time from Apogee to Ground",
+    "text": "Time from Apogee to Ground\nUse Equation 16 to determine the time, \\(𝑡_{desc}\\) for a rocket to descend from apogee to the ground. For a ballistic fall you would use the \\(𝐶_𝐷\\) of the rocket, and for a parachute descent, you would use the area and \\(𝐶_𝐷\\) of the parachute.\nShow that for \\(𝑔𝑥_0/𝑣^2_𝑡&gt;100\\) the approximation\n\\[\n𝑡−𝑡_{apogee}=\\frac{𝑥_{apogee}}{𝑣_𝑡}+\\frac{𝑣_𝑡}{𝑔}ln2\n\\] (17)\nis accurate and doesn’t have the computational difficulties of your above solution.\n\nUse Equation 12 and the fact that 𝑣=0 at apogee to determine the time from burnout to apogee.\nUse the result from the previous step and Equation 13 to determine the distance from burnout to apogee.\n\nFor the flight of a LOC Weasel on an F67-9W motor, calculate:\n\nthe velocity and altitude at burnout,\nthe time from liftoff to apogee (ignore the 9-second delay for this part),\nthe difference between the time to apogee and the 9-second delay,\nthe altitude at apogee,\nthe time required for a ballistic fall from apogee,\nthe velocity at impact for a ballistic fall\nthe time required for a parachute descent from apogee,\nthe velocity at landing for a parachute descent from apogee.\n\nData for a LOC Weasel with avionics on an F67-9W:\n\n\n\nItem\nValue\n\n\n\n\nMass (no motor)\n453.0 g\n\n\nMass (w motor)\n534.0 g\n\n\nPropellant mass\n30 g\n\n\nCG (no motor)\n23.72 in\n\n\nCG (w motor)\n27.48 in\n\n\ndiameter\n1.64 in\n\n\n\\(C_D\\)\n0.70\n\n\nmotor data\nSee Thrustcurve.org"
+  },
+  {
+    "objectID": "archive/assignment1.html#comparison-with-open-rocketrocksim",
+    "href": "archive/assignment1.html#comparison-with-open-rocketrocksim",
+    "title": "Practice Problems 1",
+    "section": "Comparison with Open Rocket/Rocksim",
+    "text": "Comparison with Open Rocket/Rocksim\nHow do your calculations compare with the results from Open Rocket or Rocksim? An Open Rocket model for the above rocket is here. Open Rocket is a Java app, but a group of dedicated volunteers have created installers for it. Go to Open Rocket to get a version that is appropriate for your computer and OS. There are some outdated hints for usage at Some Hints for Open Rocket."
+  },
+  {
+    "objectID": "archive/index.html",
+    "href": "archive/index.html",
+    "title": "Data Archive",
+    "section": "",
+    "text": "We have nine practice problems for ameature rocketeers to try. They will walk you through the steps of understanding the engineering behind rocktry concepts. Completion of the nine practice problems will set you up to earn your level 1 and level 2 certification.\nPractice Problems: Practice Problem 1\nPractice Problem 2\nPractice Problem 3\nPractice Problem 4\nPractice Problem 5\nPractice Problem 6\nPractice Problem 7\nPractice Problem 8"
+  },
+  {
+    "objectID": "archive/assignment7.html",
+    "href": "archive/assignment7.html",
+    "title": "Practice Problems 7",
+    "section": "",
+    "text": "For either NAR or Tripoli, one of the qualifications for certifying Level 2 is to pass a multiple-choice exam. The exams are assembled from published pools of exam questions. It’s best just to memorize the answers, and not waste time figuring out why they chose the answers they did."
+  },
+  {
+    "objectID": "archive/assignment7.html#level-2-certification-exam",
+    "href": "archive/assignment7.html#level-2-certification-exam",
+    "title": "Practice Problems 7",
+    "section": "",
+    "text": "For either NAR or Tripoli, one of the qualifications for certifying Level 2 is to pass a multiple-choice exam. The exams are assembled from published pools of exam questions. It’s best just to memorize the answers, and not waste time figuring out why they chose the answers they did."
+  },
+  {
+    "objectID": "archive/assignment7.html#nar-study-guides",
+    "href": "archive/assignment7.html#nar-study-guides",
+    "title": "Practice Problems 7",
+    "section": "NAR Study Guides:",
+    "text": "NAR Study Guides:\n\nPDF of the NAR Level 2 Exam Question Pool with Answers This is the 2020 edition.\nSection A Online Practice Exam 2020 Edition\nSection B Online Practice Exam 2020 Edition\nSection C Online Practice Exam 2020 Edition\nSection D Online Practice Exam 2020 Edition"
+  },
+  {
+    "objectID": "archive/assignment7.html#tra-level-2-study-aids",
+    "href": "archive/assignment7.html#tra-level-2-study-aids",
+    "title": "Practice Problems 7",
+    "section": "TRA Level 2 Study Aids",
+    "text": "TRA Level 2 Study Aids\n\nPDF of the TRA Level 2 Exam Question Pool with Answers\nTRA Online Technical Study Quiz\nTRA Online Safety Study Quiz\nExam Sheet for Level 2 Exam (No Questions or Answers, just the sheet)"
   },
   {
     "objectID": "safety/index.html",
