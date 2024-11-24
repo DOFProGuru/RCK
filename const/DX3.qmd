@@ -18,7 +18,7 @@ The following is a list of parts that are required separately from the kit.
 
 ## Step 1: Sanding
 
-Sand every surface to be epoxied (including interior surfaces) with 80-to-110 grit sandpaper. You may have to think about the assembly sequence to figure out where to sand. Don't forget about the inside of the Estes motor retainer. Pretty much the entire exterior of the motor mount should be sanded or roughed up
+Sand every surface to be epoxied (including interior surfaces) with 80-to-110 grit sandpaper. The epoxy needs the roughness created by sanding in order to be able to hold on to the surface. You may have to think about the assembly sequence to figure out where to sand. Don't forget about the inside of the Estes motor retainer. Pretty much the entire exterior of the motor mount should be sanded or roughed up. 
 
 ![Sand the entire motor mount.](https://dofprobucket2.s3.us-east-2.amazonaws.com/Images/DX3_SandMM.png)
 
@@ -69,7 +69,7 @@ Insert the eyebolt through the hole in the center of the bulkhead and secure usi
 
 ![The Assembled Bulkhead.](https://dofprobucket2.s3.us-east-2.amazonaws.com/Images/DX3_ScrewBulkhead.png)
 
-Cut off the eyebolt (Dremel or hacksaw) leaving about 1/4"-to-1/8" above the nut and file or sand the end to remove any sharp edges.
+Cut off the eyebolt (Dremel or hacksaw) leaving about 1/4"-to-1/8" above the nut and file or sand the end to remove any sharp edges. Apply insta-cure cyanoacrylate to the bolt in the crevices near the bolt so that the bolt does not become undone. After applying the cyanoacrylate, spray insta-set accelerator onto the applied surface so that the cyanoacrylate sets faster. Alternatively, instead of using cyanoacrylate and accelerator, you can epoxy where the bolt meets the nut.
 
 **Note** The coupler tube may be hidden inside either the payload tube or the body tube. Reach inside and slide it out.
 

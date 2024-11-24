@@ -1,0 +1,15 @@
+---
+title: "Practice Problems 8"
+author: "DOFPro group"
+---
+
+If you successfully completed your first set of flights, you can analyze the flight data from your first set of flights. If you were unsuccessful in your first set of flights, you can analyze the two flights of the prototype Class Adventurer rocket from [10 June 2022](https://dofpro.org/RCK/fltdata/FlightData.html). It made four flights between 9 June 2022 and 11 June 2022. You will get to analyze the other two for Assignment 9.
+
+Your data collection may differ from the standard for the Class Adventurer. Your analysis should be appropriate for the data you collected.
+
+## Analysis of First Set of Flight Data
+
+Display as much as you can from the accelerometer data, the velocity data, and the altitude data from the Large Teensy data files, the Featherweight Raven Data files, the GPS files, and Open Rocket or Rocksim simulations of your flights or the two 10 June flights. An OpenRocket model for the Adventurer is [here](https://pages.hmc.edu/spjut/AdvRoc/SimModels/ClassAdventurer.ork). Be sure to indicate regions of interest, such as supersonic/subsonic transitions, burnout, descent rates under drogue and main parachutes, etc.
+
+Both the rate gyro data and the magnetometer data can be used to calculate the axial rotation angle from liftoff to apogee. You can either plot the angle versus time for each of the sensors separately, or do data fusion to combine them. A reasonable start for data fusion is in [KalmanFilterExample](https://pages.hmc.edu/spjut/AdvRoc/PDF/KalmanFilterExample.pdf).
+
