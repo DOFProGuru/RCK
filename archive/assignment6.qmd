@@ -1,0 +1,23 @@
+---
+title: "Practice Problems 6"
+author: "DOFPro group"
+---
+
+[Open Rocket](https://openrocket.info/) is a Java app, but a group of dedicated volunteers have created installers for it. Go to Open Rocket to get a version that is appropriate for your computer and OS. There are some outdated hints for usage at [Some Hints for Open Rocket](https://pages.hmc.edu/spjut/AdvRoc/PDF/OpenRocketHints.pdf).
+
+Create an Open Rocket model of your DD Vulcanite. You may use either measurements of your parts or measurement of the Example Rocket. Measure either the sample avionics assemblies or your actual avionics assemblies, and include them as masses in your model. Record and report the model mass and center of mass as either measured by you or calculated by Open Rocket. Compare your measurements with the given values in the [Flight Data](https://dofpro.org/RCK/fltdata/) for the LOC Prercision Vulcanite.
+
+## I140W-14A Flight
+
+Simulate a flight of your DD Vulcanite with an [Aerotech I140W-14A](https://www.thrustcurve.org/motors/AeroTech/HP-I140W/) two different ways:
+1. Use Open Rocket and your measured mass and CM.
+2. Use the model from Assignment 2 and approximate the I140W-14A thrust curve as you think appropriate.
+Compare your results with the actual flight data from the test flight on 11 February 2023 in the Flight Data page.
+
+## J270W-14A Flight
+
+Simulate a flight of your DD Vulcanite with an Aerotech J270W-14A two different ways:
+1. Use Open Rocket and your measured mass and CM.
+2. Use the model from Practice Problem 2 and approximate the J270W-14A thrust curve as you think appropriate.
+For ground conditions, use the likely weather conditions at 9 am in Lucerne Valley on Saturday, 9 March 2024. Compare your results from the two models with the GPS altitude data from the DD Vulcanite J270W-14A flight on 07/08/2023 in [2023-07-08-LogExcel.xlsx](https://pages.hmc.edu/spjut/AdvRoc/FlightData/DDVulcanite/2023-07-08_DDVulcanite_J270_14-37-34.xlsx).
+

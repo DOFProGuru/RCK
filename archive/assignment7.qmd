@@ -1,0 +1,23 @@
+---
+title: "Practice Problems 7"
+author: "DOFPro group"
+---
+
+## Level 2 Certification Exam
+
+For either [NAR](https://www.nar.org/high-power-rocketry-info/) or [Tripoli](http://www.tripoli.org/Level2), one of the qualifications for certifying Level 2 is to pass a multiple-choice exam. The exams are assembled from published pools of exam questions. It's best just to memorize the answers, and not waste time figuring out why they chose the answers they did.
+
+## NAR Study Guides:
+
+* [PDF of the NAR Level 2 Exam Question Pool with Answers](https://www.nar.org/wp-content/uploads/2020/10/HPRL2-2020-V2_STUDY_GUIDE.pdf) This is the 2020 edition.
+* [Section A Online Practice Exam](https://www.nar.org/wp-content/uploads/2021/05/NAR_HPRL2-2020_SECTION-A.htm) 2020 Edition
+* [Section B Online Practice Exam](https://www.nar.org/wp-content/uploads/2021/05/NAR_HPRL2-2020_SECTION-B.htm) 2020 Edition
+* [Section C Online Practice Exam](https://www.nar.org/wp-content/uploads/2021/05/NAR_HPRL2-2020_SECTION-C.htm) 2020 Edition
+* [Section D Online Practice Exam](https://www.nar.org/wp-content/uploads/2021/05/NAR_HPRL2-2020_SECTION-D.htm) 2020 Edition
+
+## TRA Level 2 Study Aids
+
+* [PDF of the TRA Level 2 Exam Question Pool with Answers](https://www.tripoli.org/docs.ashx?id=1104356)
+* [TRA Online Technical Study Quiz](https://forms.office.com/r/dM894iJRfS)
+* [TRA Online Safety Study Quiz](https://forms.office.com/r/dM894iJRfS)
+* [Exam Sheet for Level 2 Exam](https://www.tripoli.org/docs.ashx?id=883724) (No Questions or Answers, just the sheet)

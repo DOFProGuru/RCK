@@ -1,0 +1,127 @@
+---
+title: "Practice Problems 5"
+author: "DOFPro group"
+---
+
+## Teensy Logger Data Format and File Size
+
+The format of the data in the data files from the teensy logger is ASCII. After the header rows describing the units, each row begins with a three-letter acronym:
+
+*ICM for the ICM-20948 Inertial Measurement Unit (IMU)
+* LIS for the H3LIS331 Three Axis High-g Accelerometer
+* MS5 for the MS5611-01BA03 High-Resolution Pressure Sensor
+* ADC for the temperatures calculated from the thermistors
+* VOL for the battery or supply voltage
+* GPS for the SAM-M8Q GPS unit on the Large Teensy Data Logger. It doesn't appear in files from the Small Teensy Data Logger, or if the 
+* GPS has been turned off in the code for the Large Teensy Data Logger.
+Following the acronym, there is a “t” for the time in microseconds as measured by the internal microsecond clock.
+
+## ICM-20948
+
+The ICM sample rate for the accelerometers and rate gyros is approximately 1130 to 1140 SPS. The magnetometer is read at the same rate but its sample rate is closer to 100 SPS.
+
+* t is the time in microseconds since data logging began.
+* xa, ya, and za, are the accelerations measured in the x, y, and z directions as labeled on the board. The units are milli-g's.
+* xg, yg, and zg are the rotation rates measured in the x, y, and z directions as labeled on the board. The units are degrees/s.
+* xm, ym, and zm are the magnetic field strengths as measured in the x, y, and z directions. The units are 𝜇T. You may want to check the chip specs to see how the axes for the magnetometer compare with those for the accelerometers and the rate gyros.
+* T is the on-board chip temperature measured in °C.
+
+## H3LIS331
+
+The LIS sample rate is approximately 1009 to 1022 SPS.
+
+* t is the time in microseconds since data logging began.
+* xh, yh, and zh are the accelerations measured in the x, y, and z directions as labeled on the board. The units are g's.
+
+## MS5611-01BA03 Codes
+
+The MS5611 sample rate is approximately 55 SPS.
+
+* t is the time in microseconds since data logging began.
+* T is the on-board chip temperature measured in °C.
+* P is the absolute pressure as measured in Pascal.
+
+## ADC Codes
+
+The ADC sample rate is approximately 50 SPS.
+
+t is the time in microseconds since data logging began.
+T1 is the temperature in °C calculated from the voltage measured by the 12-bit ADC on the Teensy for thermistor 1. The Steinhart Hart constants are in the Teensy code for two different 10 kΩ thermistors.
+T2 is the temperature in °C calculated from the voltage measured by the 12-bit ADC on the Teensy for thermistor 2. The Steinhart Hart constants are in the Teensy code for two different 10 kΩ thermistors.
+C1 is the raw 12-bit ADC code from ADC channel 1. It can be converted to a voltage by multiplying the value by 3.3 and dividing by 4096. T1 was calculated from it.
+C2 is the raw 12-bit ADC code from ADC channel 2. It can be converted to a voltage by multiplying the value by 3.3 and dividing by 4096. T2 was calculated from it.
+
+## Battery Voltage Code
+
+The battery voltage sample rate is approximately 2 SPS.
+
+* t is the time in microseconds since data logging began.
+* V is the battery or supply voltage measured in Volts.
+
+## GPS Codes
+
+Note: The GPS codes are included for completeness. It is unlikely that you will get access to one of the Large Teensy Data Loggers that has a GPS, and even less likely that the GPS will be turned on.
+
+The GPS sample rate is 10 SPS.
+
+* t is the time in microseconds since data logging began.
+* La is the degrees latitude in 1E7°. Multiply by 1E-7 to convert to degrees.
+* Lo is the degrees longitude in 1E7°. Multiply by 1E-7 to convert to degrees.
+* Al is the altitude in mm.
+* Ac is the uncertainty in the altitude in mm.
+* SV is the satellites in view.
+* DT is the UTC date and time in the ISO standard format.
+
+## File Size
+
+Because of the high sample rate, the file sizes for the data logging files are quite large. The storage rate is roughly 217kB/s. The resultant file sizes are:
+
+| Time |File Size (MB) |
+|-----------|------|
+| 10s | 2.2 |
+| 30s | 6.5 |
+| 1 min | 13 |
+| 10 min | 130 |
+| 30 min | 390 |
+| 1 hr | 780 |
+
+The code currently preallocates a file size of 780 MB (1 hour). If the logging is stopped before then, the file is resized to fit the logged data. If the logging is not stopped before the file size is reached, the logger closes the file at approximately 1 hour and waits for the next logging session to begin. If you suspect that the total time that your rocket may sit on the pad and spend in flight exceeds one hour, you can increase the preallocated file size by changing the LOG\_FILE\_SIZE definition.
+
+These large file sizes mean that any software designed to process them is going to be very slow to parse the file and get it into memory.
+
+## Processing Software
+
+The MATLAB .m file for processing the dat is [ScanTeensyDataLoggerGPSRotTempAdventurer.m](https://pages.hmc.edu/spjut/AdvRoc/MATLABModels/ScanTeensyDataLoggerGPSRotTempAdventurer.m). It does not have an indicator of how much of the file has been parsed or processed, so it requires some patience. I strongly recommend you run it using the Run-and-Advance button so that you can observe intermediate values and enter additional information as you run it. With it you can correct the pressure measurements to calculated the corrected barometric altitude. You can calculate the average $𝐶_𝐷$ and the $𝐶_𝐷$ as a function of 𝑣. You can also calculate the thrust curve. Quoting from the MATLAB .m file:
+
+% This m-file expects input files in the following formats.
+
+% 1. A (preferably trimmed) .TXT file from the Teensy Data Logger. It will
+% parse the data and create arrays of the sensor outputs. The parsing takes
+% a long time.
+
+% 2. An Open Rocket exported flight data file in CSV format. You should export:
+% Time in s
+% Altitude in m
+% Vertical velocity in m/s
+% Vertical acceleration in m/s^2
+% Drag Coefficient
+% DO NOT export any other variables. You will have to edit the output file
+% to remove any events like lift-off or apogee. The final format should
+% just have a variabile-name row and rows of numbers.
+
+% 3. A CSV file with the GPS time in the first column and the GPS altitude
+% (expected to be in feet MSL) in the second column. You can use either
+% data from the log file or from the flight-specific file from the
+% Featherweight GPS.
+
+## GPS Data
+
+The Small Teensy Data Logger does not have a GPS on board. It was used for the data for this assignment. The Large Teensy Data Logger has an on-board GPS for logging GPS data. At the current time the software to log the GPS data without disrupting the sampling of the other chips doesn't work properly, so the GPS is not currently used.
+
+The Featherweight GPS, which is used for ground tracking of the position of the flights, logs all of the GPS data, whether valid or not at 1 Hz. It also has the possibility to store the GPS data at 10 Hz for the most recent flight. It stores altitude data as feet MSL. In practice, the GPS does not lock as often as it should, and the most-recent-flight data storage works rarely. However, we do have both a log file and an on-board file for the GPS for this flight. We also have an already-processed spreadsheet of the log file. It has both the Weasel and a Vulcanite flight on it.
+
+The files can be opened with a spreadsheet. Most of the column names are self explanatory. The TIME is in minutes and seconds, and wraps around on the hour. Again, the altitude (ALT) is MSL in feet (not meters). The FIX is whether the GPS fix is 3-D or only 2-D. HORZV, VERTV, HEAD, and FLAGS can be ignored. #TOT is the total number of satellites used in calculating the position. >40, >32, >24, RSSI, and BATT can be ignored.
+
+The .m file will read in the GPS data, but it expects the data to be in a .csv file with only two columns: the time in seconds and the altitude in feet MSL. You need to massage the data to get them in this format. The spreadsheet shows how to do it for a log file, and this spreadsheet shows how to do it for the on-board GPS file.
+
+The file can be opened with a spreadsheet. Most of the column names are self explanatory. The TIME is in minutes and seconds, and wraps around on the hour. Again, the altitude (ALT) is MSL in feet (not meters). The FIX is whether the GPS fix is 3-D or only 2-D. HORZV, VERTV, HEAD, and FLAGS can be ignored. #TOT is the total number of satellites used in calculating the position. >40, >32, >24, RSSI, and BATT can be ignored.
