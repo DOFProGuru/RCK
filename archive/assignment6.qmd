@@ -5,7 +5,7 @@ author: "DOFPro group"
 
 [Open Rocket](https://openrocket.info/) is a Java app, but a group of dedicated volunteers have created installers for it. Go to Open Rocket to get a version that is appropriate for your computer and OS. There are some outdated hints for usage at [Some Hints for Open Rocket](https://pages.hmc.edu/spjut/AdvRoc/PDF/OpenRocketHints.pdf).
 
-Create an Open Rocket model of your DD Vulcanite. You may use either measurements of your parts or measurement of the Example Rocket. Measure either the sample avionics assemblies or your actual avionics assemblies, and include them as masses in your model. Record and report the model mass and center of mass as either measured by you or calculated by Open Rocket. Compare your measurements with the given values in the [Flight Data](https://dofpro.org/RCK/fltdata/FlightData.html) for the LOC Prercision Vulcanite.
+Create an Open Rocket model of your DD Vulcanite. You may use either measurements of your parts or measurement of the Example Rocket. Measure either the sample avionics assemblies or your actual avionics assemblies, and include them as masses in your model. Record and report the model mass and center of mass as either measured by you or calculated by Open Rocket. Compare your measurements with the given values in the [Flight Data](https://dofpro.org/RCK/fltdata/) for the LOC Prercision Vulcanite.
 
 ## I140W-14A Flight
 

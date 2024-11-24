@@ -3,7 +3,7 @@ title: "Practice Problems 8"
 author: "DOFPro group"
 ---
 
-If you successfully completed your first set of flights, you can analyze the flight data from your first set of flights. If you were unsuccessful in your first set of flights, you can analyze the two flights of the prototype Class Adventurer rocket from [10 June 2022](https://dofpro.org/RCK/fltdata/FlightData.html). It made four flights between 9 June 2022 and 11 June 2022. You will get to analyze the other two for Assignment 9.
+If you successfully completed your first set of flights, you can analyze the flight data from your first set of flights. If you were unsuccessful in your first set of flights, you can analyze the two flights of the prototype Class Adventurer rocket from [10 June 2022](https://dofpro.org/RCK/fltdata/). It made four flights between 9 June 2022 and 11 June 2022. You will get to analyze the other two for Assignment 9.
 
 Your data collection may differ from the standard for the Class Adventurer. Your analysis should be appropriate for the data you collected.
 
