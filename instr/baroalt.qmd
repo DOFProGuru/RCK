@@ -1,14 +1,20 @@
 ---
-title: "Barometric Altitude"
+title: "Tutorial – Barometric Altitude"
 author: "DOFPro group"
 format: html
 ---
 
-**Barometric Altitude**
+# Pressure Altitude
+
+In aviation (including rocketry) the [*pressure altitude*](https://en.wikipedia.org/wiki/Pressure_altitude) is the altitude one would calculate from the local atmospheric pressure using a standard atmospheric model. The pressure altitude does not account for non-standard temperature, barometric pressure, or humidity level. Refer to the [U.S. Standard Atmosphere](https://en.wikipedia.org/wiki/U.S._Standard_Atmosphere),
+and [Barometric formula](https://en.wikipedia.org/wiki/Barometric_formula) for additional reference
+information on this tutorial. You can also web search for _pressure altitude_ and
+_density altitude_.
+ 
 
 # Barometric Altimeters
 
-A [*barometric altimeter*](https://en.wikipedia.org/wiki/Pressure_altimeter) uses the variation of atmospheric (or barometric) pressure with altitude to calculate and display the altitude from the measured local atmospheric pressure. The altimeter requires a model for how the pressure varies with altitude. Both the ISO and the US government have specified standard models for how pressure varies with altitude. These models assume that the atmospheric conditions are constant. Anyone who has watched or looked up a weather forecast realizes that the local temperature and pressure vary throughout the day. This page examines how the variations affect the accuracy of the altitude calculated by a barometric altimeter. The barometric altimeter has been used since the early days of aviation, and still finds a place on modern aircraft and hobbyist rocketry.
+A [*barometric altimeter*](https://en.wikipedia.org/wiki/Pressure_altimeter) uses the variation of atmospheric (or barometric) pressure with altitude to calculate and display the altitude from the measured local atmospheric pressure. There are a number of commercial barometric altimeters designed for use in model and high-power rockets. To be useful, the altimeter must have an internal model for how the pressure varies with altitude. Both the ISO and the US government have specified standard models for the pressure versus altitude relationship. These models assume that the atmospheric pressure, temperature, and humidity are constant with time but vary with altitude. Anyone who has watched or looked up a weather forecast realizes that the local temperature and pressure vary throughout the day. This tutorial examines how the variations affect the accuracy of the altitude calculated by a barometric altimeter. The barometric altimeter has been used since the early days of aviation, and still finds a place on modern aircraft and hobbyist rocketry.
 
 There are three additional common ways to calculate the altitude of a rocket, and they each have their own set of associated errors. They are:
 
@@ -16,31 +22,55 @@ There are three additional common ways to calculate the altitude of a rocket, an
 - GPS
 - Integration of velocity or double integration of acceleration
 
-These three will not be discussed further here.
+These three will not be discussed further here, although there are tutorials on the website for all three.
+
+# AGL vs. MSL
+  For regulatory purposes, the altitude relative to Mean Sea Level (MSL) is important.
+  The FAA mandates maximum altitudes that cannot be exceeded for high-power rocket flights
+  in terms of MSL. For example, the usual waiver at ROC launches in Lucerne Valley is for
+  10,000 feet MSL.
+  For modeling and flight performance purposes, the important measurement is the altitude
+  relative to the altitude of the launch site, called Above Ground Level (AGL). This
+  tutorial is looking principally at errors in AGL measurements. AGL is always calculated
+  by taking the calculated (not measured) altitude MSL at the launch pad, $h_{0\mathrm{_MSLcalc}}$, and subtracting
+  it from the calculated altitude MSL during flight, e.g.,
+  
+  $$
+  h_\mathrm{AGL} = h_\mathrm{MSLcalc}-h_{0\mathrm{_MSLcalc}}
+  $$ {#eq-6}
+  .
+  
+  The error in AGL is calculated as:
+  
+  $$
+  \varepsilon_{\mathrm{AGL}} = h_{\mathrm{AGL}} - h_{\mathrm{true}}
+  $$ {#eq-7}
+  
+  where $h_{\mathrm{true}}$ is the actual altitude of the rocket above the launch site, e.g, what you would get from a very long measuring tape or a laser rangefinder.
 
 # Standard Atmospheric Model
 
-The standard atmospheric model below 11,000 m is almost the same for both the ISO Standard Atmosphere and the US Standard Atmosphere. The following is based on the US Standard Atmosphere. The atmosphere is modeled assuming a base temperature, $T_0$, at mean sea level (MSL) ($h_0 = 0$) of 288.15 K (15.0°C) and a base pressure, $P_0$, of 101,325 Pa. The temperature is assumed to vary linearly with altitude at a rate of –6.5°C per 1000 m (the *lapse rate*, $L$). The pressure versus altitude is calculated from the simultaneous solution of
+The standard atmospheric model below 11,000 m is almost the same for both the ISO Standard Atmosphere and the US Standard Atmosphere. This tutorial is based on the US Standard Atmosphere. The atmosphere is modeled assuming a base temperature, $T_0$, at mean sea level (MSL) ($h_0 = 0$) of 288.15 K (15.0°C) and a base pressure, $P_0$, of 101,325 Pa. The temperature is assumed to vary linearly with altitude at a rate of –6.5°C per 1000 m (the *lapse rate*, $L$). The pressure versus altitude is calculated from the simultaneous solution of
 
 $$
 \frac{dP}{dh} = \rho g = M \frac{n}{V} g
-$$
+$$ {#eq-1}
 
 and
 
-$$P = \frac{n}{V} R T$$.
+$$P = \frac{n}{V} R T$$  {#eq-2} .
 
 The solution is
 
 $$
 P = P_0\left[\frac{T_0}{T_0+ L(h-h_0)}\right]^{\left(\frac{M g}{L R}\right)}
-$$
+$$ {#eq-3}
 
 or solved for $h$ in terms of $P$
 
 $$
 h = h_0 + \frac{T_0}{L} \left[\left(\frac{P}{P_0}\right)^{-\left(\frac{L R}{M g}\right)} - 1\right]
-$$
+$$ {#eq-4}
 
 The molecular weight of dry air, $M$, is assumed to be 0.0289644 kg/mol. The value of $R$ used in the US Standard Atmosphere is 8.31432 J/(mol⋅K) versus the current [NIST standard](https://physics.nist.gov/cgi-bin/cuu/Value?r) of 8.314462618 J/(mol⋅K). The difference is less than 0.002%, and is insignificant compared to the other uncertainties in the model.
 
@@ -50,21 +80,91 @@ The MSL is calculated by most commercial rocket altimeters from the above formul
 
 High-pressure or low-pressure weather conditions can affect the calculated barometric altitude by quite a bit. In addition, the temperature at a given location may vary quite a bit from that predicted by the base temperature and standard lapse rate. Also, the molecular weight of air can vary quite a bit with the absolute humidity.
 
-If the altitude, air temperature and air pressure of the launch pad can be measured or determined, the values can be plugged into the above model and a corrected altitude calculated. Plug in launch altitude as $h_0$, launch pressure as $P_0$, and launch temperature as $T_0$. In addition, if the relative humidity can be measured, the absolute humidity and the resultant molecular weight can be calculated and plugged in for $M$. The molecular weight of water is 0.01801528 kg/mol. These corrections depend on the assumptions of a standard linear lapse rate and a water vapor mole fraction that doesn't vary with altitude.
+##  Barometric Pressure Variations  
+   The barometric pressure is calculated by measuring the local absolute pressure, and
+   then using the standard atmospheric model to calculate the pressure one would expect at
+   mean sea level. When you read the barometric pressure in a weather report, you always
+   have to correct to your current altitude. Normal atmospheric pressure at mean sea level
+   is 101,325 Pa, 1013.25 millibar (mb), or 1.01325 bar. High pressure regions rarely go
+   above 1050 mb or below 982 mb.
+
+   *  Create a parametric plot that shows the error in MSL
+      altitude from 0 m to 5000 m for $P_0 = 1050$ mb and $P_0 = 982$ mb as parameters
+   *  Create an additional parametric plot that shows the error in AGL
+      from 0 m to 5000 m for $P_0 = 1050$ mb and $P_0 = 982$ mb as parameters.
+
+##  Temperature Variations
+   The Standard Atmospheric model assumes a temperature of 288.15 K (15°C) at mean sea level
+   and a decrease of 6.5 K for every 1000 m gain in altitude. Obtaining data on variations
+   in the lapse rate is challenging, but variations in ground temperature are fairly easy
+   to measure. Lucerne Valley has a seasonal low of about –3°C and a seasonal high of
+   about 38°C. Corrected for MSL, that is a $T_0$ variation between 2.7°C and 43.7°C.
+
+   *  Create a parametric plot that shows the error in AGL
+      from 0 m to 5000 m for $T_0 = 2.7$°C and $T_0 = 43.7$°C mb as parameters.
+   *  [NAR](https://www.nar.org/contest-flying/u-s-model-rocket-new-sporting-code/altitude-competition/altitude-data/)
+      requires all official altitude record attempts (see Section 20.2.3) to have their
+      pressure altimeter data corrected by multiplying the measured AGL by the ratio of
+      the launch site temperature in K to 288.15 K. How well does the correction work
+      for the data in this problem? Where did they get the 288.15 K in the ratio?
+
+If the altitude, air temperature and air pressure at the launch pad can be measured or determined, the values can be plugged into the above model and a corrected altitude calculated. Plug in launch altitude as $h_0$, launch pressure as $P_0$, and launch temperature as $T_0$. In addition, if the relative humidity can be measured, the absolute humidity and the resultant molecular weight can be calculated and plugged in for $M$. The molecular weight of water is 0.01801528 kg/mol. These corrections depend on the assumptions of a standard linear lapse rate and a water vapor mole fraction that doesn't vary with altitude.
 
 If flight data are available for temperature and/or relative humidity versus altitude, they can be used to improve the calculations.
 
-## The Antoine Equation for Water
+##  Relative Humidity Variations
+   Water has a molecular weight of 18.01528 g/mol or 0.01801528 kg/mol. Dry air has an
+   average molecular weight of 28.9644 g/mol or 0.0289644 kg/mol. The density of air
+   changes with the relative humidity. The relative humidity is defined as the partial
+   pressure of water in the air divided by the vapor pressure of water at the air
+   temperature.
+
+### The Antoine Equation for Water
 
 To calculate the absolute humidity from the relative humidity, one needs the vapor pressure of water at the system temperature. Rather than use the steam tables, one can use the Antoine equation. A form of the equation suitable for atmospheric corrections is
 
 $$
 P = \exp\left[16.3872 -\frac{3885.70}{T-42.98}\right]
-$$
+$$ {#eq-5}
 
-where $P$ is in kPa, and $T$ is in kelvin.
+where $P$ is in kPa, and $T$ is in kelvin.   
+
+   The molecular weight of an air-water mixture is the mole-weighted
+   average of the molecular weight of air and the molecular weight of water. In practice,
+   it is easiest to calculate
+   
+   $$
+   M_\mathrm{mix} = \frac{M_\mathrm{air}P_\mathrm{air}+M_\mathrm{water}P_\mathrm{water}}{P}
+   $$ {#eq-9}
+   .
+   
+   where $M_\mathrm{mix}$ is the molecular weight of the air-water vapor mixture, $M_\mathrm{air}$ is the
+   molecular weight of dry air, $M_{water}$ is the molecular weight of water vapor, 
+   $P_\mathrm{air}$ is the partial pressure of dry air, $P_\mathrm{water}$ is the partial pressure of
+   water vapor, and $P$ is the overall pressure.
+   Without measurements, it is difficult to know how the molecular weight of the air-water
+   mixture varies with altitude. The easiest assumption is to measure the relative humidity
+   (and of necessity, the temperature) at the launch site, calculate the molecular weight
+   and assume it doesn't change with altitude. Other assumptions require numerical integration
+   of the pressure-altitude equations.
+
+   
+   *  Create a parametric plot that shows the error in AGL from 0 m to 5000 m, for $H_r$'s
+      of 50%, and 100% at 316.85 K. Don't correct $T_0$, just $M$.
+
+## Making Corrections
+
+At a minimum, the NAR temperature-ratio correction should be applied.
+Alternatively, if the altitude, air temperature and air pressure at the launch pad can be measured or determined, the values can be plugged into @eq-4 and a corrected altitude calculated. Plug in launchpad altitude as $h_0$, launchpad atmospheric pressure as $P_0$, and launchpad air temperature as $T_0$. In addition, if the relative humidity can be measured, the absolute humidity and the resultant molecular weight can be calculated and plugged in for $M$. The molecular weight of water is 0.01801528 kg/mol. These corrections depend on the assumptions of a standard linear lapse rate and a water vapor mole fraction that doesn't vary with altitude.
+
+If flight data are available for temperature and/or relative humidity versus altitude, they can be used to improve the calculations.
 
 # Sample Corrections
+
+   The [linked data set](Flight1DataForAssignment1.txt) contains the pressure-versus-time
+   data for the first flight of
+   the DX3 rocket on an F67-9W. Calculate the AGL altitude versus time both using the standard
+   atmospheric model and by applying the corrections for $T_0$, $P_0$, $h_0$, and $H_r$.
 
 Below is the plot of the uncorrected AGL altitude and the AGL altitude corrected for $P_0$, $T_0$, $h_0$, and $H_r$ for the first flight of the DX3 rocket on an F67-9W. In this case the corrections have a very minor effect on the calculated altitude. In other cases they can have a much larger effect.
 

@@ -1,12 +1,12 @@
 ---
-title: "Introduction to High Power Rocketry"
+title: "Introduction to High-Power Rocketry"
 author: "DOFPro group"
 ---
 
 # Introduction
 
-Eventually, this page will provie more background on high power rocketry.
+Eventually, this page will provie more background on High-Power rocketry.
 
-These pages outline the basics of High Power Rocketry as defined in [NFPA 1127](https://www.nfpa.org/codes-and-standards/1/nfpa-1/2/nfpa-1127) and by \[TRA\](<https://www.tripoli.org/>) and \[NAR\](<https://www.nar.org/>).
+These pages outline the basics of High-Power Rocketry as defined in [NFPA 1127](https://www.nfpa.org/codes-and-standards/1/nfpa-1/2/nfpa-1127) and by \[TRA\](<https://www.tripoli.org/>) and \[NAR\](<https://www.nar.org/>).
 
 The [Certification](/intro/cert.qmd) process is explainied on the linked page.

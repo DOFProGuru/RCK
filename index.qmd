@@ -1,10 +1,79 @@
 ---
-title: "High Power Rocketry"
+title: "High-Power Rocketry"
 author: "DOFPro group"
 ---
 
-# Introduction
+# The DOFPro High-Power Rocketry Website
 
-High Power Rocketry concerns rockets with a mass of greater than 1500 grams and/or a single motors with more than 160 Ns of impulse or a cluster of motors with more than 320 Ns of impulse. High Power Rocketry is more thoroughly defined in [NFPA 1127](https://www.nfpa.org/codes-and-standards/1/nfpa-1/2/nfpa-1127) and by [TRA](<https://www.tripoli.org/>) and [NAR](<https://www.nar.org/>). This website contains information on the safety regulations, construction guidelines and hints, modeling of rocket flight, instrumentation, avionics, and analysis of flight data. In addition, there is an archive of flight data, and archives of information from previous rocket courses.
+Hobby rocketry (flying rockets for fun, as opposed for commercial purposes) is traditionally divided unto two categories, *Model Rocketry* and *High-Power Rocketry*[^1]. In the US, Model Rocketry concerns rockets with a mass of less than 1500 grams, and either a single motor with less than 160 Ns of impulse or a cluster of motors with less than 320 Ns of impulse. The most popular brand of model rocket kit has been [Estes](https://en.wikipedia.org/wiki/Estes_Industries) since the early days of the hobby.
 
-This website is the descendent of the Harvey Mudd College [High Power Rocketry](https://pages.hmc.edu/spjut/AdvRoc/index.md.html) course.
+![Students Loading a Model Rocket[^2]](https://dofprobucket2.s3.us-east-2.amazonaws.com/LargePhotos/20150128_FirstLaunch_0014.jpg)
+
+High-Power Rocketry concerns rockets with a mass of greater than 1500 grams and/or a single motors with more than 160 Ns of impulse or a cluster of motors with more than 320 Ns of impulse. High-Power Rocketry is more thoroughly defined in the National Fire Protection Association document [NFPA 1127](https://www.nfpa.org/codes-and-standards/1/nfpa-1/2/nfpa-1127) and by the Tripoli Rocketry Association, [TRA](<https://www.tripoli.org/>), and the National Association of Rocketry, [NAR](<https://www.nar.org/>). This website contains information, practices, and guidelines on High-Power rocketry gained through 20 years of teaching the principles of Experimental Engineering to college sophomores through seniors by building, modeling, flying, and analyzing data from high-power rockets.  
+
+![Students Loading a High-Power Rocket[^3]](https://dofprobucket2.s3.us-east-2.amazonaws.com/LargePhotos/Launch23APR2016_0312.jpg)
+
+![The High-Power Rocket at Liftoff](https://dofprobucket2.s3.us-east-2.amazonaws.com/LargePhotos/Launch23APR2016_0322.jpg)
+
+# Website Organization
+
+The information is organized into
+
+* [Safety Regulations and Recommendations](safety/)
+* [Construction Guidelines and Hints](const/)
+* [Modeling and Instrumentation of Rocket](model/)
+* [Analysis of Flight Data](instr/)
+* [An Archive of Flight Data](fltdata/)
+* [Archives of Information from Previous Rocket Courses](archive/)
+
+# Recommendations by Experience Level
+
+We have recommendations for people at all levels of experience for getting the most from our website and videos. Whether you are a neophyte (newbie), or have been flying rockets for years, hopefully you will be able to find something new and interesting.
+
+## New to Rocketry
+
+If you are new to the hobby of rocketry. We strongly recommend you find a local club or prefecture, go to a launch, see if it's something you would like to do, and if so, join the club or prefecture. You may not have anyone approach you to ask if you're new here, but if you're brave enough to ask, most rocketeers are more than willing to answer questions and get you started. There are two rocketry organizations in the US: the National Association of Rocketry, [NAR](<https://www.nar.org/>), who focus on model rocketry, but also allow High-Power rockets; and the Tripoli Rocketry Association, [TRA](<https://www.tripoli.org/>), who focus on High-Power and experimental rocketry, but also allow model rockets. The [NAR Club Finder](https://www.nar.org/content.aspx?page_id=225&club_id=114127) is [here](https://www.nar.org/content.aspx?page_id=225&club_id=114127). The [TRA Prefecture Finder](https://www.tripoli.org/content.aspx?page_id=225&club_id=795696) is [here](https://www.tripoli.org/content.aspx?page_id=225&club_id=795696).
+
+We strongly recommend you build and fly a few model rockets before you think about High-Power. Model rockets have much lower costs to build and fly and mistakes are much less serious. Almost all of the building and flying lessons you learn from model rocketry will transfer to high-power rocketry.
+
+Unless you really enjoy government red tape, we *strongly* recommend you fly with a local club or prefecture, and don't try to fly on your own. Model-rocket restrictions vary from state to state, but in California you must have written permission from the local fire department and from the landowner where you plan to launch. You also need to follow the Safety Code regarding distance from people and structures. It's much easier to let someone else worry about the headaches, and you just go and fly.
+
+## New to High-Power Rocketry
+
+If you are experienced in model rocketry and want to get started in high-power rocketry, we recommend you start by reading the [Certification Page](intro/cert.qmd). It describes the certification process for Level 1 and Level 2 and has links to the relevant pages. You should also read the [Basic Safety Information](safety/index.qmd). We also have construction guides for rockets suitable for Level 1 and Level 2. They are for:
+
+1. [The Madcow MiniDX3](const/DX3.qmd) (Level 1 but not Level 2)
+2. [The LOC Precision Weasel]() if you can find one. They are officially OOP[^10]. (Level 1 but not Level 2)
+3. The standard [LOC Precision Vulcanite](const/standardVulcanite.qmd) (Level 1 and Level 2 maybe)
+4. [A LOC Precision Vulcanite with modifications for Dual Deploy](const/vulcanite.qmd) (Level 1 and Level 2)
+
+What we said above about government red tape goes double for high power. Just fly with a club or prefecture. For our yearly class launches in April, we started in June to get a Letter of Understanding from the Bureau of Land Management and a flight waiver from the FAA. We also needed a [California Pyrotechnician 3rd Class](https://friendsofamateurrocketry.org/pyrotechnic-operator/) at the launch, and at least a Level-2 certified flyer to serve as Range Safety Officer. For the final launch clearance we needed to call Edwards AFB[^7], Miramar NAS[^8], the LAX[^9] tower, the High Desert Tower, and issue a NOTAM[^4]. When we first started we needed a LEUP[^5] from the ATF[^6]. Again, just fly with a club or prefecture.
+
+If you are interested in modeling and instrumentation as well, read on.
+
+## New to Modeling and Instrumentation
+
+## Experienced but Curious
+
+
+The original course websites are not open source or licensed under Creative Commons. The links to the previous courses are [High-Power Rocketry](https://pages.hmc.edu/spjut/AdvRoc/index.md.html) and [Experimental Engineering](http://www.eng.hmc.edu/NewE80).
+
+[^1]: According to the rules of standard English, it should be *high-power rocketry* with a hyphen, but common practice often does not include the hyphen. The rocket will still fly, with or without the hyphen.
+
+[^2]: The rocket is a Quest Seeker modified to accommodate a PerfectFlite Pnut altimeter.
+
+[^3]: The rocket is a LOC Precision (PML) Phobos modified to accommodate a student-built avionics package. It's currently loaded with a G motor, which isn't High-Power, but it later flew on an I motor, which definitely is High-Power. 
+
+[^4]: [Notice to Air Missions](https://www.faa.gov/about/initiatives/notam/what_is_a_notam)
+
+[^5]: Low Explosive User Permit – It's no longer required after 2009, unless they want to hassle you about your black powder for ejection charges.
+
+[^6]: [The Bureau of Alcohol, Tobacco, Firearms and Explosives](https://www.atf.gov/)
+
+[^7]: Air Force Base
+
+[^8]: Naval Air Station
+
+[^9]: Los Angeles International Airport
+
+[^10]: Out Of Production – The manufacturer has quit making them, but you may still find some for sale at rocket vendors or perhaps on Ebay.

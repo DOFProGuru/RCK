@@ -1,14 +1,22 @@
 ---
-title: "Modeling"
+title: "Modeling of Rocket Flight"
 author: "DOFPro group"
 ---
 
-A model is a set of equations or computer code that describes the flight of the rocket. The forces and torques in a rocket model come from gravity, thrust, lift, and drag. Models are classified as 1-D, 2-D, or 3-D models. A 1-D model assumes that the rocket flies straight up and falls under parachute straight down. A 2-D (or 3 DoF) model assumes that the rocket can travel vertically and horizontally, and rotate in the 2-D plane of motion. A 3-D (or 6 DoF) model assumes that the rocket can travel in 3-D space and rotate about any of its three principal axes. The required modeling in E178 is:
+# Having Fun and Rocket Science
 
-Develop or prove an analytic 1-D model with constant thrust during motor burning, and a constant coefficient of drag during the flight.
-Learn to use a 2-D (3 DoF) open source program called Open Rocket to model and predict rocket behavior. Use this code for all three rockets you will construct.
-Develop and/or use a 1-D code to permit calculation of 𝐶𝐷
-and thrust curves from flight data.
+Flying rockets without modeling or instrumentation is just having fun. Flying rockets with modeling and/or instrumentation is *Rocket Science*. It's still a lot of fun, but now you understand what's going on. It is possible to just build and fly rockets without modeling. However, if you want to build a rocket to accomplish certain objectives, such as fly *this* high, or go *this* fast, you need a physical model of the rocket's behavior. If you want to see if you reached your objectives, your rocket needs instrumentation, and you will need to analyze the data from the instruments.
+
+# Getting Started
+
+If mass, momentum, and Newton's 2nd law are old hat to you, you can skip this section and move on to Flight Models.
+
+If you are new to rocketry, then here is a pair of videos to get you started in rocket modeling:
+
+
+# Flight Models
+
+A model is a set of equations or computer code that describes the flight of the rocket. The forces and torques on a rocket come from gravity, thrust, lift, and drag. We need models to combine these forces and torques to predict or explain the flight behavior. Models are classified as 1-D, 2-D, or 3-D models. A 1-D model assumes that the rocket flies straight up and falls under parachute straight down. A 2-D (or 3 DOF[^1]) model assumes that the rocket can travel vertically and horizontally, and rotate in the 2-D plane of motion. A 3-D (or 6 DOF[^1]) model assumes that the rocket can travel in 3-D space and rotate about any of its three principal axes. 
 
 # 1-D models
 * Analytical with constant thrust and constant drag coefficient.
@@ -43,4 +51,11 @@ Other packages we'll use:
 This is the simplest model that does a good job of describing a rocket flight up to ejection and is useful for processing data to determine total impulse, total burn time, and an average C~D. This model assumes that the motor thrust is constant at the average level for the motor burn time. For example looking up the [Estes C6]() motor on [ThrustCurve.org](http://www.thrustcurve.org/motorsearch.jsp?id=21) shows a total impulse of 8.8 Ns and a total burn time of 1.9 s. The motor would be modeled as generating a constant thrust of 8.8 Ns/1.9 s = 4.63 N for 1.9 s. Notice the listed average thrust is
 4.7 N, which is close to the value we would specify, but not exactly the same. Which is correct? That would depend on what you think is correct.
 
-3 3-D models
+2-D models
+
+3-D models
+
+
+
+
+[^1]: **D**egrees **O**f **F**reedom

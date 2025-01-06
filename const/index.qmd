@@ -17,7 +17,7 @@ There is a student-written [TLDR](https://pages.hmc.edu/spjut/AdvRoc/DX3Assembly
 
 There is a detailed student-written [blog](https://pages.hmc.edu/spjut/AdvRoc/DX3AssemblyBlog.md.html) on putting the rocket together. It was written primarily for the MiniDX3, but it still largely applies to the other Level 1 rockets.
 
-For more information about safety precautions, visit the [DocPro Rocketry Safety secion](https://dofpro.org/RCK/safety/)
+For more information about safety precautions, visit [DOFPro Rocketry Safety](https://dofpro.org/RCK/safety/)
 
 # Construction Hints
 

@@ -1,0 +1,97 @@
+---
+title: "Tutorial 4 – Barometric Altimeters"
+author: "DOFPro group"
+---
+
+Refer to [Barometric Altitude](../BarometricAltitude.md.html), [U.S. Standard Atmosphere](https://en.wikipedia.org/wiki/U.S._Standard_Atmosphere),
+and [Barometric formula](https://en.wikipedia.org/wiki/Barometric_formula) for reference
+information on this assignment. You can also web search for _pressure altitude_ and
+_density altitude_.
+ 
+# AGL vs. MSL
+  For regulatory purposes, the altitude relative to Mean Sea Level (MSL) is important.
+  The FAA mandates maximum altitudes that cannot be exceeded for high-power rocket flights
+  in terms of MSL. For example, the usual waiver at ROC launches in Lucerne Valley is for
+  10,000 feet MSL. The waiver for our class launch is 17,500 feet MSL.
+  For modeling and flight performance purposes, the important measurement is the altitude
+  relative to the altitude of the launch site, called Above Ground Level (AGL). This
+  assignment is looking principally at errors in AGL measurements. AGL is always calculated
+  by taking the calculated (not measured) altitude MSL at the launch pad, $h_{0\mathrm{_MSLcalc}}$, and subtracting
+  it from the calculated altitude MSL during flight, e.g.,
+  
+  $$
+  h_\mathrm{AGL} = h_\mathrm{MSLcalc}-h_{0\mathrm{_MSLcalc}}
+  $$.
+  
+  The error in AGL is calculated as:
+  
+  $$
+  \varepsilon_{\mathrm{AGL}} = h_{\mathrm{AGL}} - h_{\mathrm{true}}
+  $$
+  
+#  Barometric Pressure Variations  
+   The barometric pressure is calculated by measuring the local absolute pressure, and
+   then using the standard atmospheric model to calculate the pressure one would expect at
+   mean sea level. When you read the barometric pressure in a weather report, you always
+   have to correct to your current altitude. Normal atmospheric pressure at mean sea level
+   is 101,325 Pa, 1013.25 millibar (mb), or 1.01325 bar. High pressure regions rarely go
+   above 1050 mb or below 982 mb.
+
+   *  Create a parametric plot that shows the error in MSL
+      altitude from 0 m to 5000 m for $P_0 = 1050$ mb and $P_0 = 982$ mb as parameters
+   *  Create an additional parametric plot that shows the error in AGL
+      from 0 m to 5000 m for $P_0 = 1050$ mb and $P_0 = 982$ mb as parameters.
+  
+#  Temperature Variations
+   The Standard Atmospheric model assumes a temperature of 288.15 K (15°C) at mean sea level
+   and a decrease of 6.5 K for every 1000 m gain in altitude. Obtaining data on variations
+   in the lapse rate is challenging, but variations in ground temperature are fairly easy
+   to measure. Lucerne Valley has a seasonal low of about –3°C and a seasonal high of
+   about 38°C. Corrected for MSL, that is a $T_0$ variation between 2.7°C and 43.7°C.
+
+   *  Create a parametric plot that shows the error in AGL
+      from 0 m to 5000 m for $T_0 = 2.7$°C and $T_0 = 43.7$°C mb as parameters.
+   *  [NAR](https://www.nar.org/contest-flying/u-s-model-rocket-new-sporting-code/altitude-competition/altitude-data/)
+      requires all official altitude record attempts (see Section 20.2.3) to have their
+      pressure altimeter data corrected by multiplying the measured AGL by the ratio of
+      the launch site temperature in K to 288.15 K. How well does the correction work
+      for the data in this problem? Where did they get the 288.15 K in the ratio?
+  
+#  Relative Humidity Variations
+   Water has a molecular weight of 18.01528 g/mol or 0.01801528 kg/mol. Dry air has an
+   average molecular weight of 28.9644 g/mol or 0.0289644 kg/mol. The density of air
+   changes with the relative humidity. The relative humidity is defined as the partial
+   pressure of water in the air divided by the vapor pressure of water at the air
+   temperature.
+   
+   The molecular weight of an air-water mixture is the mole-weighted
+   average of the molecular weight of air and the molecular weight of water. In practice,
+   it is easiest to calculate
+   
+   $$
+   M_\mathrm{mix} = \frac{M_\mathrm{air}P_\mathrm{air}+M_\mathrm{water}P_\mathrm{water}}{P}
+   $$.
+   
+   where $M_{mix}$ is the molecular weight of the air-water vapor mixture, $M_{air}$ is the
+   molecular weight of dry air, $M_{water}$ is the molecular weight of water vapor, 
+   $P_{air}$ is the partial pressure of dry air, $P_{water}$ is the partial pressure of
+   water vapor, and $P$ is the overall pressure.
+   Without measurements, it is difficult to know how the molecular weight of the air-water
+   mixture varies with altitude. The easiest assumption is to measure the relative humidity
+   (and of necessity, the temperature) at the launch site, calculate the molecular weight
+   and assume it doesn't change with altitude. Other assumptions require numerical integration
+   of the pressure-altitude equations.
+   
+   *  Create a parametric plot that shows the error in AGL from 0 m to 5000 m, for $H_r$'s
+      of 50%, and 100% at 316.85 K. Don't correct $T_0$, just $M$.
+
+#  Put It All Together
+   The [linked data set](Flight1DataForAssignment1.txt) contains the pressure-versus-time
+   data for the first flight of
+   the DX3 rocket on an F67-9W. Calculate the AGL altitude versus time both using the standard
+   atmospheric model and applying the corrections for $T_0$, $P_0$, $h_0$, and $H_r$.
+
+   *  For this flight, how much of a difference did the corrections make?
+   *  If you were trying for a [record altitude flight](https://www.nar.org/contest-flying/u-s-model-rocket-new-sporting-code/altitude-competition/altitude-data/),
+      which would you prefer: to fly on a cold day or a hot day, under a high pressure or under a low pressure,
+      under a high humidity or under a low humidity?
