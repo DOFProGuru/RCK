@@ -1,0 +1,198 @@
+---
+title: "Tutorial 0 – Addition of Drag and Gravity to the 1-D Rocket Equation"
+author: "DOFPro group"
+---
+
+In this tutorial, we are going to derive several common solutions to the rocket equation then add drag and gravity to the 1-D rocket equation
+
+# Calculation of $\Delta v$
+
+Here is a good derivation of the rocket equation
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/IQfqB30QgfY?si=snKanIehpvZGizcl" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+We’ll take as given the equation at the end of the Rocket Equation video
+
+$$
+\label{firsteq}
+m \frac{dv}{dt}(=ma)=\frac{dm}{dt}v_e
+$$ {#eq-1}
+
+where $v_e$, the exit velocity of the propellant, is a vector quantity in the direction
+opposite the rocket. We’ll assume that the rocket stays vertical and flies under
+thrust in the positive $x$ (or $z$) direction, so vector quantities are specified as the
+magnitude and a positive or negative sign to indicate up or down. We’ll first do a
+quick derivation of the relationship between specific impulse and exit velocity.
+Starting from the definition that 
+
+$$
+T=v_e \frac{dm}{dt},
+$$ {#eq-2}
+
+and for a given motor $v_e$ is constant (not quite true but true enough), we have that
+
+$$
+dm  = - \frac{1}{|v_e|}T dt
+$$
+
+$$
+\int^m_{m_0} dm  = - \frac{1}{|v_e|} \int^t_{t_0}T dt
+$$
+
+$$
+\Delta m  = - \frac{1}{|v_e|} I = -m_p
+$$ {#eq-3}
+
+
+resulting in the impulse $I$ being given by
+
+$$
+I = m_p |v_e|,
+$$ {#eq-4}
+
+where $m_p$ is the mass of the propellant. Rearranging, we have the exit velocity is
+
+$$
+|v_e|= \frac{I}{m_p},
+$$ {#eq-5}
+
+There are two definitions for specific impulse, $I_{\rm{sp}}$. The first is the impulse divided
+by the propellant mass, $I/m_p$, with SI units of
+
+$$
+\rm{ \frac{Ns}{kg} = \frac{m}{s}},
+$$ {#eq-6}
+
+and the second is impulse divided by the propellant weight in standard gravity, $I/(m_p g_0)$
+, with SI units of
+
+$$
+\rm{ \frac{Ns}{kg\frac{m}{s^2}} = s},
+$$ {#eq-7}
+
+You can tell whether you need to multiply by or not to get by checking the
+units of $I_{\rm{sp}}$.
+
+With the rocket equation in this form we can derive the relationship between the change in
+mass and the change in velocity in the absence of other forces. Starting from
+
+$$
+\frac{dv}{dt}=\frac{dm}{dt}\frac{v_e}{m}
+$$ {#eq-dvdt}
+
+where $v_e$ still has a sign opposite to $v$, we can multiply through by $dt$
+
+$$
+dv=v_e\frac{dm}{m}
+$$ {#eq-8}
+
+and integrate from the starting velocity and mass, $v_0$ and $m_0$ to the current velocity
+and mass, $v$ and $m$.
+
+$$
+\int^v_{v_0}dv=v_e \int^m_{m_0} \frac{dm}{m}
+$$ {#eq-9}
+
+$$
+v - v_0 = \Delta v = v_e \log \frac{m}{m_0} = |v_e| \log \frac{m_0}{m} = I_{\rm{sp}} \log \frac{m_0}{m}
+$$ {#eq-10}
+
+This equation relates the change in velocity to the change in mass. It finds extensive use
+in estimating the needed propellant for a given final velocity.
+
+# Adding Gravity and Drag
+
+Substituting in thrust for $\dot{m}v_e$ in @eq-1, we have
+
+$$
+m \frac{dv}{dt}(=ma)=T
+$$  {#eq-11}
+
+At this point, we can simply add the gravity force, $–mg$ (with $m$  a function of
+time), and the drag force, $F_D = - \frac{1}{2}C_D A_p \frac{\rho}{m} v |v|$, to the rocket equation.
+
+$$
+a=\dot{v}=\frac{T}{m}-g- \frac{1}{2}C_D A_p \frac{\rho}{m} v |v|
+$$ {#eq-12}
+
+There are several analytical solutions to the rocket equation,
+depending on what you assume about the thrust curve, the importance of drag, and
+whether to include gravity or not. In general, when you include a non-constant
+thrust curve, drag, and properties that change with altitude, you need to
+numerically integrate two coupled differential equations. We include integration for
+altitude or position as a third equation. The three are
+
+$$
+\dot{v}=\frac{T}{m}-g- \frac{1}{2}C_D A_p \frac{\rho}{m} v |v|
+$$ {#eq-13}
+
+$$
+\dot{m}=\frac{T}{v_e}
+$$ {#eq-14}
+
+and
+
+$$
+\dot{x} = v
+$$ {#eq-15}
+
+The full 3-D equations of motion are given by these equations with $a$, $v$, $x$, $v_e$, and $g$
+specified as vectors.
+This system of equations can be integrated with any handy D.E. solver, such as the
+Runge-Kutta 4th-order method. The method requires some way to read in the thrust
+curve, and parameter values or functions of velocity or altitude for $C_D$, $\rho$, and $g$.
+
+## 1-D with constant gravity
+
+A useful analytical form is derived by assuming vertical flight and constant $g$. This model
+is @eq-dvdt with $g$ added
+
+$$
+\frac{dv}{dt}=\frac{dm}{dt}\frac{v_e}{m} - g
+$$ {#eq-16}
+
+Multiplying through by $dt$ we have
+
+$$
+dv=v_e\frac{dm}{m} - g dt
+$$ {#eq-17}
+
+$$
+\int^v_{v_0}dv=v_e \int^m_{m_0} \frac{dm}{m}-g \int^t_{t_0} dt
+$$ {#eq-18}
+
+$$
+\Delta v = v_e \log \frac{m}{m_0} - g \Delta t
+$$ {#eq-19}
+
+This form is very useful for getting approximate parameters for setting up the full numerical
+integration.
+
+# From Burnout to Apogee for 1-D
+The rocket equation is useful for modeling flight up to burnout. Calculating the flight from
+burnout up to apogee can be approximated if the rocket is above the densest part of the
+atmosphere by summing the change in kinetic and potential energies from burnout to apogee.
+
+$$
+E_k = \frac{1}{2} m v^2
+$$ {#eq-20}
+
+$$
+E_p = -GMm(r+x)
+$$ {#eq-21}
+
+where $E_k$ is the kinetic energy, $E_p$ is the potential energy, $G$ is Newton's gravitational
+constant, $M$ is the mass of the earth, $r$ is the radius of the earth, and $x$ is the
+AGL altitude. We will sum the changes from burnout (subscript $b$) to apogee (subscript $a$)
+
+$$
+\Delta E_k + \Delta E_p = 0 = \frac{1}{2}m (v_a^2 - v_b^2)-GMm\left(\frac{1}{r+x_a}-\frac{1}{r+x_b}\right)
+$$ {#eq-22}
+
+Solving for $x_a$ we have
+
+$$
+x_a=\frac{r^2 v_b^2 + 2 G M x_b+r v_b^2 x_b}{2 G M - v_b^2(r+x_b)}
+$$ {#eq-23}
+
+Again, this equation is useful for setting up the parameters for a numerical model.

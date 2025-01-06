@@ -26,8 +26,8 @@ the National Association of Rocketry [NAR][NAR] and certify with [one][TCRT] or 
 them, you can fly at a launch administered by the other of them. Here is a list of the 
 major differences:
 
-* TRA is focused on high power rocketry and rocketry research.
-  NAR is focused on model rocketry, but they support high power as well.
+* TRA is focused on High-Power rocketry and rocketry research.
+  NAR is focused on model rocketry, but they support High-Power as well.
 
 * Certifying Level 1 with TRA requires that you have a prefect, technical advisory panal, or TRI director observe the flight. Certifying
   Level 1 with NAR requires that you are observed by any member with Level 2 certification or two members, one of which having a Level 1 certification.
@@ -46,7 +46,7 @@ The high-power rocketry club that we most-often launch with is
 the [Rocketry Organization of California (ROC)][ROC]. Barring adverse weather conditions, they
 fly every month on the second Saturday at the [Lucerne Valley dry lake bed][ROCL]. They have a couple
 of TRA prefects and a large number of NAR observers.
-The high power on-site vendors keep changing due to economics and other factors. Check
+The High-Power on-site vendors keep changing due to economics and other factors. Check
 the [Vendors List on the ROC website](https://rocstock.org/vendors/) to see who is likely to be on site.
 
 # Level 1
@@ -76,7 +76,7 @@ just before your flight. You can have someone already Level 1 or above
 buy it for you and give it to you when you're ready to prep for launch. Some on-line vendors are willing to sell
 you one motor for certification purposes, or you can buy it
 at the launch site when you're ready to prep for launch if there is an on-site vendor.
-On the complete list of [approved motors](https://www.nar.org/standards-and-testing-committee/nar-certified-motor-list/), the naming of the motors is framed as (Impuse Class) (Average Thrust) - (Time Delay)(Color)
+On the complete list of [approved motors](https://www.nar.org/content.aspx?page_id=22&club_id=114127&module_id=669684), the naming of the motors is framed as (Impuse Class) (Average Thrust) - (Time Delay)(Color)
 The most popular choices for Level 1 and Level 2 certification are the [Aerotech][AT] single use motor, an [Aerotech][AT] reload, or a [CTI][CTI] reload.
 Both the Aerotech and CTI reloads require you to have
 a motor case. Aerotech single-use motors are slightly more expensive than
@@ -135,7 +135,7 @@ fiberglass. The rocket is available from [Wildman](https://wildmanrocketry.com/c
 The replacement motor mount tube is available from [Aerotech](https://www.aerotechstore.com/products/product_16e318e6-c2fd-e5a5-d053-3e84f31591c7),
 or [eRockets](http://www.erockets.biz/aerotech-motor-mount-tube-29-mm-x-17-3-4-inch-12918/).
 
-### PML Phobos
+### LOC Precision (PML) Phobos
 The PML Phobos is an extremely rugged and reliable kit. If you pay attention to the instructions
 and are careful during construction it will last for years. You will want a motor retainer. You can certify
 Level 2 on it as well, but you'll want to make certain of your construction techniques. Available from

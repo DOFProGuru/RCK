@@ -2,9 +2,9 @@
 title: "Basic Safety Information"
 author: "DOFPro group"
 ---
-High Power Rockets fall under code 1127 of the National Fire Protection Association. The text for Code 1127 can be found [here][NFPA]
+High-Power Rockets fall under code 1127 of the National Fire Protection Association. The text for Code 1127 can be found [here][NFPA]
 
-To meet the definition of a High Power Rocket under NFPA 1127, it must meet one or more of the following criteria:
+To meet the definition of a High-Power Rocket under NFPA 1127, it must meet one or more of the following criteria:
 
 * Uses a motor with at least 160 Newton-seconds of impulse
 

@@ -1,0 +1,182 @@
+---
+title: "Tutorial 2A – Using the Full 1-D Rocket Equation"
+author: "DOFPro group"
+---
+
+# Assignment
+Using the full 1-D Rocket Equation
+with atmospheric variation, design two rockets to travel to the Kármán line (100 km
+MSL), one with Blue Thunder Aerotech propellant, and one with methalox propellant. You may
+use any of the three following methods for the assignment.
+
+ 1. Use the existing MATLAB model for the 1-D Rocket Equation with properties that vary
+    with altitude.
+ 2. Write your own software to implement the full 1-D Rocket Equation
+    with atmospheric variation.
+ 3. Use the Kerbal Space Program and add the mods to replace Kerbin with Earth.
+
+## Python Standard Atmosphere
+
+There are several packages that implement the US Standard Atmosphere.
+
+The first is [ussa1976](https://pypi.org/project/ussa1976/)
+
+The second is [Properties Of The U.S. Standard Atmosphere 1976](https://www.pdas.com/atmos.html)
+
+You can find additional versions by web searching for *python version of standard atmosphere*.
+
+::: {.callout-note}
+This web page has not been updated beyond this point
+:::
+
+
+## MATLAB Full 1-D Rocket Equation
+The [Rocket Equation Derivation](../PDF/RocketEquationDerivation.pdf) explains the
+derivation of the 1-D rocket equation. We are assuming purely vertical ascent, so we
+don't have to account for the angle of the gravity vector. The full 1-D rocket equation
+with properties that vary with altitude (including the acceleration of gravity) is
+implemented in the MATLAB package [RocketEquationPackage.zip](../MATLABModels/RocketEquationPackage.zip).
+The files in the package are:
+
+File Name       | Purpose/Function
+----------------|-----------------
+atmo_compo.m    | High Altitude Atmospheric Composition Calculation
+atmo_p.m        | Atmospheric Pressure Calculation
+atmo_temp.m     | Atmospheric Temperature Calculation
+atmo.m          | 1976 Standard Atmosphere Calculator[0-1000 km]
+AtmosTable.mat  | Table of calculated atmospheric property values
+c_atm.m         | Returns the local speed of sound in m/s at the given altitude
+f_n.m           | Gas Integral Program
+g_atm.m         | Returns the local gravitational acceleration in m/s^2 at z
+GenAtmosTable.m | Generate US 1976 Standard Atmosphere Tables as matfiles (Generates AtmosTable.m)
+int_tau.m       | Tau Integral Computation for Hydrogen Composition
+k_atm.m         | Returns the thermal conductivity in W/m?K at the given altitude
+mu_atm.m        | Returns the dynamic viscosity in N?s/m^2 at the given altitude
+n_atm.m         | Returns the number density of a species in m^-3 at the given altitude
+n_sum_atm.m     | Returns the total number density in m^-3 at the given altitude
+nu_atm.m        | Returns the kinematic viscosity in m^2/s at the given altitude
+P_atm.m         | Returns the absolute pressure in Pa at a given altitude
+rho_atm.m       | Returns the density of air in kg/m^3 at a given altitude
+rockeq_var.m    | Integration of the rocket equation where $T$, $P$, $\rho$, and $g$ change with altitude.
+T_atm.m         | Returns the absolute temperature in Kelvin at a given altitude
+tester.m        | Test Program for atmosphere with plots
+ThrustCurveSH.m | Returns the thrust curve of a motor.
+
+To use the package, extract it, set the extracted folder as the default in MATLAB and
+run rockeq_var.m. You will need to alter ThrustCurveSH.m to enter the thrust curve for
+the motor or engine you are using. You may want to save each thrust curve file with a
+different name and use that name in rockeq_var.m The SH is short for Sandhawk, one of my
+favorite sounding rockets. You will also need to edit the rocket parameters in rockeq_var.m.
+The parameters you are likely to need to vary are:
+
+Parameter | MATLAB Variable | Meaning
+----------|-----------------|--------
+$m_0$     | xv0(1)          | Initial rocket mass in kg
+$v_0$     | xv0(2)          | Initial rocket velocity in m/s
+$z_0$     | xv0(3)          | Initial altitude MSL in m
+$I_{sp}$  | ue              | Specific Impulse in m/s aka $v_e$
+$D$       | D               | Rocket diameter in m for drag calculations
+$C_D$     | CD              | Coefficient of drag for drag calculations
+
+## Write Your Own Full 1-D Rocket Equation Package
+The [Rocket Equation Derivation](../PDF/RocketEquationDerivation.pdf) explains the
+derivation of the 1-D rocket equation. We are assuming purely vertical ascent, so we
+don't have to account for the angle of the gravity vector. Feel free to use whatever
+package or language you desire. The variation of atmospheric properties with altitude
+is given [here](https://ntrs.nasa.gov/api/citations/19770009539/downloads/19770009539.pdf?attachment=true).
+The variation of gravity with altitude can be calculated from
+[Newton's law of universal gravitation](https://en.wikipedia.org/wiki/Newton%27s_law_of_universal_gravitation)
+and the mass and radius of the earth. Beyond that, you're on your own.
+
+## Kerbal Space Program
+The [Kerbal Space Program](https://www.kerbalspaceprogram.com/) (KSP) is a commercial
+software package (meaning _you_ have to pay for it) with realistic flight physics for
+rockets and a limited range of aircraft.
+The base package comes designed for the planet Kerbin. The differences between Kerbin and
+Earth are illustrated [here](https://imgur.com/gallery/ckadxCa). To do actual rocket design
+with KSP you need to modify it to accurately account for Earth's (and the Solar System's)
+properties. Two mods that will help are [Real Solar System](https://forum.kerbalspaceprogram.com/index.php?/topic/177216-173-real-solar-system-v164-26-nov-2019/)
+and [Realism Overhaul](https://forum.kerbalspaceprogram.com/index.php?/topic/155700-173-181-realism-overhaul-v1281-17-april-2020/).
+
+# Aerotech Blue Thunder
+The $I_{sp}$ of Blue Thunder can be read from several of the larger Blue Thunder motors
+on [thrustcurve.org](https://www.thrustcurve.org/motors/search.html?manufacturer=AeroTech&designation=&commonName=&type=&impulseClass=&diameter=&propellantInfo=Blue+Thunder&flameColor=&smokeColor=&caseInfo=&sparky=all&class1=all&hazmatExempt=all&availability=available)
+or it can be calculated from the definition using the data for several of the larger
+Blue Thunder motors. Just remember that there are two different definitions for $I_{sp}$
+and you need to use the one required by the model you are using.
+
+# Methalox
+Methalox is methane oxidized with oxygen. The upper limit for its $I_{sp}$ is found in
+[this reference](https://thephysicsofspacex.files.wordpress.com/2016/07/isp-upper-limits.pdf).
+The actual value will vary somewhat from that value. The expected $I_{sp}$'s for SpaceX's
+Raptor engines are listed in [this article](https://en.wikipedia.org/wiki/SpaceX_Raptor#Description).
+You may want to check to see if SpaceX has updated the $I_{sp}$ they obtained in their tests
+and flights. Just remember that there are two different definitions for $I_{sp}$
+and you need to use the one required by the model you are using.
+
+# Mass Ratio
+One of the variables that you implicitly have to include into your design is the 
+[Mass Ratio](https://en.wikipedia.org/wiki/Mass_ratio), the ratio of the wet mass
+(the vehicle plus propellant) to the dry mass (the vehicle by itself). Assume for your
+rockets that the mass ratio is 12.5.
+
+# Approximate Solution
+
+We have a couple of solutions in [this page](../RocketEquationSolutions.md.html).
+
+In addition, [this reference from MIT](https://web.mit.edu/16.unified/www/SPRING/propulsion/notes/node103.html)
+gives the solution to the rocket equation for purely vertical flight with no drag and
+constant fuel consumption during the thrust phase. The
+relevant results are
+$$
+\label{vburn1}
+v_b=-v_e \ln \left(\frac{m_b}{m_0}\right) - gt_b
+$$
+or
+$$
+\label{vburn2}
+v_b=g \left[I_{sp} \ln \left(\frac{m_0}{m_b}\right) - t_b \right]
+$$
+where $m_0$ is the initial mass of the rocket, and $m_b$ is the mass at burnout. $v_e$ is
+the exit velocity of the exhaust (in m/s), and $I_{sp}$ is the specific impulse (in s).
+$v_b$ is the velocity at burnout and $t_b$ is the time to burnout, or the length of the
+thrust phase.
+
+Also, the altitude at burnout, $x_b$ or $h_b$, is
+$$
+\label{xburn}
+x_b= g \left[-t_b I_{sp} \frac{\ln \left(\frac{m_0}{m_b}\right)}{\left(\frac{m_0}{m_b}-1\right)} +t_b I_{sp} - \frac{1}{2} t_b^2 \right]
+$$
+
+The final altitude after burnout is determined by setting the change in kinetic energy
+from burnout to apogee plus the change in potential energy from burnout to apogee
+equal to zero.
+As a refresher, the kinetic energy of the rocket at burnout is
+$$
+\label{kinetic}
+E_{kb}= \frac{1}{2} m_b v_b^2
+$$
+and the potential energy of a mass, $m$ at an altitude MSL above the earth of $x$ is
+$$
+\label{potential}
+E_{p}= -\frac{GMm}{r_{\rm{earth}} + x}
+$$
+where the gravitational constant, $G = 6.67430 \times 10^{-11}\rm{m^3kg^{-1}s^{-2}}$,
+the mass of the earth, $M = 5.9722 \times 10^{24}\rm{kg}$, and $r_{\rm{earth}}= 6,371\ \rm{km}$.
+Values calculated from these equations are useful for starting guesses for the full model.
+
+For a multistage calculation that niglects both gravity and drag, read [this article](https://www.planetary.org/articles/20170505-the-rocket-equation-part-2).
+
+
+# Deliverables
+Your deliverables for this assignment are:
+ 1. The design for you two rockets, including
+    1. The dimensions, at least diameter and length
+    2. The assumed $I_{sp}$ of the fuel
+    3. The dry mass and the fuel mass
+    4. The assumed $C_D$
+ 2. Plots of the acceleration, velocity, mass, and altitude of your final designs from
+    liftoff to apogee.
+
+Standard report components, such as introduction, conclusions, and recommendations
+would be nice, but aren't required.

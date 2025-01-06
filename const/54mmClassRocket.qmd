@@ -1,5 +1,5 @@
 ---
-title: "55 mm Rocket Assembly Instructions"
+title: "54 mm Rocket Assembly Instructions"
 author: "DOFPro group"
 ---
 
