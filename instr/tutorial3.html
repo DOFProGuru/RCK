@@ -8,7 +8,7 @@
 
 <meta name="author" content="DOFPro group">
 
-<title>Data Archive – High-Power Rocketry</title>
+<title>Practice Problems 3 – High-Power Rocketry</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -68,6 +68,35 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 <link rel="stylesheet" href="../styles.css">
 </head>
@@ -217,15 +246,23 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#average-𝐶_𝐷" id="toc-average-𝐶_𝐷" class="nav-link active" data-scroll-target="#average-𝐶_𝐷">Average <span class="math inline">\(𝐶_𝐷\)</span></a></li>
+  <li><a href="#𝐶_𝐷-as-a-function-of-velocity" id="toc-𝐶_𝐷-as-a-function-of-velocity" class="nav-link" data-scroll-target="#𝐶_𝐷-as-a-function-of-velocity"><span class="math inline">\(𝐶_𝐷\)</span> as a Function of Velocity</a></li>
+  <li><a href="#thrust-curve" id="toc-thrust-curve" class="nav-link" data-scroll-target="#thrust-curve">Thrust Curve</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Data Archive</h1>
+<h1 class="title">Practice Problems 3</h1>
 </div>
 
 
@@ -248,17 +285,41 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>We have nine practice problems for ameature rocketeers to try. They will walk you through the steps of understanding the engineering behind rocktry concepts. Completion of the nine practice problems will set you up to earn your level 1 and level 2 certification.</p>
-<p>Practice Problems: <a href="https://dofpro.org/RCK/archive/assignment1.html">Practice Problem 1</a></p>
-<p><a href="https://dofpro.org/RCK/archive/assignment2.html">Practice Problem 2</a></p>
-<p><a href="https://dofpro.org/RCK/archive/assignment3.html">Practice Problem 3</a></p>
-<p><a href="https://dofpro.org/RCK/archive/assignment4.html">Practice Problem 4</a></p>
-<p><a href="https://dofpro.org/RCK/archive/assignment5.html">Practice Problem 5</a></p>
-<p><a href="https://dofpro.org/RCK/archive/assignment6.html">Practice Problem 6</a></p>
-<p><a href="https://dofpro.org/RCK/archive/assignment7.html">Practice Problem 7</a></p>
-<p><a href="https://dofpro.org/RCK/archive/assignment8.html">Practice Problem 8</a></p>
+<p>An analysis of the flight data recorded by the on-board avionics can reveal quite a bit of the performance of a rocket. The analysis usually involves starting with the rocket equation, and manipulating it to permit data fitting to determine performance data. This assignment will give you a chance to analyze flight data to look at the coefficient of drag (<span class="math inline">\(𝐶_𝐷\)</span>), the thrust curve of the motor, and the rotation of the rocket about the axial direction, essentially the roll, during the boost phase.</p>
+<p>If you prefer, you can analyze the data from your own flight, rather than the ones listed in the problem.</p>
+<section id="average-𝐶_𝐷" class="level2">
+<h2 class="anchored" data-anchor-id="average-𝐶_𝐷">Average <span class="math inline">\(𝐶_𝐷\)</span></h2>
+<p>The post-boost portion of the rocket flight can be used to look at <span class="math inline">\(𝐶_𝐷\)</span>, as explained in <span class="math inline">\(𝐶_𝐷\)</span>. From <a href="https://pages.hmc.edu/spjut/AdvRoc/PDF/CDfromPostBoost.pdf">Post-Boost Flight Data</a>, the average <span class="math inline">\(𝐶_𝐷\)</span> can be determined by a plot of <span class="math inline">\(\frac{−2𝑚}{𝐴_𝑝𝜌}(𝑎+𝑔)\)</span> versus <span class="math inline">\(𝑣^2\)</span> or a plot of $𝑎 versus <span class="math inline">\(𝑣_2\)</span>. Use the data from the first seven flights of the <a href="https://dofpro.org/RCK/fltdata/">Madcow Mini DX3</a> to determine average <span class="math inline">\(𝐶_𝐷\)</span> for this rocket. Include a 95% confidence intervals on the value of <span class="math inline">\(𝐶_𝐷\)</span>. There are refreshers on statistics <a href="https://drive.google.com/file/d/1_T4TviLt9oUw6PXEDxpSGv6yuUdPVigi/view?usp=sharing">here</a> and <a href="https://www.youtube.com/playlist?list=PLDA3QBjykWVxDiGsN1Xpm2ynGekSvEC9E">here</a>. The MATLAB file to parse the data is <a href="https://pages.hmc.edu/spjut/AdvRoc/MATLABModels/ParseTeensyLoggerEggfinder.m">ParseTeensyLoggerEggfinder.m</a>. Note that it doesn’t contain the code to get the average 𝐶𝐷 or the thrust curve. You are on your own to add that code.</p>
+</section>
+<section id="𝐶_𝐷-as-a-function-of-velocity" class="level2">
+<h2 class="anchored" data-anchor-id="𝐶_𝐷-as-a-function-of-velocity"><span class="math inline">\(𝐶_𝐷\)</span> as a Function of Velocity</h2>
+<p>If your accelerometers are good enough, you can actually calculate the <span class="math inline">\(𝐶_𝐷\)</span> as a function of velocity. As explained in <span class="math inline">\(𝐶_𝐷\)</span> From <a href="https://dofpro.org/RCK/fltdata/FlightData.html">Post-Boost Flight Data</a>,</p>
+<p><span class="math display">\[
+𝐶_𝐷=−\frac{2𝑚(𝑎+𝑔)}{𝐴_𝑝𝜌𝑣^2}
+\]</span> (1)</p>
+<p>and you can then plot <span class="math inline">\(𝐶_𝐷\)</span> versus 𝑣. However, the most accurate <span class="math inline">\(𝐶_𝐷\)</span> plot is as a function of Mach number, and not just velocity. The equation relating the speed of sound, 𝑐, to the absolute temperature, 𝑇, for an ideal gas is</p>
+<p><span class="math display">\[
+𝑐=\sqrt{\frac{𝛾𝑅𝑇}{𝑀}}
+\]</span> (2)</p>
+<p>where 𝛾 is the ratio of heat capacities (𝛾=1.4 for air), 𝑅 is the molar gas constant, and 𝑀 is the molar mass or molecular weight of the air.</p>
+<p>Generate plots of the <span class="math inline">\(𝐶_𝐷\)</span> as a function of velocity for either the 17 Apr 2021 flights of the Class Adventurer Prototype on the Aerotech J510W and the CTI J530 or the 11 Feb 2023 flights of the Weasel on the Aerotech G80 and the Dual Deploy Vulcanite on the Aerotech I140. There is also a <a href="https://pages.hmc.edu/spjut/AdvRoc/MATLABModels/ScanTeensyDataLogger.m">MATLAB</a> file that will make the process easier. If possible, include error bounds on your plot. Compare your results with the <span class="math inline">\(𝐶_𝐷\)</span> versus velocity data for the same rocket and motors from any of Rocksim, Open Rocket, or RASAero II. There is a MATLAB file that will make the process easier.</p>
+<p>Generate plots of the <span class="math inline">\(𝐶_𝐷\)</span> as a function of Mach number for the 9 Sep 2017 flights of the E190 Prototype rocket on the CTI J354 and the Aerotech J825R. Correct the Mach number for the temperature as a function of altitude and correct the air density for temperature and pressure as a function of altitude, and molecular weight as a function of relative humidity. Include error bounds on your plot. Compare your results with the <span class="math inline">\(𝐶_𝐷\)</span> versus velocity data for the same rocket from any of Rocksim, Open Rocket, or RASAero II.</p>
+</section>
+<section id="thrust-curve" class="level2">
+<h2 class="anchored" data-anchor-id="thrust-curve">Thrust Curve</h2>
+<p>With either your average <span class="math inline">\(𝐶_𝐷\)</span> or your <span class="math inline">\(𝐶_𝐷\)</span> as a function of velocity, you are able to calculate the thrust curve for your motor from the accelerometer data. As explained in <a href="https://pages.hmc.edu/spjut/AdvRoc/PDF/ThrustCurveFromFlightData.pdf">Thrust Curve from Acceleration and Velocity Flight Data</a> you can calculate the thrust from an iterative solution of</p>
+<p><span class="math display">\[
+𝑇=𝑚(𝑎+𝑔)+\frac{1}{2}𝐶_𝐷𝐴_𝑝𝜌𝑣^2
+\]</span> (3)</p>
+<p>and</p>
+<p><span class="math display">\[
+𝑚(𝑡)=𝑚_0+\frac{1}{𝑣_𝑒}∫^𝑡_{𝑡_0}𝑇𝑑𝑡
+\]</span> (4)</p>
+<p>Using the data from either the 17 Apr 2021 flights of the Class Adventurer Prototype on the Aerotech J510W and the CTI J530 or the 11 Feb 2023 flights of the Weasel on the Aerotech G80 and the Dual Deploy Vulcanite on the Aerotech I140, plot the thrust curves and compare with the thrust curves from ThrustCurve.org. There is a MATLAB file that will make the process easier.</p>
+<p>From the data for first six flights of the Estes Top Shot calculate the thrust curves for the Estes E12 motor. Give the mean and 95% confidence intervals for the burn time, peak thrust, average thrust, and total impulse. Compare with the data on ThrustCurve.org for the Estes E12. There is a VI, RavenCSVCDThrustCalcs.vi, that will make the process easier.</p>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">

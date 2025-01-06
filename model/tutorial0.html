@@ -2,13 +2,13 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.5.57">
+<meta name="generator" content="quarto-1.6.40">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="DOFPro group">
 
-<title>Practice Problems 3 – High Power Rocketry</title>
+<title>Tutorial 0 – Addition of Drag and Gravity to the 1-D Rocket Equation – High-Power Rocketry</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -36,10 +36,10 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-549806ee2085284f45b00abea8c6df48.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-0f4ec50609bd95d2bca8a5ab22e7c47b.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -108,11 +108,11 @@ window.Quarto = {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a href="https://dofpro.org" class="navbar-brand navbar-brand-logo">
+    <a href="../index.html" class="navbar-brand navbar-brand-logo">
     <img src="../DOFPro_D7_Red_Flame_No_Background_cropped.png" alt="DOFPro Logo" class="navbar-logo">
     </a>
-    <a class="navbar-brand" href="https://dofpro.org">
-    <span class="navbar-title">High Power Rocketry</span>
+    <a class="navbar-brand" href="../index.html">
+    <span class="navbar-title">High-Power Rocketry</span>
     </a>
   </div>
             <div id="quarto-search" class="" title="Search"></div>
@@ -155,15 +155,15 @@ window.Quarto = {
   </li>  
         <li>
     <a class="dropdown-item" href="../const/DX3.html">
- <span class="dropdown-text">1.6" miniDX3</span></a>
+ <span class="dropdown-text">1.6” miniDX3</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../const/55mmClassRocket.html">
- <span class="dropdown-text">55mm HMC Rocket</span></a>
+    <a class="dropdown-item" href="../const/54mmClassRocket.html">
+ <span class="dropdown-text">54 mm HMC Rocket</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../const/33mmClassRocket.html">
- <span class="dropdown-text">33mm HMC Rocket</span></a>
+    <a class="dropdown-item" href="../const/38mmClassRocket.html">
+ <span class="dropdown-text">38 mm HMC Rocket</span></a>
   </li>  
         <li>
     <a class="dropdown-item" href="../const/standardVulcanite.html">
@@ -251,9 +251,12 @@ window.Quarto = {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#average-𝐶_𝐷" id="toc-average-𝐶_𝐷" class="nav-link active" data-scroll-target="#average-𝐶_𝐷">Average <span class="math inline">\(𝐶_𝐷\)</span></a></li>
-  <li><a href="#𝐶_𝐷-as-a-function-of-velocity" id="toc-𝐶_𝐷-as-a-function-of-velocity" class="nav-link" data-scroll-target="#𝐶_𝐷-as-a-function-of-velocity"><span class="math inline">\(𝐶_𝐷\)</span> as a Function of Velocity</a></li>
-  <li><a href="#thrust-curve" id="toc-thrust-curve" class="nav-link" data-scroll-target="#thrust-curve">Thrust Curve</a></li>
+  <li><a href="#calculation-of-delta-v" id="toc-calculation-of-delta-v" class="nav-link active" data-scroll-target="#calculation-of-delta-v">Calculation of <span class="math inline">\(\Delta v\)</span></a></li>
+  <li><a href="#adding-gravity-and-drag" id="toc-adding-gravity-and-drag" class="nav-link" data-scroll-target="#adding-gravity-and-drag">Adding Gravity and Drag</a>
+  <ul class="collapse">
+  <li><a href="#d-with-constant-gravity" id="toc-d-with-constant-gravity" class="nav-link" data-scroll-target="#d-with-constant-gravity">1-D with constant gravity</a></li>
+  </ul></li>
+  <li><a href="#from-burnout-to-apogee-for-1-d" id="toc-from-burnout-to-apogee-for-1-d" class="nav-link" data-scroll-target="#from-burnout-to-apogee-for-1-d">From Burnout to Apogee for 1-D</a></li>
   </ul>
 </nav>
     </div>
@@ -262,7 +265,7 @@ window.Quarto = {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Practice Problems 3</h1>
+<h1 class="title">Tutorial 0 – Addition of Drag and Gravity to the 1-D Rocket Equation</h1>
 </div>
 
 
@@ -285,38 +288,124 @@ window.Quarto = {
 </header>
 
 
-<p>An analysis of the flight data recorded by the on-board avionics can reveal quite a bit of the performance of a rocket. The analysis usually involves starting with the rocket equation, and manipulating it to permit data fitting to determine performance data. This assignment will give you a chance to analyze flight data to look at the coefficient of drag (<span class="math inline">\(𝐶_𝐷\)</span>), the thrust curve of the motor, and the rotation of the rocket about the axial direction, essentially the roll, during the boost phase.</p>
-<p>If you prefer, you can analyze the data from your own flight, rather than the ones listed in the problem.</p>
-<section id="average-𝐶_𝐷" class="level2">
-<h2 class="anchored" data-anchor-id="average-𝐶_𝐷">Average <span class="math inline">\(𝐶_𝐷\)</span></h2>
-<p>The post-boost portion of the rocket flight can be used to look at <span class="math inline">\(𝐶_𝐷\)</span>, as explained in <span class="math inline">\(𝐶_𝐷\)</span>. From <a href="https://pages.hmc.edu/spjut/AdvRoc/PDF/CDfromPostBoost.pdf">Post-Boost Flight Data</a>, the average <span class="math inline">\(𝐶_𝐷\)</span> can be determined by a plot of <span class="math inline">\(\frac{−2𝑚}{𝐴_𝑝𝜌}(𝑎+𝑔)\)</span> versus <span class="math inline">\(𝑣^2\)</span> or a plot of $𝑎 versus <span class="math inline">\(𝑣_2\)</span>. Use the data from the first seven flights of the <a href="https://dofpro.org/RCK/fltdata/">Madcow Mini DX3</a> to determine average <span class="math inline">\(𝐶_𝐷\)</span> for this rocket. Include a 95% confidence intervals on the value of <span class="math inline">\(𝐶_𝐷\)</span>. There are refreshers on statistics <a href="https://drive.google.com/file/d/1_T4TviLt9oUw6PXEDxpSGv6yuUdPVigi/view?usp=sharing">here</a> and <a href="https://www.youtube.com/playlist?list=PLDA3QBjykWVxDiGsN1Xpm2ynGekSvEC9E">here</a>. The MATLAB file to parse the data is <a href="https://pages.hmc.edu/spjut/AdvRoc/MATLABModels/ParseTeensyLoggerEggfinder.m">ParseTeensyLoggerEggfinder.m</a>. Note that it doesn’t contain the code to get the average 𝐶𝐷 or the thrust curve. You are on your own to add that code.</p>
+<p>In this tutorial, we are going to derive several common solutions to the rocket equation then add drag and gravity to the 1-D rocket equation</p>
+<section id="calculation-of-delta-v" class="level1">
+<h1>Calculation of <span class="math inline">\(\Delta v\)</span></h1>
+<p>Here is a good derivation of the rocket equation</p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/IQfqB30QgfY?si=snKanIehpvZGizcl" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen="">
+</iframe>
+<p>We’ll take as given the equation at the end of the Rocket Equation video</p>
+<p><span id="eq-1"><span class="math display">\[
+\label{firsteq}
+m \frac{dv}{dt}(=ma)=\frac{dm}{dt}v_e
+\tag{1}\]</span></span></p>
+<p>where <span class="math inline">\(v_e\)</span>, the exit velocity of the propellant, is a vector quantity in the direction opposite the rocket. We’ll assume that the rocket stays vertical and flies under thrust in the positive <span class="math inline">\(x\)</span> (or <span class="math inline">\(z\)</span>) direction, so vector quantities are specified as the magnitude and a positive or negative sign to indicate up or down. We’ll first do a quick derivation of the relationship between specific impulse and exit velocity. Starting from the definition that</p>
+<p><span id="eq-2"><span class="math display">\[
+T=v_e \frac{dm}{dt},
+\tag{2}\]</span></span></p>
+<p>and for a given motor <span class="math inline">\(v_e\)</span> is constant (not quite true but true enough), we have that</p>
+<p><span class="math display">\[
+dm  = - \frac{1}{|v_e|}T dt
+\]</span></p>
+<p><span class="math display">\[
+\int^m_{m_0} dm  = - \frac{1}{|v_e|} \int^t_{t_0}T dt
+\]</span></p>
+<p><span id="eq-3"><span class="math display">\[
+\Delta m  = - \frac{1}{|v_e|} I = -m_p
+\tag{3}\]</span></span></p>
+<p>resulting in the impulse <span class="math inline">\(I\)</span> being given by</p>
+<p><span id="eq-4"><span class="math display">\[
+I = m_p |v_e|,
+\tag{4}\]</span></span></p>
+<p>where <span class="math inline">\(m_p\)</span> is the mass of the propellant. Rearranging, we have the exit velocity is</p>
+<p><span id="eq-5"><span class="math display">\[
+|v_e|= \frac{I}{m_p},
+\tag{5}\]</span></span></p>
+<p>There are two definitions for specific impulse, <span class="math inline">\(I_{\rm{sp}}\)</span>. The first is the impulse divided by the propellant mass, <span class="math inline">\(I/m_p\)</span>, with SI units of</p>
+<p><span id="eq-6"><span class="math display">\[
+\rm{ \frac{Ns}{kg} = \frac{m}{s}},
+\tag{6}\]</span></span></p>
+<p>and the second is impulse divided by the propellant weight in standard gravity, <span class="math inline">\(I/(m_p g_0)\)</span> , with SI units of</p>
+<p><span id="eq-7"><span class="math display">\[
+\rm{ \frac{Ns}{kg\frac{m}{s^2}} = s},
+\tag{7}\]</span></span></p>
+<p>You can tell whether you need to multiply by or not to get by checking the units of <span class="math inline">\(I_{\rm{sp}}\)</span>.</p>
+<p>With the rocket equation in this form we can derive the relationship between the change in mass and the change in velocity in the absence of other forces. Starting from</p>
+<p><span id="eq-dvdt"><span class="math display">\[
+\frac{dv}{dt}=\frac{dm}{dt}\frac{v_e}{m}
+\tag{8}\]</span></span></p>
+<p>where <span class="math inline">\(v_e\)</span> still has a sign opposite to <span class="math inline">\(v\)</span>, we can multiply through by <span class="math inline">\(dt\)</span></p>
+<p><span id="eq-8"><span class="math display">\[
+dv=v_e\frac{dm}{m}
+\tag{9}\]</span></span></p>
+<p>and integrate from the starting velocity and mass, <span class="math inline">\(v_0\)</span> and <span class="math inline">\(m_0\)</span> to the current velocity and mass, <span class="math inline">\(v\)</span> and <span class="math inline">\(m\)</span>.</p>
+<p><span id="eq-9"><span class="math display">\[
+\int^v_{v_0}dv=v_e \int^m_{m_0} \frac{dm}{m}
+\tag{10}\]</span></span></p>
+<p><span id="eq-10"><span class="math display">\[
+v - v_0 = \Delta v = v_e \log \frac{m}{m_0} = |v_e| \log \frac{m_0}{m} = I_{\rm{sp}} \log \frac{m_0}{m}
+\tag{11}\]</span></span></p>
+<p>This equation relates the change in velocity to the change in mass. It finds extensive use in estimating the needed propellant for a given final velocity.</p>
 </section>
-<section id="𝐶_𝐷-as-a-function-of-velocity" class="level2">
-<h2 class="anchored" data-anchor-id="𝐶_𝐷-as-a-function-of-velocity"><span class="math inline">\(𝐶_𝐷\)</span> as a Function of Velocity</h2>
-<p>If your accelerometers are good enough, you can actually calculate the <span class="math inline">\(𝐶_𝐷\)</span> as a function of velocity. As explained in <span class="math inline">\(𝐶_𝐷\)</span> From <a href="https://dofpro.org/RCK/fltdata/FlightData.html">Post-Boost Flight Data</a>,</p>
-<p><span class="math display">\[
-𝐶_𝐷=−\frac{2𝑚(𝑎+𝑔)}{𝐴_𝑝𝜌𝑣^2}
-\]</span> (1)</p>
-<p>and you can then plot <span class="math inline">\(𝐶_𝐷\)</span> versus 𝑣. However, the most accurate <span class="math inline">\(𝐶_𝐷\)</span> plot is as a function of Mach number, and not just velocity. The equation relating the speed of sound, 𝑐, to the absolute temperature, 𝑇, for an ideal gas is</p>
-<p><span class="math display">\[
-𝑐=\sqrt{\frac{𝛾𝑅𝑇}{𝑀}}
-\]</span> (2)</p>
-<p>where 𝛾 is the ratio of heat capacities (𝛾=1.4 for air), 𝑅 is the molar gas constant, and 𝑀 is the molar mass or molecular weight of the air.</p>
-<p>Generate plots of the <span class="math inline">\(𝐶_𝐷\)</span> as a function of velocity for either the 17 Apr 2021 flights of the Class Adventurer Prototype on the Aerotech J510W and the CTI J530 or the 11 Feb 2023 flights of the Weasel on the Aerotech G80 and the Dual Deploy Vulcanite on the Aerotech I140. There is also a <a href="https://pages.hmc.edu/spjut/AdvRoc/MATLABModels/ScanTeensyDataLogger.m">MATLAB</a> file that will make the process easier. If possible, include error bounds on your plot. Compare your results with the <span class="math inline">\(𝐶_𝐷\)</span> versus velocity data for the same rocket and motors from any of Rocksim, Open Rocket, or RASAero II. There is a MATLAB file that will make the process easier.</p>
-<p>Generate plots of the <span class="math inline">\(𝐶_𝐷\)</span> as a function of Mach number for the 9 Sep 2017 flights of the E190 Prototype rocket on the CTI J354 and the Aerotech J825R. Correct the Mach number for the temperature as a function of altitude and correct the air density for temperature and pressure as a function of altitude, and molecular weight as a function of relative humidity. Include error bounds on your plot. Compare your results with the <span class="math inline">\(𝐶_𝐷\)</span> versus velocity data for the same rocket from any of Rocksim, Open Rocket, or RASAero II.</p>
-</section>
-<section id="thrust-curve" class="level2">
-<h2 class="anchored" data-anchor-id="thrust-curve">Thrust Curve</h2>
-<p>With either your average <span class="math inline">\(𝐶_𝐷\)</span> or your <span class="math inline">\(𝐶_𝐷\)</span> as a function of velocity, you are able to calculate the thrust curve for your motor from the accelerometer data. As explained in <a href="https://pages.hmc.edu/spjut/AdvRoc/PDF/ThrustCurveFromFlightData.pdf">Thrust Curve from Acceleration and Velocity Flight Data</a> you can calculate the thrust from an iterative solution of</p>
-<p><span class="math display">\[
-𝑇=𝑚(𝑎+𝑔)+\frac{1}{2}𝐶_𝐷𝐴_𝑝𝜌𝑣^2
-\]</span> (3)</p>
+<section id="adding-gravity-and-drag" class="level1">
+<h1>Adding Gravity and Drag</h1>
+<p>Substituting in thrust for <span class="math inline">\(\dot{m}v_e\)</span> in <a href="#eq-1" class="quarto-xref">Equation&nbsp;1</a>, we have</p>
+<p><span id="eq-11"><span class="math display">\[
+m \frac{dv}{dt}(=ma)=T
+\tag{12}\]</span></span></p>
+<p>At this point, we can simply add the gravity force, <span class="math inline">\(–mg\)</span> (with <span class="math inline">\(m\)</span> a function of time), and the drag force, <span class="math inline">\(F_D = - \frac{1}{2}C_D A_p \frac{\rho}{m} v |v|\)</span>, to the rocket equation.</p>
+<p><span id="eq-12"><span class="math display">\[
+a=\dot{v}=\frac{T}{m}-g- \frac{1}{2}C_D A_p \frac{\rho}{m} v |v|
+\tag{13}\]</span></span></p>
+<p>There are several analytical solutions to the rocket equation, depending on what you assume about the thrust curve, the importance of drag, and whether to include gravity or not. In general, when you include a non-constant thrust curve, drag, and properties that change with altitude, you need to numerically integrate two coupled differential equations. We include integration for altitude or position as a third equation. The three are</p>
+<p><span id="eq-13"><span class="math display">\[
+\dot{v}=\frac{T}{m}-g- \frac{1}{2}C_D A_p \frac{\rho}{m} v |v|
+\tag{14}\]</span></span></p>
+<p><span id="eq-14"><span class="math display">\[
+\dot{m}=\frac{T}{v_e}
+\tag{15}\]</span></span></p>
 <p>and</p>
-<p><span class="math display">\[
-𝑚(𝑡)=𝑚_0+\frac{1}{𝑣_𝑒}∫^𝑡_{𝑡_0}𝑇𝑑𝑡
-\]</span> (4)</p>
-<p>Using the data from either the 17 Apr 2021 flights of the Class Adventurer Prototype on the Aerotech J510W and the CTI J530 or the 11 Feb 2023 flights of the Weasel on the Aerotech G80 and the Dual Deploy Vulcanite on the Aerotech I140, plot the thrust curves and compare with the thrust curves from ThrustCurve.org. There is a MATLAB file that will make the process easier.</p>
-<p>From the data for first six flights of the Estes Top Shot calculate the thrust curves for the Estes E12 motor. Give the mean and 95% confidence intervals for the burn time, peak thrust, average thrust, and total impulse. Compare with the data on ThrustCurve.org for the Estes E12. There is a VI, RavenCSVCDThrustCalcs.vi, that will make the process easier.</p>
+<p><span id="eq-15"><span class="math display">\[
+\dot{x} = v
+\tag{16}\]</span></span></p>
+<p>The full 3-D equations of motion are given by these equations with <span class="math inline">\(a\)</span>, <span class="math inline">\(v\)</span>, <span class="math inline">\(x\)</span>, <span class="math inline">\(v_e\)</span>, and <span class="math inline">\(g\)</span> specified as vectors. This system of equations can be integrated with any handy D.E. solver, such as the Runge-Kutta 4th-order method. The method requires some way to read in the thrust curve, and parameter values or functions of velocity or altitude for <span class="math inline">\(C_D\)</span>, <span class="math inline">\(\rho\)</span>, and <span class="math inline">\(g\)</span>.</p>
+<section id="d-with-constant-gravity" class="level2">
+<h2 class="anchored" data-anchor-id="d-with-constant-gravity">1-D with constant gravity</h2>
+<p>A useful analytical form is derived by assuming vertical flight and constant <span class="math inline">\(g\)</span>. This model is <a href="#eq-dvdt" class="quarto-xref">Equation&nbsp;8</a> with <span class="math inline">\(g\)</span> added</p>
+<p><span id="eq-16"><span class="math display">\[
+\frac{dv}{dt}=\frac{dm}{dt}\frac{v_e}{m} - g
+\tag{17}\]</span></span></p>
+<p>Multiplying through by <span class="math inline">\(dt\)</span> we have</p>
+<p><span id="eq-17"><span class="math display">\[
+dv=v_e\frac{dm}{m} - g dt
+\tag{18}\]</span></span></p>
+<p><span id="eq-18"><span class="math display">\[
+\int^v_{v_0}dv=v_e \int^m_{m_0} \frac{dm}{m}-g \int^t_{t_0} dt
+\tag{19}\]</span></span></p>
+<p><span id="eq-19"><span class="math display">\[
+\Delta v = v_e \log \frac{m}{m_0} - g \Delta t
+\tag{20}\]</span></span></p>
+<p>This form is very useful for getting approximate parameters for setting up the full numerical integration.</p>
+</section>
+</section>
+<section id="from-burnout-to-apogee-for-1-d" class="level1">
+<h1>From Burnout to Apogee for 1-D</h1>
+<p>The rocket equation is useful for modeling flight up to burnout. Calculating the flight from burnout up to apogee can be approximated if the rocket is above the densest part of the atmosphere by summing the change in kinetic and potential energies from burnout to apogee.</p>
+<p><span id="eq-20"><span class="math display">\[
+E_k = \frac{1}{2} m v^2
+\tag{21}\]</span></span></p>
+<p><span id="eq-21"><span class="math display">\[
+E_p = -GMm(r+x)
+\tag{22}\]</span></span></p>
+<p>where <span class="math inline">\(E_k\)</span> is the kinetic energy, <span class="math inline">\(E_p\)</span> is the potential energy, <span class="math inline">\(G\)</span> is Newton’s gravitational constant, <span class="math inline">\(M\)</span> is the mass of the earth, <span class="math inline">\(r\)</span> is the radius of the earth, and <span class="math inline">\(x\)</span> is the AGL altitude. We will sum the changes from burnout (subscript <span class="math inline">\(b\)</span>) to apogee (subscript <span class="math inline">\(a\)</span>)</p>
+<p><span id="eq-22"><span class="math display">\[
+\Delta E_k + \Delta E_p = 0 = \frac{1}{2}m (v_a^2 - v_b^2)-GMm\left(\frac{1}{r+x_a}-\frac{1}{r+x_b}\right)
+\tag{23}\]</span></span></p>
+<p>Solving for <span class="math inline">\(x_a\)</span> we have</p>
+<p><span id="eq-23"><span class="math display">\[
+x_a=\frac{r^2 v_b^2 + 2 G M x_b+r v_b^2 x_b}{2 G M - v_b^2(r+x_b)}
+\tag{24}\]</span></span></p>
+<p>Again, this equation is useful for setting up the parameters for a numerical model.</p>
 
 
 </section>
@@ -404,8 +493,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   });
   clipboard.on('success', onCopySuccess);
   if (window.document.getElementById('quarto-embedded-source-code-modal')) {
-    // For code content inside modals, clipBoardJS needs to be initialized with a container option
-    // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
     const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
       text: getTextToCopy,
       container: window.document.getElementById('quarto-embedded-source-code-modal')
@@ -516,7 +603,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       if (window.Quarto?.typesetMath) {
         window.Quarto.typesetMath(note);
       }
-      // TODO in 1.5, we should make sure this works without a callout special case
       if (note.classList.contains("callout")) {
         return note.outerHTML;
       } else {

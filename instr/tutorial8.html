@@ -8,7 +8,7 @@
 
 <meta name="author" content="DOFPro group">
 
-<title>Data Archive – High-Power Rocketry</title>
+<title>Practice Problems 8 – High-Power Rocketry</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -217,15 +217,21 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#analysis-of-first-set-of-flight-data" id="toc-analysis-of-first-set-of-flight-data" class="nav-link active" data-scroll-target="#analysis-of-first-set-of-flight-data">Analysis of First Set of Flight Data</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Data Archive</h1>
+<h1 class="title">Practice Problems 8</h1>
 </div>
 
 
@@ -248,17 +254,15 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>We have nine practice problems for ameature rocketeers to try. They will walk you through the steps of understanding the engineering behind rocktry concepts. Completion of the nine practice problems will set you up to earn your level 1 and level 2 certification.</p>
-<p>Practice Problems: <a href="https://dofpro.org/RCK/archive/assignment1.html">Practice Problem 1</a></p>
-<p><a href="https://dofpro.org/RCK/archive/assignment2.html">Practice Problem 2</a></p>
-<p><a href="https://dofpro.org/RCK/archive/assignment3.html">Practice Problem 3</a></p>
-<p><a href="https://dofpro.org/RCK/archive/assignment4.html">Practice Problem 4</a></p>
-<p><a href="https://dofpro.org/RCK/archive/assignment5.html">Practice Problem 5</a></p>
-<p><a href="https://dofpro.org/RCK/archive/assignment6.html">Practice Problem 6</a></p>
-<p><a href="https://dofpro.org/RCK/archive/assignment7.html">Practice Problem 7</a></p>
-<p><a href="https://dofpro.org/RCK/archive/assignment8.html">Practice Problem 8</a></p>
+<p>If you successfully completed your first set of flights, you can analyze the flight data from your first set of flights. If you were unsuccessful in your first set of flights, you can analyze the two flights of the prototype Class Adventurer rocket from <a href="https://dofpro.org/RCK/fltdata/">10 June 2022</a>. It made four flights between 9 June 2022 and 11 June 2022. You will get to analyze the other two for Assignment 9.</p>
+<p>Your data collection may differ from the standard for the Class Adventurer. Your analysis should be appropriate for the data you collected.</p>
+<section id="analysis-of-first-set-of-flight-data" class="level2">
+<h2 class="anchored" data-anchor-id="analysis-of-first-set-of-flight-data">Analysis of First Set of Flight Data</h2>
+<p>Display as much as you can from the accelerometer data, the velocity data, and the altitude data from the Large Teensy data files, the Featherweight Raven Data files, the GPS files, and Open Rocket or Rocksim simulations of your flights or the two 10 June flights. An OpenRocket model for the Adventurer is <a href="https://pages.hmc.edu/spjut/AdvRoc/SimModels/ClassAdventurer.ork">here</a>. Be sure to indicate regions of interest, such as supersonic/subsonic transitions, burnout, descent rates under drogue and main parachutes, etc.</p>
+<p>Both the rate gyro data and the magnetometer data can be used to calculate the axial rotation angle from liftoff to apogee. You can either plot the angle versus time for each of the sensors separately, or do data fusion to combine them. A reasonable start for data fusion is in <a href="https://pages.hmc.edu/spjut/AdvRoc/PDF/KalmanFilterExample.pdf">KalmanFilterExample</a>.</p>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">

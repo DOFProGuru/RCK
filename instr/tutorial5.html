@@ -2,13 +2,13 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.5.57">
+<meta name="generator" content="quarto-1.6.40">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="DOFPro group">
 
-<title>Practice Problems 4 – High Power Rocketry</title>
+<title>Practice Problems 5 – High-Power Rocketry</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -36,10 +36,10 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-549806ee2085284f45b00abea8c6df48.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-0f4ec50609bd95d2bca8a5ab22e7c47b.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -108,11 +108,11 @@ window.Quarto = {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a href="https://dofpro.org" class="navbar-brand navbar-brand-logo">
+    <a href="../index.html" class="navbar-brand navbar-brand-logo">
     <img src="../DOFPro_D7_Red_Flame_No_Background_cropped.png" alt="DOFPro Logo" class="navbar-logo">
     </a>
-    <a class="navbar-brand" href="https://dofpro.org">
-    <span class="navbar-title">High Power Rocketry</span>
+    <a class="navbar-brand" href="../index.html">
+    <span class="navbar-title">High-Power Rocketry</span>
     </a>
   </div>
             <div id="quarto-search" class="" title="Search"></div>
@@ -155,15 +155,15 @@ window.Quarto = {
   </li>  
         <li>
     <a class="dropdown-item" href="../const/DX3.html">
- <span class="dropdown-text">1.6" miniDX3</span></a>
+ <span class="dropdown-text">1.6” miniDX3</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../const/55mmClassRocket.html">
- <span class="dropdown-text">55mm HMC Rocket</span></a>
+    <a class="dropdown-item" href="../const/54mmClassRocket.html">
+ <span class="dropdown-text">54 mm HMC Rocket</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../const/33mmClassRocket.html">
- <span class="dropdown-text">33mm HMC Rocket</span></a>
+    <a class="dropdown-item" href="../const/38mmClassRocket.html">
+ <span class="dropdown-text">38 mm HMC Rocket</span></a>
   </li>  
         <li>
     <a class="dropdown-item" href="../const/standardVulcanite.html">
@@ -251,11 +251,16 @@ window.Quarto = {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#agl-vs.-msl" id="toc-agl-vs.-msl" class="nav-link active" data-scroll-target="#agl-vs.-msl">AGL vs.&nbsp;MSL</a></li>
-  <li><a href="#barometric-pressure-variations" id="toc-barometric-pressure-variations" class="nav-link" data-scroll-target="#barometric-pressure-variations">Barometric Pressure Variations</a></li>
-  <li><a href="#temperature-variations" id="toc-temperature-variations" class="nav-link" data-scroll-target="#temperature-variations">Temperature Variations</a></li>
-  <li><a href="#relative-humidity-variations" id="toc-relative-humidity-variations" class="nav-link" data-scroll-target="#relative-humidity-variations">Relative Humidity Variations</a></li>
-  <li><a href="#put-it-all-together" id="toc-put-it-all-together" class="nav-link" data-scroll-target="#put-it-all-together">Put It All Together</a></li>
+  <li><a href="#teensy-logger-data-format-and-file-size" id="toc-teensy-logger-data-format-and-file-size" class="nav-link active" data-scroll-target="#teensy-logger-data-format-and-file-size">Teensy Logger Data Format and File Size</a></li>
+  <li><a href="#icm-20948" id="toc-icm-20948" class="nav-link" data-scroll-target="#icm-20948">ICM-20948</a></li>
+  <li><a href="#h3lis331" id="toc-h3lis331" class="nav-link" data-scroll-target="#h3lis331">H3LIS331</a></li>
+  <li><a href="#ms5611-01ba03-codes" id="toc-ms5611-01ba03-codes" class="nav-link" data-scroll-target="#ms5611-01ba03-codes">MS5611-01BA03 Codes</a></li>
+  <li><a href="#adc-codes" id="toc-adc-codes" class="nav-link" data-scroll-target="#adc-codes">ADC Codes</a></li>
+  <li><a href="#battery-voltage-code" id="toc-battery-voltage-code" class="nav-link" data-scroll-target="#battery-voltage-code">Battery Voltage Code</a></li>
+  <li><a href="#gps-codes" id="toc-gps-codes" class="nav-link" data-scroll-target="#gps-codes">GPS Codes</a></li>
+  <li><a href="#file-size" id="toc-file-size" class="nav-link" data-scroll-target="#file-size">File Size</a></li>
+  <li><a href="#processing-software" id="toc-processing-software" class="nav-link" data-scroll-target="#processing-software">Processing Software</a></li>
+  <li><a href="#gps-data" id="toc-gps-data" class="nav-link" data-scroll-target="#gps-data">GPS Data</a></li>
   </ul>
 </nav>
     </div>
@@ -264,7 +269,7 @@ window.Quarto = {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Practice Problems 4</h1>
+<h1 class="title">Practice Problems 5</h1>
 </div>
 
 
@@ -287,44 +292,121 @@ window.Quarto = {
 </header>
 
 
-<section id="agl-vs.-msl" class="level2">
-<h2 class="anchored" data-anchor-id="agl-vs.-msl">AGL vs.&nbsp;MSL</h2>
-<p>For regulatory purposes, the altitude relative to Mean Sea Level (MSL) is important. The FAA mandates maximum altitudes that cannot be exceeded for high-power rocket flights in terms of MSL. For example, the usual waiver at ROC launches in Lucerne Valley is for 10,000 feet MSL. The waiver for our class launch is 17,500 feet MSL. For modeling and flight performance purposes, the important measurement is the altitude relative to the altitude of the launch site, called Above Ground Level (AGL). This assignment is looking principally at errors in AGL measurements. AGL is always calculated by taking the calculated (not measured) altitude MSL at the launch pad, <span class="math inline">\(ℎ_{0-MSLcalc}\)</span>, and subtracting it from the calculated altitude MSL during flight, e.g.,</p>
-<p><span class="math display">\[
-ℎ_{AGL}=ℎ_{MSLcalc}−ℎ_{0-MSLcalc}
-\]</span></p>
-<p>The error in AGL is calculated as:</p>
-<p><span class="math display">\[
-𝜖_{AGL}=ℎ_{AGL}−ℎ_{true}
-\]</span></p>
+<section id="teensy-logger-data-format-and-file-size" class="level2">
+<h2 class="anchored" data-anchor-id="teensy-logger-data-format-and-file-size">Teensy Logger Data Format and File Size</h2>
+<p>The format of the data in the data files from the teensy logger is ASCII. After the header rows describing the units, each row begins with a three-letter acronym:</p>
+<p><em>ICM for the ICM-20948 Inertial Measurement Unit (IMU) </em> LIS for the H3LIS331 Three Axis High-g Accelerometer * MS5 for the MS5611-01BA03 High-Resolution Pressure Sensor * ADC for the temperatures calculated from the thermistors * VOL for the battery or supply voltage * GPS for the SAM-M8Q GPS unit on the Large Teensy Data Logger. It doesn’t appear in files from the Small Teensy Data Logger, or if the * GPS has been turned off in the code for the Large Teensy Data Logger. Following the acronym, there is a “t” for the time in microseconds as measured by the internal microsecond clock.</p>
 </section>
-<section id="barometric-pressure-variations" class="level2">
-<h2 class="anchored" data-anchor-id="barometric-pressure-variations">Barometric Pressure Variations</h2>
-<p>The barometric pressure is calculated by measuring the local absolute pressure, and then using the standard atmospheric model to calculate the pressure one would expect at mean sea level. When you read the barometric pressure in a weather report, you always have to correct to your current altitude. Normal atmospheric pressure at mean sea level is 101,325 Pa, 1013.25 millibar (mb), or 1.01325 bar. High pressure regions rarely go above 1050 mb or below 982 mb.</p>
-<p>Create a parametric plot that shows the error in MSL altitude from 0 m to 5000 m for <span class="math inline">\(𝑃_0\)</span>=1050 mb and <span class="math inline">\(𝑃_0\)</span>=982 mb as parameters Create an additional parametric plot that shows the error in AGL from 0 m to 5000 m for <span class="math inline">\(𝑃_0\)</span>=1050 mb and <span class="math inline">\(𝑃_0\)</span>=982 mb as parameters.</p>
-</section>
-<section id="temperature-variations" class="level2">
-<h2 class="anchored" data-anchor-id="temperature-variations">Temperature Variations</h2>
-<p>The Standard Atmospheric model assumes a temperature of 288.15 K (15°C) at mean sea level and a decrease of 6.5 K for every 1000 m gain in altitude. Obtaining data on variations in the lapse rate is challenging, but variations in ground temperature are fairly easy to measure. Lucerne Valley has a seasonal low of about –3°C and a seasonal high of about 38°C. Corrected for MSL, that is a <span class="math inline">\(𝑇_0\)</span> variation between 2.7°C and 43.7°C.</p>
-<p>Create a parametric plot that shows the error in AGL from 0 m to 5000 m for <span class="math inline">\(𝑇_0=2.7°C\)</span> and <span class="math inline">\(𝑇_0=43.7°C\)</span> mb as parameters.</p>
-<p>NAR requires all official altitude record attempts to have their pressure altimeter data corrected by multiplying the measured AGL by the ratio of the launch site temperature in K to 288.15 K. How well does the correction work for the data in this problem? Where did they get the 288.15 K in the ratio?</p>
-</section>
-<section id="relative-humidity-variations" class="level2">
-<h2 class="anchored" data-anchor-id="relative-humidity-variations">Relative Humidity Variations</h2>
-<p>Water has a molecular weight of 18.01528 g/mol or 0.01801528 kg/mol. Dry air has an average molecular weight of 28.9644 g/mol or 0.0289644 kg/mol. The density of air changes with the relative humidity. The relative humidity is defined as the partial pressure of water in the air divided by the vapor pressure of water at the air temperature.</p>
-<p>The molecular weight of an air-water mixture is the mole-weighted average of the molecular weight of air and the molecular weight of water. In practice, it is easiest to calculate <span class="math display">\[
-𝑀_{𝑚𝑖𝑥}=\frac{𝑀_{𝑎𝑖𝑟}𝑃_{𝑎𝑖𝑟}+𝑀_{𝑤𝑎𝑡𝑒𝑟}𝑃_{𝑤𝑎𝑡𝑒𝑟}}{𝑃}
-\]</span></p>
-<p>where <span class="math inline">\(𝑀_{𝑚𝑖𝑥}\)</span> is the molecular weight of the air-water vapor mixture, <span class="math inline">\(𝑀_{𝑎𝑖𝑟}\)</span> is the molecular weight of dry air, <span class="math inline">\(𝑀_{𝑤𝑎𝑡𝑒𝑟}\)</span> is the molecular weight of water vapor, <span class="math inline">\(𝑃_{𝑎𝑖𝑟}\)</span> is the partial pressure of dry air, <span class="math inline">\(𝑃_{𝑤𝑎𝑡𝑒𝑟}\)</span> is the partial pressure of water vapor, and 𝑃 is the overall pressure. Without measurements, it is difficult to know how the molecular weight of the air-water mixture varies with altitude. The easiest assumption is to measure the relative humidity (and of necessity, the temperature) at the launch site, calculate the molecular weight and assume it doesn’t change with altitude. Other assumptions require numerical integration of the pressure-altitude equations.</p>
-<p>Create a parametric plot that shows the error in AGL from 0 m to 5000 m, for <span class="math inline">\(𝐻_𝑟's\)</span> of 50%, and 100% at 316.85 K. Don’t correct <span class="math inline">\(𝑇_0\)</span>, just 𝑀.</p>
-</section>
-<section id="put-it-all-together" class="level2">
-<h2 class="anchored" data-anchor-id="put-it-all-together">Put It All Together</h2>
-<p>The linked data set contains the pressure-versus-time data for the first flight of the DX3 rocket on an F67-9W. Calculate the AGL altitude versus time both using the standard atmospheric model and applying the corrections for <span class="math inline">\(𝑇_0, 𝑃_0, ℎ_0, and 𝐻_𝑟\)</span>.</p>
+<section id="icm-20948" class="level2">
+<h2 class="anchored" data-anchor-id="icm-20948">ICM-20948</h2>
+<p>The ICM sample rate for the accelerometers and rate gyros is approximately 1130 to 1140 SPS. The magnetometer is read at the same rate but its sample rate is closer to 100 SPS.</p>
 <ul>
-<li>For this flight, how much of a difference did the corrections make?</li>
-<li>If you were trying for a record altitude flight, which would you prefer: to fly on a cold day or a hot day, under a high pressure or under a low pressure, under a high humidity or under a low humidity?</li>
+<li>t is the time in microseconds since data logging began.</li>
+<li>xa, ya, and za, are the accelerations measured in the x, y, and z directions as labeled on the board. The units are milli-g’s.</li>
+<li>xg, yg, and zg are the rotation rates measured in the x, y, and z directions as labeled on the board. The units are degrees/s.</li>
+<li>xm, ym, and zm are the magnetic field strengths as measured in the x, y, and z directions. The units are 𝜇T. You may want to check the chip specs to see how the axes for the magnetometer compare with those for the accelerometers and the rate gyros.</li>
+<li>T is the on-board chip temperature measured in °C.</li>
 </ul>
+</section>
+<section id="h3lis331" class="level2">
+<h2 class="anchored" data-anchor-id="h3lis331">H3LIS331</h2>
+<p>The LIS sample rate is approximately 1009 to 1022 SPS.</p>
+<ul>
+<li>t is the time in microseconds since data logging began.</li>
+<li>xh, yh, and zh are the accelerations measured in the x, y, and z directions as labeled on the board. The units are g’s.</li>
+</ul>
+</section>
+<section id="ms5611-01ba03-codes" class="level2">
+<h2 class="anchored" data-anchor-id="ms5611-01ba03-codes">MS5611-01BA03 Codes</h2>
+<p>The MS5611 sample rate is approximately 55 SPS.</p>
+<ul>
+<li>t is the time in microseconds since data logging began.</li>
+<li>T is the on-board chip temperature measured in °C.</li>
+<li>P is the absolute pressure as measured in Pascal.</li>
+</ul>
+</section>
+<section id="adc-codes" class="level2">
+<h2 class="anchored" data-anchor-id="adc-codes">ADC Codes</h2>
+<p>The ADC sample rate is approximately 50 SPS.</p>
+<p>t is the time in microseconds since data logging began. T1 is the temperature in °C calculated from the voltage measured by the 12-bit ADC on the Teensy for thermistor 1. The Steinhart Hart constants are in the Teensy code for two different 10 kΩ thermistors. T2 is the temperature in °C calculated from the voltage measured by the 12-bit ADC on the Teensy for thermistor 2. The Steinhart Hart constants are in the Teensy code for two different 10 kΩ thermistors. C1 is the raw 12-bit ADC code from ADC channel 1. It can be converted to a voltage by multiplying the value by 3.3 and dividing by 4096. T1 was calculated from it. C2 is the raw 12-bit ADC code from ADC channel 2. It can be converted to a voltage by multiplying the value by 3.3 and dividing by 4096. T2 was calculated from it.</p>
+</section>
+<section id="battery-voltage-code" class="level2">
+<h2 class="anchored" data-anchor-id="battery-voltage-code">Battery Voltage Code</h2>
+<p>The battery voltage sample rate is approximately 2 SPS.</p>
+<ul>
+<li>t is the time in microseconds since data logging began.</li>
+<li>V is the battery or supply voltage measured in Volts.</li>
+</ul>
+</section>
+<section id="gps-codes" class="level2">
+<h2 class="anchored" data-anchor-id="gps-codes">GPS Codes</h2>
+<p>Note: The GPS codes are included for completeness. It is unlikely that you will get access to one of the Large Teensy Data Loggers that has a GPS, and even less likely that the GPS will be turned on.</p>
+<p>The GPS sample rate is 10 SPS.</p>
+<ul>
+<li>t is the time in microseconds since data logging began.</li>
+<li>La is the degrees latitude in 1E7°. Multiply by 1E-7 to convert to degrees.</li>
+<li>Lo is the degrees longitude in 1E7°. Multiply by 1E-7 to convert to degrees.</li>
+<li>Al is the altitude in mm.</li>
+<li>Ac is the uncertainty in the altitude in mm.</li>
+<li>SV is the satellites in view.</li>
+<li>DT is the UTC date and time in the ISO standard format.</li>
+</ul>
+</section>
+<section id="file-size" class="level2">
+<h2 class="anchored" data-anchor-id="file-size">File Size</h2>
+<p>Because of the high sample rate, the file sizes for the data logging files are quite large. The storage rate is roughly 217kB/s. The resultant file sizes are:</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Time</th>
+<th>File Size (MB)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>10s</td>
+<td>2.2</td>
+</tr>
+<tr class="even">
+<td>30s</td>
+<td>6.5</td>
+</tr>
+<tr class="odd">
+<td>1 min</td>
+<td>13</td>
+</tr>
+<tr class="even">
+<td>10 min</td>
+<td>130</td>
+</tr>
+<tr class="odd">
+<td>30 min</td>
+<td>390</td>
+</tr>
+<tr class="even">
+<td>1 hr</td>
+<td>780</td>
+</tr>
+</tbody>
+</table>
+<p>The code currently preallocates a file size of 780 MB (1 hour). If the logging is stopped before then, the file is resized to fit the logged data. If the logging is not stopped before the file size is reached, the logger closes the file at approximately 1 hour and waits for the next logging session to begin. If you suspect that the total time that your rocket may sit on the pad and spend in flight exceeds one hour, you can increase the preallocated file size by changing the LOG_FILE_SIZE definition.</p>
+<p>These large file sizes mean that any software designed to process them is going to be very slow to parse the file and get it into memory.</p>
+</section>
+<section id="processing-software" class="level2">
+<h2 class="anchored" data-anchor-id="processing-software">Processing Software</h2>
+<p>The MATLAB .m file for processing the dat is <a href="https://pages.hmc.edu/spjut/AdvRoc/MATLABModels/ScanTeensyDataLoggerGPSRotTempAdventurer.m">ScanTeensyDataLoggerGPSRotTempAdventurer.m</a>. It does not have an indicator of how much of the file has been parsed or processed, so it requires some patience. I strongly recommend you run it using the Run-and-Advance button so that you can observe intermediate values and enter additional information as you run it. With it you can correct the pressure measurements to calculated the corrected barometric altitude. You can calculate the average <span class="math inline">\(𝐶_𝐷\)</span> and the <span class="math inline">\(𝐶_𝐷\)</span> as a function of 𝑣. You can also calculate the thrust curve. Quoting from the MATLAB .m file:</p>
+<p>% This m-file expects input files in the following formats.</p>
+<p>% 1. A (preferably trimmed) .TXT file from the Teensy Data Logger. It will % parse the data and create arrays of the sensor outputs. The parsing takes % a long time.</p>
+<p>% 2. An Open Rocket exported flight data file in CSV format. You should export: % Time in s % Altitude in m % Vertical velocity in m/s % Vertical acceleration in m/s^2 % Drag Coefficient % DO NOT export any other variables. You will have to edit the output file % to remove any events like lift-off or apogee. The final format should % just have a variabile-name row and rows of numbers.</p>
+<p>% 3. A CSV file with the GPS time in the first column and the GPS altitude % (expected to be in feet MSL) in the second column. You can use either % data from the log file or from the flight-specific file from the % Featherweight GPS.</p>
+</section>
+<section id="gps-data" class="level2">
+<h2 class="anchored" data-anchor-id="gps-data">GPS Data</h2>
+<p>The Small Teensy Data Logger does not have a GPS on board. It was used for the data for this assignment. The Large Teensy Data Logger has an on-board GPS for logging GPS data. At the current time the software to log the GPS data without disrupting the sampling of the other chips doesn’t work properly, so the GPS is not currently used.</p>
+<p>The Featherweight GPS, which is used for ground tracking of the position of the flights, logs all of the GPS data, whether valid or not at 1 Hz. It also has the possibility to store the GPS data at 10 Hz for the most recent flight. It stores altitude data as feet MSL. In practice, the GPS does not lock as often as it should, and the most-recent-flight data storage works rarely. However, we do have both a log file and an on-board file for the GPS for this flight. We also have an already-processed spreadsheet of the log file. It has both the Weasel and a Vulcanite flight on it.</p>
+<p>The files can be opened with a spreadsheet. Most of the column names are self explanatory. The TIME is in minutes and seconds, and wraps around on the hour. Again, the altitude (ALT) is MSL in feet (not meters). The FIX is whether the GPS fix is 3-D or only 2-D. HORZV, VERTV, HEAD, and FLAGS can be ignored. #TOT is the total number of satellites used in calculating the position. &gt;40, &gt;32, &gt;24, RSSI, and BATT can be ignored.</p>
+<p>The .m file will read in the GPS data, but it expects the data to be in a .csv file with only two columns: the time in seconds and the altitude in feet MSL. You need to massage the data to get them in this format. The spreadsheet shows how to do it for a log file, and this spreadsheet shows how to do it for the on-board GPS file.</p>
+<p>The file can be opened with a spreadsheet. Most of the column names are self explanatory. The TIME is in minutes and seconds, and wraps around on the hour. Again, the altitude (ALT) is MSL in feet (not meters). The FIX is whether the GPS fix is 3-D or only 2-D. HORZV, VERTV, HEAD, and FLAGS can be ignored. #TOT is the total number of satellites used in calculating the position. &gt;40, &gt;32, &gt;24, RSSI, and BATT can be ignored.</p>
 
 
 </section>
@@ -412,8 +494,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   });
   clipboard.on('success', onCopySuccess);
   if (window.document.getElementById('quarto-embedded-source-code-modal')) {
-    // For code content inside modals, clipBoardJS needs to be initialized with a container option
-    // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
     const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
       text: getTextToCopy,
       container: window.document.getElementById('quarto-embedded-source-code-modal')
@@ -524,7 +604,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       if (window.Quarto?.typesetMath) {
         window.Quarto.typesetMath(note);
       }
-      // TODO in 1.5, we should make sure this works without a callout special case
       if (note.classList.contains("callout")) {
         return note.outerHTML;
       } else {

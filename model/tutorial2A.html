@@ -2,13 +2,13 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.5.57">
+<meta name="generator" content="quarto-1.6.40">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="DOFPro group">
 
-<title>Practice Problems 5 – High Power Rocketry</title>
+<title>Tutorial 2A – Using the Full 1-D Rocket Equation – High-Power Rocketry</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -36,10 +36,10 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-549806ee2085284f45b00abea8c6df48.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-0f4ec50609bd95d2bca8a5ab22e7c47b.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -108,11 +108,11 @@ window.Quarto = {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a href="https://dofpro.org" class="navbar-brand navbar-brand-logo">
+    <a href="../index.html" class="navbar-brand navbar-brand-logo">
     <img src="../DOFPro_D7_Red_Flame_No_Background_cropped.png" alt="DOFPro Logo" class="navbar-logo">
     </a>
-    <a class="navbar-brand" href="https://dofpro.org">
-    <span class="navbar-title">High Power Rocketry</span>
+    <a class="navbar-brand" href="../index.html">
+    <span class="navbar-title">High-Power Rocketry</span>
     </a>
   </div>
             <div id="quarto-search" class="" title="Search"></div>
@@ -155,15 +155,15 @@ window.Quarto = {
   </li>  
         <li>
     <a class="dropdown-item" href="../const/DX3.html">
- <span class="dropdown-text">1.6" miniDX3</span></a>
+ <span class="dropdown-text">1.6” miniDX3</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../const/55mmClassRocket.html">
- <span class="dropdown-text">55mm HMC Rocket</span></a>
+    <a class="dropdown-item" href="../const/54mmClassRocket.html">
+ <span class="dropdown-text">54 mm HMC Rocket</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../const/33mmClassRocket.html">
- <span class="dropdown-text">33mm HMC Rocket</span></a>
+    <a class="dropdown-item" href="../const/38mmClassRocket.html">
+ <span class="dropdown-text">38 mm HMC Rocket</span></a>
   </li>  
         <li>
     <a class="dropdown-item" href="../const/standardVulcanite.html">
@@ -251,16 +251,18 @@ window.Quarto = {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#teensy-logger-data-format-and-file-size" id="toc-teensy-logger-data-format-and-file-size" class="nav-link active" data-scroll-target="#teensy-logger-data-format-and-file-size">Teensy Logger Data Format and File Size</a></li>
-  <li><a href="#icm-20948" id="toc-icm-20948" class="nav-link" data-scroll-target="#icm-20948">ICM-20948</a></li>
-  <li><a href="#h3lis331" id="toc-h3lis331" class="nav-link" data-scroll-target="#h3lis331">H3LIS331</a></li>
-  <li><a href="#ms5611-01ba03-codes" id="toc-ms5611-01ba03-codes" class="nav-link" data-scroll-target="#ms5611-01ba03-codes">MS5611-01BA03 Codes</a></li>
-  <li><a href="#adc-codes" id="toc-adc-codes" class="nav-link" data-scroll-target="#adc-codes">ADC Codes</a></li>
-  <li><a href="#battery-voltage-code" id="toc-battery-voltage-code" class="nav-link" data-scroll-target="#battery-voltage-code">Battery Voltage Code</a></li>
-  <li><a href="#gps-codes" id="toc-gps-codes" class="nav-link" data-scroll-target="#gps-codes">GPS Codes</a></li>
-  <li><a href="#file-size" id="toc-file-size" class="nav-link" data-scroll-target="#file-size">File Size</a></li>
-  <li><a href="#processing-software" id="toc-processing-software" class="nav-link" data-scroll-target="#processing-software">Processing Software</a></li>
-  <li><a href="#gps-data" id="toc-gps-data" class="nav-link" data-scroll-target="#gps-data">GPS Data</a></li>
+  <li><a href="#assignment" id="toc-assignment" class="nav-link active" data-scroll-target="#assignment">Assignment</a>
+  <ul class="collapse">
+  <li><a href="#python-standard-atmosphere" id="toc-python-standard-atmosphere" class="nav-link" data-scroll-target="#python-standard-atmosphere">Python Standard Atmosphere</a></li>
+  <li><a href="#matlab-full-1-d-rocket-equation" id="toc-matlab-full-1-d-rocket-equation" class="nav-link" data-scroll-target="#matlab-full-1-d-rocket-equation">MATLAB Full 1-D Rocket Equation</a></li>
+  <li><a href="#write-your-own-full-1-d-rocket-equation-package" id="toc-write-your-own-full-1-d-rocket-equation-package" class="nav-link" data-scroll-target="#write-your-own-full-1-d-rocket-equation-package">Write Your Own Full 1-D Rocket Equation Package</a></li>
+  <li><a href="#kerbal-space-program" id="toc-kerbal-space-program" class="nav-link" data-scroll-target="#kerbal-space-program">Kerbal Space Program</a></li>
+  </ul></li>
+  <li><a href="#aerotech-blue-thunder" id="toc-aerotech-blue-thunder" class="nav-link" data-scroll-target="#aerotech-blue-thunder">Aerotech Blue Thunder</a></li>
+  <li><a href="#methalox" id="toc-methalox" class="nav-link" data-scroll-target="#methalox">Methalox</a></li>
+  <li><a href="#mass-ratio" id="toc-mass-ratio" class="nav-link" data-scroll-target="#mass-ratio">Mass Ratio</a></li>
+  <li><a href="#approximate-solution" id="toc-approximate-solution" class="nav-link" data-scroll-target="#approximate-solution">Approximate Solution</a></li>
+  <li><a href="#deliverables" id="toc-deliverables" class="nav-link" data-scroll-target="#deliverables">Deliverables</a></li>
   </ul>
 </nav>
     </div>
@@ -269,7 +271,7 @@ window.Quarto = {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Practice Problems 5</h1>
+<h1 class="title">Tutorial 2A – Using the Full 1-D Rocket Equation</h1>
 </div>
 
 
@@ -292,121 +294,231 @@ window.Quarto = {
 </header>
 
 
-<section id="teensy-logger-data-format-and-file-size" class="level2">
-<h2 class="anchored" data-anchor-id="teensy-logger-data-format-and-file-size">Teensy Logger Data Format and File Size</h2>
-<p>The format of the data in the data files from the teensy logger is ASCII. After the header rows describing the units, each row begins with a three-letter acronym:</p>
-<p><em>ICM for the ICM-20948 Inertial Measurement Unit (IMU) </em> LIS for the H3LIS331 Three Axis High-g Accelerometer * MS5 for the MS5611-01BA03 High-Resolution Pressure Sensor * ADC for the temperatures calculated from the thermistors * VOL for the battery or supply voltage * GPS for the SAM-M8Q GPS unit on the Large Teensy Data Logger. It doesn’t appear in files from the Small Teensy Data Logger, or if the * GPS has been turned off in the code for the Large Teensy Data Logger. Following the acronym, there is a “t” for the time in microseconds as measured by the internal microsecond clock.</p>
+<section id="assignment" class="level1">
+<h1>Assignment</h1>
+<p>Using the full 1-D Rocket Equation with atmospheric variation, design two rockets to travel to the Kármán line (100 km MSL), one with Blue Thunder Aerotech propellant, and one with methalox propellant. You may use any of the three following methods for the assignment.</p>
+<ol type="1">
+<li>Use the existing MATLAB model for the 1-D Rocket Equation with properties that vary with altitude.</li>
+<li>Write your own software to implement the full 1-D Rocket Equation with atmospheric variation.</li>
+<li>Use the Kerbal Space Program and add the mods to replace Kerbin with Earth.</li>
+</ol>
+<section id="python-standard-atmosphere" class="level2">
+<h2 class="anchored" data-anchor-id="python-standard-atmosphere">Python Standard Atmosphere</h2>
+<p>There are several packages that implement the US Standard Atmosphere.</p>
+<p>The first is <a href="https://pypi.org/project/ussa1976/">ussa1976</a></p>
+<p>The second is <a href="https://www.pdas.com/atmos.html">Properties Of The U.S. Standard Atmosphere 1976</a></p>
+<p>You can find additional versions by web searching for <em>python version of standard atmosphere</em>.</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>This web page has not been updated beyond this point</p>
+</div>
+</div>
 </section>
-<section id="icm-20948" class="level2">
-<h2 class="anchored" data-anchor-id="icm-20948">ICM-20948</h2>
-<p>The ICM sample rate for the accelerometers and rate gyros is approximately 1130 to 1140 SPS. The magnetometer is read at the same rate but its sample rate is closer to 100 SPS.</p>
-<ul>
-<li>t is the time in microseconds since data logging began.</li>
-<li>xa, ya, and za, are the accelerations measured in the x, y, and z directions as labeled on the board. The units are milli-g’s.</li>
-<li>xg, yg, and zg are the rotation rates measured in the x, y, and z directions as labeled on the board. The units are degrees/s.</li>
-<li>xm, ym, and zm are the magnetic field strengths as measured in the x, y, and z directions. The units are 𝜇T. You may want to check the chip specs to see how the axes for the magnetometer compare with those for the accelerometers and the rate gyros.</li>
-<li>T is the on-board chip temperature measured in °C.</li>
-</ul>
-</section>
-<section id="h3lis331" class="level2">
-<h2 class="anchored" data-anchor-id="h3lis331">H3LIS331</h2>
-<p>The LIS sample rate is approximately 1009 to 1022 SPS.</p>
-<ul>
-<li>t is the time in microseconds since data logging began.</li>
-<li>xh, yh, and zh are the accelerations measured in the x, y, and z directions as labeled on the board. The units are g’s.</li>
-</ul>
-</section>
-<section id="ms5611-01ba03-codes" class="level2">
-<h2 class="anchored" data-anchor-id="ms5611-01ba03-codes">MS5611-01BA03 Codes</h2>
-<p>The MS5611 sample rate is approximately 55 SPS.</p>
-<ul>
-<li>t is the time in microseconds since data logging began.</li>
-<li>T is the on-board chip temperature measured in °C.</li>
-<li>P is the absolute pressure as measured in Pascal.</li>
-</ul>
-</section>
-<section id="adc-codes" class="level2">
-<h2 class="anchored" data-anchor-id="adc-codes">ADC Codes</h2>
-<p>The ADC sample rate is approximately 50 SPS.</p>
-<p>t is the time in microseconds since data logging began. T1 is the temperature in °C calculated from the voltage measured by the 12-bit ADC on the Teensy for thermistor 1. The Steinhart Hart constants are in the Teensy code for two different 10 kΩ thermistors. T2 is the temperature in °C calculated from the voltage measured by the 12-bit ADC on the Teensy for thermistor 2. The Steinhart Hart constants are in the Teensy code for two different 10 kΩ thermistors. C1 is the raw 12-bit ADC code from ADC channel 1. It can be converted to a voltage by multiplying the value by 3.3 and dividing by 4096. T1 was calculated from it. C2 is the raw 12-bit ADC code from ADC channel 2. It can be converted to a voltage by multiplying the value by 3.3 and dividing by 4096. T2 was calculated from it.</p>
-</section>
-<section id="battery-voltage-code" class="level2">
-<h2 class="anchored" data-anchor-id="battery-voltage-code">Battery Voltage Code</h2>
-<p>The battery voltage sample rate is approximately 2 SPS.</p>
-<ul>
-<li>t is the time in microseconds since data logging began.</li>
-<li>V is the battery or supply voltage measured in Volts.</li>
-</ul>
-</section>
-<section id="gps-codes" class="level2">
-<h2 class="anchored" data-anchor-id="gps-codes">GPS Codes</h2>
-<p>Note: The GPS codes are included for completeness. It is unlikely that you will get access to one of the Large Teensy Data Loggers that has a GPS, and even less likely that the GPS will be turned on.</p>
-<p>The GPS sample rate is 10 SPS.</p>
-<ul>
-<li>t is the time in microseconds since data logging began.</li>
-<li>La is the degrees latitude in 1E7°. Multiply by 1E-7 to convert to degrees.</li>
-<li>Lo is the degrees longitude in 1E7°. Multiply by 1E-7 to convert to degrees.</li>
-<li>Al is the altitude in mm.</li>
-<li>Ac is the uncertainty in the altitude in mm.</li>
-<li>SV is the satellites in view.</li>
-<li>DT is the UTC date and time in the ISO standard format.</li>
-</ul>
-</section>
-<section id="file-size" class="level2">
-<h2 class="anchored" data-anchor-id="file-size">File Size</h2>
-<p>Because of the high sample rate, the file sizes for the data logging files are quite large. The storage rate is roughly 217kB/s. The resultant file sizes are:</p>
+<section id="matlab-full-1-d-rocket-equation" class="level2">
+<h2 class="anchored" data-anchor-id="matlab-full-1-d-rocket-equation">MATLAB Full 1-D Rocket Equation</h2>
+<p>The <a href="../PDF/RocketEquationDerivation.pdf">Rocket Equation Derivation</a> explains the derivation of the 1-D rocket equation. We are assuming purely vertical ascent, so we don’t have to account for the angle of the gravity vector. The full 1-D rocket equation with properties that vary with altitude (including the acceleration of gravity) is implemented in the MATLAB package <a href="../MATLABModels/RocketEquationPackage.zip">RocketEquationPackage.zip</a>. The files in the package are:</p>
 <table class="caption-top table">
+<colgroup>
+<col style="width: 48%">
+<col style="width: 51%">
+</colgroup>
 <thead>
 <tr class="header">
-<th>Time</th>
-<th>File Size (MB)</th>
+<th>File Name</th>
+<th>Purpose/Function</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td>10s</td>
-<td>2.2</td>
+<td>atmo_compo.m</td>
+<td>High Altitude Atmospheric Composition Calculation</td>
 </tr>
 <tr class="even">
-<td>30s</td>
-<td>6.5</td>
+<td>atmo_p.m</td>
+<td>Atmospheric Pressure Calculation</td>
 </tr>
 <tr class="odd">
-<td>1 min</td>
-<td>13</td>
+<td>atmo_temp.m</td>
+<td>Atmospheric Temperature Calculation</td>
 </tr>
 <tr class="even">
-<td>10 min</td>
-<td>130</td>
+<td>atmo.m</td>
+<td>1976 Standard Atmosphere Calculator[0-1000 km]</td>
 </tr>
 <tr class="odd">
-<td>30 min</td>
-<td>390</td>
+<td>AtmosTable.mat</td>
+<td>Table of calculated atmospheric property values</td>
 </tr>
 <tr class="even">
-<td>1 hr</td>
-<td>780</td>
+<td>c_atm.m</td>
+<td>Returns the local speed of sound in m/s at the given altitude</td>
+</tr>
+<tr class="odd">
+<td>f_n.m</td>
+<td>Gas Integral Program</td>
+</tr>
+<tr class="even">
+<td>g_atm.m</td>
+<td>Returns the local gravitational acceleration in m/s^2 at z</td>
+</tr>
+<tr class="odd">
+<td>GenAtmosTable.m</td>
+<td>Generate US 1976 Standard Atmosphere Tables as matfiles (Generates AtmosTable.m)</td>
+</tr>
+<tr class="even">
+<td>int_tau.m</td>
+<td>Tau Integral Computation for Hydrogen Composition</td>
+</tr>
+<tr class="odd">
+<td>k_atm.m</td>
+<td>Returns the thermal conductivity in W/m?K at the given altitude</td>
+</tr>
+<tr class="even">
+<td>mu_atm.m</td>
+<td>Returns the dynamic viscosity in N?s/m^2 at the given altitude</td>
+</tr>
+<tr class="odd">
+<td>n_atm.m</td>
+<td>Returns the number density of a species in m^-3 at the given altitude</td>
+</tr>
+<tr class="even">
+<td>n_sum_atm.m</td>
+<td>Returns the total number density in m^-3 at the given altitude</td>
+</tr>
+<tr class="odd">
+<td>nu_atm.m</td>
+<td>Returns the kinematic viscosity in m^2/s at the given altitude</td>
+</tr>
+<tr class="even">
+<td>P_atm.m</td>
+<td>Returns the absolute pressure in Pa at a given altitude</td>
+</tr>
+<tr class="odd">
+<td>rho_atm.m</td>
+<td>Returns the density of air in kg/m^3 at a given altitude</td>
+</tr>
+<tr class="even">
+<td>rockeq_var.m</td>
+<td>Integration of the rocket equation where <span class="math inline">\(T\)</span>, <span class="math inline">\(P\)</span>, <span class="math inline">\(\rho\)</span>, and <span class="math inline">\(g\)</span> change with altitude.</td>
+</tr>
+<tr class="odd">
+<td>T_atm.m</td>
+<td>Returns the absolute temperature in Kelvin at a given altitude</td>
+</tr>
+<tr class="even">
+<td>tester.m</td>
+<td>Test Program for atmosphere with plots</td>
+</tr>
+<tr class="odd">
+<td>ThrustCurveSH.m</td>
+<td>Returns the thrust curve of a motor.</td>
 </tr>
 </tbody>
 </table>
-<p>The code currently preallocates a file size of 780 MB (1 hour). If the logging is stopped before then, the file is resized to fit the logged data. If the logging is not stopped before the file size is reached, the logger closes the file at approximately 1 hour and waits for the next logging session to begin. If you suspect that the total time that your rocket may sit on the pad and spend in flight exceeds one hour, you can increase the preallocated file size by changing the LOG_FILE_SIZE definition.</p>
-<p>These large file sizes mean that any software designed to process them is going to be very slow to parse the file and get it into memory.</p>
+<p>To use the package, extract it, set the extracted folder as the default in MATLAB and run rockeq_var.m. You will need to alter ThrustCurveSH.m to enter the thrust curve for the motor or engine you are using. You may want to save each thrust curve file with a different name and use that name in rockeq_var.m The SH is short for Sandhawk, one of my favorite sounding rockets. You will also need to edit the rocket parameters in rockeq_var.m. The parameters you are likely to need to vary are:</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 28%">
+<col style="width: 48%">
+<col style="width: 22%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Parameter</th>
+<th>MATLAB Variable</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><span class="math inline">\(m_0\)</span></td>
+<td>xv0(1)</td>
+<td>Initial rocket mass in kg</td>
+</tr>
+<tr class="even">
+<td><span class="math inline">\(v_0\)</span></td>
+<td>xv0(2)</td>
+<td>Initial rocket velocity in m/s</td>
+</tr>
+<tr class="odd">
+<td><span class="math inline">\(z_0\)</span></td>
+<td>xv0(3)</td>
+<td>Initial altitude MSL in m</td>
+</tr>
+<tr class="even">
+<td><span class="math inline">\(I_{sp}\)</span></td>
+<td>ue</td>
+<td>Specific Impulse in m/s aka <span class="math inline">\(v_e\)</span></td>
+</tr>
+<tr class="odd">
+<td><span class="math inline">\(D\)</span></td>
+<td>D</td>
+<td>Rocket diameter in m for drag calculations</td>
+</tr>
+<tr class="even">
+<td><span class="math inline">\(C_D\)</span></td>
+<td>CD</td>
+<td>Coefficient of drag for drag calculations</td>
+</tr>
+</tbody>
+</table>
 </section>
-<section id="processing-software" class="level2">
-<h2 class="anchored" data-anchor-id="processing-software">Processing Software</h2>
-<p>The MATLAB .m file for processing the dat is <a href="https://pages.hmc.edu/spjut/AdvRoc/MATLABModels/ScanTeensyDataLoggerGPSRotTempAdventurer.m">ScanTeensyDataLoggerGPSRotTempAdventurer.m</a>. It does not have an indicator of how much of the file has been parsed or processed, so it requires some patience. I strongly recommend you run it using the Run-and-Advance button so that you can observe intermediate values and enter additional information as you run it. With it you can correct the pressure measurements to calculated the corrected barometric altitude. You can calculate the average <span class="math inline">\(𝐶_𝐷\)</span> and the <span class="math inline">\(𝐶_𝐷\)</span> as a function of 𝑣. You can also calculate the thrust curve. Quoting from the MATLAB .m file:</p>
-<p>% This m-file expects input files in the following formats.</p>
-<p>% 1. A (preferably trimmed) .TXT file from the Teensy Data Logger. It will % parse the data and create arrays of the sensor outputs. The parsing takes % a long time.</p>
-<p>% 2. An Open Rocket exported flight data file in CSV format. You should export: % Time in s % Altitude in m % Vertical velocity in m/s % Vertical acceleration in m/s^2 % Drag Coefficient % DO NOT export any other variables. You will have to edit the output file % to remove any events like lift-off or apogee. The final format should % just have a variabile-name row and rows of numbers.</p>
-<p>% 3. A CSV file with the GPS time in the first column and the GPS altitude % (expected to be in feet MSL) in the second column. You can use either % data from the log file or from the flight-specific file from the % Featherweight GPS.</p>
+<section id="write-your-own-full-1-d-rocket-equation-package" class="level2">
+<h2 class="anchored" data-anchor-id="write-your-own-full-1-d-rocket-equation-package">Write Your Own Full 1-D Rocket Equation Package</h2>
+<p>The <a href="../PDF/RocketEquationDerivation.pdf">Rocket Equation Derivation</a> explains the derivation of the 1-D rocket equation. We are assuming purely vertical ascent, so we don’t have to account for the angle of the gravity vector. Feel free to use whatever package or language you desire. The variation of atmospheric properties with altitude is given <a href="https://ntrs.nasa.gov/api/citations/19770009539/downloads/19770009539.pdf?attachment=true">here</a>. The variation of gravity with altitude can be calculated from <a href="https://en.wikipedia.org/wiki/Newton%27s_law_of_universal_gravitation">Newton’s law of universal gravitation</a> and the mass and radius of the earth. Beyond that, you’re on your own.</p>
 </section>
-<section id="gps-data" class="level2">
-<h2 class="anchored" data-anchor-id="gps-data">GPS Data</h2>
-<p>The Small Teensy Data Logger does not have a GPS on board. It was used for the data for this assignment. The Large Teensy Data Logger has an on-board GPS for logging GPS data. At the current time the software to log the GPS data without disrupting the sampling of the other chips doesn’t work properly, so the GPS is not currently used.</p>
-<p>The Featherweight GPS, which is used for ground tracking of the position of the flights, logs all of the GPS data, whether valid or not at 1 Hz. It also has the possibility to store the GPS data at 10 Hz for the most recent flight. It stores altitude data as feet MSL. In practice, the GPS does not lock as often as it should, and the most-recent-flight data storage works rarely. However, we do have both a log file and an on-board file for the GPS for this flight. We also have an already-processed spreadsheet of the log file. It has both the Weasel and a Vulcanite flight on it.</p>
-<p>The files can be opened with a spreadsheet. Most of the column names are self explanatory. The TIME is in minutes and seconds, and wraps around on the hour. Again, the altitude (ALT) is MSL in feet (not meters). The FIX is whether the GPS fix is 3-D or only 2-D. HORZV, VERTV, HEAD, and FLAGS can be ignored. #TOT is the total number of satellites used in calculating the position. &gt;40, &gt;32, &gt;24, RSSI, and BATT can be ignored.</p>
-<p>The .m file will read in the GPS data, but it expects the data to be in a .csv file with only two columns: the time in seconds and the altitude in feet MSL. You need to massage the data to get them in this format. The spreadsheet shows how to do it for a log file, and this spreadsheet shows how to do it for the on-board GPS file.</p>
-<p>The file can be opened with a spreadsheet. Most of the column names are self explanatory. The TIME is in minutes and seconds, and wraps around on the hour. Again, the altitude (ALT) is MSL in feet (not meters). The FIX is whether the GPS fix is 3-D or only 2-D. HORZV, VERTV, HEAD, and FLAGS can be ignored. #TOT is the total number of satellites used in calculating the position. &gt;40, &gt;32, &gt;24, RSSI, and BATT can be ignored.</p>
+<section id="kerbal-space-program" class="level2">
+<h2 class="anchored" data-anchor-id="kerbal-space-program">Kerbal Space Program</h2>
+<p>The <a href="https://www.kerbalspaceprogram.com/">Kerbal Space Program</a> (KSP) is a commercial software package (meaning <em>you</em> have to pay for it) with realistic flight physics for rockets and a limited range of aircraft. The base package comes designed for the planet Kerbin. The differences between Kerbin and Earth are illustrated <a href="https://imgur.com/gallery/ckadxCa">here</a>. To do actual rocket design with KSP you need to modify it to accurately account for Earth’s (and the Solar System’s) properties. Two mods that will help are <a href="https://forum.kerbalspaceprogram.com/index.php?/topic/177216-173-real-solar-system-v164-26-nov-2019/">Real Solar System</a> and <a href="https://forum.kerbalspaceprogram.com/index.php?/topic/155700-173-181-realism-overhaul-v1281-17-april-2020/">Realism Overhaul</a>.</p>
+</section>
+</section>
+<section id="aerotech-blue-thunder" class="level1">
+<h1>Aerotech Blue Thunder</h1>
+<p>The <span class="math inline">\(I_{sp}\)</span> of Blue Thunder can be read from several of the larger Blue Thunder motors on <a href="https://www.thrustcurve.org/motors/search.html?manufacturer=AeroTech&amp;designation=&amp;commonName=&amp;type=&amp;impulseClass=&amp;diameter=&amp;propellantInfo=Blue+Thunder&amp;flameColor=&amp;smokeColor=&amp;caseInfo=&amp;sparky=all&amp;class1=all&amp;hazmatExempt=all&amp;availability=available">thrustcurve.org</a> or it can be calculated from the definition using the data for several of the larger Blue Thunder motors. Just remember that there are two different definitions for <span class="math inline">\(I_{sp}\)</span> and you need to use the one required by the model you are using.</p>
+</section>
+<section id="methalox" class="level1">
+<h1>Methalox</h1>
+<p>Methalox is methane oxidized with oxygen. The upper limit for its <span class="math inline">\(I_{sp}\)</span> is found in <a href="https://thephysicsofspacex.files.wordpress.com/2016/07/isp-upper-limits.pdf">this reference</a>. The actual value will vary somewhat from that value. The expected <span class="math inline">\(I_{sp}\)</span>’s for SpaceX’s Raptor engines are listed in <a href="https://en.wikipedia.org/wiki/SpaceX_Raptor#Description">this article</a>. You may want to check to see if SpaceX has updated the <span class="math inline">\(I_{sp}\)</span> they obtained in their tests and flights. Just remember that there are two different definitions for <span class="math inline">\(I_{sp}\)</span> and you need to use the one required by the model you are using.</p>
+</section>
+<section id="mass-ratio" class="level1">
+<h1>Mass Ratio</h1>
+<p>One of the variables that you implicitly have to include into your design is the <a href="https://en.wikipedia.org/wiki/Mass_ratio">Mass Ratio</a>, the ratio of the wet mass (the vehicle plus propellant) to the dry mass (the vehicle by itself). Assume for your rockets that the mass ratio is 12.5.</p>
+</section>
+<section id="approximate-solution" class="level1">
+<h1>Approximate Solution</h1>
+<p>We have a couple of solutions in <a href="../RocketEquationSolutions.md.html">this page</a>.</p>
+<p>In addition, <a href="https://web.mit.edu/16.unified/www/SPRING/propulsion/notes/node103.html">this reference from MIT</a> gives the solution to the rocket equation for purely vertical flight with no drag and constant fuel consumption during the thrust phase. The relevant results are <span class="math display">\[
+\label{vburn1}
+v_b=-v_e \ln \left(\frac{m_b}{m_0}\right) - gt_b
+\]</span> or <span class="math display">\[
+\label{vburn2}
+v_b=g \left[I_{sp} \ln \left(\frac{m_0}{m_b}\right) - t_b \right]
+\]</span> where <span class="math inline">\(m_0\)</span> is the initial mass of the rocket, and <span class="math inline">\(m_b\)</span> is the mass at burnout. <span class="math inline">\(v_e\)</span> is the exit velocity of the exhaust (in m/s), and <span class="math inline">\(I_{sp}\)</span> is the specific impulse (in s). <span class="math inline">\(v_b\)</span> is the velocity at burnout and <span class="math inline">\(t_b\)</span> is the time to burnout, or the length of the thrust phase.</p>
+<p>Also, the altitude at burnout, <span class="math inline">\(x_b\)</span> or <span class="math inline">\(h_b\)</span>, is <span class="math display">\[
+\label{xburn}
+x_b= g \left[-t_b I_{sp} \frac{\ln \left(\frac{m_0}{m_b}\right)}{\left(\frac{m_0}{m_b}-1\right)} +t_b I_{sp} - \frac{1}{2} t_b^2 \right]
+\]</span></p>
+<p>The final altitude after burnout is determined by setting the change in kinetic energy from burnout to apogee plus the change in potential energy from burnout to apogee equal to zero. As a refresher, the kinetic energy of the rocket at burnout is <span class="math display">\[
+\label{kinetic}
+E_{kb}= \frac{1}{2} m_b v_b^2
+\]</span> and the potential energy of a mass, <span class="math inline">\(m\)</span> at an altitude MSL above the earth of <span class="math inline">\(x\)</span> is <span class="math display">\[
+\label{potential}
+E_{p}= -\frac{GMm}{r_{\rm{earth}} + x}
+\]</span> where the gravitational constant, <span class="math inline">\(G = 6.67430 \times 10^{-11}\rm{m^3kg^{-1}s^{-2}}\)</span>, the mass of the earth, <span class="math inline">\(M = 5.9722 \times 10^{24}\rm{kg}\)</span>, and <span class="math inline">\(r_{\rm{earth}}= 6,371\ \rm{km}\)</span>. Values calculated from these equations are useful for starting guesses for the full model.</p>
+<p>For a multistage calculation that niglects both gravity and drag, read <a href="https://www.planetary.org/articles/20170505-the-rocket-equation-part-2">this article</a>.</p>
+</section>
+<section id="deliverables" class="level1">
+<h1>Deliverables</h1>
+<p>Your deliverables for this assignment are: 1. The design for you two rockets, including 1. The dimensions, at least diameter and length 2. The assumed <span class="math inline">\(I_{sp}\)</span> of the fuel 3. The dry mass and the fuel mass 4. The assumed <span class="math inline">\(C_D\)</span> 2. Plots of the acceleration, velocity, mass, and altitude of your final designs from liftoff to apogee.</p>
+<p>Standard report components, such as introduction, conclusions, and recommendations would be nice, but aren’t required.</p>
 
 
 </section>
@@ -494,8 +606,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   });
   clipboard.on('success', onCopySuccess);
   if (window.document.getElementById('quarto-embedded-source-code-modal')) {
-    // For code content inside modals, clipBoardJS needs to be initialized with a container option
-    // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
     const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
       text: getTextToCopy,
       container: window.document.getElementById('quarto-embedded-source-code-modal')
@@ -606,7 +716,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       if (window.Quarto?.typesetMath) {
         window.Quarto.typesetMath(note);
       }
-      // TODO in 1.5, we should make sure this works without a callout special case
       if (note.classList.contains("callout")) {
         return note.outerHTML;
       } else {

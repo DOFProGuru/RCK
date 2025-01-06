@@ -2,13 +2,13 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.5.57">
+<meta name="generator" content="quarto-1.6.40">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="DOFPro group">
 
-<title>Barometric Altitude – High Power Rocketry</title>
+<title>Tutorial – Barometric Altitude – High-Power Rocketry</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -36,10 +36,10 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-549806ee2085284f45b00abea8c6df48.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-0f4ec50609bd95d2bca8a5ab22e7c47b.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -108,11 +108,11 @@ window.Quarto = {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a href="https://dofpro.org" class="navbar-brand navbar-brand-logo">
+    <a href="../index.html" class="navbar-brand navbar-brand-logo">
     <img src="../DOFPro_D7_Red_Flame_No_Background_cropped.png" alt="DOFPro Logo" class="navbar-logo">
     </a>
-    <a class="navbar-brand" href="https://dofpro.org">
-    <span class="navbar-title">High Power Rocketry</span>
+    <a class="navbar-brand" href="../index.html">
+    <span class="navbar-title">High-Power Rocketry</span>
     </a>
   </div>
             <div id="quarto-search" class="" title="Search"></div>
@@ -155,15 +155,15 @@ window.Quarto = {
   </li>  
         <li>
     <a class="dropdown-item" href="../const/DX3.html">
- <span class="dropdown-text">1.6" miniDX3</span></a>
+ <span class="dropdown-text">1.6” miniDX3</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../const/55mmClassRocket.html">
- <span class="dropdown-text">55mm HMC Rocket</span></a>
+    <a class="dropdown-item" href="../const/54mmClassRocket.html">
+ <span class="dropdown-text">54 mm HMC Rocket</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../const/33mmClassRocket.html">
- <span class="dropdown-text">33mm HMC Rocket</span></a>
+    <a class="dropdown-item" href="../const/38mmClassRocket.html">
+ <span class="dropdown-text">38 mm HMC Rocket</span></a>
   </li>  
         <li>
     <a class="dropdown-item" href="../const/standardVulcanite.html">
@@ -251,11 +251,19 @@ window.Quarto = {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#barometric-altimeters" id="toc-barometric-altimeters" class="nav-link active" data-scroll-target="#barometric-altimeters">Barometric Altimeters</a></li>
+  <li><a href="#pressure-altitude" id="toc-pressure-altitude" class="nav-link active" data-scroll-target="#pressure-altitude">Pressure Altitude</a></li>
+  <li><a href="#barometric-altimeters" id="toc-barometric-altimeters" class="nav-link" data-scroll-target="#barometric-altimeters">Barometric Altimeters</a></li>
+  <li><a href="#agl-vs.-msl" id="toc-agl-vs.-msl" class="nav-link" data-scroll-target="#agl-vs.-msl">AGL vs.&nbsp;MSL</a></li>
   <li><a href="#standard-atmospheric-model" id="toc-standard-atmospheric-model" class="nav-link" data-scroll-target="#standard-atmospheric-model">Standard Atmospheric Model</a></li>
   <li><a href="#corrections-for-non-standard-conditions" id="toc-corrections-for-non-standard-conditions" class="nav-link" data-scroll-target="#corrections-for-non-standard-conditions">Corrections for Non-Standard Conditions</a>
   <ul class="collapse">
+  <li><a href="#barometric-pressure-variations" id="toc-barometric-pressure-variations" class="nav-link" data-scroll-target="#barometric-pressure-variations">Barometric Pressure Variations</a></li>
+  <li><a href="#temperature-variations" id="toc-temperature-variations" class="nav-link" data-scroll-target="#temperature-variations">Temperature Variations</a></li>
+  <li><a href="#relative-humidity-variations" id="toc-relative-humidity-variations" class="nav-link" data-scroll-target="#relative-humidity-variations">Relative Humidity Variations</a>
+  <ul class="collapse">
   <li><a href="#the-antoine-equation-for-water" id="toc-the-antoine-equation-for-water" class="nav-link" data-scroll-target="#the-antoine-equation-for-water">The Antoine Equation for Water</a></li>
+  </ul></li>
+  <li><a href="#making-corrections" id="toc-making-corrections" class="nav-link" data-scroll-target="#making-corrections">Making Corrections</a></li>
   </ul></li>
   <li><a href="#sample-corrections" id="toc-sample-corrections" class="nav-link" data-scroll-target="#sample-corrections">Sample Corrections</a></li>
   </ul>
@@ -266,7 +274,7 @@ window.Quarto = {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Barometric Altitude</h1>
+<h1 class="title">Tutorial – Barometric Altitude</h1>
 </div>
 
 
@@ -289,53 +297,102 @@ window.Quarto = {
 </header>
 
 
-<p><strong>Barometric Altitude</strong></p>
+<section id="pressure-altitude" class="level1">
+<h1>Pressure Altitude</h1>
+<p>In aviation (including rocketry) the <a href="https://en.wikipedia.org/wiki/Pressure_altitude"><em>pressure altitude</em></a> is the altitude one would calculate from the local atmospheric pressure using a standard atmospheric model. The pressure altitude does not account for non-standard temperature, barometric pressure, or humidity level. Refer to the <a href="https://en.wikipedia.org/wiki/U.S._Standard_Atmosphere">U.S. Standard Atmosphere</a>, and <a href="https://en.wikipedia.org/wiki/Barometric_formula">Barometric formula</a> for additional reference information on this tutorial. You can also web search for <em>pressure altitude</em> and <em>density altitude</em>.</p>
+</section>
 <section id="barometric-altimeters" class="level1">
 <h1>Barometric Altimeters</h1>
-<p>A <a href="https://en.wikipedia.org/wiki/Pressure_altimeter"><em>barometric altimeter</em></a> uses the variation of atmospheric (or barometric) pressure with altitude to calculate and display the altitude from the measured local atmospheric pressure. The altimeter requires a model for how the pressure varies with altitude. Both the ISO and the US government have specified standard models for how pressure varies with altitude. These models assume that the atmospheric conditions are constant. Anyone who has watched or looked up a weather forecast realizes that the local temperature and pressure vary throughout the day. This page examines how the variations affect the accuracy of the altitude calculated by a barometric altimeter. The barometric altimeter has been used since the early days of aviation, and still finds a place on modern aircraft and hobbyist rocketry.</p>
+<p>A <a href="https://en.wikipedia.org/wiki/Pressure_altimeter"><em>barometric altimeter</em></a> uses the variation of atmospheric (or barometric) pressure with altitude to calculate and display the altitude from the measured local atmospheric pressure. There are a number of commercial barometric altimeters designed for use in model and high-power rockets. To be useful, the altimeter must have an internal model for how the pressure varies with altitude. Both the ISO and the US government have specified standard models for the pressure versus altitude relationship. These models assume that the atmospheric pressure, temperature, and humidity are constant with time but vary with altitude. Anyone who has watched or looked up a weather forecast realizes that the local temperature and pressure vary throughout the day. This tutorial examines how the variations affect the accuracy of the altitude calculated by a barometric altimeter. The barometric altimeter has been used since the early days of aviation, and still finds a place on modern aircraft and hobbyist rocketry.</p>
 <p>There are three additional common ways to calculate the altitude of a rocket, and they each have their own set of associated errors. They are:</p>
 <ul>
 <li><a href="https://www.apogeerockets.com/downloads/PDFs/triangulation_system.pdf">Triangulation</a></li>
 <li>GPS</li>
 <li>Integration of velocity or double integration of acceleration</li>
 </ul>
-<p>These three will not be discussed further here.</p>
+<p>These three will not be discussed further here, although there are tutorials on the website for all three.</p>
+</section>
+<section id="agl-vs.-msl" class="level1">
+<h1>AGL vs.&nbsp;MSL</h1>
+<p>For regulatory purposes, the altitude relative to Mean Sea Level (MSL) is important. The FAA mandates maximum altitudes that cannot be exceeded for high-power rocket flights in terms of MSL. For example, the usual waiver at ROC launches in Lucerne Valley is for 10,000 feet MSL. For modeling and flight performance purposes, the important measurement is the altitude relative to the altitude of the launch site, called Above Ground Level (AGL). This tutorial is looking principally at errors in AGL measurements. AGL is always calculated by taking the calculated (not measured) altitude MSL at the launch pad, <span class="math inline">\(h_{0\mathrm{_MSLcalc}}\)</span>, and subtracting it from the calculated altitude MSL during flight, e.g.,</p>
+<p><span id="eq-6"><span class="math display">\[
+  h_\mathrm{AGL} = h_\mathrm{MSLcalc}-h_{0\mathrm{_MSLcalc}}
+   \tag{1}\]</span></span> .</p>
+<p>The error in AGL is calculated as:</p>
+<p><span id="eq-7"><span class="math display">\[
+  \varepsilon_{\mathrm{AGL}} = h_{\mathrm{AGL}} - h_{\mathrm{true}}
+   \tag{2}\]</span></span></p>
+<p>where <span class="math inline">\(h_{\mathrm{true}}\)</span> is the actual altitude of the rocket above the launch site, e.g, what you would get from a very long measuring tape or a laser rangefinder.</p>
 </section>
 <section id="standard-atmospheric-model" class="level1">
 <h1>Standard Atmospheric Model</h1>
-<p>The standard atmospheric model below 11,000 m is almost the same for both the ISO Standard Atmosphere and the US Standard Atmosphere. The following is based on the US Standard Atmosphere. The atmosphere is modeled assuming a base temperature, <span class="math inline">\(T_0\)</span>, at mean sea level (MSL) (<span class="math inline">\(h_0 = 0\)</span>) of 288.15 K (15.0°C) and a base pressure, <span class="math inline">\(P_0\)</span>, of 101,325 Pa. The temperature is assumed to vary linearly with altitude at a rate of –6.5°C per 1000 m (the <em>lapse rate</em>, <span class="math inline">\(L\)</span>). The pressure versus altitude is calculated from the simultaneous solution of</p>
-<p><span class="math display">\[
+<p>The standard atmospheric model below 11,000 m is almost the same for both the ISO Standard Atmosphere and the US Standard Atmosphere. This tutorial is based on the US Standard Atmosphere. The atmosphere is modeled assuming a base temperature, <span class="math inline">\(T_0\)</span>, at mean sea level (MSL) (<span class="math inline">\(h_0 = 0\)</span>) of 288.15 K (15.0°C) and a base pressure, <span class="math inline">\(P_0\)</span>, of 101,325 Pa. The temperature is assumed to vary linearly with altitude at a rate of –6.5°C per 1000 m (the <em>lapse rate</em>, <span class="math inline">\(L\)</span>). The pressure versus altitude is calculated from the simultaneous solution of</p>
+<p><span id="eq-1"><span class="math display">\[
 \frac{dP}{dh} = \rho g = M \frac{n}{V} g
-\]</span></p>
+\tag{3}\]</span></span></p>
 <p>and</p>
-<p><span class="math display">\[P = \frac{n}{V} R T\]</span>.</p>
+<p><span id="eq-2"><span class="math display">\[P = \frac{n}{V} R T \tag{4}\]</span></span> .</p>
 <p>The solution is</p>
-<p><span class="math display">\[
+<p><span id="eq-3"><span class="math display">\[
 P = P_0\left[\frac{T_0}{T_0+ L(h-h_0)}\right]^{\left(\frac{M g}{L R}\right)}
-\]</span></p>
+\tag{5}\]</span></span></p>
 <p>or solved for <span class="math inline">\(h\)</span> in terms of <span class="math inline">\(P\)</span></p>
-<p><span class="math display">\[
+<p><span id="eq-4"><span class="math display">\[
 h = h_0 + \frac{T_0}{L} \left[\left(\frac{P}{P_0}\right)^{-\left(\frac{L R}{M g}\right)} - 1\right]
-\]</span></p>
+\tag{6}\]</span></span></p>
 <p>The molecular weight of dry air, <span class="math inline">\(M\)</span>, is assumed to be 0.0289644 kg/mol. The value of <span class="math inline">\(R\)</span> used in the US Standard Atmosphere is 8.31432 J/(mol⋅K) versus the current <a href="https://physics.nist.gov/cgi-bin/cuu/Value?r">NIST standard</a> of 8.314462618 J/(mol⋅K). The difference is less than 0.002%, and is insignificant compared to the other uncertainties in the model.</p>
 </section>
 <section id="corrections-for-non-standard-conditions" class="level1">
 <h1>Corrections for Non-Standard Conditions</h1>
 <p>The MSL is calculated by most commercial rocket altimeters from the above formula. Obviously, if <span class="math inline">\(T_0\)</span> or <span class="math inline">\(P_0\)</span> differ from the assumed values due to local weather conditions, the calculated MSL altitude can exhibit large errors. To get around the MSL errors, most commercial rocket altimeters calculate AGL altitude by subtracting the calculated MSL altitude at launch from the calculated MSL altitude during flight. This correction can be improved upon.</p>
 <p>High-pressure or low-pressure weather conditions can affect the calculated barometric altitude by quite a bit. In addition, the temperature at a given location may vary quite a bit from that predicted by the base temperature and standard lapse rate. Also, the molecular weight of air can vary quite a bit with the absolute humidity.</p>
-<p>If the altitude, air temperature and air pressure of the launch pad can be measured or determined, the values can be plugged into the above model and a corrected altitude calculated. Plug in launch altitude as <span class="math inline">\(h_0\)</span>, launch pressure as <span class="math inline">\(P_0\)</span>, and launch temperature as <span class="math inline">\(T_0\)</span>. In addition, if the relative humidity can be measured, the absolute humidity and the resultant molecular weight can be calculated and plugged in for <span class="math inline">\(M\)</span>. The molecular weight of water is 0.01801528 kg/mol. These corrections depend on the assumptions of a standard linear lapse rate and a water vapor mole fraction that doesn’t vary with altitude.</p>
+<section id="barometric-pressure-variations" class="level2">
+<h2 class="anchored" data-anchor-id="barometric-pressure-variations">Barometric Pressure Variations</h2>
+<p>The barometric pressure is calculated by measuring the local absolute pressure, and then using the standard atmospheric model to calculate the pressure one would expect at mean sea level. When you read the barometric pressure in a weather report, you always have to correct to your current altitude. Normal atmospheric pressure at mean sea level is 101,325 Pa, 1013.25 millibar (mb), or 1.01325 bar. High pressure regions rarely go above 1050 mb or below 982 mb.</p>
+<ul>
+<li>Create a parametric plot that shows the error in MSL altitude from 0 m to 5000 m for <span class="math inline">\(P_0 = 1050\)</span> mb and <span class="math inline">\(P_0 = 982\)</span> mb as parameters</li>
+<li>Create an additional parametric plot that shows the error in AGL from 0 m to 5000 m for <span class="math inline">\(P_0 = 1050\)</span> mb and <span class="math inline">\(P_0 = 982\)</span> mb as parameters.</li>
+</ul>
+</section>
+<section id="temperature-variations" class="level2">
+<h2 class="anchored" data-anchor-id="temperature-variations">Temperature Variations</h2>
+<p>The Standard Atmospheric model assumes a temperature of 288.15 K (15°C) at mean sea level and a decrease of 6.5 K for every 1000 m gain in altitude. Obtaining data on variations in the lapse rate is challenging, but variations in ground temperature are fairly easy to measure. Lucerne Valley has a seasonal low of about –3°C and a seasonal high of about 38°C. Corrected for MSL, that is a <span class="math inline">\(T_0\)</span> variation between 2.7°C and 43.7°C.</p>
+<ul>
+<li>Create a parametric plot that shows the error in AGL from 0 m to 5000 m for <span class="math inline">\(T_0 = 2.7\)</span>°C and <span class="math inline">\(T_0 = 43.7\)</span>°C mb as parameters.</li>
+<li><a href="https://www.nar.org/contest-flying/u-s-model-rocket-new-sporting-code/altitude-competition/altitude-data/">NAR</a> requires all official altitude record attempts (see Section 20.2.3) to have their pressure altimeter data corrected by multiplying the measured AGL by the ratio of the launch site temperature in K to 288.15 K. How well does the correction work for the data in this problem? Where did they get the 288.15 K in the ratio?</li>
+</ul>
+<p>If the altitude, air temperature and air pressure at the launch pad can be measured or determined, the values can be plugged into the above model and a corrected altitude calculated. Plug in launch altitude as <span class="math inline">\(h_0\)</span>, launch pressure as <span class="math inline">\(P_0\)</span>, and launch temperature as <span class="math inline">\(T_0\)</span>. In addition, if the relative humidity can be measured, the absolute humidity and the resultant molecular weight can be calculated and plugged in for <span class="math inline">\(M\)</span>. The molecular weight of water is 0.01801528 kg/mol. These corrections depend on the assumptions of a standard linear lapse rate and a water vapor mole fraction that doesn’t vary with altitude.</p>
 <p>If flight data are available for temperature and/or relative humidity versus altitude, they can be used to improve the calculations.</p>
-<section id="the-antoine-equation-for-water" class="level2">
-<h2 class="anchored" data-anchor-id="the-antoine-equation-for-water">The Antoine Equation for Water</h2>
+</section>
+<section id="relative-humidity-variations" class="level2">
+<h2 class="anchored" data-anchor-id="relative-humidity-variations">Relative Humidity Variations</h2>
+<p>Water has a molecular weight of 18.01528 g/mol or 0.01801528 kg/mol. Dry air has an average molecular weight of 28.9644 g/mol or 0.0289644 kg/mol. The density of air changes with the relative humidity. The relative humidity is defined as the partial pressure of water in the air divided by the vapor pressure of water at the air temperature.</p>
+<section id="the-antoine-equation-for-water" class="level3">
+<h3 class="anchored" data-anchor-id="the-antoine-equation-for-water">The Antoine Equation for Water</h3>
 <p>To calculate the absolute humidity from the relative humidity, one needs the vapor pressure of water at the system temperature. Rather than use the steam tables, one can use the Antoine equation. A form of the equation suitable for atmospheric corrections is</p>
-<p><span class="math display">\[
+<p><span id="eq-5"><span class="math display">\[
 P = \exp\left[16.3872 -\frac{3885.70}{T-42.98}\right]
-\]</span></p>
+\tag{7}\]</span></span></p>
 <p>where <span class="math inline">\(P\)</span> is in kPa, and <span class="math inline">\(T\)</span> is in kelvin.</p>
+<p>The molecular weight of an air-water mixture is the mole-weighted average of the molecular weight of air and the molecular weight of water. In practice, it is easiest to calculate</p>
+<p><span id="eq-9"><span class="math display">\[
+   M_\mathrm{mix} = \frac{M_\mathrm{air}P_\mathrm{air}+M_\mathrm{water}P_\mathrm{water}}{P}
+    \tag{8}\]</span></span> .</p>
+<p>where <span class="math inline">\(M_\mathrm{mix}\)</span> is the molecular weight of the air-water vapor mixture, <span class="math inline">\(M_\mathrm{air}\)</span> is the molecular weight of dry air, <span class="math inline">\(M_{water}\)</span> is the molecular weight of water vapor, <span class="math inline">\(P_\mathrm{air}\)</span> is the partial pressure of dry air, <span class="math inline">\(P_\mathrm{water}\)</span> is the partial pressure of water vapor, and <span class="math inline">\(P\)</span> is the overall pressure. Without measurements, it is difficult to know how the molecular weight of the air-water mixture varies with altitude. The easiest assumption is to measure the relative humidity (and of necessity, the temperature) at the launch site, calculate the molecular weight and assume it doesn’t change with altitude. Other assumptions require numerical integration of the pressure-altitude equations.</p>
+<ul>
+<li>Create a parametric plot that shows the error in AGL from 0 m to 5000 m, for <span class="math inline">\(H_r\)</span>’s of 50%, and 100% at 316.85 K. Don’t correct <span class="math inline">\(T_0\)</span>, just <span class="math inline">\(M\)</span>.</li>
+</ul>
+</section>
+</section>
+<section id="making-corrections" class="level2">
+<h2 class="anchored" data-anchor-id="making-corrections">Making Corrections</h2>
+<p>At a minimum, the NAR temperature-ratio correction should be applied. Alternatively, if the altitude, air temperature and air pressure at the launch pad can be measured or determined, the values can be plugged into <a href="#eq-4" class="quarto-xref">Equation&nbsp;6</a> and a corrected altitude calculated. Plug in launchpad altitude as <span class="math inline">\(h_0\)</span>, launchpad atmospheric pressure as <span class="math inline">\(P_0\)</span>, and launchpad air temperature as <span class="math inline">\(T_0\)</span>. In addition, if the relative humidity can be measured, the absolute humidity and the resultant molecular weight can be calculated and plugged in for <span class="math inline">\(M\)</span>. The molecular weight of water is 0.01801528 kg/mol. These corrections depend on the assumptions of a standard linear lapse rate and a water vapor mole fraction that doesn’t vary with altitude.</p>
+<p>If flight data are available for temperature and/or relative humidity versus altitude, they can be used to improve the calculations.</p>
 </section>
 </section>
 <section id="sample-corrections" class="level1">
 <h1>Sample Corrections</h1>
+<p>The <a href="Flight1DataForAssignment1.txt">linked data set</a> contains the pressure-versus-time data for the first flight of the DX3 rocket on an F67-9W. Calculate the AGL altitude versus time both using the standard atmospheric model and by applying the corrections for <span class="math inline">\(T_0\)</span>, <span class="math inline">\(P_0\)</span>, <span class="math inline">\(h_0\)</span>, and <span class="math inline">\(H_r\)</span>.</p>
 <p>Below is the plot of the uncorrected AGL altitude and the AGL altitude corrected for <span class="math inline">\(P_0\)</span>, <span class="math inline">\(T_0\)</span>, <span class="math inline">\(h_0\)</span>, and <span class="math inline">\(H_r\)</span> for the first flight of the DX3 rocket on an F67-9W. In this case the corrections have a very minor effect on the calculated altitude. In other cases they can have a much larger effect.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
@@ -438,8 +495,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   });
   clipboard.on('success', onCopySuccess);
   if (window.document.getElementById('quarto-embedded-source-code-modal')) {
-    // For code content inside modals, clipBoardJS needs to be initialized with a container option
-    // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
     const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
       text: getTextToCopy,
       container: window.document.getElementById('quarto-embedded-source-code-modal')
@@ -550,7 +605,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       if (window.Quarto?.typesetMath) {
         window.Quarto.typesetMath(note);
       }
-      // TODO in 1.5, we should make sure this works without a callout special case
       if (note.classList.contains("callout")) {
         return note.outerHTML;
       } else {

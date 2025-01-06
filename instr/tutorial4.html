@@ -2,13 +2,13 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.5.57">
+<meta name="generator" content="quarto-1.6.40">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="DOFPro group">
 
-<title>Practice Problems 8 – High Power Rocketry</title>
+<title>Tutorial 4 – Barometric Altimeters – High-Power Rocketry</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -36,10 +36,10 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-549806ee2085284f45b00abea8c6df48.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-0f4ec50609bd95d2bca8a5ab22e7c47b.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -68,6 +68,35 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 <link rel="stylesheet" href="../styles.css">
 </head>
@@ -79,11 +108,11 @@ ul.task-list li input[type="checkbox"] {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a href="https://dofpro.org" class="navbar-brand navbar-brand-logo">
+    <a href="../index.html" class="navbar-brand navbar-brand-logo">
     <img src="../DOFPro_D7_Red_Flame_No_Background_cropped.png" alt="DOFPro Logo" class="navbar-logo">
     </a>
-    <a class="navbar-brand" href="https://dofpro.org">
-    <span class="navbar-title">High Power Rocketry</span>
+    <a class="navbar-brand" href="../index.html">
+    <span class="navbar-title">High-Power Rocketry</span>
     </a>
   </div>
             <div id="quarto-search" class="" title="Search"></div>
@@ -126,15 +155,15 @@ ul.task-list li input[type="checkbox"] {
   </li>  
         <li>
     <a class="dropdown-item" href="../const/DX3.html">
- <span class="dropdown-text">1.6" miniDX3</span></a>
+ <span class="dropdown-text">1.6” miniDX3</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../const/55mmClassRocket.html">
- <span class="dropdown-text">55mm HMC Rocket</span></a>
+    <a class="dropdown-item" href="../const/54mmClassRocket.html">
+ <span class="dropdown-text">54 mm HMC Rocket</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../const/33mmClassRocket.html">
- <span class="dropdown-text">33mm HMC Rocket</span></a>
+    <a class="dropdown-item" href="../const/38mmClassRocket.html">
+ <span class="dropdown-text">38 mm HMC Rocket</span></a>
   </li>  
         <li>
     <a class="dropdown-item" href="../const/standardVulcanite.html">
@@ -222,7 +251,11 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#analysis-of-first-set-of-flight-data" id="toc-analysis-of-first-set-of-flight-data" class="nav-link active" data-scroll-target="#analysis-of-first-set-of-flight-data">Analysis of First Set of Flight Data</a></li>
+  <li><a href="#agl-vs.-msl" id="toc-agl-vs.-msl" class="nav-link active" data-scroll-target="#agl-vs.-msl">AGL vs.&nbsp;MSL</a></li>
+  <li><a href="#barometric-pressure-variations" id="toc-barometric-pressure-variations" class="nav-link" data-scroll-target="#barometric-pressure-variations">Barometric Pressure Variations</a></li>
+  <li><a href="#temperature-variations" id="toc-temperature-variations" class="nav-link" data-scroll-target="#temperature-variations">Temperature Variations</a></li>
+  <li><a href="#relative-humidity-variations" id="toc-relative-humidity-variations" class="nav-link" data-scroll-target="#relative-humidity-variations">Relative Humidity Variations</a></li>
+  <li><a href="#put-it-all-together" id="toc-put-it-all-together" class="nav-link" data-scroll-target="#put-it-all-together">Put It All Together</a></li>
   </ul>
 </nav>
     </div>
@@ -231,7 +264,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Practice Problems 8</h1>
+<h1 class="title">Tutorial 4 – Barometric Altimeters</h1>
 </div>
 
 
@@ -254,12 +287,53 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>If you successfully completed your first set of flights, you can analyze the flight data from your first set of flights. If you were unsuccessful in your first set of flights, you can analyze the two flights of the prototype Class Adventurer rocket from <a href="https://dofpro.org/RCK/fltdata/">10 June 2022</a>. It made four flights between 9 June 2022 and 11 June 2022. You will get to analyze the other two for Assignment 9.</p>
-<p>Your data collection may differ from the standard for the Class Adventurer. Your analysis should be appropriate for the data you collected.</p>
-<section id="analysis-of-first-set-of-flight-data" class="level2">
-<h2 class="anchored" data-anchor-id="analysis-of-first-set-of-flight-data">Analysis of First Set of Flight Data</h2>
-<p>Display as much as you can from the accelerometer data, the velocity data, and the altitude data from the Large Teensy data files, the Featherweight Raven Data files, the GPS files, and Open Rocket or Rocksim simulations of your flights or the two 10 June flights. An OpenRocket model for the Adventurer is <a href="https://pages.hmc.edu/spjut/AdvRoc/SimModels/ClassAdventurer.ork">here</a>. Be sure to indicate regions of interest, such as supersonic/subsonic transitions, burnout, descent rates under drogue and main parachutes, etc.</p>
-<p>Both the rate gyro data and the magnetometer data can be used to calculate the axial rotation angle from liftoff to apogee. You can either plot the angle versus time for each of the sensors separately, or do data fusion to combine them. A reasonable start for data fusion is in <a href="https://pages.hmc.edu/spjut/AdvRoc/PDF/KalmanFilterExample.pdf">KalmanFilterExample</a>.</p>
+<p>Refer to <a href="../BarometricAltitude.md.html">Barometric Altitude</a>, <a href="https://en.wikipedia.org/wiki/U.S._Standard_Atmosphere">U.S. Standard Atmosphere</a>, and <a href="https://en.wikipedia.org/wiki/Barometric_formula">Barometric formula</a> for reference information on this assignment. You can also web search for <em>pressure altitude</em> and <em>density altitude</em>.</p>
+<section id="agl-vs.-msl" class="level1">
+<h1>AGL vs.&nbsp;MSL</h1>
+<p>For regulatory purposes, the altitude relative to Mean Sea Level (MSL) is important. The FAA mandates maximum altitudes that cannot be exceeded for high-power rocket flights in terms of MSL. For example, the usual waiver at ROC launches in Lucerne Valley is for 10,000 feet MSL. The waiver for our class launch is 17,500 feet MSL. For modeling and flight performance purposes, the important measurement is the altitude relative to the altitude of the launch site, called Above Ground Level (AGL). This assignment is looking principally at errors in AGL measurements. AGL is always calculated by taking the calculated (not measured) altitude MSL at the launch pad, <span class="math inline">\(h_{0\mathrm{_MSLcalc}}\)</span>, and subtracting it from the calculated altitude MSL during flight, e.g.,</p>
+<p><span class="math display">\[
+  h_\mathrm{AGL} = h_\mathrm{MSLcalc}-h_{0\mathrm{_MSLcalc}}
+  \]</span>.</p>
+<p>The error in AGL is calculated as:</p>
+<p><span class="math display">\[
+  \varepsilon_{\mathrm{AGL}} = h_{\mathrm{AGL}} - h_{\mathrm{true}}
+  \]</span></p>
+</section>
+<section id="barometric-pressure-variations" class="level1">
+<h1>Barometric Pressure Variations</h1>
+<p>The barometric pressure is calculated by measuring the local absolute pressure, and then using the standard atmospheric model to calculate the pressure one would expect at mean sea level. When you read the barometric pressure in a weather report, you always have to correct to your current altitude. Normal atmospheric pressure at mean sea level is 101,325 Pa, 1013.25 millibar (mb), or 1.01325 bar. High pressure regions rarely go above 1050 mb or below 982 mb.</p>
+<ul>
+<li>Create a parametric plot that shows the error in MSL altitude from 0 m to 5000 m for <span class="math inline">\(P_0 = 1050\)</span> mb and <span class="math inline">\(P_0 = 982\)</span> mb as parameters</li>
+<li>Create an additional parametric plot that shows the error in AGL from 0 m to 5000 m for <span class="math inline">\(P_0 = 1050\)</span> mb and <span class="math inline">\(P_0 = 982\)</span> mb as parameters.</li>
+</ul>
+</section>
+<section id="temperature-variations" class="level1">
+<h1>Temperature Variations</h1>
+<p>The Standard Atmospheric model assumes a temperature of 288.15 K (15°C) at mean sea level and a decrease of 6.5 K for every 1000 m gain in altitude. Obtaining data on variations in the lapse rate is challenging, but variations in ground temperature are fairly easy to measure. Lucerne Valley has a seasonal low of about –3°C and a seasonal high of about 38°C. Corrected for MSL, that is a <span class="math inline">\(T_0\)</span> variation between 2.7°C and 43.7°C.</p>
+<ul>
+<li>Create a parametric plot that shows the error in AGL from 0 m to 5000 m for <span class="math inline">\(T_0 = 2.7\)</span>°C and <span class="math inline">\(T_0 = 43.7\)</span>°C mb as parameters.</li>
+<li><a href="https://www.nar.org/contest-flying/u-s-model-rocket-new-sporting-code/altitude-competition/altitude-data/">NAR</a> requires all official altitude record attempts (see Section 20.2.3) to have their pressure altimeter data corrected by multiplying the measured AGL by the ratio of the launch site temperature in K to 288.15 K. How well does the correction work for the data in this problem? Where did they get the 288.15 K in the ratio?</li>
+</ul>
+</section>
+<section id="relative-humidity-variations" class="level1">
+<h1>Relative Humidity Variations</h1>
+<p>Water has a molecular weight of 18.01528 g/mol or 0.01801528 kg/mol. Dry air has an average molecular weight of 28.9644 g/mol or 0.0289644 kg/mol. The density of air changes with the relative humidity. The relative humidity is defined as the partial pressure of water in the air divided by the vapor pressure of water at the air temperature.</p>
+<p>The molecular weight of an air-water mixture is the mole-weighted average of the molecular weight of air and the molecular weight of water. In practice, it is easiest to calculate</p>
+<p><span class="math display">\[
+   M_\mathrm{mix} = \frac{M_\mathrm{air}P_\mathrm{air}+M_\mathrm{water}P_\mathrm{water}}{P}
+   \]</span>.</p>
+<p>where <span class="math inline">\(M_{mix}\)</span> is the molecular weight of the air-water vapor mixture, <span class="math inline">\(M_{air}\)</span> is the molecular weight of dry air, <span class="math inline">\(M_{water}\)</span> is the molecular weight of water vapor, <span class="math inline">\(P_{air}\)</span> is the partial pressure of dry air, <span class="math inline">\(P_{water}\)</span> is the partial pressure of water vapor, and <span class="math inline">\(P\)</span> is the overall pressure. Without measurements, it is difficult to know how the molecular weight of the air-water mixture varies with altitude. The easiest assumption is to measure the relative humidity (and of necessity, the temperature) at the launch site, calculate the molecular weight and assume it doesn’t change with altitude. Other assumptions require numerical integration of the pressure-altitude equations.</p>
+<ul>
+<li>Create a parametric plot that shows the error in AGL from 0 m to 5000 m, for <span class="math inline">\(H_r\)</span>’s of 50%, and 100% at 316.85 K. Don’t correct <span class="math inline">\(T_0\)</span>, just <span class="math inline">\(M\)</span>.</li>
+</ul>
+</section>
+<section id="put-it-all-together" class="level1">
+<h1>Put It All Together</h1>
+<p>The <a href="Flight1DataForAssignment1.txt">linked data set</a> contains the pressure-versus-time data for the first flight of the DX3 rocket on an F67-9W. Calculate the AGL altitude versus time both using the standard atmospheric model and applying the corrections for <span class="math inline">\(T_0\)</span>, <span class="math inline">\(P_0\)</span>, <span class="math inline">\(h_0\)</span>, and <span class="math inline">\(H_r\)</span>.</p>
+<ul>
+<li>For this flight, how much of a difference did the corrections make?</li>
+<li>If you were trying for a <a href="https://www.nar.org/contest-flying/u-s-model-rocket-new-sporting-code/altitude-competition/altitude-data/">record altitude flight</a>, which would you prefer: to fly on a cold day or a hot day, under a high pressure or under a low pressure, under a high humidity or under a low humidity?</li>
+</ul>
 
 
 </section>
@@ -347,8 +421,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   });
   clipboard.on('success', onCopySuccess);
   if (window.document.getElementById('quarto-embedded-source-code-modal')) {
-    // For code content inside modals, clipBoardJS needs to be initialized with a container option
-    // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
     const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
       text: getTextToCopy,
       container: window.document.getElementById('quarto-embedded-source-code-modal')
@@ -459,7 +531,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       if (window.Quarto?.typesetMath) {
         window.Quarto.typesetMath(note);
       }
-      // TODO in 1.5, we should make sure this works without a callout special case
       if (note.classList.contains("callout")) {
         return note.outerHTML;
       } else {

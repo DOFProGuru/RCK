@@ -2,13 +2,13 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.5.57">
+<meta name="generator" content="quarto-1.6.40">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="DOFPro group">
 
-<title>Practice Problems 2 – High Power Rocketry</title>
+<title>Tutorial 2 – Open Rocket – High-Power Rocketry</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -36,10 +36,10 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-549806ee2085284f45b00abea8c6df48.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-0f4ec50609bd95d2bca8a5ab22e7c47b.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -79,11 +79,11 @@ ul.task-list li input[type="checkbox"] {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a href="https://dofpro.org" class="navbar-brand navbar-brand-logo">
+    <a href="../index.html" class="navbar-brand navbar-brand-logo">
     <img src="../DOFPro_D7_Red_Flame_No_Background_cropped.png" alt="DOFPro Logo" class="navbar-logo">
     </a>
-    <a class="navbar-brand" href="https://dofpro.org">
-    <span class="navbar-title">High Power Rocketry</span>
+    <a class="navbar-brand" href="../index.html">
+    <span class="navbar-title">High-Power Rocketry</span>
     </a>
   </div>
             <div id="quarto-search" class="" title="Search"></div>
@@ -126,15 +126,15 @@ ul.task-list li input[type="checkbox"] {
   </li>  
         <li>
     <a class="dropdown-item" href="../const/DX3.html">
- <span class="dropdown-text">1.6" miniDX3</span></a>
+ <span class="dropdown-text">1.6” miniDX3</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../const/55mmClassRocket.html">
- <span class="dropdown-text">55mm HMC Rocket</span></a>
+    <a class="dropdown-item" href="../const/54mmClassRocket.html">
+ <span class="dropdown-text">54 mm HMC Rocket</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../const/33mmClassRocket.html">
- <span class="dropdown-text">33mm HMC Rocket</span></a>
+    <a class="dropdown-item" href="../const/38mmClassRocket.html">
+ <span class="dropdown-text">38 mm HMC Rocket</span></a>
   </li>  
         <li>
     <a class="dropdown-item" href="../const/standardVulcanite.html">
@@ -222,9 +222,13 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#open-rocket" id="toc-open-rocket" class="nav-link active" data-scroll-target="#open-rocket">Open Rocket</a></li>
+  <li><a href="#modeling-with-open-rocket" id="toc-modeling-with-open-rocket" class="nav-link active" data-scroll-target="#modeling-with-open-rocket">Modeling with Open Rocket</a>
+  <ul class="collapse">
+  <li><a href="#designing-from-scratch-or-a-kit" id="toc-designing-from-scratch-or-a-kit" class="nav-link" data-scroll-target="#designing-from-scratch-or-a-kit">Designing from Scratch or a Kit</a></li>
+  <li><a href="#modeling-an-existing-rocket" id="toc-modeling-an-existing-rocket" class="nav-link" data-scroll-target="#modeling-an-existing-rocket">Modeling an Existing Rocket</a></li>
   <li><a href="#f67-9w-flight" id="toc-f67-9w-flight" class="nav-link" data-scroll-target="#f67-9w-flight">F67-9W Flight</a></li>
   <li><a href="#h128w-14a-flight" id="toc-h128w-14a-flight" class="nav-link" data-scroll-target="#h128w-14a-flight">H128W-14A Flight</a></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
@@ -233,7 +237,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Practice Problems 2</h1>
+<h1 class="title">Tutorial 2 – Open Rocket</h1>
 </div>
 
 
@@ -256,10 +260,23 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="open-rocket" class="level2">
-<h2 class="anchored" data-anchor-id="open-rocket">Open Rocket</h2>
-<p>Open Rocket is a Java app, but a group of dedicated volunteers have created installers for it. Go to <a href="https://openrocket.info/">Open Rocket</a> to get a version that is appropriate for your computer and OS. There are some outdated hints for usage at <a href="https://pages.hmc.edu/spjut/AdvRoc/PDF/OpenRocketHints.pdf">Some Hints for Open Rocket</a>.</p>
-<p>Create an Open Rocket model of your LOC Weasel from the data you measured. Weigh your avionics assembly or the example model avionics assembly (use 84 g if you don’t have access to the avionics, or you don’t have access to a scale), and include it as a mass in your model. Record and report the model mass and center of mass as calculated by Open Rocket.</p>
+<section id="modeling-with-open-rocket" class="level1">
+<h1>Modeling with Open Rocket</h1>
+<p>Open Rocket is a Java app, but a group of dedicated volunteers have created installers for it. Go to <a href="https://openrocket.info/">Open Rocket</a> to get a version that is appropriate for your computer and OS. There are some outdated hints for usage at <a href="https://pages.hmc.edu/spjut/AdvRoc/PDF/OpenRocketHints.pdf">Some Hints for Open Rocket</a>. Open Rocket (and RasAero) can be used for a number of different tasks. The two principal ones are:</p>
+<ol type="1">
+<li>Designing a rocket from scratch or planning modifications to an existing kit to achieve some flight objectives.</li>
+<li>Selecting motors and delays for an existing kit, and verifying that the flight will be stable, safe, and stay within the flight-waiver altitude limit.</li>
+</ol>
+<section id="designing-from-scratch-or-a-kit" class="level2">
+<h2 class="anchored" data-anchor-id="designing-from-scratch-or-a-kit">Designing from Scratch or a Kit</h2>
+<p>The basic procedure is to connect together a series of parts such as a nose cone, a body tube, a motor mount, fins, and a parachute, and then model how this collection of parts will fly when launched with a motor. Open Rocket has a huge database of parts from many different rocket kit manufacturers that have the dimensions, density, mass, and center of mass already entered. In addition, you can either specify all of these properties for any part from scratch, or edit the properties of an existing part in the database.</p>
+<p>When beginning from scratch or a kit, your process is to specify all of the components and their relative positions, and then have Open Rocket calculate the total mass, the center of mass, and the center of pressure for your rocket. You then load a model of a specific rocket motor, either from the large database within Open Rocket, downloaded from the web such as from Thrustcurve.org, or that you have created yourself, into your rocket model. Open Rocket will show you the relative positions of the center of mass and the center of pressure. If the center of pressure is not at least one calibre (body-tube diameter) behind the center of mass, you readjust the rocket model until the CP is one calibre behind the CM. Then you run the simulation and examine the results to see if the rocket reached a sufficient velocity before leaving the launch rod or launch rail, if the apogee is to your liking and is lower than the flight-waiver altitude limit where you will be flying, and if the parachute ejects within one second of apogee. If not, modify your ejection-charge delay time, choose a different motor, or modify the rocket parts until you achieve your objectives.</p>
+<p>Open Rocket has tools for exporting parts of your design, such as the fins, for use in manufacturing. You can then build your rocket.</p>
+</section>
+<section id="modeling-an-existing-rocket" class="level2">
+<h2 class="anchored" data-anchor-id="modeling-an-existing-rocket">Modeling an Existing Rocket</h2>
+<p>Once you have constructed your rocket, you will want to measure the actual mass and the actual center of mass. You will find that due to the mass of the adhesive, manufacturing variations, and other causes, your model will not exactly match the mass and center of mass that you calculated when designing the rocket or modeling the kit, although they should be fairly close. Open Rocket has overrides that you can enter for the mass and the center of mass, so you can match your measurements. You can then check if the CM with your chosen motor is at least one calibre in front of the CP. If so, you can run the simulation and examine the results to see if the rocket reached a sufficient velocity before leaving the launch rod or launch rail, if the apogee is to your liking and is lower than the flight-waiver altitude limit where you will be flying, and if the parachute ejects within one second of apogee. If not, you can modify your ejection-charge delay time and/or choose a different motor until you achieve your objectives.</p>
+<p>Open Rocket has a database of common rocket kits, and many manufacturers provide RockSim models of their kits on their websites Open Rocket has a large number of Create an Open Rocket model of your LOC Weasel from the data you measured. Weigh your avionics assembly or the example model avionics assembly (use 84 g if you don’t have access to the avionics, or you don’t have access to a scale), and include it as a mass in your model. Record and report the model mass and center of mass as calculated by Open Rocket.</p>
 <p>Record and report the actual model mass and center of mass for the example rocket. Comment on the differences from the modeled mass and CM.</p>
 </section>
 <section id="f67-9w-flight" class="level2">
@@ -280,6 +297,7 @@ ul.task-list li input[type="checkbox"] {
 <p>For ground conditions, use the likely or reported weather conditions at 9 am in Lucerne Valley on Saturday, 10 February 2024 Compare your results from the two models. Determine if the ejection happens before or after apogee. If it’s after apogee, determine the optimal delay adjustment so that the parachute ejects right at apogee. It is not cheating to use the column labeled “Optimum delay” in the Open Rocket results. Rerun your Open Rocket model with the optimal delay. Compare these results with the GPS altitude data from the Weasel H128W-14A flight on 07/08/2023 in <a href="https://pages.hmc.edu/spjut/AdvRoc/FlightData/Weasel/2023-07-08-LogExcel.xlsx">2023-07-08-LogExcel.xlsx</a>.</p>
 
 
+</section>
 </section>
 
 </main> <!-- /main -->
@@ -365,8 +383,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   });
   clipboard.on('success', onCopySuccess);
   if (window.document.getElementById('quarto-embedded-source-code-modal')) {
-    // For code content inside modals, clipBoardJS needs to be initialized with a container option
-    // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
     const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
       text: getTextToCopy,
       container: window.document.getElementById('quarto-embedded-source-code-modal')
@@ -477,7 +493,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       if (window.Quarto?.typesetMath) {
         window.Quarto.typesetMath(note);
       }
-      // TODO in 1.5, we should make sure this works without a callout special case
       if (note.classList.contains("callout")) {
         return note.outerHTML;
       } else {
