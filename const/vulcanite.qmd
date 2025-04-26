@@ -355,17 +355,7 @@ Locate an eyebolt, a small-pattern #10-24 nut, a small #10 washer, a regular #10
 
 ![The Avionics Bay Main Board with #4-40 tap pointing at hole to tap](https://dofprobucket2.s3.us-east-2.amazonaws.com/Images/VUl_Tap_TeensySmall_Hole.png)
 
-* Turn the Main Bard over so that you're looking at the back side. If you get this orientation wrong, you will be unable to populate your Avionics Board without drilling additional holes.
-
-* Glue the Large Battery Support into the lower slots (the ones just touching the two holes).
-
-* Glue the Small Battery Support into the upper slots (the ones near the oval cutout).
-
-![The Avionics Bay Main Board with Battery Support boards before gluing](https://dofprobucket2.s3.us-east-2.amazonaws.com/Images/VUl_Batt_Supports_to_Mount.png)
-
-![The Avionics Bay Main Board with Battery Support boards glued in position Bottom View](https://dofprobucket2.s3.us-east-2.amazonaws.com/Images/Vul_Batt_Supports_Attached_Front_View.png)
-
-![The Avionics Bay Main Board with Battery Support boards glued in position Side View](https://dofprobucket2.s3.us-east-2.amazonaws.com/Images/Vul_Batt_Boards_Side_View.png)
+* Turn the Main Board over so that you're looking at the back side. If you get this orientation wrong, you will be unable to populate your Avionics Board without drilling additional holes.
 
 To see if you have trimmed the eyebolts sufficiently, and to get a feeling for how the interior of the Avionics Bay will look when assembled, place the Avionics Bay Main Board in the slots in the two inner bulkheads.
 
