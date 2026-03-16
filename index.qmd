@@ -3,13 +3,33 @@ title: "High-Power Rocketry"
 author: "DOFPro group"
 ---
 
+
+::: {.callout-note}
+The RCK website is not fully complete. Expect some changes between now and December 2026, the current target launch date
+:::
+
 # The DOFPro High-Power Rocketry Website
 
-Hobby rocketry (flying rockets for fun, as opposed for commercial purposes) is traditionally divided unto two categories, *Model Rocketry* and *High-Power Rocketry*[^1]. In the US, Model Rocketry concerns rockets with a mass of less than 1500 grams, and either a single motor with less than 160 Ns of impulse or a cluster of motors with less than 320 Ns of impulse. The most popular brand of model rocket kit has been [Estes](https://en.wikipedia.org/wiki/Estes_Industries) since the early days of the hobby.
+Hobby rocketry (flying rockets for recreation rather than commercial purposes) is traditionally divided into two categories: *Model Rocketry* and *High-Power Rocketry*[^1].
+
+In the United States, model rocketry generally refers to rockets with a mass of less than **1500 grams** and either:
+
+- a single motor with less than **160 Ns** of impulse, or  
+- a cluster of motors with less than **320 Ns** of impulse.
+
+The most popular brand of model rocket kits since the early days of the hobby has been [Estes](https://en.wikipedia.org/wiki/Estes_Industries).
 
 ![Students Loading a Model Rocket[^2]](https://dofprobucket2.s3.us-east-2.amazonaws.com/LargePhotos/20150128_FirstLaunch_0014.jpg)
 
-High-Power Rocketry concerns rockets with a mass of greater than 1500 grams and/or a single motors with more than 160 Ns of impulse or a cluster of motors with more than 320 Ns of impulse. High-Power Rocketry is more thoroughly defined in the National Fire Protection Association document [NFPA 1127](https://www.nfpa.org/codes-and-standards/1/nfpa-1/2/nfpa-1127) and by the Tripoli Rocketry Association, [TRA](<https://www.tripoli.org/>), and the National Association of Rocketry, [NAR](<https://www.nar.org/>). This website contains information, practices, and guidelines on High-Power rocketry gained through 20 years of teaching the principles of Experimental Engineering to college sophomores through seniors by building, modeling, flying, and analyzing data from high-power rockets.  
+High-Power Rocketry involves rockets with a mass greater than **1500 grams** and/or:
+
+- a single motor with more than **160 Ns** of impulse, or  
+- a cluster of motors with more than **320 Ns** of impulse.
+
+High-power rocketry is more formally defined in the National Fire Protection Association document [NFPA 1127](https://www.nfpa.org/codes-and-standards/1/nfpa-1/2/nfpa-1127) and by the Tripoli Rocketry Association ([TRA](https://www.tripoli.org/)) and the National Association of Rocketry ([NAR](https://www.nar.org/)).
+
+This website presents information, practices, and guidelines for high-power rocketry drawn from more than **twenty years of teaching Experimental Engineering** to college sophomores through seniors. During that time students designed, built, modeled, flew, and analyzed data from high-power rockets.
+
 
 ![Students Loading a High-Power Rocket[^3]](https://dofprobucket2.s3.us-east-2.amazonaws.com/LargePhotos/Launch23APR2016_0312.jpg)
 
