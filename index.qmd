@@ -3,6 +3,7 @@ title: "High-Power Rocketry"
 author: "DOFPro group"
 ---
 
+
 ::: {.callout-note}
 The RCK website is not fully complete. Expect some changes between now and December 2026, the current target launch date
 :::
@@ -28,6 +29,7 @@ High-Power Rocketry involves rockets with a mass greater than **1500 grams** and
 High-power rocketry is more formally defined in the National Fire Protection Association document [NFPA 1127](https://www.nfpa.org/codes-and-standards/1/nfpa-1/2/nfpa-1127) and by the Tripoli Rocketry Association ([TRA](https://www.tripoli.org/)) and the National Association of Rocketry ([NAR](https://www.nar.org/)).
 
 This website presents information, practices, and guidelines for high-power rocketry drawn from more than **twenty years of teaching Experimental Engineering** to college sophomores through seniors. During that time students designed, built, modeled, flew, and analyzed data from high-power rockets.
+
 
 ![Students Loading a High-Power Rocket[^3]](https://dofprobucket2.s3.us-east-2.amazonaws.com/LargePhotos/Launch23APR2016_0312.jpg)
 
