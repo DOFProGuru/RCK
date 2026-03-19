@@ -60,6 +60,7 @@ website:
           text: "DOFPro Home"
         - href: https://dofpro.org/CTP/
           text: "Chem. Therm. Proc."
+  favicon: favicon.ico          
 
 format:
   html:
