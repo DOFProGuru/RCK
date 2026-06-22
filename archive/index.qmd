@@ -3,7 +3,7 @@ title: "Data Archive"
 author: "DOFPro group"
 ---
 
-We have nine practice problems for ameature rocketeers to try. They will walk you through the steps of understanding the engineering behind rocktry concepts. Completion of the nine practice problems will set you up to earn your level 1 and level 2 certification.
+We have nine practice problems for amateur rocketeers to try. They will walk you through the steps of understanding the engineering behind rocktry concepts. Completion of the nine practice problems will set you up to earn your level 1 and level 2 certification.
 
 Practice Problems:
 [Practice Problem 1](https://dofpro.org/RCK/archive/assignment1.html)
