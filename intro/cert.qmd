@@ -29,7 +29,7 @@ major differences:
 * TRA is focused on High-Power rocketry and rocketry research.
   NAR is focused on model rocketry, but they support High-Power as well.
 
-* Certifying Level 1 with TRA requires that you have a prefect, technical advisory panal, or TRI director observe the flight. Certifying
+* Certifying Level 1 with TRA requires that you have a prefect, technical advisory panel, or TRI director observe the flight. Certifying
   Level 1 with NAR requires that you are observed by any member with Level 2 certification or two members, one of which having a Level 1 certification.
 
 * NAR has many more members. TRA is a smaller community.
@@ -98,7 +98,7 @@ Coming in at about $70, this rocket will easily let you
 certify Level 1 (assuming you include a GPS Tracker) if you follow the linked construction techniques.
 In addition to the [kit](https://www.madcowrocketry.com/1-6-mini-dx3/), you will need
 an Estes 29mm motor retainer and 5-minute epoxy. The perfect cert motor for this rocket
-is the Aerotech H128W. Recommended assembly instructions are found [here](https://dofpro.org/RCK/const/).
+is the Aerotech H128W. Recommended assembly instructions are found [here](/const/DX3.qmd).
 
 ### Estes Pro Series II
 The least expensive way to certify Level 1 is to buy an [Estes Pro Series II][EPS] with a
@@ -110,20 +110,21 @@ for around $20-to-$40, you're better off spending your
 money on the Madcow or one of the other rockets below.
 
 To modify a Pro Series II for an H motor:
+
   * Leave out the engine block on the motor mount if the kit has one.
   * Put epoxy fillets on the fin joints.
   * Replace the shock cord with 10 to 15 feet of kevlar and attach it to the motor mount or through the wall, not just glued on.
   * Consider replacing the existing 1/4" launch lugs with heftier 1/4" launch lugs or rail guides.
   
 These rockets do not feature very rugged construction and will survive a few flights, but
-don't plan on doing much more than qualifying on it. Available from [Estes][EPS], 
+don't plan on doing much more than qualifying on them. Available from [Estes][EPS], 
 [eRockets](http://www.erockets.biz/pro/),
 [Sirius](https://www.siriusrocketry.biz/ishop/estes-pro-series-ii-kits-155/).
 
 ### Aerotech Arreaux
 The Aerotech Arreaux is an excellent SLE rocket. However, to fly H motors, you'll need to
 replace the stock 12" motor mount tube with a 15" or ~18" motor mount tube. See the construction
-hints [below](https://dofpro.org/RCK/const/).
+hints [below](https://dofpro.org/RCK/const/#aerotech-arreaux-motors).
 Beyond the kit and
 the extra tube, all you need are CA adhesive
 and JB weld. We used modified Arreauxs in our classes for years. It's much sturdier than the Estes
@@ -133,17 +134,15 @@ fiberglass. The rocket is available from [Wildman](https://wildmanrocketry.com/c
 [Sirius](https://www.siriusrocketry.biz/ishop/aerotech-arreaux-739.html),
 [Apogee Components](https://www.apogeerockets.com/Rocket_Kits/Skill_Level_3_Kits/Arreaux?cPath=1_85&zenid=l6mkupg4hcvh3itqubmpe2u9t3).
 The replacement motor mount tube is available from [Aerotech](https://www.aerotechstore.com/products/product_16e318e6-c2fd-e5a5-d053-3e84f31591c7),
-or [eRockets](http://www.erockets.biz/aerotech-motor-mount-tube-29-mm-x-17-3-4-inch-12918/).
+or [eRockets](https://www.erockets.biz/semroc-heavy-duty-body-tube-lt-115-bth-52-29mm-motor-tube-1pk-22-0-long-1pk-sem-lt-115220/).
 
 ### LOC Precision (PML) Phobos
 The PML Phobos is an extremely rugged and reliable kit. If you pay attention to the instructions
 and are careful during construction it will last for years. You will want a motor retainer. You can certify
 Level 2 on it as well, but you'll want to make certain of your construction techniques. Available from
-[LOC Precision](https://locprecision.com/collections/rockets-2-26-diameter/products/phobos),
-[eRockets](http://www.erockets.biz/public-missiles-pml-flying-model-rocket-kit-phobos/).
+[LOC Precision](https://locprecision.com/collections/rockets-2-26-diameter/products/phobos).
 
 ### LOC Precision Vulcanite
-You will build a Vulcanite as part of [Labs 4 and 5](labs.md.html).
 The Vulcanite is a fairly rugged rocket that can be used for both Level 1 and Level 2 flights.
 It's not quite as rugged as the PML Phobos. You'll want to order an Aero Pack Quick Change
 motor retainer.
@@ -254,10 +253,10 @@ Consult the relevant website. We will not focus on Level 3 in Advanced Rocketry
 [TL2]: http://www.tripoli.org/Level2
 [T2SG]: https://www.tripoli.org/docs.ashx?id=1104356
 [NAR]: http://www.nar.org
-[NMEM]: http://www.nar.org/join-nar/
-[NFRM]: https://nar.app.neoncrm.com/np/clients/nar/membershipJoin.jsp
-[NCRT]: http://www.nar.org/high-power-rocketry-info/
-[NL1]: http://www.nar.org/high-power-rocketry-info/level-1-hpr-certification/
+[NMEM]: https://www.nar.org/content.aspx?page_id=22&club_id=114127&module_id=667409
+[NFRM]: https://narocket.clubexpress.com/content.aspx?page_id=60&club_id=114127
+[NCRT]: https://www.nar.org/content.aspx?page_id=22&club_id=114127&module_id=668315
+[NL1]: https://www.nar.org/Level1HPRCertificationProcedures
 [NL2]: http://www.nar.org/high-power-rocketry-info/level-2-hpr-certification/
 [N2SG]: https://www.nar.org/wp-content/uploads/2020/10/HPRL2-2020-V2_STUDY_GUIDE.pdf
 [ROC]: https://rocstock.org
